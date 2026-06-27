@@ -14,12 +14,7 @@ connectDB();
 
 app.use(
   cors({
-    origin: (origin, cb) => {
-      // Allow any localhost origin (Vite picks the next free port)
-      if (!origin || /^http:\/\/localhost(:\d+)?$/.test(origin))
-        return cb(null, true);
-      cb(new Error("Not allowed by CORS"));
-    },
+    origin: true, // This allows requests from any origin dynamically
   }),
 );
 app.use(express.json());
