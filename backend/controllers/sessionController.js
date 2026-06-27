@@ -1,10 +1,10 @@
-const { v4: uuidv4 } = require('uuid');
+const { randomUUID } = require('crypto');
 const Session = require('../models/Session');
 const Message = require('../models/Message');
 
 exports.createSession = async (req, res, next) => {
   try {
-    const sessionId = uuidv4();
+    const sessionId = randomUUID();
     await Session.create({ sessionId });
     res.status(201).json({ sessionId });
   } catch (error) {
