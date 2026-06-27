@@ -24,52 +24,53 @@ function loadJSON(filename) {
   );
 }
 
-/* ── Load data files at startup ── */
-const jhsData = loadJSON("jhs_data.json");
-const shsSchools = loadJSON("ghana_shs_sample_50.json");
-const uccCutoffs = loadJSON("ucc_cut_off_points_2026.json");
-const ugCutoffs = loadJSON("university_of_ghana_cutoff_points_2026.json");
-const shsGuidance = loadJSON("shs_university_guidance_100.json");
+/* ── Lazy-loaded data (cached after first load) ── */
+let SYSTEM_PROMPT = null;
 
-/* ── Build compact career table ── */
-const careerTable = jhsData
-  .map((c) => {
-    const p = c.primary_pathway || {};
-    const sg = shsGuidance.find((g) => g.title === c.title);
-    const guide = sg?.shs_university_guidance || {};
-    const electives = (p.required_wassce_electives || []).join("+");
-    const cats = (p.target_shs_categories || []).join("/");
-    const unis = (p.university_pathways || [])
-      .slice(0, 2)
-      .map((u) => `${u.institution} agg≤${u.typical_cutoff_aggregate}`)
-      .join("; ");
-    const wassce = guide.target_wassce_aggregate || "?";
-    return `${c.title}: BECE≤${p.ideal_bece_aggregate || "?"} | ${p.recommended_shs_stream || "?"} | Cat${cats} | WASSCE≤${wassce} | ${electives} | ${unis}`;
-  })
-  .join("\n");
+function buildSystemPrompt() {
+  if (SYSTEM_PROMPT) return SYSTEM_PROMPT;
 
-/* ── Build compact university cutoff lists ── */
-function flattenCutoffs(uniData) {
-  const rows = [];
-  for (const fac of uniData.faculties_and_programs || []) {
-    for (const prog of fac.programs || []) {
-      rows.push(`${prog.name}(${prog.cut_off_point})`);
+  const jhsData = loadJSON("jhs_data.json");
+  const shsSchools = loadJSON("ghana_shs_sample_50.json");
+  const uccCutoffs = loadJSON("ucc_cut_off_points_2026.json");
+  const ugCutoffs = loadJSON("university_of_ghana_cutoff_points_2026.json");
+  const shsGuidance = loadJSON("shs_university_guidance_100.json");
+
+  const careerTable = jhsData
+    .map((c) => {
+      const p = c.primary_pathway || {};
+      const sg = shsGuidance.find((g) => g.title === c.title);
+      const guide = sg?.shs_university_guidance || {};
+      const electives = (p.required_wassce_electives || []).join("+");
+      const cats = (p.target_shs_categories || []).join("/");
+      const unis = (p.university_pathways || [])
+        .slice(0, 2)
+        .map((u) => `${u.institution} agg≤${u.typical_cutoff_aggregate}`)
+        .join("; ");
+      const wassce = guide.target_wassce_aggregate || "?";
+      return `${c.title}: BECE≤${p.ideal_bece_aggregate || "?"} | ${p.recommended_shs_stream || "?"} | Cat${cats} | WASSCE≤${wassce} | ${electives} | ${unis}`;
+    })
+    .join("\n");
+
+  function flattenCutoffs(uniData) {
+    const rows = [];
+    for (const fac of uniData.faculties_and_programs || []) {
+      for (const prog of fac.programs || []) {
+        rows.push(`${prog.name}(${prog.cut_off_point})`);
+      }
     }
+    return rows.join(", ");
   }
-  return rows.join(", ");
-}
 
-const uccList = `UCC: ${flattenCutoffs(uccCutoffs)}`;
-const ugList = `UG Legon: ${flattenCutoffs(ugCutoffs)}`;
+  const uccList = `UCC: ${flattenCutoffs(uccCutoffs)}`;
+  const ugList = `UG Legon: ${flattenCutoffs(ugCutoffs)}`;
 
-/* ── Compact SHS school list (top 30 by category) ── */
-const schoolList = shsSchools
-  .slice(0, 30)
-  .map((s) => `${s.school_name} [Cat${s.category}] ${s.region}`)
-  .join("\n");
+  const schoolList = shsSchools
+    .slice(0, 30)
+    .map((s) => `${s.school_name} [Cat${s.category}] ${s.region}`)
+    .join("\n");
 
-/* ── System prompt ── */
-const SYSTEM_PROMPT = `You are Caria, an AI career guidance advisor for Ghanaian students aged 13–22.
+  SYSTEM_PROMPT = `You are Caria, an AI career guidance advisor for Ghanaian students aged 13–22.
 
 Your job: help students understand exactly what they need to study — from JHS through BECE, SHS, WASSCE, and into university — to reach their chosen career.
 
@@ -93,6 +94,9 @@ ${ugList}
 
 KNUST general requirement: aggregate ≤24; science programmes typically ≤12, engineering ≤14, pharmacy ≤9, medicine ≤6.
 UEW, UDS, UMaT, UHAS also accept students — mention these for students who miss top-tier cutoffs.`;
+
+  return SYSTEM_PROMPT;
+}
 
 /* ── Helpers ── */
 function parseRoadmapUpdate(text) {
@@ -161,7 +165,7 @@ exports.sendMessage = async (req, res, next) => {
     const completion = await getGroq().chat.completions.create({
       model: "llama-3.3-70b-versatile",
       messages: [
-        { role: "system", content: SYSTEM_PROMPT },
+        { role: "system", content: buildSystemPrompt() },
         ...recentHistory,
         { role: "user", content: message.trim() },
       ],
