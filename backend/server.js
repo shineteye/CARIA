@@ -10,7 +10,15 @@ const errorHandler = require("./middleware/errorHandler");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-connectDB();
+// Connect before each request in serverless; cached after first connect
+app.use(async (req, res, next) => {
+  try {
+    await connectDB();
+    next();
+  } catch (err) {
+    res.status(503).json({ error: 'Database unavailable' });
+  }
+});
 
 app.use(
   cors({
