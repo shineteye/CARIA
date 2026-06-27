@@ -1,0 +1,2702 @@
+[
+  {
+    "record_id": "ASPIRING_PATH_001",
+    "career_id": "software_developer",
+    "title": "Software Developer",
+    "student_profile": {
+      "current_status": "Currently in JHS 2 (No final exam certificate yet)",
+      "student_interest": "Enjoys fixing bicycles, loosening engines, and working with tools.",
+      "primary_barrier": "Balances heavy domestic chores or farming demands before and after school hours."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Software Developer."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Software Developer."
+        }
+      ],
+      "recommended_academic_path": "SHS General Science or TVET Computer Engineering Track",
+      "long_term_vision": "BSc. Computer Science or Global Tech Bootcamp Certification"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_002",
+    "career_id": "nurse",
+    "title": "Registered Nurse",
+    "student_profile": {
+      "current_status": "Currently in SHS 1 (Exploring core elective choices)",
+      "student_interest": "Enjoys selling small items, managing school market days, or trading assets.",
+      "primary_barrier": "Struggles to retain information from reading without hands-on visual demonstrations."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Registered Nurse."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Registered Nurse."
+        }
+      ],
+      "recommended_academic_path": "SHS General Science, Home Economics, or Direct Nursing College entry",
+      "long_term_vision": "Diploma or BSc. in Nursing and Midwifery"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_003",
+    "career_id": "mechanical_mechanic",
+    "title": "Automotive Engineer / Modern Mechanic",
+    "student_profile": {
+      "current_status": "Out-of-school youth seeking entry pathways back into academic streams",
+      "student_interest": "Constantly sketching, drawing portraits on scrap paper, or editing phone photos.",
+      "primary_barrier": "Faces intense social pressure to drop out early for short-term informal mining or market labor."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Automotive Engineer / Modern Mechanic."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Automotive Engineer / Modern Mechanic."
+        }
+      ],
+      "recommended_academic_path": "TVET Motor Vehicle Mechanics or Mechanical Engineering Craft Course",
+      "long_term_vision": "Advanced Technical Diploma or Certified Diagnostic Expert Workshop Owner"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_004",
+    "career_id": "entrepreneur",
+    "title": "Agribusiness Owner / Entrepreneur",
+    "student_profile": {
+      "current_status": "JHS 3 Student waiting to write final terminal school metrics",
+      "student_interest": "Fascinated by house wiring, solar panels, and fixing fans or home radios.",
+      "primary_barrier": "Language barriers make high-level English textbooks difficult to comprehend quickly."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Agribusiness Owner / Entrepreneur."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Agribusiness Owner / Entrepreneur."
+        }
+      ],
+      "recommended_academic_path": "SHS Business, General Agriculture, or Vocational Training",
+      "long_term_vision": "Bachelor of Business Administration or Large-Scale Commercial Farm Hub Direction"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_005",
+    "career_id": "graphic_designer",
+    "title": "Digital Multimedia Designer",
+    "student_profile": {
+      "current_status": "Currently in JHS 2 (No final exam certificate yet)",
+      "student_interest": "Enjoys debating, public speaking, telling community stories, and writing essays.",
+      "primary_barrier": "Lacks funding for basic school supplies, uniforms, or registration fees."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Digital Multimedia Designer."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Digital Multimedia Designer."
+        }
+      ],
+      "recommended_academic_path": "SHS Visual Arts or Technical Drawing streams",
+      "long_term_vision": "BA. Communication Design or Lead Creative Director at an Agency"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_006",
+    "career_id": "electrical_engineer",
+    "title": "Electrical & Renewable Energy Technician",
+    "student_profile": {
+      "current_status": "Currently in SHS 1 (Exploring core elective choices)",
+      "student_interest": "Loves baking, trying out new local dishes, and decorating event spaces.",
+      "primary_barrier": "Attends a school with no computer labs or electricity, making technology feel abstract."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Electrical & Renewable Energy Technician."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Electrical & Renewable Energy Technician."
+        }
+      ],
+      "recommended_academic_path": "TVET Electrical Installation or SHS General Science",
+      "long_term_vision": "Higher National Diploma (HND) in Electrical Engineering / Solar System Architect"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_007",
+    "career_id": "journalist",
+    "title": "Broadcast Journalist / Content Creator",
+    "student_profile": {
+      "current_status": "Out-of-school youth seeking entry pathways back into academic streams",
+      "student_interest": "Enjoys organizing building blocks, mapping spaces, and working outdoors.",
+      "primary_barrier": "Has been out of school for 2 years due to financial constraints and lacks textbook access."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Broadcast Journalist / Content Creator."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Broadcast Journalist / Content Creator."
+        }
+      ],
+      "recommended_academic_path": "SHS General Arts (Literature, Government, CRS)",
+      "long_term_vision": "Degree in Communication Studies / Independent Media Network Executive"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_008",
+    "career_id": "hospitality_manager",
+    "title": "Hotel & Culinary Arts Manager",
+    "student_profile": {
+      "current_status": "JHS 3 Student waiting to write final terminal school metrics",
+      "student_interest": "Loves sorting out numbers, organizing school records, and solving logical problems.",
+      "primary_barrier": "Struggles with severe math anxiety and assumes all science tracks are closed to them."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Hotel & Culinary Arts Manager."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Hotel & Culinary Arts Manager."
+        }
+      ],
+      "recommended_academic_path": "SHS Home Economics (Catering, Food & Nutrition)",
+      "long_term_vision": "BSc. Hospitality and Tourism Management / International Chef Certification"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_009",
+    "career_id": "construction_manager",
+    "title": "Civil Contractor / Construction Manager",
+    "student_profile": {
+      "current_status": "Currently in JHS 2 (No final exam certificate yet)",
+      "student_interest": "Enjoys playing mobile video games and taking apart electronic devices.",
+      "primary_barrier": "Lacks guidance mentors in their village, meaning they don't know what courses exist."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Civil Contractor / Construction Manager."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Civil Contractor / Construction Manager."
+        }
+      ],
+      "recommended_academic_path": "TVET Building Technology or SHS Science stream",
+      "long_term_vision": "BSc. Construction Technology / Licensed Structural Contractor"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_010",
+    "career_id": "data_analyst",
+    "title": "Business Data Analyst",
+    "student_profile": {
+      "current_status": "Currently in SHS 1 (Exploring core elective choices)",
+      "student_interest": "Passionate about treating local injuries, nursing sick animals, or health talks.",
+      "primary_barrier": "No access to smartphone or internet resources, relying purely on old physical papers."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Business Data Analyst."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Business Data Analyst."
+        }
+      ],
+      "recommended_academic_path": "SHS Business or Science with strong math orientation",
+      "long_term_vision": "BSc. Statistics / Corporate Data Operations Lead"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_011",
+    "career_id": "software_developer",
+    "title": "Software Developer",
+    "student_profile": {
+      "current_status": "Out-of-school youth seeking entry pathways back into academic streams",
+      "student_interest": "Enjoys fixing bicycles, loosening engines, and working with tools.",
+      "primary_barrier": "Balances heavy domestic chores or farming demands before and after school hours."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Software Developer."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Software Developer."
+        }
+      ],
+      "recommended_academic_path": "SHS General Science or TVET Computer Engineering Track",
+      "long_term_vision": "BSc. Computer Science or Global Tech Bootcamp Certification"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_012",
+    "career_id": "nurse",
+    "title": "Registered Nurse",
+    "student_profile": {
+      "current_status": "JHS 3 Student waiting to write final terminal school metrics",
+      "student_interest": "Enjoys selling small items, managing school market days, or trading assets.",
+      "primary_barrier": "Struggles to retain information from reading without hands-on visual demonstrations."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Registered Nurse."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Registered Nurse."
+        }
+      ],
+      "recommended_academic_path": "SHS General Science, Home Economics, or Direct Nursing College entry",
+      "long_term_vision": "Diploma or BSc. in Nursing and Midwifery"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_013",
+    "career_id": "mechanical_mechanic",
+    "title": "Automotive Engineer / Modern Mechanic",
+    "student_profile": {
+      "current_status": "Currently in JHS 2 (No final exam certificate yet)",
+      "student_interest": "Constantly sketching, drawing portraits on scrap paper, or editing phone photos.",
+      "primary_barrier": "Faces intense social pressure to drop out early for short-term informal mining or market labor."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Automotive Engineer / Modern Mechanic."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Automotive Engineer / Modern Mechanic."
+        }
+      ],
+      "recommended_academic_path": "TVET Motor Vehicle Mechanics or Mechanical Engineering Craft Course",
+      "long_term_vision": "Advanced Technical Diploma or Certified Diagnostic Expert Workshop Owner"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_014",
+    "career_id": "entrepreneur",
+    "title": "Agribusiness Owner / Entrepreneur",
+    "student_profile": {
+      "current_status": "Currently in SHS 1 (Exploring core elective choices)",
+      "student_interest": "Fascinated by house wiring, solar panels, and fixing fans or home radios.",
+      "primary_barrier": "Language barriers make high-level English textbooks difficult to comprehend quickly."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Agribusiness Owner / Entrepreneur."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Agribusiness Owner / Entrepreneur."
+        }
+      ],
+      "recommended_academic_path": "SHS Business, General Agriculture, or Vocational Training",
+      "long_term_vision": "Bachelor of Business Administration or Large-Scale Commercial Farm Hub Direction"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_015",
+    "career_id": "graphic_designer",
+    "title": "Digital Multimedia Designer",
+    "student_profile": {
+      "current_status": "Out-of-school youth seeking entry pathways back into academic streams",
+      "student_interest": "Enjoys debating, public speaking, telling community stories, and writing essays.",
+      "primary_barrier": "Lacks funding for basic school supplies, uniforms, or registration fees."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Digital Multimedia Designer."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Digital Multimedia Designer."
+        }
+      ],
+      "recommended_academic_path": "SHS Visual Arts or Technical Drawing streams",
+      "long_term_vision": "BA. Communication Design or Lead Creative Director at an Agency"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_016",
+    "career_id": "electrical_engineer",
+    "title": "Electrical & Renewable Energy Technician",
+    "student_profile": {
+      "current_status": "JHS 3 Student waiting to write final terminal school metrics",
+      "student_interest": "Loves baking, trying out new local dishes, and decorating event spaces.",
+      "primary_barrier": "Attends a school with no computer labs or electricity, making technology feel abstract."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Electrical & Renewable Energy Technician."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Electrical & Renewable Energy Technician."
+        }
+      ],
+      "recommended_academic_path": "TVET Electrical Installation or SHS General Science",
+      "long_term_vision": "Higher National Diploma (HND) in Electrical Engineering / Solar System Architect"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_017",
+    "career_id": "journalist",
+    "title": "Broadcast Journalist / Content Creator",
+    "student_profile": {
+      "current_status": "Currently in JHS 2 (No final exam certificate yet)",
+      "student_interest": "Enjoys organizing building blocks, mapping spaces, and working outdoors.",
+      "primary_barrier": "Has been out of school for 2 years due to financial constraints and lacks textbook access."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Broadcast Journalist / Content Creator."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Broadcast Journalist / Content Creator."
+        }
+      ],
+      "recommended_academic_path": "SHS General Arts (Literature, Government, CRS)",
+      "long_term_vision": "Degree in Communication Studies / Independent Media Network Executive"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_018",
+    "career_id": "hospitality_manager",
+    "title": "Hotel & Culinary Arts Manager",
+    "student_profile": {
+      "current_status": "Currently in SHS 1 (Exploring core elective choices)",
+      "student_interest": "Loves sorting out numbers, organizing school records, and solving logical problems.",
+      "primary_barrier": "Struggles with severe math anxiety and assumes all science tracks are closed to them."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Hotel & Culinary Arts Manager."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Hotel & Culinary Arts Manager."
+        }
+      ],
+      "recommended_academic_path": "SHS Home Economics (Catering, Food & Nutrition)",
+      "long_term_vision": "BSc. Hospitality and Tourism Management / International Chef Certification"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_019",
+    "career_id": "construction_manager",
+    "title": "Civil Contractor / Construction Manager",
+    "student_profile": {
+      "current_status": "Out-of-school youth seeking entry pathways back into academic streams",
+      "student_interest": "Enjoys playing mobile video games and taking apart electronic devices.",
+      "primary_barrier": "Lacks guidance mentors in their village, meaning they don't know what courses exist."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Civil Contractor / Construction Manager."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Civil Contractor / Construction Manager."
+        }
+      ],
+      "recommended_academic_path": "TVET Building Technology or SHS Science stream",
+      "long_term_vision": "BSc. Construction Technology / Licensed Structural Contractor"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_020",
+    "career_id": "data_analyst",
+    "title": "Business Data Analyst",
+    "student_profile": {
+      "current_status": "JHS 3 Student waiting to write final terminal school metrics",
+      "student_interest": "Passionate about treating local injuries, nursing sick animals, or health talks.",
+      "primary_barrier": "No access to smartphone or internet resources, relying purely on old physical papers."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Business Data Analyst."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Business Data Analyst."
+        }
+      ],
+      "recommended_academic_path": "SHS Business or Science with strong math orientation",
+      "long_term_vision": "BSc. Statistics / Corporate Data Operations Lead"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_021",
+    "career_id": "software_developer",
+    "title": "Software Developer",
+    "student_profile": {
+      "current_status": "Currently in JHS 2 (No final exam certificate yet)",
+      "student_interest": "Enjoys fixing bicycles, loosening engines, and working with tools.",
+      "primary_barrier": "Balances heavy domestic chores or farming demands before and after school hours."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Software Developer."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Software Developer."
+        }
+      ],
+      "recommended_academic_path": "SHS General Science or TVET Computer Engineering Track",
+      "long_term_vision": "BSc. Computer Science or Global Tech Bootcamp Certification"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_022",
+    "career_id": "nurse",
+    "title": "Registered Nurse",
+    "student_profile": {
+      "current_status": "Currently in SHS 1 (Exploring core elective choices)",
+      "student_interest": "Enjoys selling small items, managing school market days, or trading assets.",
+      "primary_barrier": "Struggles to retain information from reading without hands-on visual demonstrations."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Registered Nurse."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Registered Nurse."
+        }
+      ],
+      "recommended_academic_path": "SHS General Science, Home Economics, or Direct Nursing College entry",
+      "long_term_vision": "Diploma or BSc. in Nursing and Midwifery"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_023",
+    "career_id": "mechanical_mechanic",
+    "title": "Automotive Engineer / Modern Mechanic",
+    "student_profile": {
+      "current_status": "Out-of-school youth seeking entry pathways back into academic streams",
+      "student_interest": "Constantly sketching, drawing portraits on scrap paper, or editing phone photos.",
+      "primary_barrier": "Faces intense social pressure to drop out early for short-term informal mining or market labor."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Automotive Engineer / Modern Mechanic."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Automotive Engineer / Modern Mechanic."
+        }
+      ],
+      "recommended_academic_path": "TVET Motor Vehicle Mechanics or Mechanical Engineering Craft Course",
+      "long_term_vision": "Advanced Technical Diploma or Certified Diagnostic Expert Workshop Owner"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_024",
+    "career_id": "entrepreneur",
+    "title": "Agribusiness Owner / Entrepreneur",
+    "student_profile": {
+      "current_status": "JHS 3 Student waiting to write final terminal school metrics",
+      "student_interest": "Fascinated by house wiring, solar panels, and fixing fans or home radios.",
+      "primary_barrier": "Language barriers make high-level English textbooks difficult to comprehend quickly."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Agribusiness Owner / Entrepreneur."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Agribusiness Owner / Entrepreneur."
+        }
+      ],
+      "recommended_academic_path": "SHS Business, General Agriculture, or Vocational Training",
+      "long_term_vision": "Bachelor of Business Administration or Large-Scale Commercial Farm Hub Direction"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_025",
+    "career_id": "graphic_designer",
+    "title": "Digital Multimedia Designer",
+    "student_profile": {
+      "current_status": "Currently in JHS 2 (No final exam certificate yet)",
+      "student_interest": "Enjoys debating, public speaking, telling community stories, and writing essays.",
+      "primary_barrier": "Lacks funding for basic school supplies, uniforms, or registration fees."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Digital Multimedia Designer."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Digital Multimedia Designer."
+        }
+      ],
+      "recommended_academic_path": "SHS Visual Arts or Technical Drawing streams",
+      "long_term_vision": "BA. Communication Design or Lead Creative Director at an Agency"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_026",
+    "career_id": "electrical_engineer",
+    "title": "Electrical & Renewable Energy Technician",
+    "student_profile": {
+      "current_status": "Currently in SHS 1 (Exploring core elective choices)",
+      "student_interest": "Loves baking, trying out new local dishes, and decorating event spaces.",
+      "primary_barrier": "Attends a school with no computer labs or electricity, making technology feel abstract."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Electrical & Renewable Energy Technician."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Electrical & Renewable Energy Technician."
+        }
+      ],
+      "recommended_academic_path": "TVET Electrical Installation or SHS General Science",
+      "long_term_vision": "Higher National Diploma (HND) in Electrical Engineering / Solar System Architect"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_027",
+    "career_id": "journalist",
+    "title": "Broadcast Journalist / Content Creator",
+    "student_profile": {
+      "current_status": "Out-of-school youth seeking entry pathways back into academic streams",
+      "student_interest": "Enjoys organizing building blocks, mapping spaces, and working outdoors.",
+      "primary_barrier": "Has been out of school for 2 years due to financial constraints and lacks textbook access."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Broadcast Journalist / Content Creator."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Broadcast Journalist / Content Creator."
+        }
+      ],
+      "recommended_academic_path": "SHS General Arts (Literature, Government, CRS)",
+      "long_term_vision": "Degree in Communication Studies / Independent Media Network Executive"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_028",
+    "career_id": "hospitality_manager",
+    "title": "Hotel & Culinary Arts Manager",
+    "student_profile": {
+      "current_status": "JHS 3 Student waiting to write final terminal school metrics",
+      "student_interest": "Loves sorting out numbers, organizing school records, and solving logical problems.",
+      "primary_barrier": "Struggles with severe math anxiety and assumes all science tracks are closed to them."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Hotel & Culinary Arts Manager."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Hotel & Culinary Arts Manager."
+        }
+      ],
+      "recommended_academic_path": "SHS Home Economics (Catering, Food & Nutrition)",
+      "long_term_vision": "BSc. Hospitality and Tourism Management / International Chef Certification"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_029",
+    "career_id": "construction_manager",
+    "title": "Civil Contractor / Construction Manager",
+    "student_profile": {
+      "current_status": "Currently in JHS 2 (No final exam certificate yet)",
+      "student_interest": "Enjoys playing mobile video games and taking apart electronic devices.",
+      "primary_barrier": "Lacks guidance mentors in their village, meaning they don't know what courses exist."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Civil Contractor / Construction Manager."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Civil Contractor / Construction Manager."
+        }
+      ],
+      "recommended_academic_path": "TVET Building Technology or SHS Science stream",
+      "long_term_vision": "BSc. Construction Technology / Licensed Structural Contractor"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_030",
+    "career_id": "data_analyst",
+    "title": "Business Data Analyst",
+    "student_profile": {
+      "current_status": "Currently in SHS 1 (Exploring core elective choices)",
+      "student_interest": "Passionate about treating local injuries, nursing sick animals, or health talks.",
+      "primary_barrier": "No access to smartphone or internet resources, relying purely on old physical papers."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Business Data Analyst."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Business Data Analyst."
+        }
+      ],
+      "recommended_academic_path": "SHS Business or Science with strong math orientation",
+      "long_term_vision": "BSc. Statistics / Corporate Data Operations Lead"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_031",
+    "career_id": "software_developer",
+    "title": "Software Developer",
+    "student_profile": {
+      "current_status": "Out-of-school youth seeking entry pathways back into academic streams",
+      "student_interest": "Enjoys fixing bicycles, loosening engines, and working with tools.",
+      "primary_barrier": "Balances heavy domestic chores or farming demands before and after school hours."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Software Developer."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Software Developer."
+        }
+      ],
+      "recommended_academic_path": "SHS General Science or TVET Computer Engineering Track",
+      "long_term_vision": "BSc. Computer Science or Global Tech Bootcamp Certification"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_032",
+    "career_id": "nurse",
+    "title": "Registered Nurse",
+    "student_profile": {
+      "current_status": "JHS 3 Student waiting to write final terminal school metrics",
+      "student_interest": "Enjoys selling small items, managing school market days, or trading assets.",
+      "primary_barrier": "Struggles to retain information from reading without hands-on visual demonstrations."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Registered Nurse."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Registered Nurse."
+        }
+      ],
+      "recommended_academic_path": "SHS General Science, Home Economics, or Direct Nursing College entry",
+      "long_term_vision": "Diploma or BSc. in Nursing and Midwifery"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_033",
+    "career_id": "mechanical_mechanic",
+    "title": "Automotive Engineer / Modern Mechanic",
+    "student_profile": {
+      "current_status": "Currently in JHS 2 (No final exam certificate yet)",
+      "student_interest": "Constantly sketching, drawing portraits on scrap paper, or editing phone photos.",
+      "primary_barrier": "Faces intense social pressure to drop out early for short-term informal mining or market labor."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Automotive Engineer / Modern Mechanic."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Automotive Engineer / Modern Mechanic."
+        }
+      ],
+      "recommended_academic_path": "TVET Motor Vehicle Mechanics or Mechanical Engineering Craft Course",
+      "long_term_vision": "Advanced Technical Diploma or Certified Diagnostic Expert Workshop Owner"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_034",
+    "career_id": "entrepreneur",
+    "title": "Agribusiness Owner / Entrepreneur",
+    "student_profile": {
+      "current_status": "Currently in SHS 1 (Exploring core elective choices)",
+      "student_interest": "Fascinated by house wiring, solar panels, and fixing fans or home radios.",
+      "primary_barrier": "Language barriers make high-level English textbooks difficult to comprehend quickly."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Agribusiness Owner / Entrepreneur."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Agribusiness Owner / Entrepreneur."
+        }
+      ],
+      "recommended_academic_path": "SHS Business, General Agriculture, or Vocational Training",
+      "long_term_vision": "Bachelor of Business Administration or Large-Scale Commercial Farm Hub Direction"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_035",
+    "career_id": "graphic_designer",
+    "title": "Digital Multimedia Designer",
+    "student_profile": {
+      "current_status": "Out-of-school youth seeking entry pathways back into academic streams",
+      "student_interest": "Enjoys debating, public speaking, telling community stories, and writing essays.",
+      "primary_barrier": "Lacks funding for basic school supplies, uniforms, or registration fees."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Digital Multimedia Designer."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Digital Multimedia Designer."
+        }
+      ],
+      "recommended_academic_path": "SHS Visual Arts or Technical Drawing streams",
+      "long_term_vision": "BA. Communication Design or Lead Creative Director at an Agency"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_036",
+    "career_id": "electrical_engineer",
+    "title": "Electrical & Renewable Energy Technician",
+    "student_profile": {
+      "current_status": "JHS 3 Student waiting to write final terminal school metrics",
+      "student_interest": "Loves baking, trying out new local dishes, and decorating event spaces.",
+      "primary_barrier": "Attends a school with no computer labs or electricity, making technology feel abstract."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Electrical & Renewable Energy Technician."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Electrical & Renewable Energy Technician."
+        }
+      ],
+      "recommended_academic_path": "TVET Electrical Installation or SHS General Science",
+      "long_term_vision": "Higher National Diploma (HND) in Electrical Engineering / Solar System Architect"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_037",
+    "career_id": "journalist",
+    "title": "Broadcast Journalist / Content Creator",
+    "student_profile": {
+      "current_status": "Currently in JHS 2 (No final exam certificate yet)",
+      "student_interest": "Enjoys organizing building blocks, mapping spaces, and working outdoors.",
+      "primary_barrier": "Has been out of school for 2 years due to financial constraints and lacks textbook access."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Broadcast Journalist / Content Creator."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Broadcast Journalist / Content Creator."
+        }
+      ],
+      "recommended_academic_path": "SHS General Arts (Literature, Government, CRS)",
+      "long_term_vision": "Degree in Communication Studies / Independent Media Network Executive"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_038",
+    "career_id": "hospitality_manager",
+    "title": "Hotel & Culinary Arts Manager",
+    "student_profile": {
+      "current_status": "Currently in SHS 1 (Exploring core elective choices)",
+      "student_interest": "Loves sorting out numbers, organizing school records, and solving logical problems.",
+      "primary_barrier": "Struggles with severe math anxiety and assumes all science tracks are closed to them."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Hotel & Culinary Arts Manager."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Hotel & Culinary Arts Manager."
+        }
+      ],
+      "recommended_academic_path": "SHS Home Economics (Catering, Food & Nutrition)",
+      "long_term_vision": "BSc. Hospitality and Tourism Management / International Chef Certification"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_039",
+    "career_id": "construction_manager",
+    "title": "Civil Contractor / Construction Manager",
+    "student_profile": {
+      "current_status": "Out-of-school youth seeking entry pathways back into academic streams",
+      "student_interest": "Enjoys playing mobile video games and taking apart electronic devices.",
+      "primary_barrier": "Lacks guidance mentors in their village, meaning they don't know what courses exist."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Civil Contractor / Construction Manager."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Civil Contractor / Construction Manager."
+        }
+      ],
+      "recommended_academic_path": "TVET Building Technology or SHS Science stream",
+      "long_term_vision": "BSc. Construction Technology / Licensed Structural Contractor"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_040",
+    "career_id": "data_analyst",
+    "title": "Business Data Analyst",
+    "student_profile": {
+      "current_status": "JHS 3 Student waiting to write final terminal school metrics",
+      "student_interest": "Passionate about treating local injuries, nursing sick animals, or health talks.",
+      "primary_barrier": "No access to smartphone or internet resources, relying purely on old physical papers."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Business Data Analyst."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Business Data Analyst."
+        }
+      ],
+      "recommended_academic_path": "SHS Business or Science with strong math orientation",
+      "long_term_vision": "BSc. Statistics / Corporate Data Operations Lead"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_041",
+    "career_id": "software_developer",
+    "title": "Software Developer",
+    "student_profile": {
+      "current_status": "Currently in JHS 2 (No final exam certificate yet)",
+      "student_interest": "Enjoys fixing bicycles, loosening engines, and working with tools.",
+      "primary_barrier": "Balances heavy domestic chores or farming demands before and after school hours."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Software Developer."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Software Developer."
+        }
+      ],
+      "recommended_academic_path": "SHS General Science or TVET Computer Engineering Track",
+      "long_term_vision": "BSc. Computer Science or Global Tech Bootcamp Certification"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_042",
+    "career_id": "nurse",
+    "title": "Registered Nurse",
+    "student_profile": {
+      "current_status": "Currently in SHS 1 (Exploring core elective choices)",
+      "student_interest": "Enjoys selling small items, managing school market days, or trading assets.",
+      "primary_barrier": "Struggles to retain information from reading without hands-on visual demonstrations."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Registered Nurse."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Registered Nurse."
+        }
+      ],
+      "recommended_academic_path": "SHS General Science, Home Economics, or Direct Nursing College entry",
+      "long_term_vision": "Diploma or BSc. in Nursing and Midwifery"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_043",
+    "career_id": "mechanical_mechanic",
+    "title": "Automotive Engineer / Modern Mechanic",
+    "student_profile": {
+      "current_status": "Out-of-school youth seeking entry pathways back into academic streams",
+      "student_interest": "Constantly sketching, drawing portraits on scrap paper, or editing phone photos.",
+      "primary_barrier": "Faces intense social pressure to drop out early for short-term informal mining or market labor."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Automotive Engineer / Modern Mechanic."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Automotive Engineer / Modern Mechanic."
+        }
+      ],
+      "recommended_academic_path": "TVET Motor Vehicle Mechanics or Mechanical Engineering Craft Course",
+      "long_term_vision": "Advanced Technical Diploma or Certified Diagnostic Expert Workshop Owner"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_044",
+    "career_id": "entrepreneur",
+    "title": "Agribusiness Owner / Entrepreneur",
+    "student_profile": {
+      "current_status": "JHS 3 Student waiting to write final terminal school metrics",
+      "student_interest": "Fascinated by house wiring, solar panels, and fixing fans or home radios.",
+      "primary_barrier": "Language barriers make high-level English textbooks difficult to comprehend quickly."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Agribusiness Owner / Entrepreneur."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Agribusiness Owner / Entrepreneur."
+        }
+      ],
+      "recommended_academic_path": "SHS Business, General Agriculture, or Vocational Training",
+      "long_term_vision": "Bachelor of Business Administration or Large-Scale Commercial Farm Hub Direction"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_045",
+    "career_id": "graphic_designer",
+    "title": "Digital Multimedia Designer",
+    "student_profile": {
+      "current_status": "Currently in JHS 2 (No final exam certificate yet)",
+      "student_interest": "Enjoys debating, public speaking, telling community stories, and writing essays.",
+      "primary_barrier": "Lacks funding for basic school supplies, uniforms, or registration fees."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Digital Multimedia Designer."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Digital Multimedia Designer."
+        }
+      ],
+      "recommended_academic_path": "SHS Visual Arts or Technical Drawing streams",
+      "long_term_vision": "BA. Communication Design or Lead Creative Director at an Agency"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_046",
+    "career_id": "electrical_engineer",
+    "title": "Electrical & Renewable Energy Technician",
+    "student_profile": {
+      "current_status": "Currently in SHS 1 (Exploring core elective choices)",
+      "student_interest": "Loves baking, trying out new local dishes, and decorating event spaces.",
+      "primary_barrier": "Attends a school with no computer labs or electricity, making technology feel abstract."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Electrical & Renewable Energy Technician."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Electrical & Renewable Energy Technician."
+        }
+      ],
+      "recommended_academic_path": "TVET Electrical Installation or SHS General Science",
+      "long_term_vision": "Higher National Diploma (HND) in Electrical Engineering / Solar System Architect"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_047",
+    "career_id": "journalist",
+    "title": "Broadcast Journalist / Content Creator",
+    "student_profile": {
+      "current_status": "Out-of-school youth seeking entry pathways back into academic streams",
+      "student_interest": "Enjoys organizing building blocks, mapping spaces, and working outdoors.",
+      "primary_barrier": "Has been out of school for 2 years due to financial constraints and lacks textbook access."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Broadcast Journalist / Content Creator."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Broadcast Journalist / Content Creator."
+        }
+      ],
+      "recommended_academic_path": "SHS General Arts (Literature, Government, CRS)",
+      "long_term_vision": "Degree in Communication Studies / Independent Media Network Executive"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_048",
+    "career_id": "hospitality_manager",
+    "title": "Hotel & Culinary Arts Manager",
+    "student_profile": {
+      "current_status": "JHS 3 Student waiting to write final terminal school metrics",
+      "student_interest": "Loves sorting out numbers, organizing school records, and solving logical problems.",
+      "primary_barrier": "Struggles with severe math anxiety and assumes all science tracks are closed to them."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Hotel & Culinary Arts Manager."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Hotel & Culinary Arts Manager."
+        }
+      ],
+      "recommended_academic_path": "SHS Home Economics (Catering, Food & Nutrition)",
+      "long_term_vision": "BSc. Hospitality and Tourism Management / International Chef Certification"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_049",
+    "career_id": "construction_manager",
+    "title": "Civil Contractor / Construction Manager",
+    "student_profile": {
+      "current_status": "Currently in JHS 2 (No final exam certificate yet)",
+      "student_interest": "Enjoys playing mobile video games and taking apart electronic devices.",
+      "primary_barrier": "Lacks guidance mentors in their village, meaning they don't know what courses exist."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Civil Contractor / Construction Manager."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Civil Contractor / Construction Manager."
+        }
+      ],
+      "recommended_academic_path": "TVET Building Technology or SHS Science stream",
+      "long_term_vision": "BSc. Construction Technology / Licensed Structural Contractor"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_050",
+    "career_id": "data_analyst",
+    "title": "Business Data Analyst",
+    "student_profile": {
+      "current_status": "Currently in SHS 1 (Exploring core elective choices)",
+      "student_interest": "Passionate about treating local injuries, nursing sick animals, or health talks.",
+      "primary_barrier": "No access to smartphone or internet resources, relying purely on old physical papers."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Business Data Analyst."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Business Data Analyst."
+        }
+      ],
+      "recommended_academic_path": "SHS Business or Science with strong math orientation",
+      "long_term_vision": "BSc. Statistics / Corporate Data Operations Lead"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_051",
+    "career_id": "software_developer",
+    "title": "Software Developer",
+    "student_profile": {
+      "current_status": "Out-of-school youth seeking entry pathways back into academic streams",
+      "student_interest": "Enjoys fixing bicycles, loosening engines, and working with tools.",
+      "primary_barrier": "Balances heavy domestic chores or farming demands before and after school hours."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Software Developer."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Software Developer."
+        }
+      ],
+      "recommended_academic_path": "SHS General Science or TVET Computer Engineering Track",
+      "long_term_vision": "BSc. Computer Science or Global Tech Bootcamp Certification"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_052",
+    "career_id": "nurse",
+    "title": "Registered Nurse",
+    "student_profile": {
+      "current_status": "JHS 3 Student waiting to write final terminal school metrics",
+      "student_interest": "Enjoys selling small items, managing school market days, or trading assets.",
+      "primary_barrier": "Struggles to retain information from reading without hands-on visual demonstrations."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Registered Nurse."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Registered Nurse."
+        }
+      ],
+      "recommended_academic_path": "SHS General Science, Home Economics, or Direct Nursing College entry",
+      "long_term_vision": "Diploma or BSc. in Nursing and Midwifery"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_053",
+    "career_id": "mechanical_mechanic",
+    "title": "Automotive Engineer / Modern Mechanic",
+    "student_profile": {
+      "current_status": "Currently in JHS 2 (No final exam certificate yet)",
+      "student_interest": "Constantly sketching, drawing portraits on scrap paper, or editing phone photos.",
+      "primary_barrier": "Faces intense social pressure to drop out early for short-term informal mining or market labor."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Automotive Engineer / Modern Mechanic."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Automotive Engineer / Modern Mechanic."
+        }
+      ],
+      "recommended_academic_path": "TVET Motor Vehicle Mechanics or Mechanical Engineering Craft Course",
+      "long_term_vision": "Advanced Technical Diploma or Certified Diagnostic Expert Workshop Owner"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_054",
+    "career_id": "entrepreneur",
+    "title": "Agribusiness Owner / Entrepreneur",
+    "student_profile": {
+      "current_status": "Currently in SHS 1 (Exploring core elective choices)",
+      "student_interest": "Fascinated by house wiring, solar panels, and fixing fans or home radios.",
+      "primary_barrier": "Language barriers make high-level English textbooks difficult to comprehend quickly."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Agribusiness Owner / Entrepreneur."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Agribusiness Owner / Entrepreneur."
+        }
+      ],
+      "recommended_academic_path": "SHS Business, General Agriculture, or Vocational Training",
+      "long_term_vision": "Bachelor of Business Administration or Large-Scale Commercial Farm Hub Direction"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_055",
+    "career_id": "graphic_designer",
+    "title": "Digital Multimedia Designer",
+    "student_profile": {
+      "current_status": "Out-of-school youth seeking entry pathways back into academic streams",
+      "student_interest": "Enjoys debating, public speaking, telling community stories, and writing essays.",
+      "primary_barrier": "Lacks funding for basic school supplies, uniforms, or registration fees."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Digital Multimedia Designer."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Digital Multimedia Designer."
+        }
+      ],
+      "recommended_academic_path": "SHS Visual Arts or Technical Drawing streams",
+      "long_term_vision": "BA. Communication Design or Lead Creative Director at an Agency"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_056",
+    "career_id": "electrical_engineer",
+    "title": "Electrical & Renewable Energy Technician",
+    "student_profile": {
+      "current_status": "JHS 3 Student waiting to write final terminal school metrics",
+      "student_interest": "Loves baking, trying out new local dishes, and decorating event spaces.",
+      "primary_barrier": "Attends a school with no computer labs or electricity, making technology feel abstract."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Electrical & Renewable Energy Technician."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Electrical & Renewable Energy Technician."
+        }
+      ],
+      "recommended_academic_path": "TVET Electrical Installation or SHS General Science",
+      "long_term_vision": "Higher National Diploma (HND) in Electrical Engineering / Solar System Architect"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_057",
+    "career_id": "journalist",
+    "title": "Broadcast Journalist / Content Creator",
+    "student_profile": {
+      "current_status": "Currently in JHS 2 (No final exam certificate yet)",
+      "student_interest": "Enjoys organizing building blocks, mapping spaces, and working outdoors.",
+      "primary_barrier": "Has been out of school for 2 years due to financial constraints and lacks textbook access."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Broadcast Journalist / Content Creator."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Broadcast Journalist / Content Creator."
+        }
+      ],
+      "recommended_academic_path": "SHS General Arts (Literature, Government, CRS)",
+      "long_term_vision": "Degree in Communication Studies / Independent Media Network Executive"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_058",
+    "career_id": "hospitality_manager",
+    "title": "Hotel & Culinary Arts Manager",
+    "student_profile": {
+      "current_status": "Currently in SHS 1 (Exploring core elective choices)",
+      "student_interest": "Loves sorting out numbers, organizing school records, and solving logical problems.",
+      "primary_barrier": "Struggles with severe math anxiety and assumes all science tracks are closed to them."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Hotel & Culinary Arts Manager."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Hotel & Culinary Arts Manager."
+        }
+      ],
+      "recommended_academic_path": "SHS Home Economics (Catering, Food & Nutrition)",
+      "long_term_vision": "BSc. Hospitality and Tourism Management / International Chef Certification"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_059",
+    "career_id": "construction_manager",
+    "title": "Civil Contractor / Construction Manager",
+    "student_profile": {
+      "current_status": "Out-of-school youth seeking entry pathways back into academic streams",
+      "student_interest": "Enjoys playing mobile video games and taking apart electronic devices.",
+      "primary_barrier": "Lacks guidance mentors in their village, meaning they don't know what courses exist."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Civil Contractor / Construction Manager."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Civil Contractor / Construction Manager."
+        }
+      ],
+      "recommended_academic_path": "TVET Building Technology or SHS Science stream",
+      "long_term_vision": "BSc. Construction Technology / Licensed Structural Contractor"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_060",
+    "career_id": "data_analyst",
+    "title": "Business Data Analyst",
+    "student_profile": {
+      "current_status": "JHS 3 Student waiting to write final terminal school metrics",
+      "student_interest": "Passionate about treating local injuries, nursing sick animals, or health talks.",
+      "primary_barrier": "No access to smartphone or internet resources, relying purely on old physical papers."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Business Data Analyst."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Business Data Analyst."
+        }
+      ],
+      "recommended_academic_path": "SHS Business or Science with strong math orientation",
+      "long_term_vision": "BSc. Statistics / Corporate Data Operations Lead"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_061",
+    "career_id": "software_developer",
+    "title": "Software Developer",
+    "student_profile": {
+      "current_status": "Currently in JHS 2 (No final exam certificate yet)",
+      "student_interest": "Enjoys fixing bicycles, loosening engines, and working with tools.",
+      "primary_barrier": "Balances heavy domestic chores or farming demands before and after school hours."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Software Developer."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Software Developer."
+        }
+      ],
+      "recommended_academic_path": "SHS General Science or TVET Computer Engineering Track",
+      "long_term_vision": "BSc. Computer Science or Global Tech Bootcamp Certification"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_062",
+    "career_id": "nurse",
+    "title": "Registered Nurse",
+    "student_profile": {
+      "current_status": "Currently in SHS 1 (Exploring core elective choices)",
+      "student_interest": "Enjoys selling small items, managing school market days, or trading assets.",
+      "primary_barrier": "Struggles to retain information from reading without hands-on visual demonstrations."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Registered Nurse."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Registered Nurse."
+        }
+      ],
+      "recommended_academic_path": "SHS General Science, Home Economics, or Direct Nursing College entry",
+      "long_term_vision": "Diploma or BSc. in Nursing and Midwifery"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_063",
+    "career_id": "mechanical_mechanic",
+    "title": "Automotive Engineer / Modern Mechanic",
+    "student_profile": {
+      "current_status": "Out-of-school youth seeking entry pathways back into academic streams",
+      "student_interest": "Constantly sketching, drawing portraits on scrap paper, or editing phone photos.",
+      "primary_barrier": "Faces intense social pressure to drop out early for short-term informal mining or market labor."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Automotive Engineer / Modern Mechanic."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Automotive Engineer / Modern Mechanic."
+        }
+      ],
+      "recommended_academic_path": "TVET Motor Vehicle Mechanics or Mechanical Engineering Craft Course",
+      "long_term_vision": "Advanced Technical Diploma or Certified Diagnostic Expert Workshop Owner"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_064",
+    "career_id": "entrepreneur",
+    "title": "Agribusiness Owner / Entrepreneur",
+    "student_profile": {
+      "current_status": "JHS 3 Student waiting to write final terminal school metrics",
+      "student_interest": "Fascinated by house wiring, solar panels, and fixing fans or home radios.",
+      "primary_barrier": "Language barriers make high-level English textbooks difficult to comprehend quickly."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Agribusiness Owner / Entrepreneur."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Agribusiness Owner / Entrepreneur."
+        }
+      ],
+      "recommended_academic_path": "SHS Business, General Agriculture, or Vocational Training",
+      "long_term_vision": "Bachelor of Business Administration or Large-Scale Commercial Farm Hub Direction"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_065",
+    "career_id": "graphic_designer",
+    "title": "Digital Multimedia Designer",
+    "student_profile": {
+      "current_status": "Currently in JHS 2 (No final exam certificate yet)",
+      "student_interest": "Enjoys debating, public speaking, telling community stories, and writing essays.",
+      "primary_barrier": "Lacks funding for basic school supplies, uniforms, or registration fees."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Digital Multimedia Designer."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Digital Multimedia Designer."
+        }
+      ],
+      "recommended_academic_path": "SHS Visual Arts or Technical Drawing streams",
+      "long_term_vision": "BA. Communication Design or Lead Creative Director at an Agency"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_066",
+    "career_id": "electrical_engineer",
+    "title": "Electrical & Renewable Energy Technician",
+    "student_profile": {
+      "current_status": "Currently in SHS 1 (Exploring core elective choices)",
+      "student_interest": "Loves baking, trying out new local dishes, and decorating event spaces.",
+      "primary_barrier": "Attends a school with no computer labs or electricity, making technology feel abstract."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Electrical & Renewable Energy Technician."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Electrical & Renewable Energy Technician."
+        }
+      ],
+      "recommended_academic_path": "TVET Electrical Installation or SHS General Science",
+      "long_term_vision": "Higher National Diploma (HND) in Electrical Engineering / Solar System Architect"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_067",
+    "career_id": "journalist",
+    "title": "Broadcast Journalist / Content Creator",
+    "student_profile": {
+      "current_status": "Out-of-school youth seeking entry pathways back into academic streams",
+      "student_interest": "Enjoys organizing building blocks, mapping spaces, and working outdoors.",
+      "primary_barrier": "Has been out of school for 2 years due to financial constraints and lacks textbook access."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Broadcast Journalist / Content Creator."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Broadcast Journalist / Content Creator."
+        }
+      ],
+      "recommended_academic_path": "SHS General Arts (Literature, Government, CRS)",
+      "long_term_vision": "Degree in Communication Studies / Independent Media Network Executive"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_068",
+    "career_id": "hospitality_manager",
+    "title": "Hotel & Culinary Arts Manager",
+    "student_profile": {
+      "current_status": "JHS 3 Student waiting to write final terminal school metrics",
+      "student_interest": "Loves sorting out numbers, organizing school records, and solving logical problems.",
+      "primary_barrier": "Struggles with severe math anxiety and assumes all science tracks are closed to them."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Hotel & Culinary Arts Manager."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Hotel & Culinary Arts Manager."
+        }
+      ],
+      "recommended_academic_path": "SHS Home Economics (Catering, Food & Nutrition)",
+      "long_term_vision": "BSc. Hospitality and Tourism Management / International Chef Certification"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_069",
+    "career_id": "construction_manager",
+    "title": "Civil Contractor / Construction Manager",
+    "student_profile": {
+      "current_status": "Currently in JHS 2 (No final exam certificate yet)",
+      "student_interest": "Enjoys playing mobile video games and taking apart electronic devices.",
+      "primary_barrier": "Lacks guidance mentors in their village, meaning they don't know what courses exist."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Civil Contractor / Construction Manager."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Civil Contractor / Construction Manager."
+        }
+      ],
+      "recommended_academic_path": "TVET Building Technology or SHS Science stream",
+      "long_term_vision": "BSc. Construction Technology / Licensed Structural Contractor"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_070",
+    "career_id": "data_analyst",
+    "title": "Business Data Analyst",
+    "student_profile": {
+      "current_status": "Currently in SHS 1 (Exploring core elective choices)",
+      "student_interest": "Passionate about treating local injuries, nursing sick animals, or health talks.",
+      "primary_barrier": "No access to smartphone or internet resources, relying purely on old physical papers."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Business Data Analyst."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Business Data Analyst."
+        }
+      ],
+      "recommended_academic_path": "SHS Business or Science with strong math orientation",
+      "long_term_vision": "BSc. Statistics / Corporate Data Operations Lead"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_071",
+    "career_id": "software_developer",
+    "title": "Software Developer",
+    "student_profile": {
+      "current_status": "Out-of-school youth seeking entry pathways back into academic streams",
+      "student_interest": "Enjoys fixing bicycles, loosening engines, and working with tools.",
+      "primary_barrier": "Balances heavy domestic chores or farming demands before and after school hours."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Software Developer."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Software Developer."
+        }
+      ],
+      "recommended_academic_path": "SHS General Science or TVET Computer Engineering Track",
+      "long_term_vision": "BSc. Computer Science or Global Tech Bootcamp Certification"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_072",
+    "career_id": "nurse",
+    "title": "Registered Nurse",
+    "student_profile": {
+      "current_status": "JHS 3 Student waiting to write final terminal school metrics",
+      "student_interest": "Enjoys selling small items, managing school market days, or trading assets.",
+      "primary_barrier": "Struggles to retain information from reading without hands-on visual demonstrations."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Registered Nurse."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Registered Nurse."
+        }
+      ],
+      "recommended_academic_path": "SHS General Science, Home Economics, or Direct Nursing College entry",
+      "long_term_vision": "Diploma or BSc. in Nursing and Midwifery"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_073",
+    "career_id": "mechanical_mechanic",
+    "title": "Automotive Engineer / Modern Mechanic",
+    "student_profile": {
+      "current_status": "Currently in JHS 2 (No final exam certificate yet)",
+      "student_interest": "Constantly sketching, drawing portraits on scrap paper, or editing phone photos.",
+      "primary_barrier": "Faces intense social pressure to drop out early for short-term informal mining or market labor."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Automotive Engineer / Modern Mechanic."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Automotive Engineer / Modern Mechanic."
+        }
+      ],
+      "recommended_academic_path": "TVET Motor Vehicle Mechanics or Mechanical Engineering Craft Course",
+      "long_term_vision": "Advanced Technical Diploma or Certified Diagnostic Expert Workshop Owner"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_074",
+    "career_id": "entrepreneur",
+    "title": "Agribusiness Owner / Entrepreneur",
+    "student_profile": {
+      "current_status": "Currently in SHS 1 (Exploring core elective choices)",
+      "student_interest": "Fascinated by house wiring, solar panels, and fixing fans or home radios.",
+      "primary_barrier": "Language barriers make high-level English textbooks difficult to comprehend quickly."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Agribusiness Owner / Entrepreneur."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Agribusiness Owner / Entrepreneur."
+        }
+      ],
+      "recommended_academic_path": "SHS Business, General Agriculture, or Vocational Training",
+      "long_term_vision": "Bachelor of Business Administration or Large-Scale Commercial Farm Hub Direction"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_075",
+    "career_id": "graphic_designer",
+    "title": "Digital Multimedia Designer",
+    "student_profile": {
+      "current_status": "Out-of-school youth seeking entry pathways back into academic streams",
+      "student_interest": "Enjoys debating, public speaking, telling community stories, and writing essays.",
+      "primary_barrier": "Lacks funding for basic school supplies, uniforms, or registration fees."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Digital Multimedia Designer."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Digital Multimedia Designer."
+        }
+      ],
+      "recommended_academic_path": "SHS Visual Arts or Technical Drawing streams",
+      "long_term_vision": "BA. Communication Design or Lead Creative Director at an Agency"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_076",
+    "career_id": "electrical_engineer",
+    "title": "Electrical & Renewable Energy Technician",
+    "student_profile": {
+      "current_status": "JHS 3 Student waiting to write final terminal school metrics",
+      "student_interest": "Loves baking, trying out new local dishes, and decorating event spaces.",
+      "primary_barrier": "Attends a school with no computer labs or electricity, making technology feel abstract."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Electrical & Renewable Energy Technician."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Electrical & Renewable Energy Technician."
+        }
+      ],
+      "recommended_academic_path": "TVET Electrical Installation or SHS General Science",
+      "long_term_vision": "Higher National Diploma (HND) in Electrical Engineering / Solar System Architect"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_077",
+    "career_id": "journalist",
+    "title": "Broadcast Journalist / Content Creator",
+    "student_profile": {
+      "current_status": "Currently in JHS 2 (No final exam certificate yet)",
+      "student_interest": "Enjoys organizing building blocks, mapping spaces, and working outdoors.",
+      "primary_barrier": "Has been out of school for 2 years due to financial constraints and lacks textbook access."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Broadcast Journalist / Content Creator."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Broadcast Journalist / Content Creator."
+        }
+      ],
+      "recommended_academic_path": "SHS General Arts (Literature, Government, CRS)",
+      "long_term_vision": "Degree in Communication Studies / Independent Media Network Executive"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_078",
+    "career_id": "hospitality_manager",
+    "title": "Hotel & Culinary Arts Manager",
+    "student_profile": {
+      "current_status": "Currently in SHS 1 (Exploring core elective choices)",
+      "student_interest": "Loves sorting out numbers, organizing school records, and solving logical problems.",
+      "primary_barrier": "Struggles with severe math anxiety and assumes all science tracks are closed to them."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Hotel & Culinary Arts Manager."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Hotel & Culinary Arts Manager."
+        }
+      ],
+      "recommended_academic_path": "SHS Home Economics (Catering, Food & Nutrition)",
+      "long_term_vision": "BSc. Hospitality and Tourism Management / International Chef Certification"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_079",
+    "career_id": "construction_manager",
+    "title": "Civil Contractor / Construction Manager",
+    "student_profile": {
+      "current_status": "Out-of-school youth seeking entry pathways back into academic streams",
+      "student_interest": "Enjoys playing mobile video games and taking apart electronic devices.",
+      "primary_barrier": "Lacks guidance mentors in their village, meaning they don't know what courses exist."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Civil Contractor / Construction Manager."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Civil Contractor / Construction Manager."
+        }
+      ],
+      "recommended_academic_path": "TVET Building Technology or SHS Science stream",
+      "long_term_vision": "BSc. Construction Technology / Licensed Structural Contractor"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_080",
+    "career_id": "data_analyst",
+    "title": "Business Data Analyst",
+    "student_profile": {
+      "current_status": "JHS 3 Student waiting to write final terminal school metrics",
+      "student_interest": "Passionate about treating local injuries, nursing sick animals, or health talks.",
+      "primary_barrier": "No access to smartphone or internet resources, relying purely on old physical papers."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Business Data Analyst."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Business Data Analyst."
+        }
+      ],
+      "recommended_academic_path": "SHS Business or Science with strong math orientation",
+      "long_term_vision": "BSc. Statistics / Corporate Data Operations Lead"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_081",
+    "career_id": "software_developer",
+    "title": "Software Developer",
+    "student_profile": {
+      "current_status": "Currently in JHS 2 (No final exam certificate yet)",
+      "student_interest": "Enjoys fixing bicycles, loosening engines, and working with tools.",
+      "primary_barrier": "Balances heavy domestic chores or farming demands before and after school hours."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Software Developer."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Software Developer."
+        }
+      ],
+      "recommended_academic_path": "SHS General Science or TVET Computer Engineering Track",
+      "long_term_vision": "BSc. Computer Science or Global Tech Bootcamp Certification"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_082",
+    "career_id": "nurse",
+    "title": "Registered Nurse",
+    "student_profile": {
+      "current_status": "Currently in SHS 1 (Exploring core elective choices)",
+      "student_interest": "Enjoys selling small items, managing school market days, or trading assets.",
+      "primary_barrier": "Struggles to retain information from reading without hands-on visual demonstrations."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Registered Nurse."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Registered Nurse."
+        }
+      ],
+      "recommended_academic_path": "SHS General Science, Home Economics, or Direct Nursing College entry",
+      "long_term_vision": "Diploma or BSc. in Nursing and Midwifery"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_083",
+    "career_id": "mechanical_mechanic",
+    "title": "Automotive Engineer / Modern Mechanic",
+    "student_profile": {
+      "current_status": "Out-of-school youth seeking entry pathways back into academic streams",
+      "student_interest": "Constantly sketching, drawing portraits on scrap paper, or editing phone photos.",
+      "primary_barrier": "Faces intense social pressure to drop out early for short-term informal mining or market labor."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Automotive Engineer / Modern Mechanic."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Automotive Engineer / Modern Mechanic."
+        }
+      ],
+      "recommended_academic_path": "TVET Motor Vehicle Mechanics or Mechanical Engineering Craft Course",
+      "long_term_vision": "Advanced Technical Diploma or Certified Diagnostic Expert Workshop Owner"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_084",
+    "career_id": "entrepreneur",
+    "title": "Agribusiness Owner / Entrepreneur",
+    "student_profile": {
+      "current_status": "JHS 3 Student waiting to write final terminal school metrics",
+      "student_interest": "Fascinated by house wiring, solar panels, and fixing fans or home radios.",
+      "primary_barrier": "Language barriers make high-level English textbooks difficult to comprehend quickly."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Agribusiness Owner / Entrepreneur."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Agribusiness Owner / Entrepreneur."
+        }
+      ],
+      "recommended_academic_path": "SHS Business, General Agriculture, or Vocational Training",
+      "long_term_vision": "Bachelor of Business Administration or Large-Scale Commercial Farm Hub Direction"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_085",
+    "career_id": "graphic_designer",
+    "title": "Digital Multimedia Designer",
+    "student_profile": {
+      "current_status": "Currently in JHS 2 (No final exam certificate yet)",
+      "student_interest": "Enjoys debating, public speaking, telling community stories, and writing essays.",
+      "primary_barrier": "Lacks funding for basic school supplies, uniforms, or registration fees."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Digital Multimedia Designer."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Digital Multimedia Designer."
+        }
+      ],
+      "recommended_academic_path": "SHS Visual Arts or Technical Drawing streams",
+      "long_term_vision": "BA. Communication Design or Lead Creative Director at an Agency"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_086",
+    "career_id": "electrical_engineer",
+    "title": "Electrical & Renewable Energy Technician",
+    "student_profile": {
+      "current_status": "Currently in SHS 1 (Exploring core elective choices)",
+      "student_interest": "Loves baking, trying out new local dishes, and decorating event spaces.",
+      "primary_barrier": "Attends a school with no computer labs or electricity, making technology feel abstract."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Electrical & Renewable Energy Technician."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Electrical & Renewable Energy Technician."
+        }
+      ],
+      "recommended_academic_path": "TVET Electrical Installation or SHS General Science",
+      "long_term_vision": "Higher National Diploma (HND) in Electrical Engineering / Solar System Architect"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_087",
+    "career_id": "journalist",
+    "title": "Broadcast Journalist / Content Creator",
+    "student_profile": {
+      "current_status": "Out-of-school youth seeking entry pathways back into academic streams",
+      "student_interest": "Enjoys organizing building blocks, mapping spaces, and working outdoors.",
+      "primary_barrier": "Has been out of school for 2 years due to financial constraints and lacks textbook access."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Broadcast Journalist / Content Creator."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Broadcast Journalist / Content Creator."
+        }
+      ],
+      "recommended_academic_path": "SHS General Arts (Literature, Government, CRS)",
+      "long_term_vision": "Degree in Communication Studies / Independent Media Network Executive"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_088",
+    "career_id": "hospitality_manager",
+    "title": "Hotel & Culinary Arts Manager",
+    "student_profile": {
+      "current_status": "JHS 3 Student waiting to write final terminal school metrics",
+      "student_interest": "Loves sorting out numbers, organizing school records, and solving logical problems.",
+      "primary_barrier": "Struggles with severe math anxiety and assumes all science tracks are closed to them."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Hotel & Culinary Arts Manager."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Hotel & Culinary Arts Manager."
+        }
+      ],
+      "recommended_academic_path": "SHS Home Economics (Catering, Food & Nutrition)",
+      "long_term_vision": "BSc. Hospitality and Tourism Management / International Chef Certification"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_089",
+    "career_id": "construction_manager",
+    "title": "Civil Contractor / Construction Manager",
+    "student_profile": {
+      "current_status": "Currently in JHS 2 (No final exam certificate yet)",
+      "student_interest": "Enjoys playing mobile video games and taking apart electronic devices.",
+      "primary_barrier": "Lacks guidance mentors in their village, meaning they don't know what courses exist."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Civil Contractor / Construction Manager."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Civil Contractor / Construction Manager."
+        }
+      ],
+      "recommended_academic_path": "TVET Building Technology or SHS Science stream",
+      "long_term_vision": "BSc. Construction Technology / Licensed Structural Contractor"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_090",
+    "career_id": "data_analyst",
+    "title": "Business Data Analyst",
+    "student_profile": {
+      "current_status": "Currently in SHS 1 (Exploring core elective choices)",
+      "student_interest": "Passionate about treating local injuries, nursing sick animals, or health talks.",
+      "primary_barrier": "No access to smartphone or internet resources, relying purely on old physical papers."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Business Data Analyst."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Business Data Analyst."
+        }
+      ],
+      "recommended_academic_path": "SHS Business or Science with strong math orientation",
+      "long_term_vision": "BSc. Statistics / Corporate Data Operations Lead"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_091",
+    "career_id": "software_developer",
+    "title": "Software Developer",
+    "student_profile": {
+      "current_status": "Out-of-school youth seeking entry pathways back into academic streams",
+      "student_interest": "Enjoys fixing bicycles, loosening engines, and working with tools.",
+      "primary_barrier": "Balances heavy domestic chores or farming demands before and after school hours."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Software Developer."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Software Developer."
+        }
+      ],
+      "recommended_academic_path": "SHS General Science or TVET Computer Engineering Track",
+      "long_term_vision": "BSc. Computer Science or Global Tech Bootcamp Certification"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_092",
+    "career_id": "nurse",
+    "title": "Registered Nurse",
+    "student_profile": {
+      "current_status": "JHS 3 Student waiting to write final terminal school metrics",
+      "student_interest": "Enjoys selling small items, managing school market days, or trading assets.",
+      "primary_barrier": "Struggles to retain information from reading without hands-on visual demonstrations."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Registered Nurse."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Registered Nurse."
+        }
+      ],
+      "recommended_academic_path": "SHS General Science, Home Economics, or Direct Nursing College entry",
+      "long_term_vision": "Diploma or BSc. in Nursing and Midwifery"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_093",
+    "career_id": "mechanical_mechanic",
+    "title": "Automotive Engineer / Modern Mechanic",
+    "student_profile": {
+      "current_status": "Currently in JHS 2 (No final exam certificate yet)",
+      "student_interest": "Constantly sketching, drawing portraits on scrap paper, or editing phone photos.",
+      "primary_barrier": "Faces intense social pressure to drop out early for short-term informal mining or market labor."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Automotive Engineer / Modern Mechanic."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Automotive Engineer / Modern Mechanic."
+        }
+      ],
+      "recommended_academic_path": "TVET Motor Vehicle Mechanics or Mechanical Engineering Craft Course",
+      "long_term_vision": "Advanced Technical Diploma or Certified Diagnostic Expert Workshop Owner"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_094",
+    "career_id": "entrepreneur",
+    "title": "Agribusiness Owner / Entrepreneur",
+    "student_profile": {
+      "current_status": "Currently in SHS 1 (Exploring core elective choices)",
+      "student_interest": "Fascinated by house wiring, solar panels, and fixing fans or home radios.",
+      "primary_barrier": "Language barriers make high-level English textbooks difficult to comprehend quickly."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Agribusiness Owner / Entrepreneur."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Agribusiness Owner / Entrepreneur."
+        }
+      ],
+      "recommended_academic_path": "SHS Business, General Agriculture, or Vocational Training",
+      "long_term_vision": "Bachelor of Business Administration or Large-Scale Commercial Farm Hub Direction"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_095",
+    "career_id": "graphic_designer",
+    "title": "Digital Multimedia Designer",
+    "student_profile": {
+      "current_status": "Out-of-school youth seeking entry pathways back into academic streams",
+      "student_interest": "Enjoys debating, public speaking, telling community stories, and writing essays.",
+      "primary_barrier": "Lacks funding for basic school supplies, uniforms, or registration fees."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Digital Multimedia Designer."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Digital Multimedia Designer."
+        }
+      ],
+      "recommended_academic_path": "SHS Visual Arts or Technical Drawing streams",
+      "long_term_vision": "BA. Communication Design or Lead Creative Director at an Agency"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_096",
+    "career_id": "electrical_engineer",
+    "title": "Electrical & Renewable Energy Technician",
+    "student_profile": {
+      "current_status": "JHS 3 Student waiting to write final terminal school metrics",
+      "student_interest": "Loves baking, trying out new local dishes, and decorating event spaces.",
+      "primary_barrier": "Attends a school with no computer labs or electricity, making technology feel abstract."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Electrical & Renewable Energy Technician."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Electrical & Renewable Energy Technician."
+        }
+      ],
+      "recommended_academic_path": "TVET Electrical Installation or SHS General Science",
+      "long_term_vision": "Higher National Diploma (HND) in Electrical Engineering / Solar System Architect"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_097",
+    "career_id": "journalist",
+    "title": "Broadcast Journalist / Content Creator",
+    "student_profile": {
+      "current_status": "Currently in JHS 2 (No final exam certificate yet)",
+      "student_interest": "Enjoys organizing building blocks, mapping spaces, and working outdoors.",
+      "primary_barrier": "Has been out of school for 2 years due to financial constraints and lacks textbook access."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Broadcast Journalist / Content Creator."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Broadcast Journalist / Content Creator."
+        }
+      ],
+      "recommended_academic_path": "SHS General Arts (Literature, Government, CRS)",
+      "long_term_vision": "Degree in Communication Studies / Independent Media Network Executive"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_098",
+    "career_id": "hospitality_manager",
+    "title": "Hotel & Culinary Arts Manager",
+    "student_profile": {
+      "current_status": "Currently in SHS 1 (Exploring core elective choices)",
+      "student_interest": "Loves sorting out numbers, organizing school records, and solving logical problems.",
+      "primary_barrier": "Struggles with severe math anxiety and assumes all science tracks are closed to them."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Basic First Aid & Health Observation",
+          "how_to_practice": "Read community health manuals and practice measuring rest-rate pulse dynamics on family members.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Hotel & Culinary Arts Manager."
+        },
+        {
+          "skill_or_concept": "Empathetic Active Listening",
+          "how_to_practice": "Practice listening to friends or elders without interrupting, summarizing what they said to ensure clarity.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Hotel & Culinary Arts Manager."
+        }
+      ],
+      "recommended_academic_path": "SHS Home Economics (Catering, Food & Nutrition)",
+      "long_term_vision": "BSc. Hospitality and Tourism Management / International Chef Certification"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_099",
+    "career_id": "construction_manager",
+    "title": "Civil Contractor / Construction Manager",
+    "student_profile": {
+      "current_status": "Out-of-school youth seeking entry pathways back into academic streams",
+      "student_interest": "Enjoys playing mobile video games and taking apart electronic devices.",
+      "primary_barrier": "Lacks guidance mentors in their village, meaning they don't know what courses exist."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Spatial Reasoning & Measurements",
+          "how_to_practice": "Practice using rulers, tape measures, and calculating scaling layouts on scrap wood or cardboard blocks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Civil Contractor / Construction Manager."
+        },
+        {
+          "skill_or_concept": "Safety Asset Management",
+          "how_to_practice": "Study tool categorization and learn proper cleaning and organization procedures for physical hardware gear.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Civil Contractor / Construction Manager."
+        }
+      ],
+      "recommended_academic_path": "TVET Building Technology or SHS Science stream",
+      "long_term_vision": "BSc. Construction Technology / Licensed Structural Contractor"
+    }
+  },
+  {
+    "record_id": "ASPIRING_PATH_100",
+    "career_id": "data_analyst",
+    "title": "Business Data Analyst",
+    "student_profile": {
+      "current_status": "JHS 3 Student waiting to write final terminal school metrics",
+      "student_interest": "Passionate about treating local injuries, nursing sick animals, or health talks.",
+      "primary_barrier": "No access to smartphone or internet resources, relying purely on old physical papers."
+    },
+    "future_roadmap": {
+      "immediate_milestone": "Establish a strong foundational grasp in basic numeracy and literacy to clear baseline entry standards comfortably when exams arrive.",
+      "critical_foundations_to_build": [
+        {
+          "skill_or_concept": "Logical Step-by-Step Thinking",
+          "how_to_practice": "Solve logic puzzles, play strategy board games, or write down step-by-step instructions for simple daily tasks.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Business Data Analyst."
+        },
+        {
+          "skill_or_concept": "Basic Digital Typing Literacy",
+          "how_to_practice": "Practice keyboard layout configurations on a paper printout or borrowed phone to build finger memory.",
+          "why_it_matters": "Establishes early subconscious neural familiarity required for professional mastery as a Business Data Analyst."
+        }
+      ],
+      "recommended_academic_path": "SHS Business or Science with strong math orientation",
+      "long_term_vision": "BSc. Statistics / Corporate Data Operations Lead"
+    }
+  }
+]

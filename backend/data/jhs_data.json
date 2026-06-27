@@ -1,0 +1,3353 @@
+[
+  {
+    "career_id": "medical_doctor",
+    "title": "Medical Doctor",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 9",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Integrated Science",
+          "why_it_matters": "Forms the absolute foundational bedrock for understanding human biology and clinical sciences.",
+          "target_score": "80% + (Grade 1 in terminal exams)"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Develops vital analytical thinking, drug dosage calculations, and logical problem-solving frameworks.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Join the school's Science and Math Club.",
+        "Volunteer or observe at a local clinic or community health center during vacations."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Science",
+      "ideal_bece_aggregate": "6 - 9",
+      "target_shs_categories": ["A", "B"],
+      "required_wassce_electives": ["Chemistry", "Physics", "Biology", "Elective Mathematics"],
+      "university_pathways": [
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "Bachelor of Medicine and Bachelor of Surgery (MBChB)",
+          "typical_cutoff_aggregate": 7
+        },
+        {
+          "institution": "KNUST",
+          "program": "BSc Human Biology / Medicine",
+          "typical_cutoff_aggregate": 6
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 10 - 15 (Missed Category A/B Science placement)",
+        "recommended_shs_stream": "Agricultural Science",
+        "rationale": "Easier to secure placement in elite schools while maintaining critical biological science prerequisites.",
+        "viable_university_programs": [
+          "BSc Biological Sciences (UG)",
+          "BSc Medical Laboratory Technology (KNUST)",
+          "Doctor of Optometry (UCC)"
+        ],
+        "possible_careers": ["Biomedical Researcher", "Laboratory Scientist", "Optometrist"]
+      },
+      {
+        "condition": "BECE Aggregate 16+ or Weak Science/Math foundations",
+        "recommended_shs_stream": "General Arts (with Geography, Economics, Elective Maths)",
+        "rationale": "Allows maximizing WASSCE aggregates to transition into high-impact healthcare operations and administrative routes.",
+        "viable_university_programs": [
+          "Bachelor of Public Health (UG)",
+          "BSc Health Administration & Education (UEW)"
+        ],
+        "possible_careers": ["Public Health Officer", "Hospital Administrator", "Health Policy Analyst"]
+      }
+    ]
+  },
+  {
+    "career_id": "software_developer",
+    "title": "Software Developer",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 12",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Formulates the logic, algorithm parsing, and computational structures needed for writing efficient code.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        },
+        {
+          "subject": "Information and Communication Technology (ICT)",
+          "why_it_matters": "Introduces basic computer operating systems, computational environments, and early tech literacy.",
+          "target_score": "80% + (Grade 1 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Join an ICT, robotics, or programming club.",
+        "Practice visual programming tools like Scratch or basic HTML if digital devices are accessible."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Science or Business (with Elective Maths)",
+      "ideal_bece_aggregate": "6 - 12",
+      "target_shs_categories": ["A", "B"],
+      "required_wassce_electives": ["Elective Mathematics", "Physics", "Chemistry", "Accounting"],
+      "university_pathways": [
+        {
+          "institution": "KNUST",
+          "program": "BSc Computer Science",
+          "typical_cutoff_aggregate": 11
+        },
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "BSc Computer Science",
+          "typical_cutoff_aggregate": 12
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 13 - 18",
+        "recommended_shs_stream": "Technical Stream (Pre-Engineering / ICT)",
+        "rationale": "Provides deeply practical, hands-on architectural and network infrastructure skills standard computing tracks overlook.",
+        "viable_university_programs": [
+          "BTech Software Engineering (ATU)",
+          "BSc Information Technology (UPSA)",
+          "BSc Computer Engineering (UMaT)"
+        ],
+        "possible_careers": ["Full-Stack Engineer", "IT Systems Administrator", "DevOps Engineer"]
+      },
+      {
+        "condition": "BECE Aggregate 19+",
+        "recommended_shs_stream": "General Arts (with Elective Mathematics and Economics)",
+        "rationale": "Focuses on maximizing raw WASSCE aggregates while establishing data management foundations through Economics.",
+        "viable_university_programs": [
+          "BSc Business Information Technology (UPSA)",
+          "BSc Management Information Systems (Ashesi - Scholarship Route)"
+        ],
+        "possible_careers": ["Data Analyst", "Product Manager", "Business Intelligence Specialist"]
+      }
+    ]
+  },
+  {
+    "career_id": "civil_engineer",
+    "title": "Civil Engineer",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 12",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Essential for structural load-bearing mental modeling, spatial trigonometry, and geometric physics.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        },
+        {
+          "subject": "Integrated Science",
+          "why_it_matters": "Provides fundamental physical mechanics, environmental understanding, and properties of materials.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Participate in local bridge-building or physical design competitions using simple household crafts.",
+        "Observe basic structural drawings or local building construction workflows under safe supervision."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Science",
+      "ideal_bece_aggregate": "6 - 12",
+      "target_shs_categories": ["A", "B"],
+      "required_wassce_electives": ["Elective Mathematics", "Physics", "Chemistry"],
+      "university_pathways": [
+        {
+          "institution": "KNUST",
+          "program": "BSc Civil Engineering",
+          "typical_cutoff_aggregate": 12
+        },
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "BSc Civil Engineering",
+          "typical_cutoff_aggregate": 14
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 13 - 18",
+        "recommended_shs_stream": "Technical Stream (Building & Construction Technology)",
+        "rationale": "Offers hands-on structural drafting, material science foundations, and building dynamics insight.",
+        "viable_university_programs": [
+          "BTech Civil Engineering (KsTU)",
+          "BTech Building Technology (ATU)",
+          "BSc Infrastructure Development (Cape Coast Technical University)"
+        ],
+        "possible_careers": ["Structural Inspector", "Construction Project Manager", "Site Engineer"]
+      },
+      {
+        "condition": "BECE Aggregate 19+",
+        "recommended_shs_stream": "General Arts (with Geography and Elective Mathematics)",
+        "rationale": "Maintains spatial and logistical intelligence modules through physical geography while leveraging a flexible grading profile.",
+        "viable_university_programs": [
+          "BSc Geomatic Engineering (UMaT)",
+          "BSc Real Estate (KNUST)"
+        ],
+        "possible_careers": ["GIS Analyst", "Land Surveyor", "Urban Logistics Consultant"]
+      }
+    ]
+  },
+  {
+    "career_id": "chartered_accountant",
+    "title": "Chartered Accountant",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 14",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Builds the prerequisite numerical data architecture, commercial math, and financial parsing frameworks.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        },
+        {
+          "subject": "English Language",
+          "why_it_matters": "Critical for structural communication, professional auditing syntax, and comprehension of regulatory legal codes.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Act as a treasurer for school clubs or local community development programs.",
+        "Practice personal budgeting or ledger bookkeeping tasks for a parent's shop."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "Business",
+      "ideal_bece_aggregate": "6 - 14",
+      "target_shs_categories": ["A", "B"],
+      "required_wassce_electives": ["Financial Accounting", "Business Management", "Economics", "Elective Mathematics"],
+      "university_pathways": [
+        {
+          "institution": "University of Ghana Business School (UGBS)",
+          "program": "BSc Administration (Accounting option)",
+          "typical_cutoff_aggregate": 8
+        },
+        {
+          "institution": "University of Professional Studies, Accra (UPSA)",
+          "program": "BSc Accounting",
+          "typical_cutoff_aggregate": 14
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 15 - 20",
+        "recommended_shs_stream": "Business (Category C or D schools)",
+        "rationale": "Secures direct foundational training in accounting systems and basic economics even within less competitive school structures.",
+        "viable_university_programs": [
+          "BSc Accounting & Finance (UCC)",
+          "BTech Accounting with Computing (Kumasi Technical University)"
+        ],
+        "possible_careers": ["Internal Auditor", "Financial Analyst", "Tax Consultant"]
+      },
+      {
+        "condition": "BECE Aggregate 21+",
+        "recommended_shs_stream": "General Arts (with Economics and Elective Mathematics)",
+        "rationale": "Optimizes elective structures to capture critical systemic macroeconomic principles while ensuring maximum overall WASSCE performance.",
+        "viable_university_programs": [
+          "BA Economics (UG)",
+          "BSc Professional Accounting (UPSA - Evening/Weekend Entry Programs)"
+        ],
+        "possible_careers": ["Cost Consultant", "Treasury Operations Analyst", "Investment Advisor"]
+      }
+    ]
+  },
+  {
+    "career_id": "pharmacist",
+    "title": "Pharmacist",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 10",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Integrated Science",
+          "why_it_matters": "Introduces basic chemical bonding, systemic body physiology, and elemental properties foundational to pharmacology.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Vital for safe chemical ratio calculation, molar conversions, and precise prescription dispensing logic.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Participate actively in chemistry lab experiments or local science exhibitions.",
+        "Read informational leaflets of safe over-the-counter medications to study structural active ingredients."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Science",
+      "ideal_bece_aggregate": "6 - 10",
+      "target_shs_categories": ["A", "B"],
+      "required_wassce_electives": ["Chemistry", "Biology", "Physics", "Elective Mathematics"],
+      "university_pathways": [
+        {
+          "institution": "KNUST",
+          "program": "Doctor of Pharmacy (PharmD)",
+          "typical_cutoff_aggregate": 8
+        },
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "Doctor of Pharmacy (PharmD)",
+          "typical_cutoff_aggregate": 9
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 11 - 16",
+        "recommended_shs_stream": "General Science (Category C or D schools)",
+        "rationale": "Maintains raw core science inputs required for standard pharmacy boards without the aggressive grade filtration of Category A institutions.",
+        "viable_university_programs": [
+          "BSc Pharmaceutical Sciences (Central University - Scholarship/Direct Admission Paths)",
+          "BSc Chemistry (UCC)"
+        ],
+        "possible_careers": ["Pharmaceutical Sales Representative", "Industrial Chemist", "Quality Control Analyst"]
+      },
+      {
+        "condition": "BECE Aggregate 17+",
+        "recommended_shs_stream": "Agricultural Science",
+        "rationale": "Leverages organic chemistry and crop biochemistry modules to transition cleanly into herbal or bio-pharmaceutical pathways.",
+        "viable_university_programs": [
+          "BSc Herbal Medicine (KNUST)",
+          "BSc Biochemistry (UG)"
+        ],
+        "possible_careers": ["Phytotherapist", "Clinical Biochemist", "Natural Product Researcher"]
+      }
+    ]
+  },
+  {
+    "career_id": "corporate_lawyer",
+    "title": "Corporate Lawyer",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 12",
+      "critical_jhs_subjects": [
+        {
+          "subject": "English Language",
+          "why_it_matters": "The core tool for textual analysis, rigorous semantic drafting, and argumentative structural presentation.",
+          "target_score": "80% + (Grade 1 in terminal exams)"
+        },
+        {
+          "subject": "Social Studies",
+          "why_it_matters": "Provides contextual definitions of citizenship, governance architectures, and foundational national legal structures.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Join a school debate, public speaking, or mock judicial advocacy club.",
+        "Engage in wide reading of national news profiles, governance updates, and editorial commentary columns."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Arts",
+      "ideal_bece_aggregate": "6 - 12",
+      "target_shs_categories": ["A", "B"],
+      "required_wassce_electives": ["Literature in English", "History", "Government", "Economics"],
+      "university_pathways": [
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "Bachelor of Laws (LLB - Post-First Degree or Direct Entry Routes)",
+          "typical_cutoff_aggregate": 7
+        },
+        {
+          "institution": "KNUST",
+          "program": "Bachelor of Laws (LLB)",
+          "typical_cutoff_aggregate": 8
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 13 - 18",
+        "recommended_shs_stream": "Business",
+        "rationale": "Provides immense systemic knowledge of corporate administration, tax governance, and commercial dynamics prior to post-grad legal study.",
+        "viable_university_programs": [
+          "BSc Business Administration (UPSA)",
+          "BSc Administration (Business Law Track - UGBS)"
+        ],
+        "possible_careers": ["Compliance Officer", "Corporate Secretary", "Legal Operations Associate"]
+      },
+      {
+        "condition": "BECE Aggregate 19+",
+        "recommended_shs_stream": "General Arts (Category C or D schools)",
+        "rationale": "Focuses on maximizing raw humanities outcomes (Government, History) to secure strong performance metrics for direct university entry.",
+        "viable_university_programs": [
+          "BA Political Science (UG)",
+          "BEd Arts (UCC)"
+        ],
+        "possible_careers": ["Policy Analyst", "Legislative Assistant", "Corporate Communications Officer"]
+      }
+    ]
+  },
+  {
+    "career_id": "electrical_engineer",
+    "title": "Electrical Engineer",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 12",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Necessary for understanding sinusoidal functions, wave analytics, and complex algebraic node algorithms.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        },
+        {
+          "subject": "Integrated Science",
+          "why_it_matters": "Introduces foundational electrical circuitry, magnetic flux principles, and early kinetic thermodynamics.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Experiment with basic safe educational circuit boards, LED systems, or simple electromagnetic battery toys.",
+        "Join a physics modeling, robotics, or design club within the community or school."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Science",
+      "ideal_bece_aggregate": "6 - 12",
+      "target_shs_categories": ["A", "B"],
+      "required_wassce_electives": ["Elective Mathematics", "Physics", "Chemistry"],
+      "university_pathways": [
+        {
+          "institution": "KNUST",
+          "program": "BSc Electrical & Electronic Engineering",
+          "typical_cutoff_aggregate": 10
+        },
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "BSc Computer Engineering (Power Systems options)",
+          "typical_cutoff_aggregate": 13
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 13 - 18",
+        "recommended_shs_stream": "Technical Stream (Electrical Engineering Technology)",
+        "rationale": "Prioritizes immediate practical field mastery of micro-wiring, power infrastructure layout, and operational grid safety architectures.",
+        "viable_university_programs": [
+          "BTech Electrical Engineering (ATU)",
+          "BTech Power Systems Engineering (KsTU)",
+          "BSc Electrical Engineering (UMaT)"
+        ],
+        "possible_careers": ["Power Grid Operator", "Electrical Control Systems Designer", "Avionics Installer"]
+      },
+      {
+        "condition": "BECE Aggregate 19+",
+        "recommended_shs_stream": "General Science (Category C or D schools)",
+        "rationale": "Focuses intensely on isolating core quantitative and physical mechanics milestones outside high-intensity institutional models.",
+        "viable_university_programs": [
+          "BSc Physics (UG)",
+          "BTech Automation Engineering (Takoradi Technical University)"
+        ],
+        "possible_careers": ["Automation Technician", "Instrumentation Specialist", "Renewable Energy Systems Installer"]
+      }
+    ]
+  },
+  {
+    "career_id": "mechanical_engineer",
+    "title": "Mechanical Engineer",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 12",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Provides algorithmic support for stress calculations, kinematic trajectories, and dimensional sizing models.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        },
+        {
+          "subject": "Integrated Science",
+          "why_it_matters": "Lays down structural physics guidelines, laws of motion, velocity equations, and thermal patterns.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Assist in safe diagnostic or repair procedures of simple home appliances or bicycles.",
+        "Engage in computational spatial modeling using freely available design tools if accessible."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Science",
+      "ideal_bece_aggregate": "6 - 12",
+      "target_shs_categories": ["A", "B"],
+      "required_wassce_electives": ["Elective Mathematics", "Physics", "Chemistry"],
+      "university_pathways": [
+        {
+          "institution": "KNUST",
+          "program": "BSc Mechanical Engineering",
+          "typical_cutoff_aggregate": 12
+        },
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "BSc Materials Science & Engineering",
+          "typical_cutoff_aggregate": 16
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 13 - 18",
+        "recommended_shs_stream": "Technical Stream (Mechanical / Automotive Engineering Tech)",
+        "rationale": "Directly exposes students to CNC milling layout, machine operations, tooling design, and structural component manufacturing.",
+        "viable_university_programs": [
+          "BTech Mechanical Engineering (ATU)",
+          "BTech Automotive Technology (KsTU)",
+          "BSc Mechanical Engineering (UMaT)"
+        ],
+        "possible_careers": ["Production Line Manager", "HVAC Design Specialist", "Automotive Systems Engineer"]
+      },
+      {
+        "condition": "BECE Aggregate 19+",
+        "recommended_shs_stream": "Technical Stream (Category C/D Institutions)",
+        "rationale": "Bypasses hyper-competitive grade entry systems to target specialized technological vocations within a flexible training loop.",
+        "viable_university_programs": [
+          "BTech Welding and Fabrication (TTU)",
+          "HND Mechanical Engineering (Cape Coast Technical University)"
+        ],
+        "possible_careers": ["Industrial Plant Inspector", "Mechatronics Installer", "Manufacturing Technician"]
+      }
+    ]
+  },
+  {
+    "career_id": "biomedical_engineer",
+    "title": "Biomedical Engineer",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 10",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Integrated Science",
+          "why_it_matters": "Combines natural anatomical structures with basic chemical patterns and kinetic physics principles.",
+          "target_score": "80% + (Grade 1 in terminal exams)"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Required for digital processing calculations, medical scanning coordinate functions, and precise sensor parsing.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Participate in regional math-science clinics, computer workshops, or biology exhibitions.",
+        "Examine basic mechanical structures of modern electronic devices or fitness tracker metrics."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Science",
+      "ideal_bece_aggregate": "6 - 10",
+      "target_shs_categories": ["A", "B"],
+      "required_wassce_electives": ["Elective Mathematics", "Physics", "Chemistry", "Biology"],
+      "university_pathways": [
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "BSc Biomedical Engineering",
+          "typical_cutoff_aggregate": 10
+        },
+        {
+          "institution": "KNUST",
+          "program": "BSc Biomedical Engineering",
+          "typical_cutoff_aggregate": 9
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 11 - 16",
+        "recommended_shs_stream": "Technical Stream (Electronics Engineering option)",
+        "rationale": "Emphasizes solid engineering hardware fundamentals, essential for maintaining and optimizing clinical scanning and diagnosis tech.",
+        "viable_university_programs": [
+          "BTech Medical Laboratory Technology (KsTU)",
+          "BSc Computer Engineering (All Nations University - Tech Track Paths)",
+          "BTech Electrical Engineering (ATU)"
+        ],
+        "possible_careers": ["Clinical Equipment Specialist", "Medical Hardware Architect", "Biomedical Sales Consultant"]
+      },
+      {
+        "condition": "BECE Aggregate 17+",
+        "recommended_shs_stream": "Agricultural Science",
+        "rationale": "Maintains structural access to biochemical frameworks, facilitating transitions into biological materials or prosthetic manufacturing fields.",
+        "viable_university_programs": [
+          "BSc Biochemistry (UCC)",
+          "BTech Laboratory Technology (Ho Technical University)"
+        ],
+        "possible_careers": ["Biomaterials Supervisor", "Laboratory Diagnostic Auditor", "Prosthetic Design Coordinator"]
+      }
+    ]
+  },
+  {
+    "career_id": "banker_financial_analyst",
+    "title": "Banker / Financial Analyst",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 14",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Forms the baseline infrastructure for compound interest logic, market probability forecasting, and data matrix operations.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        },
+        {
+          "subject": "Social Studies",
+          "why_it_matters": "Introduces state banking structures, domestic resource frameworks, and national economic development themes.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Manage micro-savings operations within family settings or savings groups (e.g., Susu structures).",
+        "Follow global or local financial market changes via regional business radio or media panels."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "Business or General Science",
+      "ideal_bece_aggregate": "6 - 14",
+      "target_shs_categories": ["A", "B"],
+      "required_wassce_electives": ["Economics", "Elective Mathematics", "Financial Accounting", "Business Management"],
+      "university_pathways": [
+        {
+          "institution": "University of Ghana Business School (UGBS)",
+          "program": "BSc Administration (Banking and Finance option)",
+          "typical_cutoff_aggregate": 9
+        },
+        {
+          "institution": "University of Cape Coast (UCC)",
+          "program": "BSc Finance",
+          "typical_cutoff_aggregate": 13
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 15 - 20",
+        "recommended_shs_stream": "General Arts (with Economics and Elective Mathematics)",
+        "rationale": "Optimizes raw aggregate performance metrics while preserving strong, foundational analytical frameworks via economic models.",
+        "viable_university_programs": [
+          "BSc Economics and Finance (UPSA)",
+          "BA Economics and Statistics (UG)"
+        ],
+        "possible_careers": ["Credit Risk Analyst", "Investment Portfolio Manager", "Macroeconomic Consultant"]
+      },
+      {
+        "condition": "BECE Aggregate 21+",
+        "recommended_shs_stream": "Business (Category C or D schools)",
+        "rationale": "Bypasses high-stress cutoffs to anchor immediate literacy in core commercial law, corporate structures, and institutional asset protocols.",
+        "viable_university_programs": [
+          "BSc Commerce (UCC - Distance/Regular Admission)",
+          "BTech Procurement and Supply Chain Management (ATU)"
+        ],
+        "possible_careers": ["Retail Branch Supervisor", "Loan Evaluation Officer", "Corporate Procurement Analyst"]
+      }
+    ]
+  },
+  {
+    "career_id": "data_scientist_ethics",
+    "title": "Data Scientist & Ethics Specialist",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 12",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Necessary for probability patterns, structural matrices, and computational statistical reasoning.",
+          "target_score": "80% + (Grade 1 in terminal exams)"
+        },
+        {
+          "subject": "Social Studies",
+          "why_it_matters": "Provides understanding of social contracts, civic ethics, human rights values, and institutional standards.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Engage in logic puzzle solving, algorithmic games, or community data tracking exercises.",
+        "Join a local debate team to think through how modern technology platforms impact personal privacy rules."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Science or Business (with Elective Maths)",
+      "ideal_bece_aggregate": "6 - 12",
+      "target_shs_categories": ["A", "B"],
+      "required_wassce_electives": ["Elective Mathematics", "Physics", "Economics", "Government"],
+      "university_pathways": [
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "BSc Mathematical Sciences (Statistics / Computer Science stream)",
+          "typical_cutoff_aggregate": 14
+        },
+        {
+          "institution": "Ashesi University",
+          "program": "BSc Computer Science (Data Science & Analytics concentrations)",
+          "typical_cutoff_aggregate": 10
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 13 - 18",
+        "recommended_shs_stream": "General Arts (with Elective Mathematics and Economics)",
+        "rationale": "Blends robust quantitative modeling with structural socio-economic theory, laying a strong foundation for technical data governance fields.",
+        "viable_university_programs": [
+          "BSc Actuarial Science (KNUST)",
+          "BSc Business Information Technology (UPSA)"
+        ],
+        "possible_careers": ["AI Governance Advisor", "Data Privacy Officer", "Risk Assessment Analyst"]
+      },
+      {
+        "condition": "BECE Aggregate 19+",
+        "recommended_shs_stream": "General Arts (with Government and Geography)",
+        "rationale": "Focuses on maximizing performance metrics across social frameworks to transition smoothly into public sector data asset policy and planning.",
+        "viable_university_programs": [
+          "BA Geography and Resource Development (UG)",
+          "BSc Development Informatics (UDS)"
+        ],
+        "possible_careers": ["Smart City Demographer", "Public Policy Data Evaluator", "GIS Project Lead"]
+      }
+    ]
+  },
+  {
+    "career_id": "bioinformatics_specialist",
+    "title": "Bioinformatics Specialist",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 10",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Integrated Science",
+          "why_it_matters": "Introduces cellular architecture, structural genetics, inheritance models, and biological sequencing foundations.",
+          "target_score": "80% + (Grade 1 in terminal exams)"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Vital for managing massive algorithmic lookup parameters, database queries, and mathematical distributions.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Join a local computing or biology exhibition team.",
+        "Review open educational materials on basic genetics, DNA structures, and molecular models."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Science",
+      "ideal_bece_aggregate": "6 - 10",
+      "target_shs_categories": ["A", "B"],
+      "required_wassce_electives": ["Biology", "Chemistry", "Elective Mathematics", "Physics"],
+      "university_pathways": [
+        {
+          "institution": "KNUST",
+          "program": "BSc Biochemistry / Computer Science tracks",
+          "typical_cutoff_aggregate": 10
+        },
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "BSc Biochemistry / Computational Biology pathways",
+          "typical_cutoff_aggregate": 12
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 11 - 16",
+        "recommended_shs_stream": "Agricultural Science",
+        "rationale": "Maintains structural contact with molecular plant biology and genetics while avoiding high-intensity science entry parameters.",
+        "viable_university_programs": [
+          "BSc Biotechnology (UDS)",
+          "BSc Biological Sciences (UCC)"
+        ],
+        "possible_careers": ["Agricultural Geneticist", "Computational Lab Evaluator", "Biotech Research Assistant"]
+      },
+      {
+        "condition": "BECE Aggregate 17+",
+        "recommended_shs_stream": "Technical Stream (ICT Option)",
+        "rationale": "Prioritizes immediate programming and digital network mastery, creating strong pathways into managing biological data repositories.",
+        "viable_university_programs": [
+          "BTech Software Engineering (ATU)",
+          "BSc Information Technology (UPSA)"
+        ],
+        "possible_careers": ["Health Data Systems Architect", "Clinical Database Administrator", "Biotech Systems Operator"]
+      }
+    ]
+  },
+  {
+    "career_id": "nurse_practitioner",
+    "title": "Nurse Practitioner",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 15",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Integrated Science",
+          "why_it_matters": "Provides basic physiological foundations, structural hygiene principles, and disease prevention models.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        },
+        {
+          "subject": "English Language",
+          "why_it_matters": "Essential for precise clinical updates, empathetic care communication, and accurate patient records.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Join a local school first-aid club, Red Cross unit, or community health group.",
+        "Practice clear documentation or wellness journaling exercises within local social initiatives."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Science or Home Economics",
+      "ideal_bece_aggregate": "6 - 15",
+      "target_shs_categories": ["A", "B", "C"],
+      "required_wassce_electives": ["Biology", "Chemistry", "Physics", "Management in Living", "Food and Nutrition"],
+      "university_pathways": [
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "BSc Nursing",
+          "typical_cutoff_aggregate": 10
+        },
+        {
+          "institution": "KNUST",
+          "program": "BSc Nursing",
+          "typical_cutoff_aggregate": 11
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 16 - 22",
+        "recommended_shs_stream": "Home Economics or General Arts",
+        "rationale": "Leverages accessible entry requirements to study structural healthcare delivery, nutrition, and patient care management.",
+        "viable_university_programs": [
+          "BSc Nursing (UCC)",
+          "BSc Public Health Nursing (UDS)",
+          "BSc Midwifery (Nurses and Midwives Training Colleges - NMTC Diploma pathways)"
+        ],
+        "possible_careers": ["Clinical Nurse Midwife", "Community Health Nurse", "Occupational Health Supervisor"]
+      },
+      {
+        "condition": "BECE Aggregate 23+",
+        "recommended_shs_stream": "Agricultural Science",
+        "rationale": "Maintains required baseline entries in biological and chemical systems, providing solid alternatives in therapeutic healthcare tracks.",
+        "viable_university_programs": [
+          "BSc Community Health and Development (UDS)",
+          "Diploma in General Nursing (Regional Nursing Training Colleges)"
+        ],
+        "possible_careers": ["Rural Health Care Coordinator", "Nutrition Health Educator", "Clinical Intake Officer"]
+      }
+    ]
+  },
+  {
+    "career_id": "environmental_scientist",
+    "title": "Environmental Scientist",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 16",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Integrated Science",
+          "why_it_matters": "Teaches critical ecological balance, soil mechanics, environmental preservation rules, and weather patterns.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        },
+        {
+          "subject": "Social Studies",
+          "why_it_matters": "Examines national resource governance, environmental sanitation management, and regional layout paradigms.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Participate in local tree planting drives, sanitation programs, or ecological conservation initiatives.",
+        "Join a geography, forestry, or environmental protection club at school."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Science or Agricultural Science",
+      "ideal_bece_aggregate": "6 - 16",
+      "target_shs_categories": ["A", "B", "C"],
+      "required_wassce_electives": ["Geography", "Biology", "Chemistry", "Physics", "General Agriculture"],
+      "university_pathways": [
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "BSc Environmental Science",
+          "typical_cutoff_aggregate": 22
+        },
+        {
+          "institution": "KNUST",
+          "program": "BSc Environmental Science",
+          "typical_cutoff_aggregate": 20
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 17 - 22",
+        "recommended_shs_stream": "General Arts (with Geography, Economics, Biology)",
+        "rationale": "Combines spatial environmental logic via Geography with analytical human impact metrics from Economics.",
+        "viable_university_programs": [
+          "BSc Geography and Regional Planning (UCC)",
+          "BA Geography and Resource Development (UG)"
+        ],
+        "possible_careers": ["Environmental Policy Officer", "Urban Sustainability Analyst", "Ecotourism Consultant"]
+      },
+      {
+        "condition": "BECE Aggregate 23+",
+        "recommended_shs_stream": "Agricultural Science (Category C or D schools)",
+        "rationale": "Provides deeply practical training in soil conservation, water management, and local agricultural ecosystems.",
+        "viable_university_programs": [
+          "BSc Natural Resources Management (KNUST)",
+          "BSc Renewable Natural Resources (UDS)"
+        ],
+        "possible_careers": ["Forestry Conservator", "Soil Conservation Officer", "Environmental Compliance Inspector"]
+      }
+    ]
+  },
+  {
+    "career_id": "agricultural_scientist",
+    "title": "Agricultural Scientist",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 18",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Integrated Science",
+          "why_it_matters": "Introduces basic botany, soil composition mechanics, crop disease models, and animal nutrition.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Essential for calculating fertilizer mix configurations, yield distributions, and farm business financial metrics.",
+          "target_score": "65% + (Grade 1 to 4 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Participate in family or school gardening projects using systematic logging procedures.",
+        "Join local agricultural enterprise networks or 4-H clubs where available."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "Agricultural Science or General Science",
+      "ideal_bece_aggregate": "6 - 18",
+      "target_shs_categories": ["A", "B", "C"],
+      "required_wassce_electives": ["General Agriculture", "Chemistry", "Biology", "Physics", "Elective Mathematics"],
+      "university_pathways": [
+        {
+          "institution": "KNUST",
+          "program": "BSc Agriculture",
+          "typical_cutoff_aggregate": 22
+        },
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "BSc Agriculture",
+          "typical_cutoff_aggregate": 24
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 19 - 24",
+        "recommended_shs_stream": "Agricultural Science (Category C or D schools)",
+        "rationale": "Provides direct, practical connection with essential agricultural production management frameworks and equipment platforms.",
+        "viable_university_programs": [
+          "BSc Agribusiness Management (KNUST)",
+          "BSc Agriculture (UCC)",
+          "BSc Agribusiness (University of Energy and Natural Resources - UENR)"
+        ],
+        "possible_careers": ["Agribusiness Manager", "Extension Services Specialist", "Farm Operations Supervisor"]
+      },
+      {
+        "condition": "BECE Aggregate 25+",
+        "recommended_shs_stream": "Business (with Economics)",
+        "rationale": "Shifts technical focus to commercial asset channels, trade optimization pipelines, and agricultural commodity supply chains.",
+        "viable_university_programs": [
+          "BSc Agribusiness Economics (UDS)",
+          "HND Agricultural Engineering (In technical universities across regions)"
+        ],
+        "possible_careers": ["Agricultural Produce Trader", "Logistics Operations Planner", "Rural Credit Officer"]
+      }
+    ]
+  },
+  {
+    "career_id": "telecoms_engineer",
+    "title": "Telecommunications Engineer",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 12",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Vital for spatial signaling models, wave frequency matrices, and digital signal modulation calculations.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        },
+        {
+          "subject": "Information and Communication Technology (ICT)",
+          "why_it_matters": "Introduces basic data transmission networks, hardware interfaces, and early communication tools.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Join an electronic repair, robotics, or ham radio hobby group if available.",
+        "Explore online tutorials detailing how regional mobile networks route and transmit cell data."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Science",
+      "ideal_bece_aggregate": "6 - 12",
+      "target_shs_categories": ["A", "B"],
+      "required_wassce_electives": ["Elective Mathematics", "Physics", "Chemistry"],
+      "university_pathways": [
+        {
+          "institution": "KNUST",
+          "program": "BSc Telecommunication Engineering",
+          "typical_cutoff_aggregate": 12
+        },
+        {
+          "institution": "Ghana Communication Technology University (GCTU)",
+          "program": "BSc Telecommunications Engineering",
+          "typical_cutoff_aggregate": 16
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 13 - 18",
+        "recommended_shs_stream": "Technical Stream (Electronics / ICT Option)",
+        "rationale": "Emphasizes practical network topologies, structural fiber optic layouts, and radio frequency hardware engineering installations.",
+        "viable_university_programs": [
+          "BTech Telecommunications Engineering (ATU)",
+          "BSc Computer Science (GCTU)",
+          "BTech Electrical Engineering Technology (KsTU)"
+        ],
+        "possible_careers": ["Network Infrastructure Installer", "RF Field Operations Planner", "Telecom Systems Administrator"]
+      },
+      {
+        "condition": "BECE Aggregate 19+",
+        "recommended_shs_stream": "General Science (Category C or D schools)",
+        "rationale": "Focuses on optimizing key quantitative metrics away from dense institutional testing pools to secure baseline engineering entry.",
+        "viable_university_programs": [
+          "BSc Physics with Electronics (UCC)",
+          "BTech Information Technology (Koforidua Technical University)"
+        ],
+        "possible_careers": ["Cell Site Maintenance Technician", "Broadband Support Analyst", "Network Operations Center Agent"]
+      }
+    ]
+  },
+  {
+    "career_id": "marketing_manager",
+    "title": "Marketing Manager",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 15",
+      "critical_jhs_subjects": [
+        {
+          "subject": "English Language",
+          "why_it_matters": "The core tool for brand story architecture, copywriting, persuasion tactics, and audience engagement.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        },
+        {
+          "subject": "Social Studies",
+          "why_it_matters": "Teaches cultural patterns, community buying behaviors, and regional consumer dynamics.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Create advertising campaigns for school events, drama plays, or community youth forums.",
+        "Analyze regional billboard layouts and product packaging strategies at local markets."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "Business or General Arts",
+      "ideal_bece_aggregate": "6 - 15",
+      "target_shs_categories": ["A", "B", "C"],
+      "required_wassce_electives": ["Business Management", "Economics", "Elective Mathematics", "Government", "Literature in English"],
+      "university_pathways": [
+        {
+          "institution": "University of Ghana Business School (UGBS)",
+          "program": "BSc Administration (Marketing option)",
+          "typical_cutoff_aggregate": 12
+        },
+        {
+          "institution": "University of Professional Studies, Accra (UPSA)",
+          "program": "BSc Marketing",
+          "typical_cutoff_aggregate": 16
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 16 - 22",
+        "recommended_shs_stream": "General Arts (with Economics and Geography)",
+        "rationale": "Develops a deep understanding of market geography, trade patterns, and economic consumer choices.",
+        "viable_university_programs": [
+          "BSc Marketing (UCC)",
+          "BA Communication Studies (Christian Service University College / Private Tracks)"
+        ],
+        "possible_careers": ["Brand Management Representative", "Market Research Specialist", "Advertising Consultant"]
+      },
+      {
+        "condition": "BECE Aggregate 23+",
+        "recommended_shs_stream": "Visual Arts",
+        "rationale": "Leverages graphic design and asset layout skills to enter visual media marketing, digital content production, and commercial styling.",
+        "viable_university_programs": [
+          "BTech Graphic Design (ATU)",
+          "BA Publishing Studies (KNUST)"
+        ],
+        "possible_careers": ["Digital Content Director", "Visual Communications Coordinator", "Creative Advertising Planner"]
+      }
+    ]
+  },
+  {
+    "career_id": "supply_chain_manager",
+    "title": "Supply Chain & Logistics Manager",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 15",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Crucial for inventory modeling, delivery route mapping, and optimization metrics.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        },
+        {
+          "subject": "Social Studies",
+          "why_it_matters": "Provides contextual understanding of national transportation networks, trade entry hubs, and regional layout profiles.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Manage material distributions or storage systems for school sports setups or events.",
+        "Examine distribution layouts at local parcel offices or transport hubs (e.g., VIP/STC stations)."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "Business",
+      "ideal_bece_aggregate": "6 - 15",
+      "target_shs_categories": ["A", "B", "C"],
+      "required_wassce_electives": ["Business Management", "Financial Accounting", "Economics", "Elective Mathematics"],
+      "university_pathways": [
+        {
+          "institution": "University of Professional Studies, Accra (UPSA)",
+          "program": "BSc Procurement and Supply Chain Management",
+          "typical_cutoff_aggregate": 15
+        },
+        {
+          "institution": "KNUST",
+          "program": "BSc Business Administration (Logistics & Supply Chain Management option)",
+          "typical_cutoff_aggregate": 12
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 16 - 22",
+        "recommended_shs_stream": "General Arts (with Geography and Economics)",
+        "rationale": "Uses physical geography frameworks to master regional trade corridors, infrastructure logistics, and spatial organization models.",
+        "viable_university_programs": [
+          "BSc Procurement and Supply Chain Management (UCC)",
+          "BA Geography and Resource Development (UG)"
+        ],
+        "possible_careers": ["Logistics Operations Planner", "Freight Management Specialist", "Distribution Supervisor"]
+      },
+      {
+        "condition": "BECE Aggregate 23+",
+        "recommended_shs_stream": "Technical Stream (Mechanical / Engineering Option)",
+        "rationale": "Prioritizes direct asset maintenance, inventory security, and heavy equipment logistics engineering protocols.",
+        "viable_university_programs": [
+          "BTech Procurement and Supply Chain Management (ATU)",
+          "HND Purchasing and Supply (Takoradi Technical University)"
+        ],
+        "possible_careers": ["Warehouse Inventory Auditor", "Fleet Maintenance Supervisor", "Procurement Assistant"]
+      }
+    ]
+  },
+  {
+    "career_id": "journalist_media_expert",
+    "title": "Journalist / Media Expert",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 14",
+      "critical_jhs_subjects": [
+        {
+          "subject": "English Language",
+          "why_it_matters": "The fundamental tool for reporting, professional news writing, syntax accuracy, and editorial work.",
+          "target_score": "80% + (Grade 1 in terminal exams)"
+        },
+        {
+          "subject": "Social Studies",
+          "why_it_matters": "Provides vital historical background, governance frameworks, public policy tracking, and socio-cultural context.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Write articles for school noticeboards, youth blogs, or local community event fliers.",
+        "Join a local school debate, reading, or media and broadcasting club."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Arts",
+      "ideal_bece_aggregate": "6 - 14",
+      "target_shs_categories": ["A", "B", "C"],
+      "required_wassce_electives": ["Literature in English", "Government", "History", "Christian Religious Studies / Islamic Religious Studies"],
+      "university_pathways": [
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "BA Communication Studies (UniMAC - GIJ Pathway Entry)",
+          "typical_cutoff_aggregate": 14
+        },
+        {
+          "institution": "University of Media, Arts and Communication (UniMAC-GIJ)",
+          "program": "BA Journalism",
+          "typical_cutoff_aggregate": 16
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 15 - 20",
+        "recommended_shs_stream": "General Arts (Category C or D schools)",
+        "rationale": "Focuses on maximizing raw humanities outcomes (Government, Literature) to secure strong performance metrics for direct university entry.",
+        "viable_university_programs": [
+          "BA Communication Studies (UCC)",
+          "BA Theatre Arts / Media Tracks (UG)"
+        ],
+        "possible_careers": ["News Reporter", "Radio Show Producer", "Media Content Writer"]
+      },
+      {
+        "condition": "BECE Aggregate 21+",
+        "recommended_shs_stream": "Visual Arts",
+        "rationale": "Leverages digital design, photojournalism, visual framing, and multimedia production layouts for modern digital broadcasting.",
+        "viable_university_programs": [
+          "BA Publishing Studies (KNUST)",
+          "BTech Graphic Design (Takoradi Technical University)"
+        ],
+        "possible_careers": ["Photojournalist", "Digital Media Producer", "Video Editor Specialist"]
+      }
+    ]
+  },
+  {
+    "career_id": "professional_educator",
+    "title": "Professional Educator / Teacher",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 18",
+      "critical_jhs_subjects": [
+        {
+          "subject": "English Language",
+          "why_it_matters": "Crucial for instruction clarity, curriculum writing, student assessment, and presentation skills.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        },
+        {
+          "subject": "Social Studies",
+          "why_it_matters": "Builds fundamental citizenship concepts, community civic duties, and national cultural history.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Offer peer tutoring or volunteer as a student study lead at a local weekend school program.",
+        "Participate in public speaking, dramatic readings, or school mentoring groups."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Arts, Business, or General Science",
+      "ideal_bece_aggregate": "6 - 18",
+      "target_shs_categories": ["A", "B", "C"],
+      "required_wassce_electives": ["Government", "History", "Literature in English", "Economics", "Biology", "Physics"],
+      "university_pathways": [
+        {
+          "institution": "University of Education, Winneba (UEW)",
+          "program": "BEd Social Studies Education",
+          "typical_cutoff_aggregate": 18
+        },
+        {
+          "institution": "University of Cape Coast (UCC)",
+          "program": "BEd Arts / Social Sciences",
+          "typical_cutoff_aggregate": 16
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 19 - 24",
+        "recommended_shs_stream": "General Arts (Category C or D schools)",
+        "rationale": "Focuses on maximizing core elective grades to secure direct entry into regional teacher education systems.",
+        "viable_university_programs": [
+          "BEd Junior High School Education (Various Public Colleges of Education affiliated with UG/UCC)",
+          "BEd Primary Education (UEW)"
+        ],
+        "possible_careers": ["Junior High School Instructor", "Curriculum Designer Specialist", "Educational Assessment Officer"]
+      },
+      {
+        "condition": "BECE Aggregate 25+",
+        "recommended_shs_stream": "Home Economics or Visual Arts",
+        "rationale": "Provides practical technical skills combined with teaching methods, matching national priorities for TVET education.",
+        "viable_university_programs": [
+          "BEd Home Economics Education (UEW)",
+          "BEd Technology Education (Akenten Appiah-Menka University of Skills Training and Entrepreneurial Development - AAMUSTED)"
+        ],
+        "possible_careers": ["TVET Instructor", "Vocational Training Coordinator", "School Facilities Manager"]
+      }
+    ]
+  },
+  {
+    "career_id": "automotive_technician",
+    "title": "Automotive Engineering Technician",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 20",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Integrated Science",
+          "why_it_matters": "Provides core physics concepts like force vectors, hydraulic pressure rules, and mechanical thermodynamics.",
+          "target_score": "65% + (Grade 1 to 4 in terminal exams)"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Vital for diagnostic parameter analysis, checking component tolerances, and engine timing calculations.",
+          "target_score": "65% + (Grade 1 to 4 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Assist safely at small engineering, diagnostic, or vehicle electronics repair centers.",
+        "Study foundational schematics of modern internal combustion and hybrid automotive engines."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "Technical Stream (Automotive Engineering Technology)",
+      "ideal_bece_aggregate": "6 - 20",
+      "target_shs_categories": ["B", "C", "D"],
+      "required_wassce_electives": ["Auto Mechanics", "Technical Drawing", "Engineering Science", "Elective Mathematics"],
+      "university_pathways": [
+        {
+          "institution": "Koforidua Technical University (KTU)",
+          "program": "BTech Automotive Engineering",
+          "typical_cutoff_aggregate": 22
+        },
+        {
+          "institution": "Accra Technical University (ATU)",
+          "program": "BTech Mechanical Engineering (Automotive option)",
+          "typical_cutoff_aggregate": 20
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 21 - 26",
+        "recommended_shs_stream": "Technical Stream (Category C or D Technical Institutes)",
+        "rationale": "Bypasses competitive grade models to focus on industry certs, mechanical engine overhauls, and automotive electrical troubleshooting.",
+        "viable_university_programs": [
+          "HND Automotive Engineering (Kumasi Technical University)",
+          "Advanced Motor Vehicle Craft Certificate (Government Technical Training Institutes)"
+        ],
+        "possible_careers": ["Fleet Diagnostics Lead", "Automotive Workshop Manager", "Heavy Machinery Technician"]
+      },
+      {
+        "condition": "BECE Aggregate 27+",
+        "recommended_shs_stream": "General Science (with Physics and Technical Drawing)",
+        "rationale": "Maintains raw science backgrounds, preparing students to transition into vehicle testing and safety auditing career paths.",
+        "viable_university_programs": [
+          "BTech Mechanical Engineering technology (Takoradi Technical University)",
+          "Diploma in Transport and Logistics (GCTU)"
+        ],
+        "possible_careers": ["Transport Systems Safety Inspector", "Vehicle Claims Valuer", "Automotive Assembly Supervisor"]
+      }
+    ]
+  },
+  {
+    "career_id": "building_construction_tech",
+    "title": "Building & Construction Technician",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 20",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Required for volume estimations, concrete mixing formulas, and precision line layouts.",
+          "target_score": "65% + (Grade 1 to 4 in terminal exams)"
+        },
+        {
+          "subject": "Integrated Science",
+          "why_it_matters": "Introduces basic soil physics, structural loading limits, and foundational material science patterns.",
+          "target_score": "65% + (Grade 1 to 4 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Practice geometric spatial drafting using simple tools or entry-level vector design apps.",
+        "Observe masonry, plumbing, or structural layout workflows under safe, authorized site conditions."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "Technical Stream (Building & Construction Technology)",
+      "ideal_bece_aggregate": "6 - 20",
+      "target_shs_categories": ["B", "C", "D"],
+      "required_wassce_electives": ["Building Construction", "Technical Drawing", "Engineering Science", "Elective Mathematics"],
+      "university_pathways": [
+        {
+          "institution": "Accra Technical University (ATU)",
+          "program": "BTech Building Technology",
+          "typical_cutoff_aggregate": 22
+        },
+        {
+          "institution": "Kumasi Technical University (KsTU)",
+          "program": "BTech Building Technology",
+          "typical_cutoff_aggregate": 20
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 21 - 26",
+        "recommended_shs_stream": "Technical Stream (Category C/D Technical Centers)",
+        "rationale": "Focuses on hands-on structural brickwork training, roof layout patterns, and modern plumbing layout systems.",
+        "viable_university_programs": [
+          "HND Building Technology (Cape Coast Technical University)",
+          "Construction Craft Professional Certificate (NVTI / National Technical Examination Boards)"
+        ],
+        "possible_careers": ["Construction Site Supervisor", "Quantity Estimating Assistant", "Masonry Project Lead"]
+      },
+      {
+        "condition": "BECE Aggregate 27+",
+        "recommended_shs_stream": "Visual Arts (with Graphic Design and Economics)",
+        "rationale": "Leverages architectural drafting and visual representation skills to enter design spaces, interior fit-out plans, and site logistics operations.",
+        "viable_university_programs": [
+          "BTech Interior Design and Technology (Takoradi Technical University)",
+          "HND Civil Engineering (Sunyani Technical University)"
+        ],
+        "possible_careers": ["Interior Layout Designer", "Construction Procurement Clerk", "Site Layout Draftsman"]
+      }
+    ]
+  },
+  {
+    "career_id": "cybersecurity_analyst",
+    "title": "Cybersecurity Analyst",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 12",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Builds skills in discrete logic formulas, modular encryption math, and complex code analysis structures.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        },
+        {
+          "subject": "Information and Communication Technology (ICT)",
+          "why_it_matters": "Provides basic concepts of data packets, internet networks, and structural operating systems.",
+          "target_score": "80% + (Grade 1 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Join a computing, cybersecurity, or electronics hacking/logic club.",
+        "Practice script structures, database queries, and logical command prompts on available devices."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Science or Technical Stream (ICT option)",
+      "ideal_bece_aggregate": "6 - 12",
+      "target_shs_categories": ["A", "B"],
+      "required_wassce_electives": ["Elective Mathematics", "Physics", "Chemistry"],
+      "university_pathways": [
+        {
+          "institution": "Ghana Communication Technology University (GCTU)",
+          "program": "BSc Mobile Computing and Computer Security",
+          "typical_cutoff_aggregate": 14
+        },
+        {
+          "institution": "KNUST",
+          "program": "BSc Computer Science",
+          "typical_cutoff_aggregate": 11
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 13 - 18",
+        "recommended_shs_stream": "Business (with Elective Mathematics)",
+        "rationale": "Blends data risk profiles and corporate asset protection with information technology networks, ideal for financial tech infrastructure.",
+        "viable_university_programs": [
+          "BSc Business Information Technology (UPSA)",
+          "BTech Cyber Security (Accra Technical University)"
+        ],
+        "possible_careers": ["Information Security Auditor", "FinTech Fraud Investigator", "Network Security Administrator"]
+      },
+      {
+        "condition": "BECE Aggregate 19+",
+        "recommended_shs_stream": "General Arts (with Elective Mathematics and Economics)",
+        "rationale": "Focuses on maximizing raw WASSCE metrics while establishing essential analytical data skills via Economics frameworks.",
+        "viable_university_programs": [
+          "BSc Management Information Systems (UPSA)",
+          "Diploma in Information Technology (UG)"
+        ],
+        "possible_careers": ["IT Compliance Specialist", "Digital Forensics Assistant", "Cyber Threat Coordinator"]
+      }
+    ]
+  },
+  {
+    "career_id": "graphic_designer",
+    "title": "Graphic Designer & Brand Identity Specialist",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 16",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Creative Arts / Visual Arts",
+          "why_it_matters": "Teaches fundamental color theories, composition geometry, perspective drawing, and asset layouts.",
+          "target_score": "80% + (Grade 1 in terminal exams)"
+        },
+        {
+          "subject": "English Language",
+          "why_it_matters": "Essential for clear message development, copywriting tasks, client brief reviews, and brand storytelling.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Sketch logo concepts, design layouts for school posters, or practice digital typography templates.",
+        "Explore basic layout, photo vector adjustments, or animation tools on accessible mobile platforms."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "Visual Arts",
+      "ideal_bece_aggregate": "6 - 16",
+      "target_shs_categories": ["A", "B", "C"],
+      "required_wassce_electives": ["Graphic Design", "Picture Making", "General Knowledge in Art", "Economics"],
+      "university_pathways": [
+        {
+          "institution": "KNUST",
+          "program": "BA Communication Design",
+          "typical_cutoff_aggregate": 14
+        },
+        {
+          "institution": "Takoradi Technical University (TTU)",
+          "program": "BTech Graphic Design",
+          "typical_cutoff_aggregate": 18
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 17 - 22",
+        "recommended_shs_stream": "General Arts (with Literature and Geography)",
+        "rationale": "Combines conceptual content planning with structural cultural geography metrics, ideal for brand strategy roles.",
+        "viable_university_programs": [
+          "BA Publishing Studies (KNUST)",
+          "BTech Graphic Design (Accra Technical University)"
+        ],
+        "possible_careers": ["Brand Strategist Coordinator", "UI/UX Visual Layout Designer", "Digital Publisher Associate"]
+      },
+      {
+        "condition": "BECE Aggregate 23+",
+        "recommended_shs_stream": "Visual Arts (Category C or D schools)",
+        "rationale": "Provides direct connection with essential technical craft components and layout skills in less competitive environments.",
+        "viable_university_programs": [
+          "HND Commercial Art (Ho Technical University)",
+          "Diploma in Communication Design (KNUST Distance Streams)"
+        ],
+        "possible_careers": ["Advertising Layout Artist", "Print Media Operator", "Corporate Visual Consultant"]
+      }
+    ]
+  },
+  {
+    "career_id": "biochemist",
+    "title": "Clinical Biochemist",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 10",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Integrated Science",
+          "why_it_matters": "Introduces basic chemical bonding, cellular biology structures, and metabolic pattern configurations.",
+          "target_score": "80% + (Grade 1 in terminal exams)"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Required for chemical ratio calculations, data point parsing, and computing quantitative assay yields.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Join a science club, participate in chemistry modeling, or assist in safe laboratory demonstrations.",
+        "Read introductory materials detailing how diagnostic labs analyze blood chemistry metrics."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Science",
+      "ideal_bece_aggregate": "6 - 10",
+      "target_shs_categories": ["A", "B"],
+      "required_wassce_electives": ["Chemistry", "Biology", "Physics", "Elective Mathematics"],
+      "university_pathways": [
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "BSc Biochemistry",
+          "typical_cutoff_aggregate": 12
+        },
+        {
+          "institution": "KNUST",
+          "program": "BSc Biochemistry",
+          "typical_cutoff_aggregate": 11
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 11 - 16",
+        "recommended_shs_stream": "Agricultural Science",
+        "rationale": "Maintains structural access to organic chemical pathways, soil-plant biological testing, and molecular systems training.",
+        "viable_university_programs": [
+          "BSc Biotechnology (UDS)",
+          "BSc Biological Sciences (UCC)"
+        ],
+        "possible_careers": ["Agricultural Biochemist", "Quality Assurance Analyst", "Biotech Research Assistant"]
+      },
+      {
+        "condition": "BECE Aggregate 17+",
+        "recommended_shs_stream": "General Science (Category C or D schools)",
+        "rationale": "Secures the core chemical prerequisite foundations within adaptive institutional frameworks to target laboratory technology degrees.",
+        "viable_university_programs": [
+          "BTech Medical Laboratory Technology (KsTU)",
+          "BTech Laboratory Technology (Accra Technical University)"
+        ],
+        "possible_careers": ["Clinical Lab Analyst", "Diagnostic Systems Operator", "Chemical Process Supervisor"]
+      }
+    ]
+  },
+  {
+    "career_id": "urban_informatics_analyst",
+    "title": "Smart City / Urban Informatics Analyst",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 12",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Essential for spatial mapping trigonometry, demographic calculations, and computational logistics tracking.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        },
+        {
+          "subject": "Social Studies",
+          "why_it_matters": "Teaches critical urban community models, population distributions, and civic utility infrastructure plans.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Study layout grids, transport systems, or waste network flow models in regional town settings.",
+        "Practice structured spreadsheet organization or basic data visualization layouts if digital options exist."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Science or General Arts (with Geography and Elective Maths)",
+      "ideal_bece_aggregate": "6 - 12",
+      "target_shs_categories": ["A", "B"],
+      "required_wassce_electives": ["Geography", "Elective Mathematics", "Physics", "Economics"],
+      "university_pathways": [
+        {
+          "institution": "KNUST",
+          "program": "BSc Land Economy / Urban Planning tracks",
+          "typical_cutoff_aggregate": 11
+        },
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "BA Geography & Resource Development (with Computer Science options)",
+          "typical_cutoff_aggregate": 14
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 13 - 18",
+        "recommended_shs_stream": "Technical Stream (Building Technology option)",
+        "rationale": "Provides direct, practical understanding of real-world construction data, spatial drafting, and infrastructure layouts.",
+        "viable_university_programs": [
+          "BSc Geomatic Engineering (UMaT)",
+          "BTech Building Technology (ATU)"
+        ],
+        "possible_careers": ["GIS Mapping Analyst", "Cadastral Land Surveyor", "Infrastructure Project Planner"]
+      },
+      {
+        "condition": "BECE Aggregate 19+",
+        "recommended_shs_stream": "General Arts (with Economics and Government)",
+        "rationale": "Focuses on maximizing social sciences grades to transition cleanly into regional public administrative and town planning sectors.",
+        "viable_university_programs": [
+          "BSc Settlement Planning (KNUST)",
+          "BA Integrated Development Studies (UDS)"
+        ],
+        "possible_careers": ["Town Planning Inspector", "Municipal Data Evaluator", "Regional Logistics Specialist"]
+      }
+    ]
+  },
+  {
+    "career_id": "veterinary_surgeon",
+    "title": "Veterinary Surgeon",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 10",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Integrated Science",
+          "why_it_matters": "Introduces foundational comparative anatomy, cell classification, and animal health concepts.",
+          "target_score": "80% + (Grade 1 in terminal exams)"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Crucial for computing accurate drug volumes, fluid replacement ratios, and safe anesthesia allocations.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Assist safely at small veterinary practices, local livestock operations, or animal shelters.",
+        "Observe livestock processing metrics and regional poultry management structures."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Science",
+      "ideal_bece_aggregate": "6 - 10",
+      "target_shs_categories": ["A", "B"],
+      "required_wassce_electives": ["Biology", "Chemistry", "Physics", "Elective Mathematics"],
+      "university_pathways": [
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "Doctor of Veterinary Medicine (DVM)",
+          "typical_cutoff_aggregate": 13
+        },
+        {
+          "institution": "KNUST",
+          "program": "Doctor of Veterinary Medicine (DVM)",
+          "typical_cutoff_aggregate": 11
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 11 - 16",
+        "recommended_shs_stream": "Agricultural Science",
+        "rationale": "Maintains structural contact with animal husbandry modules, livestock production data, and veterinary parasitology parameters.",
+        "viable_university_programs": [
+          "BSc Agriculture (Animal Science Option - KNUST)",
+          "BSc Biological Sciences (UCC)"
+        ],
+        "possible_careers": ["Livestock Health Consultant", "Animal Breeding Specialist", "Veterinary Lab Analyst"]
+      },
+      {
+        "condition": "BECE Aggregate 17+",
+        "recommended_shs_stream": "Agricultural Science (Category C or D schools)",
+        "rationale": "Provides an accessible pathway to practical veterinary diplomas and animal health extension training loops.",
+        "viable_university_programs": [
+          "BSc Agriculture (UDS)",
+          "Diploma in Animal Health and Production (Pong-Tamale Veterinary Training College)"
+        ],
+        "possible_careers": ["Animal Health Extension Officer", "Veterinary Inspector Assistant", "Poultry Facility Manager"]
+      }
+    ]
+  },
+  {
+    "career_id": "human_resource_manager",
+    "title": "Human Resource Manager",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 15",
+      "critical_jhs_subjects": [
+        {
+          "subject": "English Language",
+          "why_it_matters": "Essential for professional corporate communication, drafting labor agreements, and managing policies.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        },
+        {
+          "subject": "Social Studies",
+          "why_it_matters": "Teaches critical conflict resolution steps, group dynamics, cultural norms, and human rights rules.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Take on leadership or organizational roles in student councils, debate circles, or school sports teams.",
+        "Coordinate peer activities, roster plans, or logistics workflows for youth initiatives."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "Business or General Arts",
+      "ideal_bece_aggregate": "6 - 15",
+      "target_shs_categories": ["A", "B", "C"],
+      "required_wassce_electives": ["Business Management", "Economics", "Government", "Literature in English"],
+      "university_pathways": [
+        {
+          "institution": "University of Ghana Business School (UGBS)",
+          "program": "BSc Administration (Human Resource Management option)",
+          "typical_cutoff_aggregate": 11
+        },
+        {
+          "institution": "University of Professional Studies, Accra (UPSA)",
+          "program": "BSc Human Resource Management",
+          "typical_cutoff_aggregate": 16
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 16 - 22",
+        "recommended_shs_stream": "General Arts (with Government and Economics)",
+        "rationale": "Develops a deep understanding of organizational frameworks, public labor administration, and societal economic profiles.",
+        "viable_university_programs": [
+          "BA Psychology and Sociology (UG)",
+          "BSc Human Resource Management (UCC)"
+        ],
+        "possible_careers": ["Talent Acquisition Coordinator", "Corporate Trainer Associate", "Labor Relations Assistant"]
+      },
+      {
+        "condition": "BECE Aggregate 23+",
+        "recommended_shs_stream": "Business (Category C or D schools)",
+        "rationale": "Secures direct foundational training in commercial law, corporate administration, and operational management protocols.",
+        "viable_university_programs": [
+          "BBA Human Resource Management option (Direct technical university paths)",
+          "Diploma in Business Administration (UPSA)"
+        ],
+        "possible_careers": ["HR Operations Clerk", "Payroll Support Assistant", "Employee Records Supervisor"]
+      }
+    ]
+  },
+  {
+    "career_id": "human_computer_interaction_designer",
+    "title": "Human-Computer Interaction (HCI) Designer",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 14",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Information and Communication Technology (ICT)",
+          "why_it_matters": "Provides basic concepts of software visual interfaces, user pathways, and terminal configurations.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        },
+        {
+          "subject": "Creative Arts",
+          "why_it_matters": "Teaches core spatial drawing, visual hierarchy, alignment logic, and ergonomic layout principles.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Sketch custom user layouts for favorite phone applications or practice basic wireframe paths.",
+        "Join school or community technology groups focused on software logic or visual design projects."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "Visual Arts or General Science",
+      "ideal_bece_aggregate": "6 - 14",
+      "target_shs_categories": ["A", "B"],
+      "required_wassce_electives": ["Graphic Design", "Elective Mathematics", "Physics", "General Knowledge in Art"],
+      "university_pathways": [
+        {
+          "institution": "Ashesi University",
+          "program": "BSc Computer Science / Management Information Systems pathways",
+          "typical_cutoff_aggregate": 10
+        },
+        {
+          "institution": "KNUST",
+          "program": "BA Communication Design (with computing electives)",
+          "typical_cutoff_aggregate": 14
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 15 - 20",
+        "recommended_shs_stream": "General Arts (with Economics and Elective Mathematics)",
+        "rationale": "Blends structural data modeling with insights into consumer choices and behavior, providing strong design strategy roots.",
+        "viable_university_programs": [
+          "BSc Business Information Technology (UPSA)",
+          "BA Psychology and Computer Science (UG)"
+        ],
+        "possible_careers": ["UX User Researcher", "Digital Product Manager Associate", "Usability Testing Analyst"]
+      },
+      {
+        "condition": "BECE Aggregate 21+",
+        "recommended_shs_stream": "Visual Arts (Category C or D schools)",
+        "rationale": "Focuses on developing core graphic framing, interface design, and commercial visual production skills.",
+        "viable_university_programs": [
+          "BTech Graphic Design (Takoradi Technical University)",
+          "BSc Information Technology (GCTU)"
+        ],
+        "possible_careers": ["UI Layout Artist", "Frontend Interface Designer", "Digital Branding Assistant"]
+      }
+    ]
+  },
+  {
+    "career_id": "medical_laboratory_scientist",
+    "title": "Medical Laboratory Scientist",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 12",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Integrated Science",
+          "why_it_matters": "Introduces basic cell biology, cellular staining concepts, microscopy, and pathogen profiles.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Essential for processing quantitative dilution calculations, cell counts, and laboratory calibration data.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Join a science and math club, or take part in regional biology lab workshops.",
+        "Observe safe sample collection and diagnostic testing steps at localized medical labs."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Science",
+      "ideal_bece_aggregate": "6 - 12",
+      "target_shs_categories": ["A", "B"],
+      "required_wassce_electives": ["Chemistry", "Biology", "Physics", "Elective Mathematics"],
+      "university_pathways": [
+        {
+          "institution": "KNUST",
+          "program": "BSc Medical Laboratory Technology",
+          "typical_cutoff_aggregate": 10
+        },
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "BSc Medical Laboratory Sciences",
+          "typical_cutoff_aggregate": 11
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 13 - 18",
+        "recommended_shs_stream": "Agricultural Science",
+        "rationale": "Maintains structural access to organic laboratory chemistry, molecular genetics modules, and biological assay setups.",
+        "viable_university_programs": [
+          "BSc Biological Sciences (UCC)",
+          "BTech Medical Laboratory Technology (Kumasi Technical University)"
+        ],
+        "possible_careers": ["Pathology Lab Assistant", "Quality Control Inspector", "Biomedical Sample Specialist"]
+      },
+      {
+        "condition": "BECE Aggregate 19+",
+        "recommended_shs_stream": "General Science (Category C or D schools)",
+        "rationale": "Focuses on key chemical and physical prerequisites within adaptive learning models to secure technological admissions.",
+        "viable_university_programs": [
+          "BTech Laboratory Technology (Accra Technical University)",
+          "BSc Molecular Biology and Biotechnology (UCC)"
+        ],
+        "possible_careers": ["Diagnostic Product Sales Analyst", "Chemical Laboratory Operator", "Public Health Lab Associate"]
+      }
+    ]
+  },
+  {
+    "career_id": "industrial_designer",
+    "title": "Industrial Product Designer",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 15",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Creative Arts / Technical Drawing",
+          "why_it_matters": "Teaches essential blueprints, 3D structural perspective views, scaling calculations, and material properties.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Crucial for volume estimations, dimension matching, geometric balance, and stress parameters.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Build small physical product mockups using cardboard, clay, or recycled containers.",
+        "Practice using free geometric modeling software or layout drafting tools if devices are available."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "Visual Arts or Technical Stream",
+      "ideal_bece_aggregate": "6 - 15",
+      "target_shs_categories": ["A", "B", "C"],
+      "required_wassce_electives": ["Graphic Design", "Technical Drawing", "General Knowledge in Art", "Engineering Science"],
+      "university_pathways": [
+        {
+          "institution": "KNUST",
+          "program": "BA Integrated Rural Art and Industry",
+          "typical_cutoff_aggregate": 16
+        },
+        {
+          "institution": "Takoradi Technical University (TTU)",
+          "program": "BTech Industrial Design",
+          "typical_cutoff_aggregate": 20
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 16 - 22",
+        "recommended_shs_stream": "Technical Stream (Mechanical option)",
+        "rationale": "Focuses heavily on raw material tool layouts, CNC operations, fabrication logic, and physical manufacturing systems.",
+        "viable_university_programs": [
+          "BTech Mechanical Engineering (ATU)",
+          "BTech Ceramic Technology (Takoradi Technical University)"
+        ],
+        "possible_careers": ["Manufacturing Mold Designer", "Product Fabrication Lead", "Material Layout Consultant"]
+      },
+      {
+        "condition": "BECE Aggregate 23+",
+        "recommended_shs_stream": "Visual Arts (Category C or D schools)",
+        "rationale": "Bypasses hyper-competitive grade entry systems to target specialized technical vocations within a flexible training loop.",
+        "viable_university_programs": [
+          "HND Commercial Art (Ho Technical University)",
+          "Diploma in Integrated Art (KNUST Distance Streams)"
+        ],
+        "possible_careers": ["Product Visual Artist", "Packaging Assembly Supervisor", "Commercial Model Maker"]
+      }
+    ]
+  },
+  {
+    "career_id": "epidemiologist",
+    "title": "Epidemiologist / Public Health Researcher",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 12",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Provides basic knowledge of probability layouts, population statistical trends, and demographic matrices.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        },
+        {
+          "subject": "Integrated Science",
+          "why_it_matters": "Teaches fundamental pathogen transmission models, infectious disease biology, and public hygiene rules.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Help coordinate local community immunization, sanitation, or basic healthcare messaging projects.",
+        "Practice tracking community health indices or setting up data charts using simple logic structures."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Science",
+      "ideal_bece_aggregate": "6 - 12",
+      "target_shs_categories": ["A", "B"],
+      "required_wassce_electives": ["Biology", "Chemistry", "Elective Mathematics", "Physics"],
+      "university_pathways": [
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "Bachelor of Public Health (Health Information & Statistics option)",
+          "typical_cutoff_aggregate": 11
+        },
+        {
+          "institution": "KNUST",
+          "program": "BSc Biological Sciences",
+          "typical_cutoff_aggregate": 13
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 13 - 18",
+        "recommended_shs_stream": "Agricultural Science or General Arts (with Geography and Elective Maths)",
+        "rationale": "Combines spatial population models via Geography with structural plant/animal health dynamics from agricultural sciences.",
+        "viable_university_programs": [
+          "BSc Geography and Regional Planning (UCC)",
+          "BSc Biotechnology (UDS)"
+        ],
+        "possible_careers": ["Spatial Disease Surveyor", "Biosecurity Field Analyst", "Health Logistics Coordinator"]
+      },
+      {
+        "condition": "BECE Aggregate 19+",
+        "recommended_shs_stream": "General Arts (with Economics and Government)",
+        "rationale": "Focuses on maximizing raw humanities grades to transition cleanly into public health administration and national health policy planning.",
+        "viable_university_programs": [
+          "BA Development Studies (UDS)",
+          "BSc Health Administration & Education (UEW)"
+        ],
+        "possible_careers": ["Public Health Policy Analyst", "Healthcare Campaign Manager", "NGO Health Program Officer"]
+      }
+    ]
+  },
+  {
+    "career_id": "aerospace_engineer",
+    "title": "Aerospace Systems Engineer",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 9",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Essential for understanding advanced calculus, aerodynamic physics, and navigation matrices.",
+          "target_score": "80% + (Grade 1 in terminal exams)"
+        },
+        {
+          "subject": "Integrated Science",
+          "why_it_matters": "Provides core concepts in physical mechanics, gravity laws, fluid dynamics, and thermodynamics.",
+          "target_score": "80% + (Grade 1 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Build aerodynamics projects, flight models, or explore computational flight simulations.",
+        "Join specialized regional math and physics clinics or advanced robotics leagues."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Science",
+      "ideal_bece_aggregate": "6 - 9",
+      "target_shs_categories": ["A", "B"],
+      "required_wassce_electives": ["Elective Mathematics", "Physics", "Chemistry"],
+      "university_pathways": [
+        {
+          "institution": "KNUST",
+          "program": "BSc Aerospace Engineering",
+          "typical_cutoff_aggregate": 8
+        },
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "BSc Computer Engineering (Telecommunications option)",
+          "typical_cutoff_aggregate": 12
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 10 - 15",
+        "recommended_shs_stream": "Technical Stream (Mechanical / Avionics options)",
+        "rationale": "Focuses heavily on direct mechanical propulsion layouts, metal fabrication rules, and hardware circuit integrations.",
+        "viable_university_programs": [
+          "BTech Mechanical Engineering (ATU)",
+          "BSc Mechanical Engineering (UMaT)",
+          "BTech Electrical Engineering Technology (KsTU)"
+        ],
+        "possible_careers": ["Avionics System Specialist", "Aircraft Fleet Inspector", "Propulsion Field Maintenance Lead"]
+      },
+      {
+        "condition": "BECE Aggregate 16+",
+        "recommended_shs_stream": "General Science (Category C or D schools)",
+        "rationale": "Secures essential physics and quantitative options within a flexible test environment, opening doors to automotive engineering tracks.",
+        "viable_university_programs": [
+          "BTech Automotive Engineering (Koforidua Technical University)",
+          "BSc Physics (UG)"
+        ],
+        "possible_careers": ["Fluid Dynamics Consultant", "Automotive Systems Analyst", "Precision Component Tester"]
+      }
+    ]
+  },
+  {
+    "career_id": "agribusiness_consultant",
+    "title": "Agribusiness Strategy Consultant",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 16",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Essential for processing asset accounting systems, market yield formulas, and margin distributions.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        },
+        {
+          "subject": "Social Studies",
+          "why_it_matters": "Teaches critical national trade systems, agricultural development strategies, and community setups.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Manage supply logs or pricing tracking frameworks for local farm initiatives.",
+        "Review regional trade networks and agricultural commodity sales platforms."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "Agricultural Science or Business",
+      "ideal_bece_aggregate": "6 - 16",
+      "target_shs_categories": ["A", "B", "C"],
+      "required_wassce_electives": ["General Agriculture", "Economics", "Business Management", "Financial Accounting", "Chemistry"],
+      "university_pathways": [
+        {
+          "institution": "KNUST",
+          "program": "BSc Agribusiness Management",
+          "typical_cutoff_aggregate": 18
+        },
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "BSc Agriculture (Agribusiness option)",
+          "typical_cutoff_aggregate": 22
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 17 - 22",
+        "recommended_shs_stream": "General Arts (with Geography and Economics)",
+        "rationale": "Combines spatial geography logistics for agricultural zoning with structural macroeconomic resource mapping.",
+        "viable_university_programs": [
+          "BSc Agribusiness Economics (UDS)",
+          "BA Geography and Resource Development (UG)"
+        ],
+        "possible_careers": ["Agricultural Supply Chain Analyst", "Rural Asset Evaluator", "Agri-Commodities Broker"]
+      },
+      {
+        "condition": "BECE Aggregate 23+",
+        "recommended_shs_stream": "Agricultural Science (Category C or D schools)",
+        "rationale": "Prioritizes immediate practical field mastery of farm management frameworks and localized crop production systems.",
+        "viable_university_programs": [
+          "BSc Agriculture (UCC)",
+          "BSc Agribusiness (University of Energy and Natural Resources - UENR)"
+        ],
+        "possible_careers": ["Farm Operations Supervisor", "Agricultural Extension Specialist", "Rural Credit Officer"]
+      }
+    ]
+  },
+  {
+    "career_id": "investment_banker",
+    "title": "Investment Banker / Corporate Financier",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 12",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Essential for pricing formulas, matrix computations, statistical models, and trend analysis.",
+          "target_score": "80% + (Grade 1 in terminal exams)"
+        },
+        {
+          "subject": "English Language",
+          "why_it_matters": "Crucial for writing deal briefs, professional investment pitches, and understanding commercial law syntax.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Lead financial budgeting models for regional youth groups or student enterprises.",
+        "Analyze stock indices, market changes, or regional bank performance dashboards via business media."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "Business or General Science",
+      "ideal_bece_aggregate": "6 - 12",
+      "target_shs_categories": ["A", "B"],
+      "required_wassce_electives": ["Elective Mathematics", "Economics", "Financial Accounting", "Business Management"],
+      "university_pathways": [
+        {
+          "institution": "University of Ghana Business School (UGBS)",
+          "program": "BSc Administration (Banking and Finance option)",
+          "typical_cutoff_aggregate": 8
+        },
+        {
+          "institution": "University of Cape Coast (UCC)",
+          "program": "BSc Finance",
+          "typical_cutoff_aggregate": 12
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 13 - 18",
+        "recommended_shs_stream": "Business (Category B or C schools)",
+        "rationale": "Maintains direct access to corporate bookkeeping systems and financial law frameworks away from hyper-competitive cutoff pools.",
+        "viable_university_programs": [
+          "BSc Economics and Finance (UPSA)",
+          "BSc Accounting and Finance (UCC)"
+        ],
+        "possible_careers": ["Corporate Treasury Associate", "Credit Risk Analyst", "Market Investment Analyst"]
+      },
+      {
+        "condition": "BECE Aggregate 19+",
+        "recommended_shs_stream": "General Arts (with Economics and Elective Mathematics)",
+        "rationale": "Focuses on maximizing raw WASSCE outcomes while preserving strong quantitative frameworks through advanced mathematical models.",
+        "viable_university_programs": [
+          "BA Economics and Statistics (UG)",
+          "BSc Professional Accounting (UPSA)"
+        ],
+        "possible_careers": ["Portfolio Operations Clerk", "Financial Data Evaluator", "Public Audit Inspector"]
+      }
+    ]
+  },
+  {
+    "career_id": "architect",
+    "title": "Architect / Spatial Designer",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 12",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Creative Arts / Technical Drawing",
+          "why_it_matters": "Teaches fundamental perspective drawing, spatial balance layouts, blueprint lines, and structural forms.",
+          "target_score": "80% + (Grade 1 in terminal exams)"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Essential for precise blueprint scaling, geometric alignment, and structural volume logic.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Sketch detailed architectural profiles, layout schematics, or structural models of public properties.",
+        "Practice using basic digital design or 3D modeling tools if hardware is accessible."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Science or Visual Arts (with Elective Maths)",
+      "ideal_bece_aggregate": "6 - 12",
+      "target_shs_categories": ["A", "B"],
+      "required_wassce_electives": ["Technical Drawing", "Elective Mathematics", "Physics", "Graphic Design", "General Knowledge in Art"],
+      "university_pathways": [
+        {
+          "institution": "KNUST",
+          "program": "BSc Architecture",
+          "typical_cutoff_aggregate": 9
+        },
+        {
+          "institution": "Central University (Scholarship / Regular paths)",
+          "program": "BSc Architecture",
+          "typical_cutoff_aggregate": 15
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 13 - 18",
+        "recommended_shs_stream": "Technical Stream (Building Technology option)",
+        "rationale": "Focuses heavily on structural materials, structural masonry blueprints, site operations, and load-bearing parameters.",
+        "viable_university_programs": [
+          "BTech Building Technology (ATU)",
+          "BSc Real Estate (KNUST)",
+          "BTech Interior Design and Technology (Takoradi Technical University)"
+        ],
+        "possible_careers": ["Architectural Draftsman Specialist", "Building Construction Manager", "Interior Spatial Designer"]
+      },
+      {
+        "condition": "BECE Aggregate 19+",
+        "recommended_shs_stream": "Visual Arts (Category C or D schools)",
+        "rationale": "Bypasses high competitive filters to anchor fundamental commercial illustration, product modeling, and structural visualization skills.",
+        "viable_university_programs": [
+          "Diploma in Architecture (KNUST Distance Streams)",
+          "HND Building Technology (Kumasi Technical University)"
+        ],
+        "possible_careers": ["3D Visualization Artist", "Exhibition Layout Designer", "Construction Materials Coordinator"]
+      }
+    ]
+  },
+  {
+    "career_id": "human rights advocate",
+    "title": "Human Rights Advocate / NGO Director",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 15",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Social Studies",
+          "why_it_matters": "Provides understanding of international treaties, constitution rules, civil rights protection systems, and community setups.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        },
+        {
+          "subject": "English Language",
+          "why_it_matters": "Essential for writing human rights briefs, systemic advocacy reporting, campaign copy, and public defense.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Lead local volunteer groups, child rights circles, safety clubs, or student advocacy groups.",
+        "Follow regional governance tracking updates, socio-legal commentary, and humanitarian journals."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Arts",
+      "ideal_bece_aggregate": "6 - 15",
+      "target_shs_categories": ["A", "B", "C"],
+      "required_wassce_electives": ["Government", "History", "Literature in English", "Economics"],
+      "university_pathways": [
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "BA Political Science and Sociology",
+          "typical_cutoff_aggregate": 14
+        },
+        {
+          "institution": "KNUST",
+          "program": "BA Sociology / Culture and Tourism",
+          "typical_cutoff_aggregate": 16
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 16 - 22",
+        "recommended_shs_stream": "General Arts (Category C or D schools)",
+        "rationale": "Focuses on maximizing raw humanities outcomes (Government, History) to secure strong performance metrics for direct university entry.",
+        "viable_university_programs": [
+          "BA Integrated Development Studies (UDS)",
+          "BA Social Sciences (UCC)"
+        ],
+        "possible_careers": ["Community Mobilization Lead", "Humanitarian Program Officer", "Social Field Policy Analyst"]
+      },
+      {
+        "condition": "BECE Aggregate 23+",
+        "recommended_shs_stream": "Business",
+        "rationale": "Shifts technical focus to commercial non-profit operations, funding allocations, microfinance setups, and labor law tracking.",
+        "viable_university_programs": [
+          "BSc Business Administration (UPSA)",
+          "Diploma in Public Administration (UG)"
+        ],
+        "possible_careers": ["NGO Operations Manager", "Grant Compliance Officer", "Labor Welfare Coordinator"]
+      }
+    ]
+  },
+  {
+    "career_id": "clinical_psychologist",
+    "title": "Clinical Psychologist / Mental Health Specialist",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 14",
+      "critical_jhs_subjects": [
+        {
+          "subject": "English Language",
+          "why_it_matters": "Essential for evaluating cognitive narratives, diagnostic writing, and complex therapeutic communication.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        },
+        {
+          "subject": "Social Studies",
+          "why_it_matters": "Teaches social normalization paths, community systems, family patterns, and human relationship profiles.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Participate as a peer mentor, safe counseling assistant, or student guidance representative.",
+        "Review entry-level profiles outlining clinical behavioral therapy models and cognitive support programs."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Arts or General Science",
+      "ideal_bece_aggregate": "6 - 14",
+      "target_shs_categories": ["A", "B", "C"],
+      "required_wassce_electives": ["Literature in English", "Government", "Biology", "Chemistry", "Economics"],
+      "university_pathways": [
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "BSc Psychology (Science option) / BA Psychology",
+          "typical_cutoff_aggregate": 12
+        },
+        {
+          "institution": "University of Cape Coast (UCC)",
+          "program": "BSc Psychology",
+          "typical_cutoff_aggregate": 15
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 15 - 20",
+        "recommended_shs_stream": "General Arts (Category C or D schools)",
+        "rationale": "Focuses on maximizing raw humanities outcomes (Government, History) to secure strong performance metrics for direct university entry.",
+        "viable_university_programs": [
+          "BA Sociology and Social Work (KNUST)",
+          "BEd Guidance and Counseling Education (UEW)"
+        ],
+        "possible_careers": ["Family Social Worker", "School Counseling Advisor", "Rehabilitation Case Coordinator"]
+      },
+      {
+        "condition": "BECE Aggregate 21+",
+        "recommended_shs_stream": "Home Economics",
+        "rationale": "Leverages family lifestyle studies and biological inputs to enter community health support, child development, and welfare fields.",
+        "viable_university_programs": [
+          "BSc Family and Consumer Sciences (UG)",
+          "Diploma in Community Health (UDS)"
+        ],
+        "possible_careers": ["Child Care Facility Director", "Community Welfare Educator", "Behavioral Support Assistant"]
+      }
+    ]
+  },
+  {
+    "career_id": "physiotherapist",
+    "title": "Physiotherapist / Sports Rehab Specialist",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 12",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Integrated Science",
+          "why_it_matters": "Introduces physical movement dynamics, muscle mechanics, bone structures, and metabolic models.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Required for angle calculations, motion path measurements, and processing patient physical recovery rates.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Assist in first-aid support, physical recovery planning, or logistics for sports teams.",
+        "Study foundational kinetic structures and training techniques used in professional athletic programs."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Science",
+      "ideal_bece_aggregate": "6 - 12",
+      "target_shs_categories": ["A", "B"],
+      "required_wassce_electives": ["Biology", "Physics", "Chemistry", "Elective Mathematics"],
+      "university_pathways": [
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "BSc Physiotherapy",
+          "typical_cutoff_aggregate": 11
+        },
+        {
+          "institution": "University of Health and Allied Sciences (UHAS)",
+          "program": "BSc Physiotherapy",
+          "typical_cutoff_aggregate": 14
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 13 - 18",
+        "recommended_shs_stream": "General Science (Category C or D schools)",
+        "rationale": "Maintains required baseline entries in biological and chemical systems, providing solid alternatives in therapeutic healthcare tracks.",
+        "viable_university_programs": [
+          "BSc Sports Coaching (UEW)",
+          "BSc Biological Sciences (UCC)"
+        ],
+        "possible_careers": ["Athletic Conditioning Coach", "Ergonomics Consultant", "Clinical Recovery Assistant"]
+      },
+      {
+        "condition": "BECE Aggregate 19+",
+        "recommended_shs_stream": "Agricultural Science",
+        "rationale": "Preserves required physical and biological options within adaptive testing models, opening doors into allied healthcare streams.",
+        "viable_university_programs": [
+          "BSc Health Informatics (UHAS)",
+          "Diploma in Sports Management (UEW)"
+        ],
+        "possible_careers": ["Clinical Operations Supervisor", "Fitness Health Coordinator", "Allied Care Intake Analyst"]
+      }
+    ]
+  },
+  {
+    "career_id": "quantity_surveyor",
+    "title": "Quantity Surveyor / Cost Engineer",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 14",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Crucial for asset valuation calculations, building budget auditing, and engineering material estimates.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        },
+        {
+          "subject": "Integrated Science",
+          "why_it_matters": "Provides basic physics parameters, physical chemistry concepts, and raw material engineering attributes.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Manage material logs, budget ledgers, or purchase tracking setups for local building initiatives.",
+        "Review modern material valuation frameworks and procurement guidelines used in industry."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "Business or General Science",
+      "ideal_bece_aggregate": "6 - 14",
+      "target_shs_categories": ["A", "B", "C"],
+      "required_wassce_electives": ["Elective Mathematics", "Financial Accounting", "Business Management", "Physics", "Economics"],
+      "university_pathways": [
+        {
+          "institution": "KNUST",
+          "program": "BSc Quantity Surveying and Construction Economics",
+          "typical_cutoff_aggregate": 12
+        },
+        {
+          "institution": "Accra Technical University (ATU)",
+          "program": "BTech Building Technology (Quantity Surveying option)",
+          "typical_cutoff_aggregate": 20
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 15 - 20",
+        "recommended_shs_stream": "Technical Stream (Building Construction option)",
+        "rationale": "Focuses on building drafting, structural masonry systems, operational workflows, and practical construction blueprints.",
+        "viable_university_programs": [
+          "BTech Building Technology (KsTU)",
+          "BSc Real Estate (KNUST)"
+        ],
+        "possible_careers": ["Construction Cost Evaluator", "Site Procurement Manager", "Building Assets Auditor"]
+      },
+      {
+        "condition": "BECE Aggregate 21+",
+        "recommended_shs_stream": "Business (Category C or D schools)",
+        "rationale": "Bypasses high-stress cutoffs to anchor immediate literacy in core commercial law, corporate structures, and institutional asset protocols.",
+        "viable_university_programs": [
+          "HND Building Technology (Cape Coast Technical University)",
+          "Diploma in Business Administration (UPSA)"
+        ],
+        "possible_careers": ["Project Cost Estimation Clerk", "Material Allocation Supervisor", "Contract Procurement Assistant"]
+      }
+    ]
+  },
+  {
+    "career_id": "actuary",
+    "title": "Actuary / Risk Management Specialist",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 12",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "The core tool for parsing compound interest parameters, probability matrices, and statistical trends.",
+          "target_score": "80% + (Grade 1 in terminal exams)"
+        },
+        {
+          "subject": "English Language",
+          "why_it_matters": "Required for structural auditing reporting, reviewing insurance legal frameworks, and commercial copy plans.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Lead logic puzzle competitions, financial modeling, or spreadsheet data analysis games.",
+        "Track local insurance updates or regional financial policy boards through business media columns."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Science or Business (with Elective Maths)",
+      "ideal_bece_aggregate": "6 - 12",
+      "target_shs_categories": ["A", "B"],
+      "required_wassce_electives": ["Elective Mathematics", "Economics", "Financial Accounting", "Physics"],
+      "university_pathways": [
+        {
+          "institution": "KNUST",
+          "program": "BSc Actuarial Science",
+          "typical_cutoff_aggregate": 11
+        },
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "BSc Actuarial Science",
+          "typical_cutoff_aggregate": 13
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 13 - 18",
+        "recommended_shs_stream": "Business (Category B or C schools)",
+        "rationale": "Preserves core commercial bookkeeping and economics foundations away from hyper-competitive cutoff pools.",
+        "viable_university_programs": [
+          "BSc Economics and Statistics (UPSA)",
+          "BSc Mathematics and Statistics (UCC)"
+        ],
+        "possible_careers": ["Financial Risk Evaluator", "Insurance Claims Analyst", "Investment Data Coordinator"]
+      },
+      {
+        "condition": "BECE Aggregate 19+",
+        "recommended_shs_stream": "General Arts (with Elective Mathematics and Economics)",
+        "rationale": "Focuses on maximizing raw WASSCE metrics while maintaining essential quantitative modules through advanced algebra options.",
+        "viable_university_programs": [
+          "BA Economics (UG)",
+          "Diploma in Accounting (UPSA)"
+        ],
+        "possible_careers": ["Data Analysis Specialist", "Pension Fund Operations Assistant", "Underwriting Control Clerk"]
+      }
+    ]
+  },
+  {
+    "career_id": "agricultural_engineer",
+    "title": "Agricultural Engineer / Automation Expert",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 14",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Vital for spatial gear calibrations, fluid processing system metrics, and structural sizing equations.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        },
+        {
+          "subject": "Integrated Science",
+          "why_it_matters": "Teaches fundamental physical force vectors, mechanization logic, and baseline crop-soil dynamics.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Assist in safely repairing farm equipment, machinery modules, or water irrigation systems.",
+        "Design model water pumps or physical structural layouts using simple everyday elements."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Science or Agricultural Science (with Elective Maths)",
+      "ideal_bece_aggregate": "6 - 14",
+      "target_shs_categories": ["A", "B", "C"],
+      "required_wassce_electives": ["Elective Mathematics", "Physics", "Chemistry", "General Agriculture"],
+      "university_pathways": [
+        {
+          "institution": "KNUST",
+          "program": "BSc Agricultural Engineering",
+          "typical_cutoff_aggregate": 22
+        },
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "BSc Agricultural Engineering",
+          "typical_cutoff_aggregate": 23
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 15 - 20",
+        "recommended_shs_stream": "Technical Stream (Mechanical option)",
+        "rationale": "Prioritizes direct tool creation, heavy machine maintenance, component fabrication, and hydraulic power setups.",
+        "viable_university_programs": [
+          "BTech Mechanical Engineering (ATU)",
+          "BSc Agricultural Engineering (UMaT)",
+          "BTech Agricultural Engineering (Kumasi Technical University)"
+        ],
+        "possible_careers": ["Farm Machinery Designer", "Irrigation Systems Project Lead", "Agri-Plant Maintenance Supervisor"]
+      },
+      {
+        "condition": "BECE Aggregate 21+",
+        "recommended_shs_stream": "Agricultural Science (Category C or D schools)",
+        "rationale": "Focuses heavily on direct agricultural operations, environmental factors, and regional land preservation models.",
+        "viable_university_programs": [
+          "BSc Agriculture (UCC)",
+          "HND Mechanical Engineering Technology (Takoradi Technical University)"
+        ],
+        "possible_careers": ["Mechanized Farm Manager", "Soil Infrastructure Auditor", "Agri-Tech Field Representative"]
+      }
+    ]
+  },
+  {
+    "career_id": "public_health_director",
+    "title": "Public Health Director",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 14",
+      "critical_jhs_subjects": [
+        {
+          "subject": "English Language",
+          "why_it_matters": "Essential for high-impact communication, healthcare project writing, and regulatory framework documentation.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        },
+        {
+          "subject": "Social Studies",
+          "why_it_matters": "Provides contextual understanding of national healthcare policy systems, civic structures, and community demographics.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Coordinate local school wellness clinics, first-aid teams, or community sanitation initiatives.",
+        "Follow regional healthcare development trends and global health policy journals via media platforms."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Science or General Arts",
+      "ideal_bece_aggregate": "6 - 14",
+      "target_shs_categories": ["A", "B", "C"],
+      "required_wassce_electives": ["Biology", "Chemistry", "Government", "Economics", "Geography"],
+      "university_pathways": [
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "Bachelor of Public Health",
+          "typical_cutoff_aggregate": 10
+        },
+        {
+          "institution": "University of Health and Allied Sciences (UHAS)",
+          "program": "BSc Public Health",
+          "typical_cutoff_aggregate": 14
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 15 - 20",
+        "recommended_shs_stream": "General Arts (Category C or D schools)",
+        "rationale": "Focuses on maximizing raw humanities grades to transition cleanly into regional public administrative and town planning sectors.",
+        "viable_university_programs": [
+          "BA Development Studies (UDS)",
+          "BSc Health Administration & Education (UEW)"
+        ],
+        "possible_careers": ["Public Health Policy Analyst", "Healthcare Campaign Manager", "NGO Health Program Officer"]
+      },
+      {
+        "condition": "BECE Aggregate 21+",
+        "recommended_shs_stream": "Home Economics",
+        "rationale": "Leverages accessible entry requirements to study structural healthcare delivery, nutrition, and patient care management.",
+        "viable_university_programs": [
+          "BSc Family and Consumer Sciences (UG)",
+          "Diploma in Community Health (UDS)"
+        ],
+        "possible_careers": ["Community Welfare Educator", "Behavioral Support Assistant", "Rural Health Care Coordinator"]
+      }
+    ]
+  },
+  {
+    "career_id": "biomedical_researcher",
+    "title": "Biomedical Researcher / Geneticist",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 10",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Integrated Science",
+          "why_it_matters": "Introduces cellular biology structures, genetic inheritance models, and molecular configurations.",
+          "target_score": "80% + (Grade 1 in terminal exams)"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Required for structural data modeling, assay validations, and metric parsing systems.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Join specialized regional math and science clinics or advanced robotics leagues.",
+        "Read open educational materials on basic genetics, DNA structures, and molecular models."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Science",
+      "ideal_bece_aggregate": "6 - 10",
+      "target_shs_categories": ["A", "B"],
+      "required_wassce_electives": ["Biology", "Chemistry", "Physics", "Elective Mathematics"],
+      "university_pathways": [
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "BSc Biochemistry / Cell and Molecular Biology tracks",
+          "typical_cutoff_aggregate": 12
+        },
+        {
+          "institution": "KNUST",
+          "program": "BSc Biological Sciences",
+          "typical_cutoff_aggregate": 13
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 11 - 16",
+        "recommended_shs_stream": "Agricultural Science",
+        "rationale": "Maintains structural contact with molecular plant biology and genetics while avoiding high-intensity science entry parameters.",
+        "viable_university_programs": [
+          "BSc Biotechnology (UDS)",
+          "BSc Biological Sciences (UCC)"
+        ],
+        "possible_careers": ["Agricultural Geneticist", "Computational Lab Evaluator", "Biotech Research Assistant"]
+      },
+      {
+        "condition": "BECE Aggregate 17+",
+        "recommended_shs_stream": "General Science (Category C or D schools)",
+        "rationale": "Secures essential physics and quantitative options within a flexible test environment, opening doors to laboratory technology degrees.",
+        "viable_university_programs": [
+          "BTech Medical Laboratory Technology (KsTU)",
+          "BTech Laboratory Technology (Accra Technical University)"
+        ],
+        "possible_careers": ["Clinical Lab Analyst", "Diagnostic Systems Operator", "Chemical Process Supervisor"]
+      }
+    ]
+  },
+  {
+    "career_id": "hr_operations_clerk",
+    "title": "HR Operations Clerk",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 18",
+      "critical_jhs_subjects": [
+        {
+          "subject": "English Language",
+          "why_it_matters": "Essential for corporate administrative documentation, policy filing syntax, and structural memo updates.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        },
+        {
+          "subject": "Social Studies",
+          "why_it_matters": "Provides contextual definitions of citizenship, governance architectures, and foundational national labor laws.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Manage peer schedules, roster setups, or record archiving tasks for student leagues.",
+        "Practice using basic word processor layouts or file organization systems if tools exist."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "Business or General Arts",
+      "ideal_bece_aggregate": "6 - 18",
+      "target_shs_categories": ["B", "C", "D"],
+      "required_wassce_electives": ["Business Management", "Government", "Economics", "Literature in English"],
+      "university_pathways": [
+        {
+          "institution": "University of Professional Studies, Accra (UPSA)",
+          "program": "Diploma in Human Resource Management",
+          "typical_cutoff_aggregate": 24
+        },
+        {
+          "institution": "University of Cape Coast (UCC)",
+          "program": "BSc Human Resource Management (Distance mode / Flexible cuts)",
+          "typical_cutoff_aggregate": 22
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 19 - 24",
+        "recommended_shs_stream": "General Arts (Category C or D schools)",
+        "rationale": "Focuses on maximizing raw humanities outcomes (Government, History) to secure strong performance metrics for direct university entry.",
+        "viable_university_programs": [
+          "BA Sociology (UDS)",
+          "Diploma in Public Administration (UG)"
+        ],
+        "possible_careers": ["Corporate Records Clerk", "Welfare Operations Assistant", "Public Intake Coordinator"]
+      },
+      {
+        "condition": "BECE Aggregate 25+",
+        "recommended_shs_stream": "Business (Category C or D schools)",
+        "rationale": "Secures direct foundational training in accounting systems and basic economics even within less competitive school structures.",
+        "viable_university_programs": [
+          "BBA Human Resource Management option (Direct technical university paths)",
+          "Diploma in Business Administration (UPSA)"
+        ],
+        "possible_careers": ["HR Operations Clerk", "Payroll Support Assistant", "Employee Records Supervisor"]
+      }
+    ]
+  },
+  {
+    "career_id": "telecom_infrastructure_installer",
+    "title": "Telecom Infrastructure Installer",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 20",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Information and Communication Technology (ICT)",
+          "why_it_matters": "Provides basic concepts of data packets, internet networks, and structural hardware setups.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Vital for spatial gear calibrations, fluid processing system metrics, and structural sizing equations.",
+          "target_score": "65% + (Grade 1 to 4 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Join an electronic repair, robotics, or ham radio hobby group if available.",
+        "Assist in safe diagnostic or repair procedures of simple home appliances or electronics."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "Technical Stream (Electronics / ICT Option)",
+      "ideal_bece_aggregate": "6 - 20",
+      "target_shs_categories": ["B", "C", "D"],
+      "required_wassce_electives": ["Auto Mechanics", "Technical Drawing", "Engineering Science", "Elective Mathematics"],
+      "university_pathways": [
+        {
+          "institution": "Accra Technical University (ATU)",
+          "program": "BTech Telecommunications Engineering Technology",
+          "typical_cutoff_aggregate": 22
+        },
+        {
+          "institution": "Koforidua Technical University (KTU)",
+          "program": "HND Electrical/Electronic Engineering",
+          "typical_cutoff_aggregate": 24
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 21 - 26",
+        "recommended_shs_stream": "Technical Stream (Category C/D Technical Centers)",
+        "rationale": "Bypasses competitive grade models to focus on industry certs, mechanical engine overhauls, and automotive electrical troubleshooting.",
+        "viable_university_programs": [
+          "Advanced Motor Vehicle Craft Certificate (Government Technical Training Institutes)",
+          "Telecom Infrastructure Professional Certificate (Regional NVTI hubs)"
+        ],
+        "possible_careers": ["Cell Site Maintenance Technician", "Broadband Support Analyst", "Network Operations Center Agent"]
+      },
+      {
+        "condition": "BECE Aggregate 27+",
+        "recommended_shs_stream": "General Science (Category C or D schools)",
+        "rationale": "Secures essential physics and quantitative options within a flexible test environment, opening doors to laboratory technology degrees.",
+        "viable_university_programs": [
+          "BTech Information Technology (Takoradi Technical University)",
+          "Diploma in Transport and Logistics (GCTU)"
+        ],
+        "possible_careers": ["Transport Systems Safety Inspector", "Vehicle Claims Valuer", "Automotive Assembly Supervisor"]
+      }
+    ]
+  },
+  {
+    "career_id": "brand_manager",
+    "title": "Brand Manager / Marketing Executive",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 14",
+      "critical_jhs_subjects": [
+        {
+          "subject": "English Language",
+          "why_it_matters": "The fundamental tool for reporting, professional news writing, syntax accuracy, and editorial work.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        },
+        {
+          "subject": "Social Studies",
+          "why_it_matters": "Provides vital historical background, governance frameworks, public policy tracking, and socio-cultural context.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Create advertising campaigns for school events, drama plays, or community youth forums.",
+        "Join a local school debate, reading, or media and broadcasting club."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "Business or General Arts",
+      "ideal_bece_aggregate": "6 - 14",
+      "target_shs_categories": ["A", "B"],
+      "required_wassce_electives": ["Business Management", "Economics", "Elective Mathematics", "Government", "Literature in English"],
+      "university_pathways": [
+        {
+          "institution": "University of Ghana Business School (UGBS)",
+          "program": "BSc Administration (Marketing option)",
+          "typical_cutoff_aggregate": 12
+        },
+        {
+          "institution": "University of Professional Studies, Accra (UPSA)",
+          "program": "BSc Marketing",
+          "typical_cutoff_aggregate": 16
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 15 - 20",
+        "recommended_shs_stream": "General Arts (Category C or D schools)",
+        "rationale": "Focuses on maximizing raw humanities outcomes (Government, History) to secure strong performance metrics for direct university entry.",
+        "viable_university_programs": [
+          "BSc Marketing (UCC)",
+          "BA Communication Studies (UniMAC - GIJ Pathway Entry)"
+        ],
+        "possible_careers": ["News Reporter", "Radio Show Producer", "Media Content Writer"]
+      },
+      {
+        "condition": "BECE Aggregate 21+",
+        "recommended_shs_stream": "Visual Arts",
+        "rationale": "Leverages graphic design and asset layout skills to enter visual media marketing, digital content production, and commercial styling.",
+        "viable_university_programs": [
+          "BA Publishing Studies (KNUST)",
+          "BTech Graphic Design (Takoradi Technical University)"
+        ],
+        "possible_careers": ["Digital Content Director", "Visual Communications Coordinator", "Creative Advertising Planner"]
+      }
+    ]
+  },
+  {
+    "career_id": "logistics_coordinator",
+    "title": "Logistics Operations Coordinator",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 16",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Crucial for asset valuation calculations, building budget auditing, and engineering material estimates.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        },
+        {
+          "subject": "Social Studies",
+          "why_it_matters": "Provides contextual understanding of national transportation networks, trade entry hubs, and regional layout profiles.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Manage material logs, budget ledgers, or purchase tracking setups for local building initiatives.",
+        "Review modern material valuation frameworks and procurement guidelines used in industry."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "Business or General Arts",
+      "ideal_bece_aggregate": "6 - 16",
+      "target_shs_categories": ["B", "C", "D"],
+      "required_wassce_electives": ["Business Management", "Financial Accounting", "Economics", "Geography"],
+      "university_pathways": [
+        {
+          "institution": "University of Professional Studies, Accra (UPSA)",
+          "program": "BSc Procurement and Supply Chain Management",
+          "typical_cutoff_aggregate": 15
+        },
+        {
+          "institution": "University of Cape Coast (UCC)",
+          "program": "BSc Procurement and Supply Chain Management",
+          "typical_cutoff_aggregate": 16
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 17 - 22",
+        "recommended_shs_stream": "General Arts (with Geography and Economics)",
+        "rationale": "Uses physical geography frameworks to master regional trade corridors, infrastructure logistics, and spatial organization models.",
+        "viable_university_programs": [
+          "BBA Logistics & Supply Chain option (Direct technical university paths)",
+          "BA Geography and Resource Development (UG)"
+        ],
+        "possible_careers": ["Logistics Operations Planner", "Freight Management Specialist", "Distribution Supervisor"]
+      },
+      {
+        "condition": "BECE Aggregate 23+",
+        "recommended_shs_stream": "Technical Stream (Mechanical option)",
+        "rationale": "Prioritizes direct tool creation, heavy machine maintenance, component fabrication, and hydraulic power setups.",
+        "viable_university_programs": [
+          "BTech Procurement and Supply Chain Management (ATU)",
+          "HND Purchasing and Supply (Takoradi Technical University)"
+        ],
+        "possible_careers": ["Warehouse Inventory Auditor", "Fleet Maintenance Supervisor", "Procurement Assistant"]
+      }
+    ]
+  },
+  {
+    "career_id": "news_reporter",
+    "title": "News Reporter / Media Associate",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 16",
+      "critical_jhs_subjects": [
+        {
+          "subject": "English Language",
+          "why_it_matters": "The fundamental tool for reporting, professional news writing, syntax accuracy, and editorial work.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        },
+        {
+          "subject": "Social Studies",
+          "why_it_matters": "Provides vital historical background, governance frameworks, public policy tracking, and socio-cultural context.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Write articles for school noticeboards, youth blogs, or local community event fliers.",
+        "Join a local school debate, reading, or media and broadcasting club."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Arts",
+      "ideal_bece_aggregate": "6 - 16",
+      "target_shs_categories": ["B", "C", "D"],
+      "required_wassce_electives": ["Literature in English", "Government", "History", "Christian Religious Studies / Islamic Religious Studies"],
+      "university_pathways": [
+        {
+          "institution": "University of Media, Arts and Communication (UniMAC-GIJ)",
+          "program": "Diploma in Journalism",
+          "typical_cutoff_aggregate": 22
+        },
+        {
+          "institution": "University of Cape Coast (UCC)",
+          "program": "BA Communication Studies",
+          "typical_cutoff_aggregate": 16
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 17 - 22",
+        "recommended_shs_stream": "General Arts (Category C or D schools)",
+        "rationale": "Focuses on maximizing raw humanities outcomes (Government, History) to secure strong performance metrics for direct university entry.",
+        "viable_university_programs": [
+          "BA Communication Studies (UCC)",
+          "BA Theatre Arts / Media Tracks (UG)"
+        ],
+        "possible_careers": ["News Reporter", "Radio Show Producer", "Media Content Writer"]
+      },
+      {
+        "condition": "BECE Aggregate 23+",
+        "recommended_shs_stream": "Visual Arts",
+        "rationale": "Leverages graphic design and asset layout skills to enter visual media marketing, digital content production, and commercial styling.",
+        "viable_university_programs": [
+          "BA Publishing Studies (KNUST)",
+          "BTech Graphic Design (Takoradi Technical University)"
+        ],
+        "possible_careers": ["Digital Content Director", "Visual Communications Coordinator", "Creative Advertising Planner"]
+      }
+    ]
+  },
+  {
+    "career_id": "jhs_teacher",
+    "title": "Junior High School Instructor",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 20",
+      "critical_jhs_subjects": [
+        {
+          "subject": "English Language",
+          "why_it_matters": "Crucial for instruction clarity, curriculum writing, student assessment, and presentation skills.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        },
+        {
+          "subject": "Social Studies",
+          "why_it_matters": "Builds fundamental citizenship concepts, community civic duties, and national cultural history.",
+          "target_score": "65% + (Grade 1 to 4 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Offer peer tutoring or volunteer as a student study lead at a local weekend school program.",
+        "Participate in public speaking, dramatic readings, or school mentoring groups."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "General Arts or Business",
+      "ideal_bece_aggregate": "6 - 20",
+      "target_shs_categories": ["B", "C", "D"],
+      "required_wassce_electives": ["Government", "History", "Literature in English", "Economics"],
+      "university_pathways": [
+        {
+          "institution": "University of Education, Winneba (UEW)",
+          "program": "BEd Junior High School Education",
+          "typical_cutoff_aggregate": 20
+        },
+        {
+          "institution": "Various Public Colleges of Education (Affiliated with UG/UCC)",
+          "program": "BEd Junior High School Education",
+          "typical_cutoff_aggregate": 22
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 21 - 26",
+        "recommended_shs_stream": "General Arts (Category C or D schools)",
+        "rationale": "Focuses on maximizing core elective grades to secure direct entry into regional teacher education systems.",
+        "viable_university_programs": [
+          "BEd Primary Education (UEW)",
+          "Diploma in Basic Education (Colleges of Education Distance tracks)"
+        ],
+        "possible_careers": ["Primary School Instructor", "Curriculum Designer Specialist", "Educational Assessment Officer"]
+      },
+      {
+        "condition": "BECE Aggregate 27+",
+        "recommended_shs_stream": "Home Economics or Visual Arts",
+        "rationale": "Provides practical technical skills combined with teaching methods, matching national priorities for TVET education.",
+        "viable_university_programs": [
+          "BEd Technology Education (AAMUSTED)",
+          "BEd Home Economics Education (UEW)"
+        ],
+        "possible_careers": ["TVET Instructor", "Vocational Training Coordinator", "School Facilities Manager"]
+      }
+    ]
+  },
+  {
+    "career_id": "automotive_workshop_manager",
+    "title": "Automotive Workshop Manager",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 22",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Integrated Science",
+          "why_it_matters": "Provides core physics concepts like force vectors, hydraulic pressure rules, and mechanical thermodynamics.",
+          "target_score": "65% + (Grade 1 to 4 in terminal exams)"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Vital for diagnostic parameter analysis, checking component tolerances, and engine timing calculations.",
+          "target_score": "60% + (Grade 1 to 4 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Assist safely at small engineering, diagnostic, or vehicle electronics repair centers.",
+        "Study foundational schematics of modern internal combustion and hybrid automotive engines."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "Technical Stream (Automotive option)",
+      "ideal_bece_aggregate": "6 - 22",
+      "target_shs_categories": ["C", "D"],
+      "required_wassce_electives": ["Auto Mechanics", "Technical Drawing", "Engineering Science"],
+      "university_pathways": [
+        {
+          "institution": "Kumasi Technical University (KsTU)",
+          "program": "HND Automotive Engineering",
+          "typical_cutoff_aggregate": 24
+        },
+        {
+          "institution": "Accra Technical University (ATU)",
+          "program": "BTech Mechanical Engineering (Automotive option)",
+          "typical_cutoff_aggregate": 22
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 23 - 28",
+        "recommended_shs_stream": "Technical Stream (Category C or D Technical Institutes)",
+        "rationale": "Bypasses competitive grade models to focus on industry certs, mechanical engine overhauls, and automotive electrical troubleshooting.",
+        "viable_university_programs": [
+          "Advanced Motor Vehicle Craft Certificate (Government Technical Training Institutes)",
+          "Telecom Infrastructure Professional Certificate (Regional NVTI hubs)"
+        ],
+        "possible_careers": ["Fleet Diagnostics Lead", "Automotive Workshop Manager", "Heavy Machinery Technician"]
+      },
+      {
+        "condition": "BECE Aggregate 29+",
+        "recommended_shs_stream": "General Science (with Physics and Technical Drawing)",
+        "rationale": "Maintains raw science backgrounds, preparing students to transition into vehicle testing and safety auditing career paths.",
+        "viable_university_programs": [
+          "BTech Mechanical Engineering technology (Takoradi Technical University)",
+          "Diploma in Transport and Logistics (GCTU)"
+        ],
+        "possible_careers": ["Transport Systems Safety Inspector", "Vehicle Claims Valuer", "Automotive Assembly Supervisor"]
+      }
+    ]
+  },
+  {
+    "career_id": "construction_site_supervisor",
+    "title": "Construction Site Supervisor",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 22",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Required for volume estimations, concrete mixing formulas, and precision line layouts.",
+          "target_score": "65% + (Grade 1 to 4 in terminal exams)"
+        },
+        {
+          "subject": "Integrated Science",
+          "why_it_matters": "Introduces basic soil physics, structural loading limits, and foundational material science patterns.",
+          "target_score": "60% + (Grade 1 to 4 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Practice geometric spatial drafting using simple tools or entry-level vector design apps.",
+        "Observe masonry, plumbing, or structural layout workflows under safe, authorized site conditions."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "Technical Stream (Building technology option)",
+      "ideal_bece_aggregate": "6 - 22",
+      "target_shs_categories": ["C", "D"],
+      "required_wassce_electives": ["Building Construction", "Technical Drawing", "Engineering Science"],
+      "university_pathways": [
+        {
+          "institution": "Cape Coast Technical University (CCTU)",
+          "program": "HND Building Technology",
+          "typical_cutoff_aggregate": 24
+        },
+        {
+          "institution": "Accra Technical University (ATU)",
+          "program": "BTech Building Technology",
+          "typical_cutoff_aggregate": 22
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 23 - 28",
+        "recommended_shs_stream": "Technical Stream (Category C/D Technical Centers)",
+        "rationale": "Focuses on hands-on structural brickwork training, roof layout patterns, and modern plumbing layout systems.",
+        "viable_university_programs": [
+          "Construction Craft Professional Certificate (NVTI / National Technical Examination Boards)",
+          "Diploma in Construction Management (Technical University systems)"
+        ],
+        "possible_careers": ["Construction Site Supervisor", "Quantity Estimating Assistant", "Masonry Project Lead"]
+      },
+      {
+        "condition": "BECE Aggregate 29+",
+        "recommended_shs_stream": "Visual Arts (with Graphic Design and Economics)",
+        "rationale": "Leverages architectural drafting and visual representation skills to enter design spaces, interior fit-out plans, and site logistics operations.",
+        "viable_university_programs": [
+          "BTech Interior Design and Technology (Takoradi Technical University)",
+          "HND Civil Engineering (Sunyani Technical University)"
+        ],
+        "possible_careers": ["Interior Layout Designer", "Construction Procurement Clerk", "Site Layout Draftsman"]
+      }
+    ]
+  },
+  {
+    "career_id": "it_compliance_specialist",
+    "title": "IT Compliance Specialist",
+    "early_years_guidance": {
+      "target_bece_aggregate": "6 - 15",
+      "critical_jhs_subjects": [
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "Builds skills in discrete logic formulas, modular encryption math, and complex code analysis structures.",
+          "target_score": "70% + (Grade 1 to 3 in terminal exams)"
+        },
+        {
+          "subject": "Information and Communication Technology (ICT)",
+          "why_it_matters": "Provides basic concepts of data packets, internet networks, and structural operating systems.",
+          "target_score": "75% + (Grade 1 or 2 in terminal exams)"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Join a computing, cybersecurity, or electronics hacking/logic club.",
+        "Practice script structures, database queries, and logical command prompts on available devices."
+      ]
+    },
+    "primary_pathway": {
+      "recommended_shs_stream": "Business or General Arts",
+      "ideal_bece_aggregate": "6 - 15",
+      "target_shs_categories": ["B", "C"],
+      "required_wassce_electives": ["Business Management", "Economics", "Elective Mathematics", "Government"],
+      "university_pathways": [
+        {
+          "institution": "University of Professional Studies, Accra (UPSA)",
+          "program": "BSc Management Information Systems",
+          "typical_cutoff_aggregate": 16
+        },
+        {
+          "institution": "University of Ghana (UG)",
+          "program": "Diploma in Information Technology",
+          "typical_cutoff_aggregate": 22
+        }
+      ]
+    },
+    "alternative_pathways": [
+      {
+        "condition": "BECE Aggregate 16 - 22",
+        "recommended_shs_stream": "Business (Category C or D schools)",
+        "rationale": "Blends data risk profiles and corporate asset protection with information technology networks, ideal for financial tech infrastructure.",
+        "viable_university_programs": [
+          "BSc Business Information Technology (UPSA)",
+          "BTech Cyber Security (Accra Technical University)"
+        ],
+        "possible_careers": ["Information Security Auditor", "FinTech Fraud Investigator", "Network Security Administrator"]
+      },
+      {
+        "condition": "BECE Aggregate 23+",
+        "recommended_shs_stream": "General Arts (with Government and Economics)",
+        "rationale": "Focuses on maximizing raw WASSCE metrics while maintaining essential quantitative modules through advanced algebra options.",
+        "viable_university_programs": [
+          "BA Political Science (UG)",
+          "Diploma in Business Administration (UPSA)"
+        ],
+        "possible_careers": ["IT Compliance Specialist", "Digital Forensics Assistant", "Cyber Threat Coordinator"]
+      }
+    ]
+  }
+]

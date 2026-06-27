@@ -1,0 +1,3672 @@
+[
+  {
+    "record_id": "SHS_GUIDE_001",
+    "career_id": "software_developer",
+    "title": "Software Developer",
+    "student_profile": {
+      "student_want": "Wants to design sustainable infrastructure and transport networks.",
+      "current_issue": "Struggles to focus in large class sizes and prefers practical, hands-on learning."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "6 - 10 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Software Developer.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Physics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Software Developer metrics.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Elective Mathematics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Computer Science",
+        "BSc. Software Engineering"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_002",
+    "career_id": "medical_doctor",
+    "title": "Medical Doctor",
+    "student_profile": {
+      "student_want": "Wants to defend human rights or handle international corporate mergers.",
+      "current_issue": "Finds theoretical science abstract and needs visual or real-world application models."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "7 - 12 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Biology",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Medical Doctor.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Chemistry",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Medical Doctor metrics.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Biology drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "MBChB Medicine",
+        "BSc. Human Biology"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_003",
+    "career_id": "chartered_accountant",
+    "title": "Chartered Accountant",
+    "student_profile": {
+      "student_want": "Wants to analyze big data trends for global e-commerce companies.",
+      "current_issue": "Faces peer pressure to abandon academic streams for quick informal income routes."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "8 - 14 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Financial Accounting",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Chartered Accountant.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Cost Accounting",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Chartered Accountant metrics.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Financial Accounting drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Accounting",
+        "Bachelor of Commerce (BCom)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_004",
+    "career_id": "civil_engineer",
+    "title": "Civil Engineer",
+    "student_profile": {
+      "student_want": "Wants to establish an independent pharmaceutical manufacturing chain.",
+      "current_issue": "Attends a rural school with frequent electricity disruptions and poor computer access."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "9 - 16 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Physics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Civil Engineer.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Civil Engineer metrics.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Physics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Civil Engineering",
+        "BSc. Construction Technology"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_005",
+    "career_id": "lawyer",
+    "title": "Corporate Lawyer",
+    "student_profile": {
+      "student_want": "Wants to run a creative digital branding agency for global brands.",
+      "current_issue": "Experiences high exam anxiety during core math tests, leading to time lapses."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "10 - 18 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Literature in English",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Corporate Lawyer.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Government",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Corporate Lawyer metrics.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Literature in English drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "Bachelor of Laws (LLB)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_006",
+    "career_id": "data_scientist",
+    "title": "Data Scientist",
+    "student_profile": {
+      "student_want": "Wants to scale commercial mechanized farming systems across West Africa.",
+      "current_issue": "Struggles to balance heavy academic workloads with family responsibilities at home."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "11 - 15 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Data Scientist.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Economics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Data Scientist metrics.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Elective Mathematics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Statistics",
+        "BSc. Data Science"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_007",
+    "career_id": "pharmacist",
+    "title": "Pharmacist",
+    "student_profile": {
+      "student_want": "Wants to work in the renewable energy sector manufacturing wind/solar tech.",
+      "current_issue": "Lacks structural career mentoring and clarity on university admission processes."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "6 - 11 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Chemistry",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Pharmacist.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Biology",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Pharmacist metrics.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Chemistry drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "Doctor of Pharmacy (PharmD)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_008",
+    "career_id": "graphic_designer",
+    "title": "UI/UX Graphic Designer",
+    "student_profile": {
+      "student_want": "Wants to build local tech startups solving community problems.",
+      "current_issue": "Finds it difficult to memorize extensive essay layouts and literature texts."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "7 - 13 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Graphic Design",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to UI/UX Graphic Designer.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "General Knowledge in Art",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for UI/UX Graphic Designer metrics.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Graphic Design drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BA. Communication Design",
+        "BFA. Visual Arts"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_009",
+    "career_id": "agricultural_economist",
+    "title": "Agricultural Economist",
+    "student_profile": {
+      "student_want": "Wants to work in top-tier public hospitals and advance healthcare.",
+      "current_issue": "Has weak foundations in elective mathematics from early SHS levels."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "8 - 15 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "General Agriculture",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Agricultural Economist.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Economics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Agricultural Economist metrics.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting General Agriculture drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Agriculture",
+        "BSc. Agricultural Economics"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_010",
+    "career_id": "mechanical_engineer",
+    "title": "Mechanical Engineer",
+    "student_profile": {
+      "student_want": "Wants to manage financial portfolios for multinational banks.",
+      "current_issue": "Lacks financial resources for extra weekend remedial classes or text books."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "9 - 17 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Physics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Mechanical Engineer.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Mechanical Engineer metrics.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Physics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Mechanical Engineering"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_011",
+    "career_id": "software_developer",
+    "title": "Software Developer",
+    "student_profile": {
+      "student_want": "Wants to design sustainable infrastructure and transport networks.",
+      "current_issue": "Struggles to focus in large class sizes and prefers practical, hands-on learning."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "10 - 14 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Software Developer.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Physics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Software Developer metrics.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Elective Mathematics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Computer Science",
+        "BSc. Software Engineering"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_012",
+    "career_id": "medical_doctor",
+    "title": "Medical Doctor",
+    "student_profile": {
+      "student_want": "Wants to defend human rights or handle international corporate mergers.",
+      "current_issue": "Finds theoretical science abstract and needs visual or real-world application models."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "11 - 16 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Biology",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Medical Doctor.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Chemistry",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Medical Doctor metrics.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Biology drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "MBChB Medicine",
+        "BSc. Human Biology"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_013",
+    "career_id": "chartered_accountant",
+    "title": "Chartered Accountant",
+    "student_profile": {
+      "student_want": "Wants to analyze big data trends for global e-commerce companies.",
+      "current_issue": "Faces peer pressure to abandon academic streams for quick informal income routes."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "6 - 12 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Financial Accounting",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Chartered Accountant.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Cost Accounting",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Chartered Accountant metrics.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Financial Accounting drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Accounting",
+        "Bachelor of Commerce (BCom)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_014",
+    "career_id": "civil_engineer",
+    "title": "Civil Engineer",
+    "student_profile": {
+      "student_want": "Wants to establish an independent pharmaceutical manufacturing chain.",
+      "current_issue": "Attends a rural school with frequent electricity disruptions and poor computer access."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "7 - 14 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Physics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Civil Engineer.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Civil Engineer metrics.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Physics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Civil Engineering",
+        "BSc. Construction Technology"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_015",
+    "career_id": "lawyer",
+    "title": "Corporate Lawyer",
+    "student_profile": {
+      "student_want": "Wants to run a creative digital branding agency for global brands.",
+      "current_issue": "Experiences high exam anxiety during core math tests, leading to time lapses."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "8 - 16 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Literature in English",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Corporate Lawyer.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Government",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Corporate Lawyer metrics.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Literature in English drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "Bachelor of Laws (LLB)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_016",
+    "career_id": "data_scientist",
+    "title": "Data Scientist",
+    "student_profile": {
+      "student_want": "Wants to scale commercial mechanized farming systems across West Africa.",
+      "current_issue": "Struggles to balance heavy academic workloads with family responsibilities at home."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "9 - 13 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Data Scientist.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Economics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Data Scientist metrics.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Elective Mathematics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Statistics",
+        "BSc. Data Science"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_017",
+    "career_id": "pharmacist",
+    "title": "Pharmacist",
+    "student_profile": {
+      "student_want": "Wants to work in the renewable energy sector manufacturing wind/solar tech.",
+      "current_issue": "Lacks structural career mentoring and clarity on university admission processes."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "10 - 15 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Chemistry",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Pharmacist.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Biology",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Pharmacist metrics.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Chemistry drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "Doctor of Pharmacy (PharmD)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_018",
+    "career_id": "graphic_designer",
+    "title": "UI/UX Graphic Designer",
+    "student_profile": {
+      "student_want": "Wants to build local tech startups solving community problems.",
+      "current_issue": "Finds it difficult to memorize extensive essay layouts and literature texts."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "11 - 17 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Graphic Design",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to UI/UX Graphic Designer.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "General Knowledge in Art",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for UI/UX Graphic Designer metrics.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Graphic Design drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BA. Communication Design",
+        "BFA. Visual Arts"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_019",
+    "career_id": "agricultural_economist",
+    "title": "Agricultural Economist",
+    "student_profile": {
+      "student_want": "Wants to work in top-tier public hospitals and advance healthcare.",
+      "current_issue": "Has weak foundations in elective mathematics from early SHS levels."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "6 - 13 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "General Agriculture",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Agricultural Economist.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Economics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Agricultural Economist metrics.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting General Agriculture drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Agriculture",
+        "BSc. Agricultural Economics"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_020",
+    "career_id": "mechanical_engineer",
+    "title": "Mechanical Engineer",
+    "student_profile": {
+      "student_want": "Wants to manage financial portfolios for multinational banks.",
+      "current_issue": "Lacks financial resources for extra weekend remedial classes or text books."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "7 - 15 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Physics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Mechanical Engineer.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Mechanical Engineer metrics.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Physics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Mechanical Engineering"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_021",
+    "career_id": "software_developer",
+    "title": "Software Developer",
+    "student_profile": {
+      "student_want": "Wants to design sustainable infrastructure and transport networks.",
+      "current_issue": "Struggles to focus in large class sizes and prefers practical, hands-on learning."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "8 - 12 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Software Developer.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Physics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Software Developer metrics.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Elective Mathematics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Computer Science",
+        "BSc. Software Engineering"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_022",
+    "career_id": "medical_doctor",
+    "title": "Medical Doctor",
+    "student_profile": {
+      "student_want": "Wants to defend human rights or handle international corporate mergers.",
+      "current_issue": "Finds theoretical science abstract and needs visual or real-world application models."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "9 - 14 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Biology",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Medical Doctor.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Chemistry",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Medical Doctor metrics.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Biology drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "MBChB Medicine",
+        "BSc. Human Biology"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_023",
+    "career_id": "chartered_accountant",
+    "title": "Chartered Accountant",
+    "student_profile": {
+      "student_want": "Wants to analyze big data trends for global e-commerce companies.",
+      "current_issue": "Faces peer pressure to abandon academic streams for quick informal income routes."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "10 - 16 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Financial Accounting",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Chartered Accountant.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Cost Accounting",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Chartered Accountant metrics.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Financial Accounting drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Accounting",
+        "Bachelor of Commerce (BCom)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_024",
+    "career_id": "civil_engineer",
+    "title": "Civil Engineer",
+    "student_profile": {
+      "student_want": "Wants to establish an independent pharmaceutical manufacturing chain.",
+      "current_issue": "Attends a rural school with frequent electricity disruptions and poor computer access."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "11 - 18 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Physics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Civil Engineer.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Civil Engineer metrics.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Physics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Civil Engineering",
+        "BSc. Construction Technology"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_025",
+    "career_id": "lawyer",
+    "title": "Corporate Lawyer",
+    "student_profile": {
+      "student_want": "Wants to run a creative digital branding agency for global brands.",
+      "current_issue": "Experiences high exam anxiety during core math tests, leading to time lapses."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "6 - 14 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Literature in English",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Corporate Lawyer.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Government",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Corporate Lawyer metrics.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Literature in English drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "Bachelor of Laws (LLB)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_026",
+    "career_id": "data_scientist",
+    "title": "Data Scientist",
+    "student_profile": {
+      "student_want": "Wants to scale commercial mechanized farming systems across West Africa.",
+      "current_issue": "Struggles to balance heavy academic workloads with family responsibilities at home."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "7 - 11 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Data Scientist.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Economics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Data Scientist metrics.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Elective Mathematics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Statistics",
+        "BSc. Data Science"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_027",
+    "career_id": "pharmacist",
+    "title": "Pharmacist",
+    "student_profile": {
+      "student_want": "Wants to work in the renewable energy sector manufacturing wind/solar tech.",
+      "current_issue": "Lacks structural career mentoring and clarity on university admission processes."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "8 - 13 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Chemistry",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Pharmacist.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Biology",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Pharmacist metrics.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Chemistry drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "Doctor of Pharmacy (PharmD)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_028",
+    "career_id": "graphic_designer",
+    "title": "UI/UX Graphic Designer",
+    "student_profile": {
+      "student_want": "Wants to build local tech startups solving community problems.",
+      "current_issue": "Finds it difficult to memorize extensive essay layouts and literature texts."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "9 - 15 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Graphic Design",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to UI/UX Graphic Designer.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "General Knowledge in Art",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for UI/UX Graphic Designer metrics.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Graphic Design drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BA. Communication Design",
+        "BFA. Visual Arts"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_029",
+    "career_id": "agricultural_economist",
+    "title": "Agricultural Economist",
+    "student_profile": {
+      "student_want": "Wants to work in top-tier public hospitals and advance healthcare.",
+      "current_issue": "Has weak foundations in elective mathematics from early SHS levels."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "10 - 17 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "General Agriculture",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Agricultural Economist.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Economics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Agricultural Economist metrics.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting General Agriculture drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Agriculture",
+        "BSc. Agricultural Economics"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_030",
+    "career_id": "mechanical_engineer",
+    "title": "Mechanical Engineer",
+    "student_profile": {
+      "student_want": "Wants to manage financial portfolios for multinational banks.",
+      "current_issue": "Lacks financial resources for extra weekend remedial classes or text books."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "11 - 19 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Physics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Mechanical Engineer.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Mechanical Engineer metrics.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Physics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Mechanical Engineering"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_031",
+    "career_id": "software_developer",
+    "title": "Software Developer",
+    "student_profile": {
+      "student_want": "Wants to design sustainable infrastructure and transport networks.",
+      "current_issue": "Struggles to focus in large class sizes and prefers practical, hands-on learning."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "6 - 10 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Software Developer.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Physics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Software Developer metrics.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Elective Mathematics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Computer Science",
+        "BSc. Software Engineering"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_032",
+    "career_id": "medical_doctor",
+    "title": "Medical Doctor",
+    "student_profile": {
+      "student_want": "Wants to defend human rights or handle international corporate mergers.",
+      "current_issue": "Finds theoretical science abstract and needs visual or real-world application models."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "7 - 12 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Biology",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Medical Doctor.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Chemistry",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Medical Doctor metrics.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Biology drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "MBChB Medicine",
+        "BSc. Human Biology"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_033",
+    "career_id": "chartered_accountant",
+    "title": "Chartered Accountant",
+    "student_profile": {
+      "student_want": "Wants to analyze big data trends for global e-commerce companies.",
+      "current_issue": "Faces peer pressure to abandon academic streams for quick informal income routes."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "8 - 14 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Financial Accounting",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Chartered Accountant.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Cost Accounting",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Chartered Accountant metrics.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Financial Accounting drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Accounting",
+        "Bachelor of Commerce (BCom)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_034",
+    "career_id": "civil_engineer",
+    "title": "Civil Engineer",
+    "student_profile": {
+      "student_want": "Wants to establish an independent pharmaceutical manufacturing chain.",
+      "current_issue": "Attends a rural school with frequent electricity disruptions and poor computer access."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "9 - 16 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Physics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Civil Engineer.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Civil Engineer metrics.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Physics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Civil Engineering",
+        "BSc. Construction Technology"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_035",
+    "career_id": "lawyer",
+    "title": "Corporate Lawyer",
+    "student_profile": {
+      "student_want": "Wants to run a creative digital branding agency for global brands.",
+      "current_issue": "Experiences high exam anxiety during core math tests, leading to time lapses."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "10 - 18 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Literature in English",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Corporate Lawyer.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Government",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Corporate Lawyer metrics.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Literature in English drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "Bachelor of Laws (LLB)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_036",
+    "career_id": "data_scientist",
+    "title": "Data Scientist",
+    "student_profile": {
+      "student_want": "Wants to scale commercial mechanized farming systems across West Africa.",
+      "current_issue": "Struggles to balance heavy academic workloads with family responsibilities at home."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "11 - 15 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Data Scientist.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Economics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Data Scientist metrics.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Elective Mathematics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Statistics",
+        "BSc. Data Science"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_037",
+    "career_id": "pharmacist",
+    "title": "Pharmacist",
+    "student_profile": {
+      "student_want": "Wants to work in the renewable energy sector manufacturing wind/solar tech.",
+      "current_issue": "Lacks structural career mentoring and clarity on university admission processes."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "6 - 11 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Chemistry",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Pharmacist.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Biology",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Pharmacist metrics.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Chemistry drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "Doctor of Pharmacy (PharmD)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_038",
+    "career_id": "graphic_designer",
+    "title": "UI/UX Graphic Designer",
+    "student_profile": {
+      "student_want": "Wants to build local tech startups solving community problems.",
+      "current_issue": "Finds it difficult to memorize extensive essay layouts and literature texts."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "7 - 13 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Graphic Design",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to UI/UX Graphic Designer.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "General Knowledge in Art",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for UI/UX Graphic Designer metrics.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Graphic Design drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BA. Communication Design",
+        "BFA. Visual Arts"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_039",
+    "career_id": "agricultural_economist",
+    "title": "Agricultural Economist",
+    "student_profile": {
+      "student_want": "Wants to work in top-tier public hospitals and advance healthcare.",
+      "current_issue": "Has weak foundations in elective mathematics from early SHS levels."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "8 - 15 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "General Agriculture",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Agricultural Economist.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Economics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Agricultural Economist metrics.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting General Agriculture drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Agriculture",
+        "BSc. Agricultural Economics"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_040",
+    "career_id": "mechanical_engineer",
+    "title": "Mechanical Engineer",
+    "student_profile": {
+      "student_want": "Wants to manage financial portfolios for multinational banks.",
+      "current_issue": "Lacks financial resources for extra weekend remedial classes or text books."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "9 - 17 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Physics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Mechanical Engineer.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Mechanical Engineer metrics.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Physics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Mechanical Engineering"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_041",
+    "career_id": "software_developer",
+    "title": "Software Developer",
+    "student_profile": {
+      "student_want": "Wants to design sustainable infrastructure and transport networks.",
+      "current_issue": "Struggles to focus in large class sizes and prefers practical, hands-on learning."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "10 - 14 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Software Developer.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Physics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Software Developer metrics.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Elective Mathematics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Computer Science",
+        "BSc. Software Engineering"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_042",
+    "career_id": "medical_doctor",
+    "title": "Medical Doctor",
+    "student_profile": {
+      "student_want": "Wants to defend human rights or handle international corporate mergers.",
+      "current_issue": "Finds theoretical science abstract and needs visual or real-world application models."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "11 - 16 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Biology",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Medical Doctor.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Chemistry",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Medical Doctor metrics.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Biology drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "MBChB Medicine",
+        "BSc. Human Biology"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_043",
+    "career_id": "chartered_accountant",
+    "title": "Chartered Accountant",
+    "student_profile": {
+      "student_want": "Wants to analyze big data trends for global e-commerce companies.",
+      "current_issue": "Faces peer pressure to abandon academic streams for quick informal income routes."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "6 - 12 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Financial Accounting",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Chartered Accountant.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Cost Accounting",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Chartered Accountant metrics.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Financial Accounting drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Accounting",
+        "Bachelor of Commerce (BCom)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_044",
+    "career_id": "civil_engineer",
+    "title": "Civil Engineer",
+    "student_profile": {
+      "student_want": "Wants to establish an independent pharmaceutical manufacturing chain.",
+      "current_issue": "Attends a rural school with frequent electricity disruptions and poor computer access."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "7 - 14 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Physics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Civil Engineer.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Civil Engineer metrics.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Physics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Civil Engineering",
+        "BSc. Construction Technology"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_045",
+    "career_id": "lawyer",
+    "title": "Corporate Lawyer",
+    "student_profile": {
+      "student_want": "Wants to run a creative digital branding agency for global brands.",
+      "current_issue": "Experiences high exam anxiety during core math tests, leading to time lapses."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "8 - 16 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Literature in English",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Corporate Lawyer.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Government",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Corporate Lawyer metrics.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Literature in English drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "Bachelor of Laws (LLB)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_046",
+    "career_id": "data_scientist",
+    "title": "Data Scientist",
+    "student_profile": {
+      "student_want": "Wants to scale commercial mechanized farming systems across West Africa.",
+      "current_issue": "Struggles to balance heavy academic workloads with family responsibilities at home."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "9 - 13 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Data Scientist.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Economics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Data Scientist metrics.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Elective Mathematics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Statistics",
+        "BSc. Data Science"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_047",
+    "career_id": "pharmacist",
+    "title": "Pharmacist",
+    "student_profile": {
+      "student_want": "Wants to work in the renewable energy sector manufacturing wind/solar tech.",
+      "current_issue": "Lacks structural career mentoring and clarity on university admission processes."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "10 - 15 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Chemistry",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Pharmacist.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Biology",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Pharmacist metrics.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Chemistry drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "Doctor of Pharmacy (PharmD)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_048",
+    "career_id": "graphic_designer",
+    "title": "UI/UX Graphic Designer",
+    "student_profile": {
+      "student_want": "Wants to build local tech startups solving community problems.",
+      "current_issue": "Finds it difficult to memorize extensive essay layouts and literature texts."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "11 - 17 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Graphic Design",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to UI/UX Graphic Designer.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "General Knowledge in Art",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for UI/UX Graphic Designer metrics.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Graphic Design drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BA. Communication Design",
+        "BFA. Visual Arts"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_049",
+    "career_id": "agricultural_economist",
+    "title": "Agricultural Economist",
+    "student_profile": {
+      "student_want": "Wants to work in top-tier public hospitals and advance healthcare.",
+      "current_issue": "Has weak foundations in elective mathematics from early SHS levels."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "6 - 13 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "General Agriculture",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Agricultural Economist.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Economics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Agricultural Economist metrics.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting General Agriculture drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Agriculture",
+        "BSc. Agricultural Economics"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_050",
+    "career_id": "mechanical_engineer",
+    "title": "Mechanical Engineer",
+    "student_profile": {
+      "student_want": "Wants to manage financial portfolios for multinational banks.",
+      "current_issue": "Lacks financial resources for extra weekend remedial classes or text books."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "7 - 15 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Physics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Mechanical Engineer.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Mechanical Engineer metrics.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Physics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Mechanical Engineering"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_051",
+    "career_id": "software_developer",
+    "title": "Software Developer",
+    "student_profile": {
+      "student_want": "Wants to design sustainable infrastructure and transport networks.",
+      "current_issue": "Struggles to focus in large class sizes and prefers practical, hands-on learning."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "8 - 12 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Software Developer.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Physics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Software Developer metrics.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Elective Mathematics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Computer Science",
+        "BSc. Software Engineering"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_052",
+    "career_id": "medical_doctor",
+    "title": "Medical Doctor",
+    "student_profile": {
+      "student_want": "Wants to defend human rights or handle international corporate mergers.",
+      "current_issue": "Finds theoretical science abstract and needs visual or real-world application models."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "9 - 14 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Biology",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Medical Doctor.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Chemistry",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Medical Doctor metrics.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Biology drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "MBChB Medicine",
+        "BSc. Human Biology"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_053",
+    "career_id": "chartered_accountant",
+    "title": "Chartered Accountant",
+    "student_profile": {
+      "student_want": "Wants to analyze big data trends for global e-commerce companies.",
+      "current_issue": "Faces peer pressure to abandon academic streams for quick informal income routes."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "10 - 16 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Financial Accounting",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Chartered Accountant.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Cost Accounting",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Chartered Accountant metrics.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Financial Accounting drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Accounting",
+        "Bachelor of Commerce (BCom)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_054",
+    "career_id": "civil_engineer",
+    "title": "Civil Engineer",
+    "student_profile": {
+      "student_want": "Wants to establish an independent pharmaceutical manufacturing chain.",
+      "current_issue": "Attends a rural school with frequent electricity disruptions and poor computer access."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "11 - 18 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Physics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Civil Engineer.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Civil Engineer metrics.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Physics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Civil Engineering",
+        "BSc. Construction Technology"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_055",
+    "career_id": "lawyer",
+    "title": "Corporate Lawyer",
+    "student_profile": {
+      "student_want": "Wants to run a creative digital branding agency for global brands.",
+      "current_issue": "Experiences high exam anxiety during core math tests, leading to time lapses."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "6 - 14 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Literature in English",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Corporate Lawyer.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Government",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Corporate Lawyer metrics.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Literature in English drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "Bachelor of Laws (LLB)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_056",
+    "career_id": "data_scientist",
+    "title": "Data Scientist",
+    "student_profile": {
+      "student_want": "Wants to scale commercial mechanized farming systems across West Africa.",
+      "current_issue": "Struggles to balance heavy academic workloads with family responsibilities at home."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "7 - 11 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Data Scientist.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Economics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Data Scientist metrics.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Elective Mathematics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Statistics",
+        "BSc. Data Science"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_057",
+    "career_id": "pharmacist",
+    "title": "Pharmacist",
+    "student_profile": {
+      "student_want": "Wants to work in the renewable energy sector manufacturing wind/solar tech.",
+      "current_issue": "Lacks structural career mentoring and clarity on university admission processes."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "8 - 13 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Chemistry",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Pharmacist.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Biology",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Pharmacist metrics.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Chemistry drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "Doctor of Pharmacy (PharmD)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_058",
+    "career_id": "graphic_designer",
+    "title": "UI/UX Graphic Designer",
+    "student_profile": {
+      "student_want": "Wants to build local tech startups solving community problems.",
+      "current_issue": "Finds it difficult to memorize extensive essay layouts and literature texts."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "9 - 15 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Graphic Design",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to UI/UX Graphic Designer.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "General Knowledge in Art",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for UI/UX Graphic Designer metrics.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Graphic Design drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BA. Communication Design",
+        "BFA. Visual Arts"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_059",
+    "career_id": "agricultural_economist",
+    "title": "Agricultural Economist",
+    "student_profile": {
+      "student_want": "Wants to work in top-tier public hospitals and advance healthcare.",
+      "current_issue": "Has weak foundations in elective mathematics from early SHS levels."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "10 - 17 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "General Agriculture",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Agricultural Economist.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Economics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Agricultural Economist metrics.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting General Agriculture drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Agriculture",
+        "BSc. Agricultural Economics"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_060",
+    "career_id": "mechanical_engineer",
+    "title": "Mechanical Engineer",
+    "student_profile": {
+      "student_want": "Wants to manage financial portfolios for multinational banks.",
+      "current_issue": "Lacks financial resources for extra weekend remedial classes or text books."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "11 - 19 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Physics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Mechanical Engineer.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Mechanical Engineer metrics.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Physics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Mechanical Engineering"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_061",
+    "career_id": "software_developer",
+    "title": "Software Developer",
+    "student_profile": {
+      "student_want": "Wants to design sustainable infrastructure and transport networks.",
+      "current_issue": "Struggles to focus in large class sizes and prefers practical, hands-on learning."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "6 - 10 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Software Developer.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Physics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Software Developer metrics.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Elective Mathematics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Computer Science",
+        "BSc. Software Engineering"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_062",
+    "career_id": "medical_doctor",
+    "title": "Medical Doctor",
+    "student_profile": {
+      "student_want": "Wants to defend human rights or handle international corporate mergers.",
+      "current_issue": "Finds theoretical science abstract and needs visual or real-world application models."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "7 - 12 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Biology",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Medical Doctor.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Chemistry",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Medical Doctor metrics.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Biology drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "MBChB Medicine",
+        "BSc. Human Biology"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_063",
+    "career_id": "chartered_accountant",
+    "title": "Chartered Accountant",
+    "student_profile": {
+      "student_want": "Wants to analyze big data trends for global e-commerce companies.",
+      "current_issue": "Faces peer pressure to abandon academic streams for quick informal income routes."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "8 - 14 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Financial Accounting",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Chartered Accountant.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Cost Accounting",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Chartered Accountant metrics.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Financial Accounting drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Accounting",
+        "Bachelor of Commerce (BCom)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_064",
+    "career_id": "civil_engineer",
+    "title": "Civil Engineer",
+    "student_profile": {
+      "student_want": "Wants to establish an independent pharmaceutical manufacturing chain.",
+      "current_issue": "Attends a rural school with frequent electricity disruptions and poor computer access."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "9 - 16 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Physics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Civil Engineer.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Civil Engineer metrics.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Physics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Civil Engineering",
+        "BSc. Construction Technology"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_065",
+    "career_id": "lawyer",
+    "title": "Corporate Lawyer",
+    "student_profile": {
+      "student_want": "Wants to run a creative digital branding agency for global brands.",
+      "current_issue": "Experiences high exam anxiety during core math tests, leading to time lapses."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "10 - 18 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Literature in English",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Corporate Lawyer.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Government",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Corporate Lawyer metrics.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Literature in English drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "Bachelor of Laws (LLB)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_066",
+    "career_id": "data_scientist",
+    "title": "Data Scientist",
+    "student_profile": {
+      "student_want": "Wants to scale commercial mechanized farming systems across West Africa.",
+      "current_issue": "Struggles to balance heavy academic workloads with family responsibilities at home."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "11 - 15 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Data Scientist.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Economics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Data Scientist metrics.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Elective Mathematics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Statistics",
+        "BSc. Data Science"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_067",
+    "career_id": "pharmacist",
+    "title": "Pharmacist",
+    "student_profile": {
+      "student_want": "Wants to work in the renewable energy sector manufacturing wind/solar tech.",
+      "current_issue": "Lacks structural career mentoring and clarity on university admission processes."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "6 - 11 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Chemistry",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Pharmacist.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Biology",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Pharmacist metrics.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Chemistry drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "Doctor of Pharmacy (PharmD)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_068",
+    "career_id": "graphic_designer",
+    "title": "UI/UX Graphic Designer",
+    "student_profile": {
+      "student_want": "Wants to build local tech startups solving community problems.",
+      "current_issue": "Finds it difficult to memorize extensive essay layouts and literature texts."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "7 - 13 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Graphic Design",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to UI/UX Graphic Designer.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "General Knowledge in Art",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for UI/UX Graphic Designer metrics.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Graphic Design drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BA. Communication Design",
+        "BFA. Visual Arts"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_069",
+    "career_id": "agricultural_economist",
+    "title": "Agricultural Economist",
+    "student_profile": {
+      "student_want": "Wants to work in top-tier public hospitals and advance healthcare.",
+      "current_issue": "Has weak foundations in elective mathematics from early SHS levels."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "8 - 15 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "General Agriculture",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Agricultural Economist.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Economics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Agricultural Economist metrics.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting General Agriculture drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Agriculture",
+        "BSc. Agricultural Economics"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_070",
+    "career_id": "mechanical_engineer",
+    "title": "Mechanical Engineer",
+    "student_profile": {
+      "student_want": "Wants to manage financial portfolios for multinational banks.",
+      "current_issue": "Lacks financial resources for extra weekend remedial classes or text books."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "9 - 17 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Physics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Mechanical Engineer.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Mechanical Engineer metrics.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Physics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Mechanical Engineering"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_071",
+    "career_id": "software_developer",
+    "title": "Software Developer",
+    "student_profile": {
+      "student_want": "Wants to design sustainable infrastructure and transport networks.",
+      "current_issue": "Struggles to focus in large class sizes and prefers practical, hands-on learning."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "10 - 14 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Software Developer.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Physics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Software Developer metrics.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Elective Mathematics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Computer Science",
+        "BSc. Software Engineering"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_072",
+    "career_id": "medical_doctor",
+    "title": "Medical Doctor",
+    "student_profile": {
+      "student_want": "Wants to defend human rights or handle international corporate mergers.",
+      "current_issue": "Finds theoretical science abstract and needs visual or real-world application models."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "11 - 16 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Biology",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Medical Doctor.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Chemistry",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Medical Doctor metrics.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Biology drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "MBChB Medicine",
+        "BSc. Human Biology"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_073",
+    "career_id": "chartered_accountant",
+    "title": "Chartered Accountant",
+    "student_profile": {
+      "student_want": "Wants to analyze big data trends for global e-commerce companies.",
+      "current_issue": "Faces peer pressure to abandon academic streams for quick informal income routes."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "6 - 12 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Financial Accounting",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Chartered Accountant.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Cost Accounting",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Chartered Accountant metrics.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Financial Accounting drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Accounting",
+        "Bachelor of Commerce (BCom)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_074",
+    "career_id": "civil_engineer",
+    "title": "Civil Engineer",
+    "student_profile": {
+      "student_want": "Wants to establish an independent pharmaceutical manufacturing chain.",
+      "current_issue": "Attends a rural school with frequent electricity disruptions and poor computer access."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "7 - 14 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Physics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Civil Engineer.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Civil Engineer metrics.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Physics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Civil Engineering",
+        "BSc. Construction Technology"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_075",
+    "career_id": "lawyer",
+    "title": "Corporate Lawyer",
+    "student_profile": {
+      "student_want": "Wants to run a creative digital branding agency for global brands.",
+      "current_issue": "Experiences high exam anxiety during core math tests, leading to time lapses."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "8 - 16 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Literature in English",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Corporate Lawyer.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Government",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Corporate Lawyer metrics.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Literature in English drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "Bachelor of Laws (LLB)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_076",
+    "career_id": "data_scientist",
+    "title": "Data Scientist",
+    "student_profile": {
+      "student_want": "Wants to scale commercial mechanized farming systems across West Africa.",
+      "current_issue": "Struggles to balance heavy academic workloads with family responsibilities at home."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "9 - 13 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Data Scientist.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Economics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Data Scientist metrics.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Elective Mathematics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Statistics",
+        "BSc. Data Science"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_077",
+    "career_id": "pharmacist",
+    "title": "Pharmacist",
+    "student_profile": {
+      "student_want": "Wants to work in the renewable energy sector manufacturing wind/solar tech.",
+      "current_issue": "Lacks structural career mentoring and clarity on university admission processes."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "10 - 15 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Chemistry",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Pharmacist.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Biology",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Pharmacist metrics.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Chemistry drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "Doctor of Pharmacy (PharmD)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_078",
+    "career_id": "graphic_designer",
+    "title": "UI/UX Graphic Designer",
+    "student_profile": {
+      "student_want": "Wants to build local tech startups solving community problems.",
+      "current_issue": "Finds it difficult to memorize extensive essay layouts and literature texts."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "11 - 17 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Graphic Design",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to UI/UX Graphic Designer.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "General Knowledge in Art",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for UI/UX Graphic Designer metrics.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Graphic Design drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BA. Communication Design",
+        "BFA. Visual Arts"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_079",
+    "career_id": "agricultural_economist",
+    "title": "Agricultural Economist",
+    "student_profile": {
+      "student_want": "Wants to work in top-tier public hospitals and advance healthcare.",
+      "current_issue": "Has weak foundations in elective mathematics from early SHS levels."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "6 - 13 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "General Agriculture",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Agricultural Economist.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Economics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Agricultural Economist metrics.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting General Agriculture drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Agriculture",
+        "BSc. Agricultural Economics"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_080",
+    "career_id": "mechanical_engineer",
+    "title": "Mechanical Engineer",
+    "student_profile": {
+      "student_want": "Wants to manage financial portfolios for multinational banks.",
+      "current_issue": "Lacks financial resources for extra weekend remedial classes or text books."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "7 - 15 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Physics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Mechanical Engineer.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Mechanical Engineer metrics.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Physics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Mechanical Engineering"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_081",
+    "career_id": "software_developer",
+    "title": "Software Developer",
+    "student_profile": {
+      "student_want": "Wants to design sustainable infrastructure and transport networks.",
+      "current_issue": "Struggles to focus in large class sizes and prefers practical, hands-on learning."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "8 - 12 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Software Developer.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Physics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Software Developer metrics.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Elective Mathematics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Computer Science",
+        "BSc. Software Engineering"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_082",
+    "career_id": "medical_doctor",
+    "title": "Medical Doctor",
+    "student_profile": {
+      "student_want": "Wants to defend human rights or handle international corporate mergers.",
+      "current_issue": "Finds theoretical science abstract and needs visual or real-world application models."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "9 - 14 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Biology",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Medical Doctor.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Chemistry",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Medical Doctor metrics.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Biology drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "MBChB Medicine",
+        "BSc. Human Biology"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_083",
+    "career_id": "chartered_accountant",
+    "title": "Chartered Accountant",
+    "student_profile": {
+      "student_want": "Wants to analyze big data trends for global e-commerce companies.",
+      "current_issue": "Faces peer pressure to abandon academic streams for quick informal income routes."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "10 - 16 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Financial Accounting",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Chartered Accountant.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Cost Accounting",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Chartered Accountant metrics.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Financial Accounting drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Accounting",
+        "Bachelor of Commerce (BCom)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_084",
+    "career_id": "civil_engineer",
+    "title": "Civil Engineer",
+    "student_profile": {
+      "student_want": "Wants to establish an independent pharmaceutical manufacturing chain.",
+      "current_issue": "Attends a rural school with frequent electricity disruptions and poor computer access."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "11 - 18 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Physics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Civil Engineer.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Civil Engineer metrics.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Physics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Civil Engineering",
+        "BSc. Construction Technology"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_085",
+    "career_id": "lawyer",
+    "title": "Corporate Lawyer",
+    "student_profile": {
+      "student_want": "Wants to run a creative digital branding agency for global brands.",
+      "current_issue": "Experiences high exam anxiety during core math tests, leading to time lapses."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "6 - 14 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Literature in English",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Corporate Lawyer.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Government",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Corporate Lawyer metrics.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Literature in English drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "Bachelor of Laws (LLB)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_086",
+    "career_id": "data_scientist",
+    "title": "Data Scientist",
+    "student_profile": {
+      "student_want": "Wants to scale commercial mechanized farming systems across West Africa.",
+      "current_issue": "Struggles to balance heavy academic workloads with family responsibilities at home."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "7 - 11 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Data Scientist.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Economics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Data Scientist metrics.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Elective Mathematics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Statistics",
+        "BSc. Data Science"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_087",
+    "career_id": "pharmacist",
+    "title": "Pharmacist",
+    "student_profile": {
+      "student_want": "Wants to work in the renewable energy sector manufacturing wind/solar tech.",
+      "current_issue": "Lacks structural career mentoring and clarity on university admission processes."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "8 - 13 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Chemistry",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Pharmacist.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Biology",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Pharmacist metrics.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Chemistry drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "Doctor of Pharmacy (PharmD)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_088",
+    "career_id": "graphic_designer",
+    "title": "UI/UX Graphic Designer",
+    "student_profile": {
+      "student_want": "Wants to build local tech startups solving community problems.",
+      "current_issue": "Finds it difficult to memorize extensive essay layouts and literature texts."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "9 - 15 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Graphic Design",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to UI/UX Graphic Designer.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "General Knowledge in Art",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for UI/UX Graphic Designer metrics.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Graphic Design drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BA. Communication Design",
+        "BFA. Visual Arts"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_089",
+    "career_id": "agricultural_economist",
+    "title": "Agricultural Economist",
+    "student_profile": {
+      "student_want": "Wants to work in top-tier public hospitals and advance healthcare.",
+      "current_issue": "Has weak foundations in elective mathematics from early SHS levels."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "10 - 17 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "General Agriculture",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Agricultural Economist.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Economics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Agricultural Economist metrics.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting General Agriculture drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Agriculture",
+        "BSc. Agricultural Economics"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_090",
+    "career_id": "mechanical_engineer",
+    "title": "Mechanical Engineer",
+    "student_profile": {
+      "student_want": "Wants to manage financial portfolios for multinational banks.",
+      "current_issue": "Lacks financial resources for extra weekend remedial classes or text books."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "11 - 19 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Physics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Mechanical Engineer.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Mechanical Engineer metrics.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Physics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Mechanical Engineering"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_091",
+    "career_id": "software_developer",
+    "title": "Software Developer",
+    "student_profile": {
+      "student_want": "Wants to design sustainable infrastructure and transport networks.",
+      "current_issue": "Struggles to focus in large class sizes and prefers practical, hands-on learning."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "6 - 10 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Software Developer.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Physics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Software Developer metrics.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Elective Mathematics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Computer Science",
+        "BSc. Software Engineering"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_092",
+    "career_id": "medical_doctor",
+    "title": "Medical Doctor",
+    "student_profile": {
+      "student_want": "Wants to defend human rights or handle international corporate mergers.",
+      "current_issue": "Finds theoretical science abstract and needs visual or real-world application models."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "7 - 12 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Biology",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Medical Doctor.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Chemistry",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Medical Doctor metrics.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Biology drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "MBChB Medicine",
+        "BSc. Human Biology"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_093",
+    "career_id": "chartered_accountant",
+    "title": "Chartered Accountant",
+    "student_profile": {
+      "student_want": "Wants to analyze big data trends for global e-commerce companies.",
+      "current_issue": "Faces peer pressure to abandon academic streams for quick informal income routes."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "8 - 14 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Financial Accounting",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Chartered Accountant.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Cost Accounting",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Chartered Accountant metrics.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Financial Accounting drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Accounting",
+        "Bachelor of Commerce (BCom)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_094",
+    "career_id": "civil_engineer",
+    "title": "Civil Engineer",
+    "student_profile": {
+      "student_want": "Wants to establish an independent pharmaceutical manufacturing chain.",
+      "current_issue": "Attends a rural school with frequent electricity disruptions and poor computer access."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "9 - 16 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Physics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Civil Engineer.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Civil Engineer metrics.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Physics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Civil Engineering",
+        "BSc. Construction Technology"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_095",
+    "career_id": "lawyer",
+    "title": "Corporate Lawyer",
+    "student_profile": {
+      "student_want": "Wants to run a creative digital branding agency for global brands.",
+      "current_issue": "Experiences high exam anxiety during core math tests, leading to time lapses."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "10 - 18 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Literature in English",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Corporate Lawyer.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Government",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Corporate Lawyer metrics.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Literature in English drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "Bachelor of Laws (LLB)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_096",
+    "career_id": "data_scientist",
+    "title": "Data Scientist",
+    "student_profile": {
+      "student_want": "Wants to scale commercial mechanized farming systems across West Africa.",
+      "current_issue": "Struggles to balance heavy academic workloads with family responsibilities at home."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "11 - 15 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Data Scientist.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Economics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Data Scientist metrics.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Elective Mathematics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Statistics",
+        "BSc. Data Science"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_097",
+    "career_id": "pharmacist",
+    "title": "Pharmacist",
+    "student_profile": {
+      "student_want": "Wants to work in the renewable energy sector manufacturing wind/solar tech.",
+      "current_issue": "Lacks structural career mentoring and clarity on university admission processes."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "6 - 11 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Chemistry",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Pharmacist.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Biology",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Pharmacist metrics.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Chemistry drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "Doctor of Pharmacy (PharmD)"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_098",
+    "career_id": "graphic_designer",
+    "title": "UI/UX Graphic Designer",
+    "student_profile": {
+      "student_want": "Wants to build local tech startups solving community problems.",
+      "current_issue": "Finds it difficult to memorize extensive essay layouts and literature texts."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "7 - 13 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Graphic Design",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to UI/UX Graphic Designer.",
+          "target_score": "Grade A1 - B3"
+        },
+        {
+          "subject": "General Knowledge in Art",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for UI/UX Graphic Designer metrics.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Graphic Design drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BA. Communication Design",
+        "BFA. Visual Arts"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_099",
+    "career_id": "agricultural_economist",
+    "title": "Agricultural Economist",
+    "student_profile": {
+      "student_want": "Wants to work in top-tier public hospitals and advance healthcare.",
+      "current_issue": "Has weak foundations in elective mathematics from early SHS levels."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "8 - 15 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "General Agriculture",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Agricultural Economist.",
+          "target_score": "Grade A1 - C4"
+        },
+        {
+          "subject": "Economics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Agricultural Economist metrics.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting General Agriculture drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Agriculture",
+        "BSc. Agricultural Economics"
+      ]
+    }
+  },
+  {
+    "record_id": "SHS_GUIDE_100",
+    "career_id": "mechanical_engineer",
+    "title": "Mechanical Engineer",
+    "student_profile": {
+      "student_want": "Wants to manage financial portfolios for multinational banks.",
+      "current_issue": "Lacks financial resources for extra weekend remedial classes or text books."
+    },
+    "shs_university_guidance": {
+      "target_wassce_aggregate": "9 - 17 (Best 6 subjects)",
+      "critical_shs_subjects": [
+        {
+          "subject": "Physics",
+          "why_it_matters": "Core prerequisite entry pillar for university tracks leading to Mechanical Engineer.",
+          "target_score": "Grade B2 - C6"
+        },
+        {
+          "subject": "Elective Mathematics",
+          "why_it_matters": "Provides analytical stamina and conceptual mastery vital for Mechanical Engineer metrics.",
+          "target_score": "Grade A1 - B2"
+        },
+        {
+          "subject": "Core Mathematics",
+          "why_it_matters": "A non-negotiable pass subject for university admission access across West Africa.",
+          "target_score": "Grade A1 - B3"
+        }
+      ],
+      "recommended_extracurriculars": [
+        "Form an active peer-to-peer accountability partnership targeting Physics drills.",
+        "Utilize vacation windows to complete past WASSCE question sets under strict timing parameters."
+      ],
+      "recommended_university_programs": [
+        "BSc. Mechanical Engineering"
+      ]
+    }
+  }
+]

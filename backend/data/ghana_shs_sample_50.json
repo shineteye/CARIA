@@ -1,0 +1,803 @@
+[
+  {
+    "school_code": "1000001",
+    "school_name": "Presbyterian Boys Secondary School (PRESEC)",
+    "category": "A",
+    "region": "Greater Accra Region",
+    "district": "La Nkwantanang Madina",
+    "location": "Legon",
+    "type": "Boys",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Business",
+      "Visual Arts"
+    ]
+  },
+  {
+    "school_code": "1010002",
+    "school_name": "Prempeh College",
+    "category": "A",
+    "region": "Ashanti Region",
+    "district": "Kumasi Metro",
+    "location": "Sofoline",
+    "type": "Boys",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Business",
+      "Home Economics",
+      "Visual Arts"
+    ]
+  },
+  {
+    "school_code": "1020003",
+    "school_name": "Mfantsipim School",
+    "category": "A",
+    "region": "Central Region",
+    "district": "Cape Coast Metro",
+    "location": "Cape Coast",
+    "type": "Boys",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Arts",
+      "Business",
+      "Home Economics"
+    ]
+  },
+  {
+    "school_code": "1030004",
+    "school_name": "Adisadel College",
+    "category": "A",
+    "region": "Central Region",
+    "district": "Cape Coast Metro",
+    "location": "Cape Coast",
+    "type": "Boys",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Technical Drawing",
+      "Applied Electricity"
+    ]
+  },
+  {
+    "school_code": "1040005",
+    "school_name": "Opoku Ware School",
+    "category": "A",
+    "region": "Ashanti Region",
+    "district": "Kumasi Metro",
+    "location": "Santasi",
+    "type": "Boys",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Business",
+      "Visual Arts"
+    ]
+  },
+  {
+    "school_code": "1050006",
+    "school_name": "Wesley Girls High School",
+    "category": "A",
+    "region": "Central Region",
+    "district": "Cape Coast Metro",
+    "location": "Cape Coast",
+    "type": "Girls",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Business",
+      "Home Economics",
+      "Visual Arts"
+    ]
+  },
+  {
+    "school_code": "1060007",
+    "school_name": "Achimota School",
+    "category": "A",
+    "region": "Greater Accra Region",
+    "district": "Okaikwei North",
+    "location": "Achimota",
+    "type": "Mixed",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Arts",
+      "Business",
+      "Home Economics"
+    ]
+  },
+  {
+    "school_code": "1070008",
+    "school_name": "Aburi Girls Senior High",
+    "category": "A",
+    "region": "Eastern Region",
+    "district": "Akuapem South",
+    "location": "Aburi",
+    "type": "Girls",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Technical Drawing",
+      "Applied Electricity"
+    ]
+  },
+  {
+    "school_code": "1080009",
+    "school_name": "Accra Academy",
+    "category": "A",
+    "region": "Greater Accra Region",
+    "district": "Ablekuma North",
+    "location": "Kaneshie",
+    "type": "Boys",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Business",
+      "Visual Arts"
+    ]
+  },
+  {
+    "school_code": "1090010",
+    "school_name": "St. Peter's Senior High",
+    "category": "A",
+    "region": "Eastern Region",
+    "district": "Kwahu West",
+    "location": "Nkwatia",
+    "type": "Boys",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Business",
+      "Home Economics",
+      "Visual Arts"
+    ]
+  },
+  {
+    "school_code": "1100011",
+    "school_name": "Holy Child School",
+    "category": "A",
+    "region": "Central Region",
+    "district": "Cape Coast Metro",
+    "location": "Cape Coast",
+    "type": "Girls",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Arts",
+      "Business",
+      "Home Economics"
+    ]
+  },
+  {
+    "school_code": "1110012",
+    "school_name": "St. Augustine's College",
+    "category": "A",
+    "region": "Central Region",
+    "district": "Cape Coast Metro",
+    "location": "Cape Coast",
+    "type": "Boys",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Technical Drawing",
+      "Applied Electricity"
+    ]
+  },
+  {
+    "school_code": "1120013",
+    "school_name": "Yaa Asantewaa Girls SHS",
+    "category": "A",
+    "region": "Ashanti Region",
+    "district": "Kumasi Metro",
+    "location": "Tanoso",
+    "type": "Girls",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Business",
+      "Visual Arts"
+    ]
+  },
+  {
+    "school_code": "1130014",
+    "school_name": "St. Louis Senior High",
+    "category": "A",
+    "region": "Ashanti Region",
+    "district": "Kumasi Metro",
+    "location": "Oduom",
+    "type": "Girls",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Business",
+      "Home Economics",
+      "Visual Arts"
+    ]
+  },
+  {
+    "school_code": "1140015",
+    "school_name": "Tamale Senior High",
+    "category": "A",
+    "region": "Northern Region",
+    "district": "Tamale Metro",
+    "location": "Tamale",
+    "type": "Mixed",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Arts",
+      "Business",
+      "Home Economics"
+    ]
+  },
+  {
+    "school_code": "1150016",
+    "school_name": "Mawuli School",
+    "category": "A",
+    "region": "Volta Region",
+    "district": "Ho Municipal",
+    "location": "Ho",
+    "type": "Mixed",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Technical Drawing",
+      "Applied Electricity"
+    ]
+  },
+  {
+    "school_code": "1160017",
+    "school_name": "Pope John Senior High & Minor Seminary",
+    "category": "A",
+    "region": "Eastern Region",
+    "district": "New Juaben South",
+    "location": "Koforidua",
+    "type": "Boys",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Business",
+      "Visual Arts"
+    ]
+  },
+  {
+    "school_code": "1170018",
+    "school_name": "St. James Seminary & SHS",
+    "category": "A",
+    "region": "Bono Region",
+    "district": "Sunyani Municipal",
+    "location": "Abesim",
+    "type": "Boys",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Business",
+      "Home Economics",
+      "Visual Arts"
+    ]
+  },
+  {
+    "school_code": "1180019",
+    "school_name": "Ghana Senior High/Technical School (GSTS)",
+    "category": "A",
+    "region": "Western Region",
+    "district": "Takoradi Metro",
+    "location": "Takoradi",
+    "type": "Boys",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Arts",
+      "Business",
+      "Home Economics"
+    ]
+  },
+  {
+    "school_code": "1190020",
+    "school_name": "Archbishop Porter Girls SHS",
+    "category": "A",
+    "region": "Western Region",
+    "district": "Sekondi Takoradi",
+    "location": "Sekondi",
+    "type": "Girls",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Technical Drawing",
+      "Applied Electricity"
+    ]
+  },
+  {
+    "school_code": "1200021",
+    "school_name": "Kumasi Academy",
+    "category": "B",
+    "region": "Ashanti Region",
+    "district": "Asokore Mampong",
+    "location": "Asokore Mampong",
+    "type": "Mixed",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Business",
+      "Visual Arts"
+    ]
+  },
+  {
+    "school_code": "1210022",
+    "school_name": "KNUST Senior High",
+    "category": "B",
+    "region": "Ashanti Region",
+    "district": "Kumasi Metro",
+    "location": "Boadi Junction",
+    "type": "Mixed",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Business",
+      "Home Economics",
+      "Visual Arts"
+    ]
+  },
+  {
+    "school_code": "1220023",
+    "school_name": "Kumasi High School",
+    "category": "B",
+    "region": "Ashanti Region",
+    "district": "Kumasi Metro",
+    "location": "Gyinyase",
+    "type": "Boys",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Arts",
+      "Business",
+      "Home Economics"
+    ]
+  },
+  {
+    "school_code": "1230024",
+    "school_name": "Labone Senior High",
+    "category": "B",
+    "region": "Greater Accra Region",
+    "district": "La Dade Kotopon",
+    "location": "Labone",
+    "type": "Mixed",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Technical Drawing",
+      "Applied Electricity"
+    ]
+  },
+  {
+    "school_code": "1240025",
+    "school_name": "Accra Girls Senior High",
+    "category": "B",
+    "region": "Greater Accra Region",
+    "district": "Ayawaso North",
+    "location": "Mamobi",
+    "type": "Girls",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Business",
+      "Visual Arts"
+    ]
+  },
+  {
+    "school_code": "1250026",
+    "school_name": "St. Thomas Aquinas SHS",
+    "category": "B",
+    "region": "Greater Accra Region",
+    "district": "La Dade Kotopon",
+    "location": "Cantonments",
+    "type": "Boys",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Business",
+      "Home Economics",
+      "Visual Arts"
+    ]
+  },
+  {
+    "school_code": "1260027",
+    "school_name": "Koforidua Secondary Technical",
+    "category": "B",
+    "region": "Eastern Region",
+    "district": "New Juaben North",
+    "location": "Koforidua",
+    "type": "Mixed",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Arts",
+      "Business",
+      "Home Economics"
+    ]
+  },
+  {
+    "school_code": "1270028",
+    "school_name": "Ofori Panin Senior High",
+    "category": "B",
+    "region": "Eastern Region",
+    "district": "Abuakwa North",
+    "location": "Kukurantumi",
+    "type": "Mixed",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Technical Drawing",
+      "Applied Electricity"
+    ]
+  },
+  {
+    "school_code": "1280029",
+    "school_name": "Ghanata Senior High",
+    "category": "B",
+    "region": "Greater Accra Region",
+    "district": "Shai Osudoku",
+    "location": "Dodowa",
+    "type": "Mixed",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Business",
+      "Visual Arts"
+    ]
+  },
+  {
+    "school_code": "1290030",
+    "school_name": "Winneba Senior High",
+    "category": "B",
+    "region": "Central Region",
+    "district": "Effutu Municipal",
+    "location": "Winneba",
+    "type": "Mixed",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Business",
+      "Home Economics",
+      "Visual Arts"
+    ]
+  },
+  {
+    "school_code": "1300031",
+    "school_name": "Sunyani Senior High",
+    "category": "B",
+    "region": "Bono Region",
+    "district": "Sunyani Municipal",
+    "location": "Sunyani",
+    "type": "Mixed",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Arts",
+      "Business",
+      "Home Economics"
+    ]
+  },
+  {
+    "school_code": "1310032",
+    "school_name": "OLA Girls Senior High",
+    "category": "B",
+    "region": "Volta Region",
+    "district": "Ho Municipal",
+    "location": "Ho",
+    "type": "Girls",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Technical Drawing",
+      "Applied Electricity"
+    ]
+  },
+  {
+    "school_code": "1320033",
+    "school_name": "Bishop Herman College",
+    "category": "B",
+    "region": "Volta Region",
+    "district": "Kpando Municipal",
+    "location": "Kpando",
+    "type": "Boys",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Business",
+      "Visual Arts"
+    ]
+  },
+  {
+    "school_code": "1330034",
+    "school_name": "Suponso Senior High",
+    "category": "C",
+    "region": "Eastern Region",
+    "district": "Lower West Akim",
+    "location": "Suponso",
+    "type": "Mixed",
+    "housing": "Day",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Business",
+      "Home Economics",
+      "Visual Arts"
+    ]
+  },
+  {
+    "school_code": "1340035",
+    "school_name": "Adu Gyamfi Senior High",
+    "category": "B",
+    "region": "Ashanti Region",
+    "district": "Afigya Kwabre",
+    "location": "Jamasi",
+    "type": "Mixed",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Arts",
+      "Business",
+      "Home Economics"
+    ]
+  },
+  {
+    "school_code": "1350036",
+    "school_name": "Asare Bediako SHS",
+    "category": "C",
+    "region": "Ashanti Region",
+    "district": "Adansi North",
+    "location": "Akrokerri",
+    "type": "Mixed",
+    "housing": "Day",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Technical Drawing",
+      "Applied Electricity"
+    ]
+  },
+  {
+    "school_code": "1360037",
+    "school_name": "Bodwesango SHS",
+    "category": "C",
+    "region": "Ashanti Region",
+    "district": "Adansi South",
+    "location": "Bodwesango",
+    "type": "Mixed",
+    "housing": "Day",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Business",
+      "Visual Arts"
+    ]
+  },
+  {
+    "school_code": "1370038",
+    "school_name": "Manso-Adubia SHS",
+    "category": "C",
+    "region": "Ashanti Region",
+    "district": "Amansie West",
+    "location": "Adubia",
+    "type": "Mixed",
+    "housing": "Day",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Business",
+      "Home Economics",
+      "Visual Arts"
+    ]
+  },
+  {
+    "school_code": "1380039",
+    "school_name": "Bosome Senior High Technical",
+    "category": "C",
+    "region": "Ashanti Region",
+    "district": "Bosome Freho",
+    "location": "Asiwa",
+    "type": "Mixed",
+    "housing": "Day",
+    "academic_tracks": [
+      "General Arts",
+      "Business",
+      "Home Economics"
+    ]
+  },
+  {
+    "school_code": "1390040",
+    "school_name": "Osu Presby Senior High",
+    "category": "C",
+    "region": "Greater Accra Region",
+    "district": "Korle Klottey",
+    "location": "Osu",
+    "type": "Mixed",
+    "housing": "Day",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Technical Drawing",
+      "Applied Electricity"
+    ]
+  },
+  {
+    "school_code": "1400041",
+    "school_name": "O'Reilly Senior High",
+    "category": "C",
+    "region": "Greater Accra Region",
+    "district": "Ledzokuku",
+    "location": "Teshie",
+    "type": "Mixed",
+    "housing": "Day",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Business",
+      "Visual Arts"
+    ]
+  },
+  {
+    "school_code": "1410042",
+    "school_name": "Christian Methodist SHS",
+    "category": "C",
+    "region": "Greater Accra Region",
+    "district": "Ga Central",
+    "location": "Anyaa",
+    "type": "Mixed",
+    "housing": "Day",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Business",
+      "Home Economics",
+      "Visual Arts"
+    ]
+  },
+  {
+    "school_code": "1420043",
+    "school_name": "Agogo State College",
+    "category": "B",
+    "region": "Ashanti Region",
+    "district": "Asante Akim North",
+    "location": "Agogo",
+    "type": "Mixed",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Arts",
+      "Business",
+      "Home Economics"
+    ]
+  },
+  {
+    "school_code": "1430044",
+    "school_name": "Amankwakrom Fisheries Tech Inst",
+    "category": "C",
+    "region": "Eastern Region",
+    "district": "Afram Plains North",
+    "location": "Amankwakrom",
+    "type": "Mixed",
+    "housing": "Day",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Technical Drawing",
+      "Applied Electricity"
+    ]
+  },
+  {
+    "school_code": "1440045",
+    "school_name": "Krobo Girls Presby SHS",
+    "category": "B",
+    "region": "Eastern Region",
+    "district": "Lower Manya Krobo",
+    "location": "Odumase",
+    "type": "Girls",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Business",
+      "Visual Arts"
+    ]
+  },
+  {
+    "school_code": "1450046",
+    "school_name": "Bolgatanga Girls SHS",
+    "category": "B",
+    "region": "Upper East Region",
+    "district": "Bolgatanga Metro",
+    "location": "Zaare",
+    "type": "Girls",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Business",
+      "Home Economics",
+      "Visual Arts"
+    ]
+  },
+  {
+    "school_code": "1460047",
+    "school_name": "St. Francis Girls SHS",
+    "category": "B",
+    "region": "Upper West Region",
+    "district": "Jirapa Municipal",
+    "location": "Jirapa",
+    "type": "Girls",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Arts",
+      "Business",
+      "Home Economics"
+    ]
+  },
+  {
+    "school_code": "1470048",
+    "school_name": "Bosomtwe Girls STEM SHS",
+    "category": "A",
+    "region": "Ashanti Region",
+    "district": "Bosomtwe",
+    "location": "Deduako",
+    "type": "Girls",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Technical Drawing",
+      "Applied Electricity"
+    ]
+  },
+  {
+    "school_code": "1480049",
+    "school_name": "Berekum Presby SHS",
+    "category": "B",
+    "region": "Bono Region",
+    "district": "Berekum Municipal",
+    "location": "Berekum",
+    "type": "Mixed",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Business",
+      "Visual Arts"
+    ]
+  },
+  {
+    "school_code": "1490050",
+    "school_name": "Notre Dame Girls SHS",
+    "category": "A",
+    "region": "Bono Region",
+    "district": "Sunyani West",
+    "location": "Sunyani",
+    "type": "Girls",
+    "housing": "Day/Boarding",
+    "academic_tracks": [
+      "General Science",
+      "General Arts",
+      "Business",
+      "Home Economics",
+      "Visual Arts"
+    ]
+  }
+]

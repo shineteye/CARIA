@@ -1,0 +1,435 @@
+[
+  {
+    "university_name": "University of Ghana (UG Legon)",
+    "location": "Accra, Greater Accra",
+    "category": "Public",
+    "faculties_and_programs": [
+      {
+        "faculty": "College of Health Sciences",
+        "programs": [
+          {
+            "name": "Bachelor of Medicine and Bachelor of Surgery (MBChB)",
+            "cut_off_point": 8,
+            "competitiveness": "Very High"
+          },
+          {
+            "name": "Bachelor of Dental Surgery",
+            "cut_off_point": 10,
+            "competitiveness": "Very High"
+          },
+          {
+            "name": "Doctor of Pharmacy (PharmD)",
+            "cut_off_point": 10,
+            "competitiveness": "Very High"
+          },
+          {
+            "name": "BSc. Nursing",
+            "cut_off_point": 15,
+            "competitiveness": "High"
+          },
+          {
+            "name": "BSc. Midwifery",
+            "cut_off_point": 15,
+            "competitiveness": "High"
+          },
+          {
+            "name": "BSc. Radiography",
+            "cut_off_point": 13,
+            "competitiveness": "Medium"
+          },
+          {
+            "name": "BSc. Dietetics",
+            "cut_off_point": 14,
+            "competitiveness": "Medium"
+          },
+          {
+            "name": "BSc. Occupational Therapy",
+            "cut_off_point": 15,
+            "competitiveness": "Medium"
+          }
+        ]
+      },
+      {
+        "faculty": "College of Basic & Applied Sciences",
+        "programs": [
+          {
+            "name": "BSc. Biomedical Engineering",
+            "cut_off_point": 6,
+            "competitiveness": "Very High"
+          },
+          {
+            "name": "BSc. Computer Engineering",
+            "cut_off_point": 7,
+            "competitiveness": "Very High"
+          },
+          {
+            "name": "BSc. Computer Science",
+            "cut_off_point": 7,
+            "competitiveness": "Very High"
+          },
+          {
+            "name": "BSc. Information Technology",
+            "cut_off_point": 10,
+            "competitiveness": "High"
+          },
+          {
+            "name": "BSc. Actuarial Science",
+            "cut_off_point": 11,
+            "competitiveness": "High"
+          },
+          {
+            "name": "BSc. Food Process Engineering",
+            "cut_off_point": 12,
+            "competitiveness": "Medium"
+          },
+          {
+            "name": "BSc. Materials Science & Engineering",
+            "cut_off_point": 13,
+            "competitiveness": "Medium"
+          },
+          {
+            "name": "BSc. Biological Sciences",
+            "cut_off_point": 14,
+            "competitiveness": "Medium"
+          },
+          {
+            "name": "BSc. Mathematical Sciences",
+            "cut_off_point": 15,
+            "competitiveness": "Medium"
+          },
+          {
+            "name": "Doctor of Veterinary Medicine",
+            "cut_off_point": 14,
+            "competitiveness": "Medium"
+          },
+          {
+            "name": "BSc. Agricultural Engineering",
+            "cut_off_point": 15,
+            "competitiveness": "Medium"
+          },
+          {
+            "name": "BSc. Earth Science",
+            "cut_off_point": 15,
+            "competitiveness": "Medium"
+          },
+          {
+            "name": "BSc. Physical Sciences",
+            "cut_off_point": 24,
+            "competitiveness": "Low"
+          },
+          {
+            "name": "BSc. Agriculture Science",
+            "cut_off_point": 22,
+            "competitiveness": "Low"
+          },
+          {
+            "name": "BSc. Crop Science",
+            "cut_off_point": 20,
+            "competitiveness": "Low"
+          },
+          {
+            "name": "BSc. Marine and Fisheries Science",
+            "cut_off_point": 20,
+            "competitiveness": "Low"
+          }
+        ]
+      },
+      {
+        "faculty": "College of Humanities",
+        "programs": [
+          {
+            "name": "Bachelor of Laws (LLB)",
+            "cut_off_point": 7,
+            "competitiveness": "Very High"
+          },
+          {
+            "name": "BSc. Administration",
+            "cut_off_point": 9,
+            "competitiveness": "Very High"
+          },
+          {
+            "name": "Bachelor of Arts (Bouquets with Business Subject)",
+            "cut_off_point": 12,
+            "competitiveness": "High"
+          },
+          {
+            "name": "BA. Communication Studies",
+            "cut_off_point": 14,
+            "competitiveness": "Medium"
+          },
+          {
+            "name": "BA. Economics",
+            "cut_off_point": 14,
+            "competitiveness": "Medium"
+          },
+          {
+            "name": "BSc. Psychology",
+            "cut_off_point": 15,
+            "competitiveness": "Medium"
+          },
+          {
+            "name": "BA. Political Science",
+            "cut_off_point": 16,
+            "competitiveness": "Medium"
+          },
+          {
+            "name": "BA. Geography and Resource Development",
+            "cut_off_point": 18,
+            "competitiveness": "Medium"
+          },
+          {
+            "name": "BA. Sociology",
+            "cut_off_point": 18,
+            "competitiveness": "Medium"
+          },
+          {
+            "name": "BA. Theatre Arts",
+            "cut_off_point": 22,
+            "competitiveness": "Low"
+          },
+          {
+            "name": "BA. Philosophy & Classics",
+            "cut_off_point": 22,
+            "competitiveness": "Low"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "university_name": "Kwame Nkrumah University of Science and Technology (KNUST)",
+    "location": "Kumasi, Ashanti",
+    "category": "Public",
+    "faculties_and_programs": [
+      {
+        "faculty": "College of Engineering",
+        "programs": [
+          {
+            "name": "BSc. Computer Engineering",
+            "cut_off_point": 9,
+            "competitiveness": "Very High"
+          },
+          {
+            "name": "BSc. Electrical & Electronic Engineering",
+            "cut_off_point": 10,
+            "competitiveness": "Very High"
+          },
+          {
+            "name": "BSc. Mechanical Engineering",
+            "cut_off_point": 12,
+            "competitiveness": "High"
+          },
+          {
+            "name": "BSc. Civil Engineering",
+            "cut_off_point": 12,
+            "competitiveness": "High"
+          },
+          {
+            "name": "BSc. Telecommunication Engineering",
+            "cut_off_point": 12,
+            "competitiveness": "High"
+          },
+          {
+            "name": "BSc. Aerospace Engineering",
+            "cut_off_point": 8,
+            "competitiveness": "Very High"
+          },
+          {
+            "name": "BSc. Agricultural Engineering",
+            "cut_off_point": 22,
+            "competitiveness": "Low"
+          }
+        ]
+      },
+      {
+        "faculty": "College of Health Sciences",
+        "programs": [
+          {
+            "name": "BSc. Human Biology (Medicine)",
+            "cut_off_point": 6,
+            "competitiveness": "Very High"
+          },
+          {
+            "name": "Doctor of Pharmacy (PharmD)",
+            "cut_off_point": 8,
+            "competitiveness": "Very High"
+          },
+          {
+            "name": "BSc. Biomedical Engineering",
+            "cut_off_point": 9,
+            "competitiveness": "Very High"
+          },
+          {
+            "name": "BSc. Medical Laboratory Technology",
+            "cut_off_point": 10,
+            "competitiveness": "High"
+          },
+          {
+            "name": "BSc. Nursing",
+            "cut_off_point": 11,
+            "competitiveness": "High"
+          }
+        ]
+      },
+      {
+        "faculty": "College of Science",
+        "programs": [
+          {
+            "name": "BSc. Computer Science",
+            "cut_off_point": 11,
+            "competitiveness": "High"
+          },
+          {
+            "name": "BSc. Actuarial Science",
+            "cut_off_point": 11,
+            "competitiveness": "High"
+          },
+          {
+            "name": "BSc. Biochemistry",
+            "cut_off_point": 11,
+            "competitiveness": "High"
+          },
+          {
+            "name": "BSc. Biological Sciences",
+            "cut_off_point": 13,
+            "competitiveness": "Medium"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "university_name": "University of Professional Studies, Accra (UPSA)",
+    "location": "Accra, Greater Accra",
+    "category": "Public",
+    "faculties_and_programs": [
+      {
+        "faculty": "Faculty of Management & IT",
+        "programs": [
+          {
+            "name": "Bachelor of Laws (LLB)",
+            "cut_off_point": 8,
+            "competitiveness": "Very High"
+          },
+          {
+            "name": "BSc. Software Engineering",
+            "cut_off_point": 14,
+            "competitiveness": "Medium"
+          },
+          {
+            "name": "BSc. Cyber Security",
+            "cut_off_point": 14,
+            "competitiveness": "Medium"
+          },
+          {
+            "name": "BSc. Data Science and Analytics",
+            "cut_off_point": 14,
+            "competitiveness": "Medium"
+          },
+          {
+            "name": "BSc. Information Technology Management",
+            "cut_off_point": 18,
+            "competitiveness": "Medium"
+          }
+        ]
+      },
+      {
+        "faculty": "Faculty of Accounting & Finance",
+        "programs": [
+          {
+            "name": "BSc. Accounting",
+            "cut_off_point": 12,
+            "competitiveness": "High"
+          },
+          {
+            "name": "BSc. Forensic Accounting",
+            "cut_off_point": 14,
+            "competitiveness": "Medium"
+          },
+          {
+            "name": "BSc. Investment Banking",
+            "cut_off_point": 14,
+            "competitiveness": "Medium"
+          },
+          {
+            "name": "BSc. Banking and Finance",
+            "cut_off_point": 16,
+            "competitiveness": "Business"
+          },
+          {
+            "name": "BSc. Insurance",
+            "cut_off_point": 20,
+            "competitiveness": "Low"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "university_name": "University for Development Studies (UDS)",
+    "location": "Tamale, Northern Region",
+    "category": "Public",
+    "faculties_and_programs": [
+      {
+        "faculty": "School of Medicine",
+        "programs": [
+          {
+            "name": "Bachelor of Medicine and Surgery (MBChB)",
+            "cut_off_point": 6,
+            "competitiveness": "Very High"
+          },
+          {
+            "name": "BSc. Pharmacy",
+            "cut_off_point": 10,
+            "competitiveness": "High"
+          },
+          {
+            "name": "BSc. Physician Assistantship",
+            "cut_off_point": 10,
+            "competitiveness": "High"
+          },
+          {
+            "name": "Doctor of Medical Laboratory Science",
+            "cut_off_point": 12,
+            "competitiveness": "High"
+          }
+        ]
+      },
+      {
+        "faculty": "Faculty of Biosciences & Engineering",
+        "programs": [
+          {
+            "name": "BSc. Accounting",
+            "cut_off_point": 14,
+            "competitiveness": "Medium"
+          },
+          {
+            "name": "BSc. Civil Engineering",
+            "cut_off_point": 14,
+            "competitiveness": "Medium"
+          },
+          {
+            "name": "BSc. Procurement and Supply Chain Management",
+            "cut_off_point": 18,
+            "competitiveness": "Medium"
+          },
+          {
+            "name": "BSc. Agricultural Engineering",
+            "cut_off_point": 20,
+            "competitiveness": "Low"
+          },
+          {
+            "name": "BSc. Chemical Science and Technology",
+            "cut_off_point": 22,
+            "competitiveness": "Low"
+          },
+          {
+            "name": "BSc. Information Technology",
+            "cut_off_point": 22,
+            "competitiveness": "Low"
+          }
+        ]
+      }
+    ]
+  }
+]

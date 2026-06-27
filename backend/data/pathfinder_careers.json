@@ -1,0 +1,1398 @@
+{
+  "metadata": {
+    "project": "Caria Ghana",
+    "version": "1.0-prototype",
+    "regions_covered": ["Greater Accra", "Central Region"],
+    "universities_covered": [
+      "University of Ghana (UG)",
+      "University of Cape Coast (UCC)",
+      "KNUST"
+    ],
+    "last_updated": "2025"
+  },
+
+  "grading_reference": {
+    "bece": {
+      "scale": "1–9 (1 is best, 9 is worst)",
+      "aggregate": "Sum of best 6 subjects (3 core + 3 best electives)",
+      "core_subjects": [
+        "English Language",
+        "Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ],
+      "good_aggregate_range": "6–18",
+      "placement_categories": {
+        "A": "Aggregate 6–18 (top schools)",
+        "B": "Aggregate 19–24",
+        "C": "Aggregate 25–30",
+        "D": "Aggregate 31–36"
+      },
+      "important_rule": "Grade 9 in English or Mathematics means no SHS placement"
+    },
+    "wassce": {
+      "scale": "A1 (best) to F9 (fail)",
+      "credit_grades": "A1 to C6 (required for university)",
+      "passing_not_enough": "D7 and E8 pass but do not qualify for university",
+      "aggregate_calculation": "Sum of best 6 subjects",
+      "core_subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science",
+        "Social Studies"
+      ]
+    },
+    "university": {
+      "general_cutoff": "Aggregate must not exceed 24 (UG regular admission)",
+      "science_core_subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Integrated Science"
+      ],
+      "non_science_core_subjects": [
+        "English Language",
+        "Core Mathematics",
+        "Social Studies"
+      ]
+    }
+  },
+
+  "shs_programs": {
+    "General Science": {
+      "description": "Focuses on sciences and mathematics. Gateway to medicine, engineering, and technology careers.",
+      "core_electives": [
+        "Biology",
+        "Chemistry",
+        "Physics",
+        "Elective Mathematics"
+      ]
+    },
+    "General Arts": {
+      "description": "Focuses on humanities, languages, and social sciences. Leads to law, journalism, education, and social work.",
+      "core_electives": [
+        "Literature in English",
+        "Geography",
+        "History",
+        "Government",
+        "French",
+        "Economics"
+      ]
+    },
+    "Business": {
+      "description": "Focuses on commerce and business subjects. Leads to accounting, banking, and business management careers.",
+      "core_electives": [
+        "Financial Accounting",
+        "Business Management",
+        "Economics",
+        "Elective Mathematics",
+        "Cost Accounting"
+      ]
+    },
+    "Technical (TVET)": {
+      "description": "Focuses on hands-on technical and vocational skills. Leads to trades, technician roles, and HND programs.",
+      "core_electives": [
+        "Technical Drawing",
+        "Workshop Technology",
+        "Building Construction",
+        "Auto Mechanics",
+        "Electrical Installation"
+      ]
+    },
+    "Home Economics": {
+      "description": "Covers food and nutrition, textiles, and management. Leads to nursing, nutrition, and hospitality careers.",
+      "core_electives": [
+        "Food and Nutrition",
+        "Clothing and Textiles",
+        "Management in Living"
+      ]
+    },
+    "Visual Arts": {
+      "description": "Focuses on creative and design subjects. Leads to architecture, graphic design, and creative arts careers.",
+      "core_electives": [
+        "Graphic Design",
+        "Picture Making",
+        "Sculpture",
+        "Ceramics",
+        "Textiles"
+      ]
+    }
+  },
+
+  "careers": [
+    {
+      "id": 1,
+      "title": "Medical Doctor",
+      "stream": "Science / Health",
+      "description": "Diagnose and treat illnesses and injuries. One of the most competitive and respected careers in Ghana.",
+      "years_of_study_after_shs": 6,
+
+      "shs_guidance": {
+        "required_program": "General Science",
+        "required_electives": ["Biology", "Chemistry", "Physics"],
+        "recommended_elective": "Elective Mathematics (strengthens application)",
+        "note": "All three — Biology, Chemistry, and Physics — are compulsory. No substitution accepted by medical schools."
+      },
+
+      "wassce_requirements": {
+        "core_subjects_needed": [
+          "English Language (C6 min)",
+          "Core Mathematics (C6 min)",
+          "Integrated Science (C6 min)",
+          "Social Studies (C6 min — not counted in science aggregate)"
+        ],
+        "electives_needed": [
+          "Biology (B3 recommended)",
+          "Chemistry (B3 recommended)",
+          "Physics (C6 min)"
+        ],
+        "aggregate_target": "6–12 (very competitive)",
+        "special_notes": "Social Studies is required at credit level but excluded from the science aggregate calculation. Aim for the lowest possible aggregate."
+      },
+
+      "university_programs": [
+        {
+          "program": "MBChB (Bachelor of Medicine and Bachelor of Surgery)",
+          "universities": [
+            {
+              "name": "University of Ghana Medical School (UGMS)",
+              "location": "Greater Accra",
+              "typical_cutoff": "6–9",
+              "notes": "Most competitive medical program in Ghana. Requires entrance exam after WASSCE."
+            },
+            {
+              "name": "University of Cape Coast School of Medical Sciences",
+              "location": "Central Region",
+              "typical_cutoff": "8–12",
+              "notes": "Growing medical school. Strong science foundation required."
+            },
+            {
+              "name": "KNUST School of Medicine",
+              "location": "Ashanti Region",
+              "typical_cutoff": "6–10",
+              "notes": "Second oldest medical school in Ghana."
+            }
+          ]
+        }
+      ],
+
+      "bece_guidance": {
+        "recommended_aggregate": "6–18 (Category A or B school to access strong Science program)",
+        "key_subjects_to_excel": [
+          "Mathematics",
+          "English Language",
+          "Integrated Science"
+        ],
+        "advice": "Focus heavily on Maths and Science at JHS level. These form the foundation for SHS Science electives.",
+        "if_aggregate_is_higher": "Aggregates of 19–24 can still access Science at Category B/C schools. The program is still achievable."
+      }
+    },
+
+    {
+      "id": 2,
+      "title": "Nurse / Midwife",
+      "stream": "Science / Health",
+      "description": "Provide patient care, assist doctors, and support maternal and child health. High demand across Ghana.",
+      "years_of_study_after_shs": 3,
+
+      "shs_guidance": {
+        "required_program": "General Science or Home Economics",
+        "required_electives": ["Biology", "Chemistry"],
+        "recommended_elective": "Physics or Food and Nutrition",
+        "note": "Home Economics students with Biology and Chemistry can also qualify. Science is the stronger pathway."
+      },
+
+      "wassce_requirements": {
+        "core_subjects_needed": [
+          "English Language (C6 min)",
+          "Core Mathematics (C6 min)",
+          "Integrated Science (C6 min)"
+        ],
+        "electives_needed": [
+          "Biology (C6 min)",
+          "Chemistry (C6 min)",
+          "One other science or relevant elective"
+        ],
+        "aggregate_target": "12–24",
+        "special_notes": "For nursing programs, Social Studies is NOT used in aggregate. Core subjects are English, Maths, and Integrated Science + 3 electives."
+      },
+
+      "university_programs": [
+        {
+          "program": "BSc Nursing",
+          "universities": [
+            {
+              "name": "University of Ghana (School of Nursing and Midwifery)",
+              "location": "Greater Accra",
+              "typical_cutoff": "12–20",
+              "notes": "Requires professional nursing diploma for some routes. Check direct entry requirements."
+            },
+            {
+              "name": "University of Cape Coast",
+              "location": "Central Region",
+              "typical_cutoff": "14–22",
+              "notes": "Offers BSc Nursing and BSc Midwifery."
+            }
+          ]
+        }
+      ],
+
+      "bece_guidance": {
+        "recommended_aggregate": "6–24 (wider range — more schools offer Science and Home Economics)",
+        "key_subjects_to_excel": [
+          "Mathematics",
+          "English Language",
+          "Integrated Science"
+        ],
+        "advice": "Biology and Chemistry performance at SHS matters most. Nurse training colleges also accept students with strong WASSCE results even without university.",
+        "if_aggregate_is_higher": "Nursing Training Colleges (NTCs) are a strong alternative to university nursing programs and are available across Ghana."
+      }
+    },
+
+    {
+      "id": 3,
+      "title": "Pharmacist",
+      "stream": "Science / Health",
+      "description": "Prepare and dispense medications, counsel patients on drug use, and work in hospitals, clinics, or community pharmacies.",
+      "years_of_study_after_shs": 4,
+
+      "shs_guidance": {
+        "required_program": "General Science",
+        "required_electives": [
+          "Biology",
+          "Chemistry",
+          "Physics or Elective Mathematics"
+        ],
+        "recommended_elective": "Elective Mathematics",
+        "note": "Chemistry is the most critical subject. Strong Chemistry performance is essential."
+      },
+
+      "wassce_requirements": {
+        "core_subjects_needed": [
+          "English Language (C6 min)",
+          "Core Mathematics (C6 min)",
+          "Integrated Science (C6 min)"
+        ],
+        "electives_needed": [
+          "Biology (C6 min)",
+          "Chemistry (B3 recommended)",
+          "Physics or Elective Mathematics (C6 min)"
+        ],
+        "aggregate_target": "8–18",
+        "special_notes": "Chemistry grade is closely scrutinized by pharmacy schools. A weak Chemistry grade can disqualify even a good overall aggregate."
+      },
+
+      "university_programs": [
+        {
+          "program": "Bachelor of Pharmacy (B.Pharm)",
+          "universities": [
+            {
+              "name": "University of Ghana (School of Pharmacy)",
+              "location": "Greater Accra",
+              "typical_cutoff": "8–14",
+              "notes": "Requires strong Chemistry. Competitive intake."
+            },
+            {
+              "name": "KNUST Faculty of Pharmacy",
+              "location": "Ashanti Region",
+              "typical_cutoff": "8–12",
+              "notes": "One of the oldest pharmacy schools in Ghana."
+            }
+          ]
+        }
+      ],
+
+      "bece_guidance": {
+        "recommended_aggregate": "6–18",
+        "key_subjects_to_excel": [
+          "Mathematics",
+          "Integrated Science",
+          "English Language"
+        ],
+        "advice": "Build a strong Science foundation at JHS. Chemistry and Biology at SHS are directly linked to performance in Science at JHS level.",
+        "if_aggregate_is_higher": "Still possible via Category B Science schools. The key is maintaining strong Chemistry throughout SHS."
+      }
+    },
+
+    {
+      "id": 4,
+      "title": "Biomedical Engineer",
+      "stream": "Science / Health",
+      "description": "Design and maintain medical equipment and devices. Combines engineering principles with biological and medical sciences.",
+      "years_of_study_after_shs": 4,
+
+      "shs_guidance": {
+        "required_program": "General Science",
+        "required_electives": ["Physics", "Elective Mathematics", "Chemistry"],
+        "recommended_elective": "Biology",
+        "note": "Physics and Elective Mathematics are non-negotiable for engineering programs."
+      },
+
+      "wassce_requirements": {
+        "core_subjects_needed": [
+          "English Language (C6 min)",
+          "Core Mathematics (B3 min)",
+          "Integrated Science (C6 min)"
+        ],
+        "electives_needed": [
+          "Physics (C6 min)",
+          "Elective Mathematics (C6 min)",
+          "Chemistry (C6 min)"
+        ],
+        "aggregate_target": "6–12",
+        "special_notes": "UG Biomedical Engineering is one of the most competitive programs. Elective Mathematics is compulsory."
+      },
+
+      "university_programs": [
+        {
+          "program": "BSc Biomedical Engineering",
+          "universities": [
+            {
+              "name": "University of Ghana (College of Basic and Applied Sciences)",
+              "location": "Greater Accra",
+              "typical_cutoff": "6–9",
+              "notes": "First choice program. Very competitive. Requires B3 in Elective Mathematics minimum."
+            }
+          ]
+        }
+      ],
+
+      "bece_guidance": {
+        "recommended_aggregate": "6–15 (needs top Category A school for strong Physics and Maths teaching)",
+        "key_subjects_to_excel": [
+          "Mathematics",
+          "Integrated Science",
+          "English Language"
+        ],
+        "advice": "Elective Mathematics at SHS is critical. Choose a Science school known for strong Maths and Physics departments.",
+        "if_aggregate_is_higher": "Consider Civil or Electrical Engineering as alternative engineering paths with slightly less competitive cutoffs."
+      }
+    },
+
+    {
+      "id": 5,
+      "title": "Environmental Scientist",
+      "stream": "Science / Health",
+      "description": "Study and protect the natural environment. Work in pollution control, conservation, climate change, and natural resource management.",
+      "years_of_study_after_shs": 4,
+
+      "shs_guidance": {
+        "required_program": "General Science or General Arts (Geography pathway)",
+        "required_electives": ["Biology", "Chemistry", "Physics or Geography"],
+        "recommended_elective": "Geography",
+        "note": "Both Science and Arts (with Geography) students can pursue Environmental Science. Science is the stronger pathway for research roles."
+      },
+
+      "wassce_requirements": {
+        "core_subjects_needed": [
+          "English Language (C6 min)",
+          "Core Mathematics (C6 min)",
+          "Integrated Science (C6 min)"
+        ],
+        "electives_needed": [
+          "Biology (C6 min)",
+          "Chemistry (C6 min)",
+          "Geography or Physics (C6 min)"
+        ],
+        "aggregate_target": "12–24",
+        "special_notes": "Less competitive than Medicine or Engineering. Good opportunity for students with solid but not exceptional science grades."
+      },
+
+      "university_programs": [
+        {
+          "program": "BSc Environmental Science",
+          "universities": [
+            {
+              "name": "University of Ghana",
+              "location": "Greater Accra",
+              "typical_cutoff": "14–22",
+              "notes": "Offered under the College of Basic and Applied Sciences."
+            },
+            {
+              "name": "University of Cape Coast",
+              "location": "Central Region",
+              "typical_cutoff": "15–24",
+              "notes": "Strong environmental science program linked to coastal and marine research."
+            }
+          ]
+        }
+      ],
+
+      "bece_guidance": {
+        "recommended_aggregate": "6–24 (accessible range)",
+        "key_subjects_to_excel": [
+          "Integrated Science",
+          "Mathematics",
+          "English Language"
+        ],
+        "advice": "A good Geography performance at JHS level signals strong environmental awareness. Both Science and Arts pathways are valid.",
+        "if_aggregate_is_higher": "Category C schools with Science or Arts programs still lead to this career. The path is very accessible."
+      }
+    },
+
+    {
+      "id": 6,
+      "title": "Agricultural Scientist",
+      "stream": "Science / Health",
+      "description": "Research and develop methods to improve crop yields, animal health, and food security. Important career for Ghana's agricultural economy.",
+      "years_of_study_after_shs": 4,
+
+      "shs_guidance": {
+        "required_program": "General Science or Agriculture program",
+        "required_electives": [
+          "Biology",
+          "Chemistry",
+          "Physics or Elective Mathematics"
+        ],
+        "recommended_elective": "Geography",
+        "note": "Some SHS schools offer Agriculture as a specific program. Science with Biology and Chemistry is the standard university entry route."
+      },
+
+      "wassce_requirements": {
+        "core_subjects_needed": [
+          "English Language (C6 min)",
+          "Core Mathematics (C6 min)",
+          "Integrated Science (C6 min)"
+        ],
+        "electives_needed": [
+          "Biology (C6 min)",
+          "Chemistry (C6 min)",
+          "Physics or Elective Mathematics (C6 min)"
+        ],
+        "aggregate_target": "12–24",
+        "special_notes": "UG School of Agriculture has specific elective requirements. Check program page for details."
+      },
+
+      "university_programs": [
+        {
+          "program": "BSc Agriculture",
+          "universities": [
+            {
+              "name": "University of Ghana (School of Agriculture)",
+              "location": "Greater Accra",
+              "typical_cutoff": "12–22",
+              "notes": "One of the largest agriculture schools in West Africa."
+            },
+            {
+              "name": "University of Cape Coast",
+              "location": "Central Region",
+              "typical_cutoff": "14–24",
+              "notes": "Offers BSc Agriculture with focus on crop science and agribusiness."
+            }
+          ]
+        }
+      ],
+
+      "bece_guidance": {
+        "recommended_aggregate": "6–24",
+        "key_subjects_to_excel": [
+          "Integrated Science",
+          "Mathematics",
+          "English Language"
+        ],
+        "advice": "Strong Biology and Chemistry are the foundation. Agriculture is a growing career in Ghana with good employment prospects.",
+        "if_aggregate_is_higher": "Category B and C schools are fine for this path. The career is very achievable across a wide aggregate range."
+      }
+    },
+
+    {
+      "id": 7,
+      "title": "Software Developer / Computer Engineer",
+      "stream": "Engineering / Technology",
+      "description": "Design, build, and maintain software applications, websites, and computer systems. One of the fastest-growing career fields in Ghana and globally.",
+      "years_of_study_after_shs": 4,
+
+      "shs_guidance": {
+        "required_program": "General Science (preferred) or General Arts",
+        "required_electives": [
+          "Elective Mathematics",
+          "Physics",
+          "Chemistry or Economics"
+        ],
+        "recommended_elective": "Elective Mathematics is the most critical subject for Computer Science",
+        "note": "General Arts students with Economics and Elective Mathematics can also qualify for Computer Science at some universities. Science is the stronger route."
+      },
+
+      "wassce_requirements": {
+        "core_subjects_needed": [
+          "English Language (C6 min)",
+          "Core Mathematics (B3 min)",
+          "Integrated Science (C6 min)"
+        ],
+        "electives_needed": [
+          "Elective Mathematics (C6 min)",
+          "Physics (C6 min)",
+          "Chemistry or Economics (C6 min)"
+        ],
+        "aggregate_target": "12–20",
+        "special_notes": "Core Mathematics and Elective Mathematics grades are both scrutinized. Computing at UG and KNUST is competitive but not as extreme as Medicine."
+      },
+
+      "university_programs": [
+        {
+          "program": "BSc Computer Science / BSc Computer Engineering",
+          "universities": [
+            {
+              "name": "University of Ghana (Department of Computer Science)",
+              "location": "Greater Accra",
+              "typical_cutoff": "12–18",
+              "notes": "Highly recommended for software development track."
+            },
+            {
+              "name": "University of Cape Coast",
+              "location": "Central Region",
+              "typical_cutoff": "14–20",
+              "notes": "BSc Computer Science offered under Faculty of Science."
+            },
+            {
+              "name": "KNUST (BSc Computer Engineering)",
+              "location": "Ashanti Region",
+              "typical_cutoff": "10–16",
+              "notes": "Engineering accreditation. Strong industry links."
+            }
+          ]
+        }
+      ],
+
+      "bece_guidance": {
+        "recommended_aggregate": "6–24",
+        "key_subjects_to_excel": [
+          "Mathematics",
+          "English Language",
+          "Integrated Science"
+        ],
+        "advice": "Mathematics performance at JHS is the strongest predictor of success in this career. Elective Mathematics at SHS is the gateway subject.",
+        "if_aggregate_is_higher": "Still very achievable via Category B and C schools. Focus on getting strong Maths and Physics grades at SHS level."
+      }
+    },
+
+    {
+      "id": 8,
+      "title": "Civil / Structural Engineer",
+      "stream": "Engineering / Technology",
+      "description": "Design and oversee construction of roads, bridges, buildings, and infrastructure. High demand in Ghana's growing construction sector.",
+      "years_of_study_after_shs": 4,
+
+      "shs_guidance": {
+        "required_program": "General Science",
+        "required_electives": ["Physics", "Elective Mathematics", "Chemistry"],
+        "recommended_elective": "Technical Drawing (if available at school)",
+        "note": "Physics and Elective Mathematics are both compulsory for engineering admission. No exceptions."
+      },
+
+      "wassce_requirements": {
+        "core_subjects_needed": [
+          "English Language (C6 min)",
+          "Core Mathematics (B3 min)",
+          "Integrated Science (C6 min)"
+        ],
+        "electives_needed": [
+          "Physics (C6 min)",
+          "Elective Mathematics (B3 recommended)",
+          "Chemistry (C6 min)"
+        ],
+        "aggregate_target": "8–18",
+        "special_notes": "KNUST Engineering requires B3 in Elective Mathematics. UG Engineering is also very competitive."
+      },
+
+      "university_programs": [
+        {
+          "program": "BSc Civil Engineering",
+          "universities": [
+            {
+              "name": "University of Ghana",
+              "location": "Greater Accra",
+              "typical_cutoff": "8–14",
+              "notes": "Offered under College of Basic and Applied Sciences."
+            },
+            {
+              "name": "KNUST (College of Engineering)",
+              "location": "Ashanti Region",
+              "typical_cutoff": "8–12",
+              "notes": "Ghana's leading engineering university. Very competitive for Civil Engineering."
+            }
+          ]
+        }
+      ],
+
+      "bece_guidance": {
+        "recommended_aggregate": "6–18",
+        "key_subjects_to_excel": [
+          "Mathematics",
+          "Integrated Science",
+          "English Language"
+        ],
+        "advice": "Choose a Science school with a strong Physics and Mathematics department. These two subjects define your ability to access engineering programs.",
+        "if_aggregate_is_higher": "Aggregate 19–24 can still access Science at good Category B schools. Focus on Elective Maths and Physics performance."
+      }
+    },
+
+    {
+      "id": 9,
+      "title": "Electrical Engineer",
+      "stream": "Engineering / Technology",
+      "description": "Design and develop electrical systems, power networks, and electronic devices. Essential for Ghana's energy sector.",
+      "years_of_study_after_shs": 4,
+
+      "shs_guidance": {
+        "required_program": "General Science",
+        "required_electives": ["Physics", "Elective Mathematics", "Chemistry"],
+        "recommended_elective": "Elective Mathematics — most important subject for this career",
+        "note": "Physics and Elective Maths are both required. Electrical Engineering is one of the most Maths-intensive careers."
+      },
+
+      "wassce_requirements": {
+        "core_subjects_needed": [
+          "English Language (C6 min)",
+          "Core Mathematics (B3 min)",
+          "Integrated Science (C6 min)"
+        ],
+        "electives_needed": [
+          "Physics (B3 recommended)",
+          "Elective Mathematics (B3 min)",
+          "Chemistry (C6 min)"
+        ],
+        "aggregate_target": "8–16",
+        "special_notes": "Physics and Elective Maths grades carry the most weight. Aim for B3 or better in both."
+      },
+
+      "university_programs": [
+        {
+          "program": "BSc Electrical / Electronic Engineering",
+          "universities": [
+            {
+              "name": "University of Ghana",
+              "location": "Greater Accra",
+              "typical_cutoff": "8–14",
+              "notes": "BSc Electrical and Electronic Engineering under CBAS."
+            },
+            {
+              "name": "KNUST (College of Engineering)",
+              "location": "Ashanti Region",
+              "typical_cutoff": "8–12",
+              "notes": "Top engineering program in Ghana for electrical systems."
+            }
+          ]
+        }
+      ],
+
+      "bece_guidance": {
+        "recommended_aggregate": "6–18",
+        "key_subjects_to_excel": [
+          "Mathematics",
+          "Integrated Science",
+          "English Language"
+        ],
+        "advice": "Mathematics and Science at JHS directly predict performance in Physics and Elective Maths at SHS. Take both seriously from JHS level.",
+        "if_aggregate_is_higher": "Category B Science schools still lead here. The key differentiator is SHS performance not BECE aggregate."
+      }
+    },
+
+    {
+      "id": 10,
+      "title": "Mechanical Engineer",
+      "stream": "Engineering / Technology",
+      "description": "Design, develop, and maintain mechanical systems and machinery. Works across manufacturing, automotive, energy, and industrial sectors.",
+      "years_of_study_after_shs": 4,
+
+      "shs_guidance": {
+        "required_program": "General Science",
+        "required_electives": ["Physics", "Elective Mathematics", "Chemistry"],
+        "recommended_elective": "Technical Drawing (strong advantage for Mechanical Engineering)",
+        "note": "Same core electives as other engineering programs. Technical Drawing gives a practical advantage."
+      },
+
+      "wassce_requirements": {
+        "core_subjects_needed": [
+          "English Language (C6 min)",
+          "Core Mathematics (B3 min)",
+          "Integrated Science (C6 min)"
+        ],
+        "electives_needed": [
+          "Physics (C6 min)",
+          "Elective Mathematics (B3 min)",
+          "Chemistry (C6 min)"
+        ],
+        "aggregate_target": "8–18",
+        "special_notes": "Physics and Elective Maths are the key subjects. Technical Drawing is an advantage but not universally required."
+      },
+
+      "university_programs": [
+        {
+          "program": "BSc Mechanical Engineering",
+          "universities": [
+            {
+              "name": "KNUST (College of Engineering)",
+              "location": "Ashanti Region",
+              "typical_cutoff": "8–14",
+              "notes": "Strongest Mechanical Engineering program in Ghana."
+            },
+            {
+              "name": "University of Ghana",
+              "location": "Greater Accra",
+              "typical_cutoff": "10–16",
+              "notes": "Offered under the engineering sciences track."
+            }
+          ]
+        }
+      ],
+
+      "bece_guidance": {
+        "recommended_aggregate": "6–18",
+        "key_subjects_to_excel": [
+          "Mathematics",
+          "Integrated Science",
+          "English Language"
+        ],
+        "advice": "Same path as other engineering careers. Physics and Maths are the foundation. Choose a Science school with practical lab facilities.",
+        "if_aggregate_is_higher": "Still achievable via strong Category B Science schools with good Physics departments."
+      }
+    },
+
+    {
+      "id": 11,
+      "title": "Telecommunications Engineer",
+      "stream": "Engineering / Technology",
+      "description": "Design and manage communication networks including mobile networks, internet infrastructure, and broadcasting systems.",
+      "years_of_study_after_shs": 4,
+
+      "shs_guidance": {
+        "required_program": "General Science",
+        "required_electives": ["Physics", "Elective Mathematics", "Chemistry"],
+        "recommended_elective": "Elective Mathematics — core for telecommunications systems",
+        "note": "Closely related to Electrical Engineering at the SHS level. Same elective pathway."
+      },
+
+      "wassce_requirements": {
+        "core_subjects_needed": [
+          "English Language (C6 min)",
+          "Core Mathematics (B3 min)",
+          "Integrated Science (C6 min)"
+        ],
+        "electives_needed": [
+          "Physics (B3 recommended)",
+          "Elective Mathematics (B3 min)",
+          "Chemistry (C6 min)"
+        ],
+        "aggregate_target": "10–18",
+        "special_notes": "Physics and Maths are critical. Some programs accept Computer Science elective in place of Chemistry."
+      },
+
+      "university_programs": [
+        {
+          "program": "BSc Telecommunication Engineering / BSc Computer Engineering",
+          "universities": [
+            {
+              "name": "KNUST",
+              "location": "Ashanti Region",
+              "typical_cutoff": "10–16",
+              "notes": "Telecommunications Engineering is a distinct program at KNUST."
+            },
+            {
+              "name": "University of Ghana",
+              "location": "Greater Accra",
+              "typical_cutoff": "12–18",
+              "notes": "Computer Engineering at UG covers telecommunications fundamentals."
+            }
+          ]
+        }
+      ],
+
+      "bece_guidance": {
+        "recommended_aggregate": "6–20",
+        "key_subjects_to_excel": [
+          "Mathematics",
+          "Integrated Science",
+          "English Language"
+        ],
+        "advice": "The same Science foundation applies. Ghana's growing telecom sector makes this an excellent career choice with strong job prospects.",
+        "if_aggregate_is_higher": "Category B Science schools provide the same pathway. Focus on excelling in Physics and Maths at SHS."
+      }
+    },
+
+    {
+      "id": 12,
+      "title": "Accountant / Chartered Accountant",
+      "stream": "Business",
+      "description": "Manage financial records, prepare accounts, conduct audits, and advise on financial matters. One of the most in-demand business careers in Ghana.",
+      "years_of_study_after_shs": 4,
+
+      "shs_guidance": {
+        "required_program": "Business",
+        "required_electives": [
+          "Financial Accounting",
+          "Business Management",
+          "Economics"
+        ],
+        "recommended_elective": "Elective Mathematics (strongly recommended for CA path)",
+        "note": "Financial Accounting at SHS is the direct foundation for university accounting programs. Cost Accounting is also useful."
+      },
+
+      "wassce_requirements": {
+        "core_subjects_needed": [
+          "English Language (C6 min)",
+          "Core Mathematics (C6 min)",
+          "Social Studies (C6 min)"
+        ],
+        "electives_needed": [
+          "Financial Accounting (C6 min)",
+          "Business Management (C6 min)",
+          "Economics (C6 min)"
+        ],
+        "aggregate_target": "12–24",
+        "special_notes": "Business aggregate uses Social Studies (not Integrated Science) as the third core subject. Elective Mathematics is not required but helps with CA professional exams later."
+      },
+
+      "university_programs": [
+        {
+          "program": "BSc Administration (Accounting option) / BSc Accounting",
+          "universities": [
+            {
+              "name": "University of Ghana Business School (UGBS)",
+              "location": "Greater Accra",
+              "typical_cutoff": "12–20",
+              "notes": "One of the top business schools in West Africa. BSc Administration with Accounting major."
+            },
+            {
+              "name": "University of Cape Coast School of Business",
+              "location": "Central Region",
+              "typical_cutoff": "14–22",
+              "notes": "Strong accounting program. Good professional exam pass rates."
+            }
+          ]
+        }
+      ],
+
+      "bece_guidance": {
+        "recommended_aggregate": "6–24 (wide and accessible range)",
+        "key_subjects_to_excel": [
+          "Mathematics",
+          "English Language",
+          "Social Studies"
+        ],
+        "advice": "Business programs are accessible across a wider aggregate range. Focus on Mathematics and English. Many students also pursue ICAG (Institute of Chartered Accountants Ghana) certification after university.",
+        "if_aggregate_is_higher": "Category C and D schools with Business programs still lead to this career. This is one of the most accessible professional career paths."
+      }
+    },
+
+    {
+      "id": 13,
+      "title": "Banker / Finance Analyst",
+      "stream": "Business",
+      "description": "Manage financial products, analyze investment opportunities, and support clients with banking and financial services.",
+      "years_of_study_after_shs": 4,
+
+      "shs_guidance": {
+        "required_program": "Business (preferred) or General Arts with Economics",
+        "required_electives": [
+          "Economics",
+          "Financial Accounting",
+          "Business Management or Elective Mathematics"
+        ],
+        "recommended_elective": "Elective Mathematics",
+        "note": "Economics is the core subject for finance. Both Business and Arts (with Economics) students can pursue finance programs."
+      },
+
+      "wassce_requirements": {
+        "core_subjects_needed": [
+          "English Language (C6 min)",
+          "Core Mathematics (C6 min)",
+          "Social Studies (C6 min)"
+        ],
+        "electives_needed": [
+          "Economics (C6 min)",
+          "Financial Accounting or Elective Mathematics (C6 min)",
+          "Business Management (C6 min)"
+        ],
+        "aggregate_target": "12–24",
+        "special_notes": "Finance programs at UG accept both Business and Arts students with Economics. Elective Maths strengthens the application."
+      },
+
+      "university_programs": [
+        {
+          "program": "BSc Administration (Finance / Banking option) / BSc Economics",
+          "universities": [
+            {
+              "name": "University of Ghana Business School",
+              "location": "Greater Accra",
+              "typical_cutoff": "12–20",
+              "notes": "Finance and Banking specialization under BSc Administration."
+            },
+            {
+              "name": "University of Cape Coast",
+              "location": "Central Region",
+              "typical_cutoff": "14–22",
+              "notes": "BSc Economics and BSc Finance available."
+            }
+          ]
+        }
+      ],
+
+      "bece_guidance": {
+        "recommended_aggregate": "6–24",
+        "key_subjects_to_excel": [
+          "Mathematics",
+          "English Language",
+          "Social Studies"
+        ],
+        "advice": "Strong Mathematics at JHS and SHS is the key differentiator in banking and finance careers. Elective Maths at SHS opens more doors.",
+        "if_aggregate_is_higher": "Very accessible across all school categories. Business and Arts programs are available in most SHS schools."
+      }
+    },
+
+    {
+      "id": 14,
+      "title": "Marketing / Business Manager",
+      "stream": "Business",
+      "description": "Plan and execute marketing strategies, manage business operations, and drive organizational growth.",
+      "years_of_study_after_shs": 4,
+
+      "shs_guidance": {
+        "required_program": "Business or General Arts",
+        "required_electives": [
+          "Business Management",
+          "Economics",
+          "Financial Accounting or Geography"
+        ],
+        "recommended_elective": "Business Management and Economics are the core pair",
+        "note": "Both Business and Arts pathways work. Business gives the more direct route."
+      },
+
+      "wassce_requirements": {
+        "core_subjects_needed": [
+          "English Language (C6 min)",
+          "Core Mathematics (C6 min)",
+          "Social Studies (C6 min)"
+        ],
+        "electives_needed": [
+          "Business Management (C6 min)",
+          "Economics (C6 min)",
+          "Financial Accounting or any third elective (C6 min)"
+        ],
+        "aggregate_target": "14–24",
+        "special_notes": "One of the more flexible entry programs. Good English and communication skills matter beyond grades."
+      },
+
+      "university_programs": [
+        {
+          "program": "BSc Administration (Marketing / Management option)",
+          "universities": [
+            {
+              "name": "University of Ghana Business School",
+              "location": "Greater Accra",
+              "typical_cutoff": "14–22",
+              "notes": "Marketing and Management specializations under BSc Administration."
+            },
+            {
+              "name": "University of Cape Coast School of Business",
+              "location": "Central Region",
+              "typical_cutoff": "16–24",
+              "notes": "BSc Business Administration with Management option."
+            }
+          ]
+        }
+      ],
+
+      "bece_guidance": {
+        "recommended_aggregate": "6–30 (very accessible)",
+        "key_subjects_to_excel": [
+          "English Language",
+          "Mathematics",
+          "Social Studies"
+        ],
+        "advice": "Good communication and English skills are as important as grades in this career. Focus on English and Social Studies performance.",
+        "if_aggregate_is_higher": "Very achievable path. Business programs are available at Category B, C, and D schools."
+      }
+    },
+
+    {
+      "id": 15,
+      "title": "Supply Chain / Logistics Manager",
+      "stream": "Business",
+      "description": "Manage the flow of goods, services, and information from production to delivery. Growing career in Ghana's expanding trade and commerce sector.",
+      "years_of_study_after_shs": 4,
+
+      "shs_guidance": {
+        "required_program": "Business or General Arts",
+        "required_electives": [
+          "Business Management",
+          "Economics",
+          "Financial Accounting"
+        ],
+        "recommended_elective": "Geography (useful for understanding trade routes and logistics)",
+        "note": "Business is the direct pathway. Logistics management programs are growing in Ghana."
+      },
+
+      "wassce_requirements": {
+        "core_subjects_needed": [
+          "English Language (C6 min)",
+          "Core Mathematics (C6 min)",
+          "Social Studies (C6 min)"
+        ],
+        "electives_needed": [
+          "Business Management (C6 min)",
+          "Economics (C6 min)",
+          "Financial Accounting (C6 min)"
+        ],
+        "aggregate_target": "14–24",
+        "special_notes": "Similar entry requirements to general business programs."
+      },
+
+      "university_programs": [
+        {
+          "program": "BSc Administration (Logistics & Supply Chain option) / BSc Logistics",
+          "universities": [
+            {
+              "name": "University of Ghana Business School",
+              "location": "Greater Accra",
+              "typical_cutoff": "14–22",
+              "notes": "Supply Chain and Logistics as a specialization under BSc Administration."
+            },
+            {
+              "name": "University of Cape Coast",
+              "location": "Central Region",
+              "typical_cutoff": "16–24",
+              "notes": "Business Administration with relevant specialization."
+            }
+          ]
+        }
+      ],
+
+      "bece_guidance": {
+        "recommended_aggregate": "6–30",
+        "key_subjects_to_excel": [
+          "Mathematics",
+          "English Language",
+          "Social Studies"
+        ],
+        "advice": "This career is growing fast in Ghana due to trade expansion. Business path is straightforward and accessible.",
+        "if_aggregate_is_higher": "Very accessible path. Available through most Business program SHS schools."
+      }
+    },
+
+    {
+      "id": 16,
+      "title": "Lawyer",
+      "stream": "Arts / Humanities / Law",
+      "description": "Represent clients in legal matters, draft legal documents, and advise on rights and obligations. One of the most prestigious careers in Ghana.",
+      "years_of_study_after_shs": 4,
+
+      "shs_guidance": {
+        "required_program": "General Arts (preferred) or Business",
+        "required_electives": [
+          "Literature in English",
+          "History or Government",
+          "Economics or Geography"
+        ],
+        "recommended_elective": "Literature in English is the most important elective for law",
+        "note": "English Literature and History/Government are the traditional law electives. Business students with Economics can also qualify."
+      },
+
+      "wassce_requirements": {
+        "core_subjects_needed": [
+          "English Language (B3 min — very important)",
+          "Core Mathematics (C6 min)",
+          "Social Studies (C6 min)"
+        ],
+        "electives_needed": [
+          "Literature in English (C6 min)",
+          "History or Government (C6 min)",
+          "Economics or Geography (C6 min)"
+        ],
+        "aggregate_target": "6–15 (very competitive for Ghana Law School)",
+        "special_notes": "English Language grade is critically important for law. Ghana School of Law entrance exam is required after the LLB degree. KNUST Law accepts Business students with Economics electives."
+      },
+
+      "university_programs": [
+        {
+          "program": "LLB (Bachelor of Laws)",
+          "universities": [
+            {
+              "name": "University of Ghana (Faculty of Law)",
+              "location": "Greater Accra",
+              "typical_cutoff": "6–12",
+              "notes": "Most competitive law faculty in Ghana. Strong English performance essential."
+            },
+            {
+              "name": "University of Cape Coast (Faculty of Law)",
+              "location": "Central Region",
+              "typical_cutoff": "8–15",
+              "notes": "Growing law faculty. Good reputation for commercial law."
+            },
+            {
+              "name": "KNUST (Faculty of Law)",
+              "location": "Ashanti Region",
+              "typical_cutoff": "7–14",
+              "notes": "Accepts Business students. Strong links to commercial and business law."
+            }
+          ]
+        }
+      ],
+
+      "bece_guidance": {
+        "recommended_aggregate": "6–18",
+        "key_subjects_to_excel": [
+          "English Language",
+          "Social Studies",
+          "Mathematics"
+        ],
+        "advice": "English Language is the single most important subject for a future lawyer. Read widely, write often, and focus on comprehension and composition from JHS level.",
+        "if_aggregate_is_higher": "Law is still accessible via Category B Arts schools. Strong English and Literature performance at SHS matters more than BECE aggregate for this career."
+      }
+    },
+
+    {
+      "id": 17,
+      "title": "Journalist / Media Practitioner",
+      "stream": "Arts / Humanities / Law",
+      "description": "Report news, produce media content, and communicate information to the public through print, broadcast, or digital platforms.",
+      "years_of_study_after_shs": 4,
+
+      "shs_guidance": {
+        "required_program": "General Arts",
+        "required_electives": [
+          "Literature in English",
+          "History or Government",
+          "Geography or French"
+        ],
+        "recommended_elective": "Literature in English — most important for journalism",
+        "note": "General Arts is the natural pathway. Strong English and writing skills from early on are essential."
+      },
+
+      "wassce_requirements": {
+        "core_subjects_needed": [
+          "English Language (B3 min)",
+          "Core Mathematics (C6 min)",
+          "Social Studies (C6 min)"
+        ],
+        "electives_needed": [
+          "Literature in English (C6 min)",
+          "History or Government (C6 min)",
+          "Any third Arts elective (C6 min)"
+        ],
+        "aggregate_target": "14–24",
+        "special_notes": "English Language grade is the most important. Communication and writing ability matters beyond just grades."
+      },
+
+      "university_programs": [
+        {
+          "program": "BA Communication Studies / BA Journalism",
+          "universities": [
+            {
+              "name": "University of Ghana (School of Information and Communication Studies)",
+              "location": "Greater Accra",
+              "typical_cutoff": "14–22",
+              "notes": "Ghana's leading communication and journalism school."
+            },
+            {
+              "name": "University of Cape Coast",
+              "location": "Central Region",
+              "typical_cutoff": "16–24",
+              "notes": "BA Communication Studies available."
+            }
+          ]
+        }
+      ],
+
+      "bece_guidance": {
+        "recommended_aggregate": "6–24",
+        "key_subjects_to_excel": [
+          "English Language",
+          "Social Studies",
+          "Mathematics"
+        ],
+        "advice": "Read newspapers, write regularly, and develop strong communication habits from JHS. English is everything in this career.",
+        "if_aggregate_is_higher": "Very accessible path. General Arts programs are available in most SHS schools across all categories."
+      }
+    },
+
+    {
+      "id": 18,
+      "title": "Teacher / Educator",
+      "stream": "Arts / Humanities / Law",
+      "description": "Educate students at basic, secondary, or tertiary levels. Teaching remains one of the most important and stable careers in Ghana.",
+      "years_of_study_after_shs": 4,
+
+      "shs_guidance": {
+        "required_program": "Any program (Science, Arts, Business, TVET) depending on subject specialization",
+        "required_electives": [
+          "Depends on subject to be taught — Science teachers need Science electives, Arts teachers need Arts electives"
+        ],
+        "recommended_elective": "Choose electives aligned with the subject you want to teach",
+        "note": "Teaching is unique — your SHS program should match the subject you want to specialize in at university level."
+      },
+
+      "wassce_requirements": {
+        "core_subjects_needed": [
+          "English Language (C6 min)",
+          "Core Mathematics (C6 min)",
+          "Social Studies (C6 min)",
+          "Integrated Science (C6 min)"
+        ],
+        "electives_needed": [
+          "3 electives relevant to your teaching subject area"
+        ],
+        "aggregate_target": "14–28",
+        "special_notes": "UCC is Ghana's primary teacher education university. College of Education programs also accept students through separate placement. Aggregate requirements vary by subject area."
+      },
+
+      "university_programs": [
+        {
+          "program": "B.Ed (Bachelor of Education) / BSc Education",
+          "universities": [
+            {
+              "name": "University of Cape Coast (College of Education Studies)",
+              "location": "Central Region",
+              "typical_cutoff": "14–24",
+              "notes": "Ghana's premier teacher education university. Offers B.Ed across Science, Arts, Social Studies, and Technical education."
+            },
+            {
+              "name": "University of Ghana (School of Education)",
+              "location": "Greater Accra",
+              "typical_cutoff": "16–26",
+              "notes": "Education programs with various subject specializations."
+            }
+          ]
+        }
+      ],
+
+      "bece_guidance": {
+        "recommended_aggregate": "6–30 (very wide range)",
+        "key_subjects_to_excel": [
+          "English Language",
+          "Mathematics",
+          "Subject areas you enjoy most"
+        ],
+        "advice": "Teaching is accessible across a very wide range of aggregate scores. UCC is especially well-positioned for teacher training. Colleges of Education (CoE) are also a strong route.",
+        "if_aggregate_is_higher": "Colleges of Education accept students through their own placement system and are excellent institutions for teacher training even with higher BECE aggregates."
+      }
+    },
+
+    {
+      "id": 19,
+      "title": "Automotive Technician (TVET)",
+      "stream": "Technical / Vocational",
+      "description": "Diagnose, repair, and maintain vehicles including cars, trucks, and heavy equipment. Growing demand with Ghana's expanding vehicle fleet.",
+      "years_of_study_after_shs": 2,
+
+      "shs_guidance": {
+        "required_program": "Technical (TVET)",
+        "required_electives": [
+          "Auto Mechanics",
+          "Workshop Technology",
+          "Technical Drawing"
+        ],
+        "recommended_elective": "Auto Mechanics is the core elective for this career",
+        "note": "Technical/Vocational schools offer Auto Mechanics as a specific track. This career does not require a university degree — HND or City & Guilds certification is the standard route."
+      },
+
+      "wassce_requirements": {
+        "core_subjects_needed": [
+          "English Language (C6 min)",
+          "Core Mathematics (C6 min)"
+        ],
+        "electives_needed": [
+          "Auto Mechanics (C6 min)",
+          "Workshop Technology (C6 min)",
+          "Technical Drawing (C6 min)"
+        ],
+        "aggregate_target": "Not required for HND route — TVET certificate sufficient",
+        "special_notes": "TVET graduates can progress to HND at polytechnics or technical universities without the same university aggregate requirements. NVTI certification is also an alternative route."
+      },
+
+      "university_programs": [
+        {
+          "program": "HND Automotive Engineering / NVTI Certificate",
+          "universities": [
+            {
+              "name": "Accra Technical University",
+              "location": "Greater Accra",
+              "typical_cutoff": "Not aggregate-based — TVET certificate and aptitude",
+              "notes": "HND Automotive Engineering. Practical, industry-linked program."
+            },
+            {
+              "name": "Cape Coast Technical University",
+              "location": "Central Region",
+              "typical_cutoff": "Not aggregate-based",
+              "notes": "Technical and vocational programs in engineering trades."
+            }
+          ]
+        }
+      ],
+
+      "bece_guidance": {
+        "recommended_aggregate": "Any aggregate (TVET pathway is open to all)",
+        "key_subjects_to_excel": [
+          "Mathematics",
+          "Integrated Science",
+          "English Language"
+        ],
+        "advice": "Technical schools are a strong and dignified pathway. Students who enjoy hands-on work and mechanics thrive in this career. Ghana's vehicle repair industry is a major employer.",
+        "if_aggregate_is_higher": "TVET schools are specifically designed for students with a wider range of aggregates. This is a strength, not a limitation."
+      }
+    },
+
+    {
+      "id": 20,
+      "title": "Building & Construction Technician (TVET)",
+      "stream": "Technical / Vocational",
+      "description": "Plan, supervise, and execute building and construction projects. Works alongside engineers and architects in Ghana's booming construction sector.",
+      "years_of_study_after_shs": 2,
+
+      "shs_guidance": {
+        "required_program": "Technical (TVET)",
+        "required_electives": [
+          "Building Construction",
+          "Technical Drawing",
+          "Workshop Technology"
+        ],
+        "recommended_elective": "Building Construction is the core elective",
+        "note": "Technical schools offer Building Construction as a specific track. Can progress to HND Building Technology at technical universities."
+      },
+
+      "wassce_requirements": {
+        "core_subjects_needed": [
+          "English Language (C6 min)",
+          "Core Mathematics (C6 min)"
+        ],
+        "electives_needed": [
+          "Building Construction (C6 min)",
+          "Technical Drawing (C6 min)",
+          "Workshop Technology or Electrical Installation (C6 min)"
+        ],
+        "aggregate_target": "Not required for HND route",
+        "special_notes": "HND Building Technology at technical universities is the natural progression. Civil Engineering degree is an option for top performers who want the university route."
+      },
+
+      "university_programs": [
+        {
+          "program": "HND Building Technology / HND Civil Engineering",
+          "universities": [
+            {
+              "name": "Accra Technical University",
+              "location": "Greater Accra",
+              "typical_cutoff": "Not aggregate-based — TVET certificate and aptitude",
+              "notes": "HND Building Technology. Strong construction industry links."
+            },
+            {
+              "name": "Cape Coast Technical University",
+              "location": "Central Region",
+              "typical_cutoff": "Not aggregate-based",
+              "notes": "HND programs in building and civil works."
+            }
+          ]
+        }
+      ],
+
+      "bece_guidance": {
+        "recommended_aggregate": "Any aggregate (TVET pathway is open to all)",
+        "key_subjects_to_excel": [
+          "Mathematics",
+          "Integrated Science",
+          "English Language"
+        ],
+        "advice": "Ghana's construction sector is one of the fastest-growing industries. Building technicians are in high demand. This career path is practical, well-paying, and respectable.",
+        "if_aggregate_is_higher": "Technical schools are designed for this. TVET is not a fallback — it is a focused career track with strong employment outcomes."
+      }
+    }
+  ]
+}

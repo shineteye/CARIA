@@ -1,0 +1,82 @@
+:root {
+  /* Colors */
+  --navy: #0d1b3e;
+  --navy-mid: #1a2f5e;
+  --navy-light: #243e7a;
+  --gold: #c9970a;
+  --gold-light: #f0c93a;
+  --gold-faint: #fbf3d5;
+  --off-white: #f4f2ec;
+  --white: #ffffff;
+  --text-primary: #1a1a2e;
+  --text-secondary: #4a4a6a;
+  --text-muted: #8888aa;
+  --border: #ddd9ce;
+  --border-strong: #b8b4a8;
+  --success: #1a6b3c;
+  --error: #b91c1c;
+
+  /* Typography */
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  /* Type scale */
+  --text-xs: 0.75rem;
+  --: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+
+  /* Borders */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(13, 27, 62, 0.08);
+  --shadow-md: 0 4px 12px rgba(13, 27, 62, 0.12);
+  --shadow-lg: 0 8px 24px rgba(13, 27, 62, 0.16);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+}
+
+/* ── Tailwind v4 theme tokens ──────────────────────────────────────────────
+   Registers CSS vars as named Tailwind colors so you can write:
+   text-navy, bg-gold, border-border, text-fg-muted, etc.              */
+@theme {
+  --color-navy: #0d1b3e;
+  --color-navy-mid: #1a2f5e;
+  --color-navy-light: #243e7a;
+  --color-gold: #c9970a;
+  --color-gold-light: #f0c93a;
+  --color-gold-faint: #fbf3d5;
+  --color-cream: #f4f2ec; /* --off-white */
+
+  --color-fg: #1a1a2e; /* --text-primary   */
+  --color-fg-soft: #4a4a6a; /* --text-secondary */
+  --color-fg-muted: #8888aa; /* --text-muted     */
+
+  --color-border: #ddd9ce;
+  --color-success: #1a6b3c;
+  --color-error: #b91c1c;
+}

@@ -1,0 +1,424 @@
+{
+  "university_name": "University of Ghana (UG Legon)",
+  "location": "Accra, Greater Accra, Ghana",
+  "category": "Public",
+  "academic_year": "2026/2027",
+  "general_requirement": "Aggregate 24 or better for standard undergraduate degrees; C6 or better in Core English, Core Mathematics, and Integrated Science/Social Studies.",
+  "faculties_and_programs": [
+    {
+      "faculty": "College of Health Sciences",
+      "programs": [
+        {
+          "name": "BSc. Biomedical Engineering",
+          "cut_off_point": 6,
+          "competitiveness": "Very High"
+        },
+        {
+          "name": "MBChB Medicine",
+          "cut_off_point": 8,
+          "competitiveness": "Very High"
+        },
+        {
+          "name": "BSc. Public Health",
+          "cut_off_point": 9,
+          "competitiveness": "High"
+        },
+        {
+          "name": "Bachelor of Dental Surgery",
+          "cut_off_point": 10,
+          "competitiveness": "Very High"
+        },
+        {
+          "name": "Doctor of Pharmacy",
+          "cut_off_point": 10,
+          "competitiveness": "Very High"
+        },
+        {
+          "name": "BSc. Medical Laboratory Science",
+          "cut_off_point": 12,
+          "competitiveness": "High"
+        },
+        {
+          "name": "BSc. Radiography",
+          "cut_off_point": 13,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BSc. Dietetics",
+          "cut_off_point": 14,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BSc. Nursing",
+          "cut_off_point": 15,
+          "competitiveness": "High"
+        },
+        {
+          "name": "BSc. Midwifery",
+          "cut_off_point": 15,
+          "competitiveness": "High"
+        },
+        {
+          "name": "BSc. Occupational Therapy",
+          "cut_off_point": 15,
+          "competitiveness": "Medium"
+        }
+      ]
+    },
+    {
+      "faculty": "College of Basic & Applied Sciences",
+      "programs": [
+        {
+          "name": "BSc. Computer Engineering",
+          "cut_off_point": 7,
+          "competitiveness": "Very High"
+        },
+        {
+          "name": "BSc. Computer Science",
+          "cut_off_point": 7,
+          "competitiveness": "Very High"
+        },
+        {
+          "name": "BSc. Information Technology",
+          "cut_off_point": 10,
+          "competitiveness": "High"
+        },
+        {
+          "name": "BSc. Actuarial Science",
+          "cut_off_point": 11,
+          "competitiveness": "High"
+        },
+        {
+          "name": "BSc. Biochemistry, Cell and Molecular Biology",
+          "cut_off_point": 12,
+          "competitiveness": "High"
+        },
+        {
+          "name": "BSc. Food Process Engineering",
+          "cut_off_point": 12,
+          "competitiveness": "High"
+        },
+        {
+          "name": "BSc. Mathematics",
+          "cut_off_point": 12,
+          "competitiveness": "High"
+        },
+        {
+          "name": "BSc. Statistics",
+          "cut_off_point": 12,
+          "competitiveness": "High"
+        },
+        {
+          "name": "BSc. Materials Science and Engineering",
+          "cut_off_point": 13,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BSc. Biological Sciences",
+          "cut_off_point": 14,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "Doctor of Veterinary Medicine",
+          "cut_off_point": 14,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BSc. Agricultural Engineering",
+          "cut_off_point": 15,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BSc. Earth Science",
+          "cut_off_point": 15,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BSc. Nutrition and Food Science",
+          "cut_off_point": 16,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BSc. Physics",
+          "cut_off_point": 16,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BSc. Chemistry",
+          "cut_off_point": 16,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BSc. Geology",
+          "cut_off_point": 16,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BSc. Environmental Science",
+          "cut_off_point": 18,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BSc. Food Science and Nutrition",
+          "cut_off_point": 18,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BSc. Geography and Resource Development",
+          "cut_off_point": 18,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BSc. Family and Consumer Sciences",
+          "cut_off_point": 20,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BSc. Marine and Fisheries Science",
+          "cut_off_point": 20,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BSc. Family Resource Management",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BSc. Home Science",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BSc. Sports Science",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BSc. Physical Sciences",
+          "cut_off_point": 24,
+          "competitiveness": "Low"
+        }
+      ]
+    },
+    {
+      "faculty": "School of Agriculture",
+      "programs": [
+        {
+          "name": "BSc. Agribusiness",
+          "cut_off_point": 18,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BSc. Crop Science",
+          "cut_off_point": 20,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BSc. Soil Science",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BSc. Agriculture Science",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        }
+      ]
+    },
+    {
+      "faculty": "College of Humanities & Social Sciences",
+      "programs": [
+        {
+          "name": "Bachelor of Laws (LLB)",
+          "cut_off_point": 7,
+          "competitiveness": "Very High"
+        },
+        {
+          "name": "BSc. Administration",
+          "cut_off_point": 9,
+          "competitiveness": "High"
+        },
+        {
+          "name": "Bachelor of Arts (Bouquets with Business Subject)",
+          "cut_off_point": 12,
+          "competitiveness": "High"
+        },
+        {
+          "name": "LLB Law (Accra City Campus Weekend)",
+          "cut_off_point": 12,
+          "competitiveness": "High"
+        },
+        {
+          "name": "BA. Communication Studies",
+          "cut_off_point": 14,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BA. Economics",
+          "cut_off_point": 14,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BA. Psychology",
+          "cut_off_point": 15,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BA. Political Science",
+          "cut_off_point": 16,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BA. English",
+          "cut_off_point": 18,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BA. Geography and Resource Development",
+          "cut_off_point": 18,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BA. Sociology",
+          "cut_off_point": 18,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BA. Population and Health",
+          "cut_off_point": 20,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BA. Chinese",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BA. Economics (Accra City Campus)",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BA. French",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BSc. Recreation and Social Psychology",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BA. Akuapem Twi",
+          "cut_off_point": 24,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BA. Arabic",
+          "cut_off_point": 24,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BA. Archaeology and Heritage Studies",
+          "cut_off_point": 24,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BA. Dagbani",
+          "cut_off_point": 24,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BA. Dance Studies",
+          "cut_off_point": 24,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BA. Ga",
+          "cut_off_point": 24,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BA. Information Studies (Accra City Campus)",
+          "cut_off_point": 24,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BA. Music",
+          "cut_off_point": 24,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BA. Portuguese",
+          "cut_off_point": 24,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BA. Russian",
+          "cut_off_point": 24,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BA. Sociology (Accra City Campus)",
+          "cut_off_point": 24,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BA. Study of Religions",
+          "cut_off_point": 24,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BA. Swahili",
+          "cut_off_point": 24,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BFA. Dance",
+          "cut_off_point": 24,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BFA. Music",
+          "cut_off_point": 24,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BFA. Theatre Arts",
+          "cut_off_point": 24,
+          "competitiveness": "Low"
+        }
+      ]
+    },
+    {
+      "faculty": "School of Education & Distance Learning",
+      "programs": [
+        {
+          "name": "BA. Adult Education",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BEd. Streams (Basic/JHS/Upper Grade Specialism)",
+          "cut_off_point": 24,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BSc. Accounting (Distance Education)",
+          "cut_off_point": 24,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BSc. Information Technology (Distance Education)",
+          "cut_off_point": 24,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "Bachelor of Arts (Distance Education)",
+          "cut_off_point": 30,
+          "competitiveness": "Low"
+        }
+      ]
+    }
+  ]
+}

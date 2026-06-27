@@ -1,0 +1,323 @@
+{
+  "university_name": "University of Cape Coast (UCC)",
+  "location": "Cape Coast, Central Region, Ghana",
+  "category": "Public",
+  "academic_year": "2026/2027",
+  "faculties_and_programs": [
+    {
+      "faculty": "School of Medical Sciences & Health Sciences",
+      "programs": [
+        {
+          "name": "MBChB Medicine and Surgery",
+          "cut_off_point": 8,
+          "competitiveness": "Very High"
+        },
+        {
+          "name": "Doctor of Pharmacy",
+          "cut_off_point": 9,
+          "competitiveness": "High"
+        },
+        {
+          "name": "BSc. Medical Laboratory Science",
+          "cut_off_point": 12,
+          "competitiveness": "High"
+        },
+        {
+          "name": "BSc. Medical Laboratory Technology",
+          "cut_off_point": 12,
+          "competitiveness": "High"
+        },
+        {
+          "name": "BSc. Midwifery",
+          "cut_off_point": 12,
+          "competitiveness": "High"
+        },
+        {
+          "name": "BSc. Community Health Nursing",
+          "cut_off_point": 18,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BSc. Health Information Management",
+          "cut_off_point": 18,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BSc. Sport and Exercise Science",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        }
+      ]
+    },
+    {
+      "faculty": "Faculty of Law",
+      "programs": [
+        {
+          "name": "Bachelor of Laws (LLB)",
+          "cut_off_point": 12,
+          "competitiveness": "High"
+        }
+      ]
+    },
+    {
+      "faculty": "Faculty of Arts & Humanities",
+      "programs": [
+        {
+          "name": "BA. Communication Studies",
+          "cut_off_point": 17,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BA. Anthropology",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BA. Arts (General Arts bouquet)",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BA. French",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BA. Theatre Studies",
+          "cut_off_point": 23,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BA. African Studies",
+          "cut_off_point": 24,
+          "competitiveness": "Low"
+        }
+      ]
+    },
+    {
+      "faculty": "School of Business",
+      "programs": [
+        {
+          "name": "BSc. Economics with Finance",
+          "cut_off_point": 17,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BBA. Commerce",
+          "cut_off_point": 18,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BComm. Procurement and Supply Chain Management",
+          "cut_off_point": 20,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BSc. Hospitality Management",
+          "cut_off_point": 20,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BComm. Management",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BSc. Tourism Management",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        }
+      ]
+    },
+    {
+      "faculty": "Faculty of Science & Computing",
+      "programs": [
+        {
+          "name": "BSc. Forensic Science",
+          "cut_off_point": 17,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BSc. Mathematics and Statistics",
+          "cut_off_point": 17,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BSc. Mathematics with Economics",
+          "cut_off_point": 17,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BSc. Engineering Physics",
+          "cut_off_point": 18,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BSc. Laboratory Technology",
+          "cut_off_point": 18,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BSc. Environmental Science",
+          "cut_off_point": 19,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BSc. Meteorology and Atmospheric Physics",
+          "cut_off_point": 19,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BSc. Fisheries and Aquatic Sciences",
+          "cut_off_point": 20,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BSc. Mathematics",
+          "cut_off_point": 20,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BSc. Molecular Biology and Biotechnology",
+          "cut_off_point": 20,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BSc. Water and Sanitation",
+          "cut_off_point": 20,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BSc. Industrial Chemistry",
+          "cut_off_point": 21,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BSc. Mathematics with Business",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BSc. Physics",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        }
+      ]
+    },
+    {
+      "faculty": "College of Education Studies",
+      "programs": [
+        {
+          "name": "BEd. Computer Science",
+          "cut_off_point": 20,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BEd. Mathematics",
+          "cut_off_point": 20,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BEd. Arts",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BEd. Basic Education",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BEd. Communication Design",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BEd. Health Sciences Education",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BEd. Home Economics",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BEd. Information Technology Education",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BEd. Science",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BEd. Health Physical Education and Recreation",
+          "cut_off_point": 24,
+          "competitiveness": "Low"
+        }
+      ]
+    },
+    {
+      "faculty": "School of Agriculture & Social Sciences",
+      "programs": [
+        {
+          "name": "BA. Political Science",
+          "cut_off_point": 18,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BA. Sociology",
+          "cut_off_point": 18,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BSc. Geography and Regional Planning",
+          "cut_off_point": 17,
+          "competitiveness": "Medium"
+        },
+        {
+          "name": "BSc. Agri-Business",
+          "cut_off_point": 20,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BSc. Development Economics",
+          "cut_off_point": 20,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BSc. Horticulture",
+          "cut_off_point": 20,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BSc. Psychology",
+          "cut_off_point": 20,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BA. Social Behaviour and Conflict Management",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BSc. Agricultural Extension and Community Development",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BSc. Agriculture",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        },
+        {
+          "name": "BSc. Agro-Processing",
+          "cut_off_point": 22,
+          "competitiveness": "Low"
+        }
+      ]
+    }
+  ]
+}
