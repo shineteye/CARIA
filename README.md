@@ -138,4 +138,4 @@ Built with ❤️ for Ghanaian students
 
 ---
 
-**Start your journey today → [pathfinder-ghana.com](https://vercel-app.caria-ghana.com)**
+**Start your journey today → [pathfinder-ghana.com](https://caria-ghana.vercel.app)**
