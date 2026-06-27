@@ -1,11 +1,16 @@
 import axios from 'axios';
 
+// Detect if we are running in production on Vercel
+const isProduction = import.meta.env.PROD;
+
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5001',
+  // Dev: local Express server. Production: Vercel's routing prefix
+  baseURL: import.meta.env.VITE_API_URL || (isProduction ? '/_/backend' : 'http://localhost:5001'),
   headers: { 'Content-Type': 'application/json' },
 });
 
 export async function createSession() {
+  // This will now hit /_/backend/api/session/create in production
   const { data } = await api.post('/api/session/create');
   return data;
 }
