@@ -13,7 +13,7 @@ export default function Footer() {
             className="text-xl font-semibold text-white"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            Caria <span className="text-gold">Ghana</span>
+            Caria <span className="text-gold">AI</span>
           </p>
           <p className=" mt-2 leading-relaxed text-white/40">
             Career guidance built for Ghanaian students.
@@ -46,7 +46,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="max-w-[960px] mx-auto mt-6">
         <p className="text-xs text-white/25">
-          © 2025 Caria Ghana · Built for Ghanaian Students
+          © 2025 Caria AI · Built for Ghanaian Students
         </p>
       </div>
     </footer>

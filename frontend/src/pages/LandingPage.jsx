@@ -28,18 +28,18 @@ const GALLERY_CARDS = [
 const BENEFITS = [
   {
     Icon: RiRouteLine,
-    heading: "Personalized Roadmaps",
-    text: "A step-by-step academic plan built around your specific career goal.",
+    heading: "Personal Onboarding",
+    text: "A short chat-style quiz about school, skills, family, and goals — tap answers or type details.",
   },
   {
     Icon: RiBookOpenLine,
-    heading: "Subject Guidance",
-    text: "Know exactly which electives and core subjects to pick at every stage.",
+    heading: "Your Custom Guide",
+    text: "A roadmap shaped by who you are — not just a career name — with subjects and next steps.",
   },
   {
     Icon: RiSchoolLine,
     heading: "School & Grade Targets",
-    text: "See exactly which institutions and aggregate scores you need to aim for.",
+    text: "See realistic institutions and aggregate scores that fit your region and constraints.",
   },
 ];
 
@@ -78,8 +78,8 @@ export default function LandingPage() {
         </h1>
 
         <p className="text-lg text-fg-soft max-w-[500px] mx-auto mb-8 leading-[1.65]">
-          From JHS to university — discover exactly what subjects, schools, and
-          grades you need for the career you want.
+          Answer a short chat-style quiz about you — then get a personal guide
+          for subjects, schools, and grades from JHS to university.
         </p>
 
         <Link
@@ -174,21 +174,20 @@ export default function LandingPage() {
           >
             <StepNum n="01" light />
             <h3 className="text-xl font-semibold text-white leading-[1.3] mb-3">
-              Tell us your career goal
+              Complete your student profile
             </h3>
             <p className=" leading-[1.7] text-white/65">
-              Share what you want to become — doctor, engineer, accountant, or
-              anything else. Our AI understands Ghana's education landscape
-              inside out.
+              A short chat quiz covers school stage, strengths, family
+              influence, money, and goals. Tap suggestions — or type more detail
+              anytime.
             </p>
 
             <div className="flex flex-col gap-3 mt-auto pt-6">
-              <div className="self-end bg-gold text-navy text-xs leading-[1.5] px-3.5 py-2.5 rounded-[14px] rounded-br-[4px] max-w-[85%]">
-                I want to become a Software Engineer.
+              <div className="self-start text-xs leading-[1.5] px-3.5 py-2.5 rounded-[14px] rounded-bl-[4px] max-w-[90%] text-white/80 bg-white/[8%] border border-white/10">
+                Who has the biggest voice in your path right now?
               </div>
-              <div className="self-start text-xs leading-[1.5] px-3.5 py-2.5 rounded-[14px] rounded-bl-[4px] max-w-[85%] text-white/80 bg-white/[8%] border border-white/10">
-                Great choice! Here's your roadmap from JHS to KNUST Computer
-                Science…
+              <div className="self-end bg-gold text-navy text-xs leading-[1.5] px-3.5 py-2.5 rounded-[14px] rounded-br-[4px] max-w-[85%]">
+                Mix of family and me
               </div>
             </div>
           </div>
@@ -197,11 +196,11 @@ export default function LandingPage() {
           <div className="rounded-[20px] p-8 flex flex-col bg-cream border border-border">
             <StepNum n="02" />
             <h3 className="text-xl font-semibold text-fg leading-[1.3] mb-3">
-              Get your full academic roadmap
+              Get your personal guide
             </h3>
             <p className=" text-fg-soft leading-[1.7]">
-              Every step from JHS through BECE, SHS, WASSCE, and into university
-              — mapped out clearly and completely.
+              Caria writes a guide that fits your real situation — strengths,
+              constraints, and a best-fit direction with alternates.
             </p>
           </div>
 
@@ -209,11 +208,11 @@ export default function LandingPage() {
           <div className="rounded-[20px] p-8 flex flex-col bg-gold">
             <StepNum n="03" light />
             <h3 className="text-xl font-semibold text-navy leading-[1.3] mb-3">
-              Know which schools & grades
+              Follow up anytime
             </h3>
             <p className=" leading-[1.7] text-navy/70">
-              See the subjects, aggregates, and institutions you need to hit
-              your specific target — no guesswork.
+              Ask about streams, cutoffs, parent conversations, or backups —
+              with your profile already understood.
             </p>
           </div>
         </div>
@@ -371,7 +370,7 @@ export default function LandingPage() {
           <em className="not-italic text-gold-light">with one conversation.</em>
         </h2>
         <p className="text-base text-white/50 mb-8 leading-[1.6]">
-          Built for every Ghanaian student — no sign-up needed.
+          Built for every Ghanaian student — free, with a quick sign-up.
         </p>
         <Link
           to="/chat"

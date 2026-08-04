@@ -1,20 +1,57 @@
-import { useState, useCallback, useEffect, useRef } from 'react';
-import { createSession, sendMessage as sendMessageApi, getSessionHistory } from '../services/api';
+import { useState, useCallback, useEffect, useRef } from "react";
+import {
+  createSession,
+  sendMessage as sendMessageApi,
+  getSessionHistory,
+} from "../services/api";
+import { useAuth } from "../context/AuthContext";
 
-const SESSION_KEY = 'Caria_session_id';
+const SESSION_KEY = "Caria_session_id";
 
-export default function useChat(onRoadmapUpdate) {
+export default function useChat(onMetaUpdate) {
+  const { isAuthenticated, token } = useAuth();
   const [messages, setMessages] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [sessionId, setSessionId] = useState(null);
   const [sessionReady, setSessionReady] = useState(false);
-  const onRoadmapUpdateRef = useRef(onRoadmapUpdate);
-  onRoadmapUpdateRef.current = onRoadmapUpdate;
+  const [phase, setPhase] = useState("onboarding");
+  const [onboarding, setOnboarding] = useState(null);
+  const [profile, setProfile] = useState(null);
+  const [careerGoal, setCareerGoal] = useState(null);
+  const [guideReady, setGuideReady] = useState(false);
+
+  const onMetaUpdateRef = useRef(onMetaUpdate);
+  onMetaUpdateRef.current = onMetaUpdate;
+
+  const applyMeta = useCallback((data) => {
+    if (data.phase) setPhase(data.phase);
+    if (data.onboarding !== undefined) setOnboarding(data.onboarding);
+    if (data.profile) setProfile(data.profile);
+    if (data.careerGoal !== undefined && data.careerGoal !== null) {
+      setCareerGoal(data.careerGoal);
+    }
+    if (data.guideReady !== undefined) setGuideReady(!!data.guideReady);
+
+    onMetaUpdateRef.current?.({
+      phase: data.phase,
+      onboarding: data.onboarding,
+      profile: data.profile,
+      careerGoal: data.careerGoal,
+      guideReady: data.guideReady,
+      roadmapUpdate: data.roadmapUpdate,
+    });
+  }, []);
 
   useEffect(() => {
+    if (!isAuthenticated || !token) {
+      setSessionReady(true);
+      return;
+    }
+
     let cancelled = false;
 
     async function initSession() {
+      setSessionReady(false);
       const storedId = localStorage.getItem(SESSION_KEY);
 
       if (storedId) {
@@ -22,9 +59,10 @@ export default function useChat(onRoadmapUpdate) {
           const history = await getSessionHistory(storedId);
           if (!cancelled) {
             setSessionId(storedId);
-            if (Array.isArray(history)) {
-              setMessages(history);
+            if (Array.isArray(history.messages)) {
+              setMessages(history.messages);
             }
+            applyMeta(history);
             setSessionReady(true);
             return;
           }
@@ -34,61 +72,108 @@ export default function useChat(onRoadmapUpdate) {
       }
 
       try {
-        const { sessionId: newId } = await createSession();
+        const created = await createSession(false);
         if (!cancelled) {
-          localStorage.setItem(SESSION_KEY, newId);
-          setSessionId(newId);
+          localStorage.setItem(SESSION_KEY, created.sessionId);
+          setSessionId(created.sessionId);
+          if (Array.isArray(created.messages)) {
+            setMessages(created.messages);
+          }
+          applyMeta(created);
         }
       } catch {
-        /* backend not available yet */
+        /* backend not available */
       } finally {
         if (!cancelled) setSessionReady(true);
       }
     }
 
     initSession();
-    return () => { cancelled = true; };
-  }, []);
-
-  const sendMessage = useCallback(async (text) => {
-    if (!sessionId || isLoading) return;
-
-    const userMessage = {
-      role: 'user',
-      content: text,
-      timestamp: new Date().toISOString(),
+    return () => {
+      cancelled = true;
     };
+  }, [isAuthenticated, token, applyMeta]);
 
-    setMessages((prev) => [...prev, userMessage]);
-    setIsLoading(true);
+  const sendMessage = useCallback(
+    async (text) => {
+      if (!sessionId || isLoading) return;
 
-    try {
-      const { reply, roadmapUpdate } = await sendMessageApi(sessionId, text);
+      const trimmed = (text || "").trim();
+      if (!trimmed) return;
 
-      const agentMessage = {
-        role: 'agent',
-        content: reply,
+      const userMessage = {
+        role: "user",
+        content: trimmed,
         timestamp: new Date().toISOString(),
       };
 
-      setMessages((prev) => [...prev, agentMessage]);
+      setMessages((prev) => [...prev, userMessage]);
+      setIsLoading(true);
 
-      if (roadmapUpdate) {
-        onRoadmapUpdateRef.current?.(roadmapUpdate);
-      }
-    } catch {
-      setMessages((prev) => [
-        ...prev,
-        {
-          role: 'agent',
-          content: 'Sorry, I couldn\'t reach the server. Please try again in a moment.',
+      try {
+        const data = await sendMessageApi(sessionId, trimmed);
+
+        const agentMessage = {
+          role: "agent",
+          content: data.reply,
           timestamp: new Date().toISOString(),
-        },
-      ]);
+        };
+
+        setMessages((prev) => [...prev, agentMessage]);
+        applyMeta(data);
+      } catch (err) {
+        const msg =
+          err?.response?.data?.error ||
+          "Sorry, I couldn't reach the server. Please try again in a moment.";
+        setMessages((prev) => [
+          ...prev,
+          {
+            role: "agent",
+            content: msg,
+            timestamp: new Date().toISOString(),
+          },
+        ]);
+      } finally {
+        setIsLoading(false);
+      }
+    },
+    [sessionId, isLoading, applyMeta],
+  );
+
+  const startFreshOnboarding = useCallback(async () => {
+    localStorage.removeItem(SESSION_KEY);
+    setMessages([]);
+    setIsLoading(true);
+    try {
+      const created = await createSession(true);
+      localStorage.setItem(SESSION_KEY, created.sessionId);
+      setSessionId(created.sessionId);
+      setMessages(created.messages || []);
+      applyMeta(created);
+    } catch {
+      /* ignore */
     } finally {
       setIsLoading(false);
     }
-  }, [sessionId, isLoading]);
+  }, [applyMeta]);
 
-  return { messages, isLoading, sendMessage, sessionId, sessionReady };
+  const setProfileLocal = useCallback((nextProfile, nextGoal) => {
+    if (nextProfile) setProfile(nextProfile);
+    if (nextGoal !== undefined) setCareerGoal(nextGoal);
+  }, []);
+
+  return {
+    messages,
+    isLoading,
+    sendMessage,
+    sessionId,
+    sessionReady,
+    phase,
+    onboarding,
+    profile,
+    careerGoal,
+    guideReady,
+    startFreshOnboarding,
+    setProfileLocal,
+  };
 }

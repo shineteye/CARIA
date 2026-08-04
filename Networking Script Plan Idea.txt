@@ -1,0 +1,6 @@
+A script or an application that allows people on the same network to share resources. 
+What else can be done with this kind of idea. Think out of the box. Not just the sharing of resources. ut apart form web implementations what core script stuff can we actually implement on phones and devices that kind of makes it novel from what other people are used to doing on web and stuff in hackathons
+
+It should be a prodcut we can sell as well 
+
+What do you think

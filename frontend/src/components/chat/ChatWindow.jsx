@@ -24,7 +24,8 @@ function TypingIndicator() {
   );
 }
 
-function EmptyState() {
+function EmptyState({ phase }) {
+  const onboarding = phase === 'onboarding';
   return (
     <div className="flex flex-col items-center justify-center flex-1 text-center px-8 py-16 gap-4">
       <div className="w-16 h-16 rounded-2xl flex items-center justify-center text-white bg-navy">
@@ -32,17 +33,29 @@ function EmptyState() {
       </div>
       <div>
         <p className="text-lg font-semibold text-navy mb-1">
-          Your AI Academic Advisor
+          {onboarding ? "Let's build your personal guide" : 'Your AI Academic Advisor'}
         </p>
         <p className="text-base leading-[1.6] text-fg-muted">
-          Tell me your career goal and I'll map your complete<br />path from JHS to university.
+          {onboarding ? (
+            <>
+              I&apos;ll ask about school, skills, family, and goals.
+              <br />
+              Tap a suggestion or type your own answer.
+            </>
+          ) : (
+            <>
+              Tell me your career goal and I&apos;ll map your complete
+              <br />
+              path from JHS to university.
+            </>
+          )}
         </p>
       </div>
     </div>
   );
 }
 
-export default function ChatWindow({ messages, isLoading }) {
+export default function ChatWindow({ messages, isLoading, phase = 'chat' }) {
   const bottomRef = useRef(null);
 
   useEffect(() => {
@@ -59,7 +72,7 @@ export default function ChatWindow({ messages, isLoading }) {
       `}</style>
 
       <div className="flex-1 overflow-y-auto px-6 py-5 flex flex-col gap-5">
-        {messages.length === 0 && !isLoading && <EmptyState />}
+        {messages.length === 0 && !isLoading && <EmptyState phase={phase} />}
 
         {messages.map((msg, index) => (
           <ChatBubble

@@ -3,6 +3,10 @@ import useChat from "../hooks/useChat";
 import useRoadmap from "../hooks/useRoadmap";
 import ChatWindow from "../components/chat/ChatWindow";
 import ChatInput from "../components/chat/ChatInput";
+import OnboardingProgress from "../components/chat/OnboardingProgress";
+import SuggestionChips from "../components/chat/SuggestionChips";
+import ProfileSummary from "../components/chat/ProfileSummary";
+import ProfileEditor from "../components/chat/ProfileEditor";
 import AppHeader from "../components/layout/AppHeader";
 
 function getProgress(stages) {
@@ -22,28 +26,47 @@ const ROADMAP_META = [
   { key: "University", label: "Professional Degree", Icon: IcoDegree },
 ];
 
-const QUICK_REPLIES = [
-  "What SHS offers Science?",
-  "WASSCE grades for KNUST",
-  "Career as a Pharmacist",
-  "Best schools for Business",
+const CHAT_QUICK_REPLIES = [
+  "Refine my roadmap for my grades",
+  "What SHS stream fits me?",
+  "How do I talk to my parents about this?",
+  "University options if I miss top cutoffs",
 ];
 
 export default function ChatPage() {
-  const [careerGoal, setCareerGoal] = useState(null);
+  const [sidebarGoal, setSidebarGoal] = useState(null);
+  const [editorOpen, setEditorOpen] = useState(false);
 
   const { stages, updateStage } = useRoadmap();
-  const handleRoadmapUpdate = useCallback(
-    (update) => {
-      updateStage(update);
-      if (update?.careerGoal) setCareerGoal(update.careerGoal);
+  const handleMetaUpdate = useCallback(
+    (meta) => {
+      if (meta?.roadmapUpdate) updateStage(meta.roadmapUpdate);
+      if (meta?.careerGoal) setSidebarGoal(meta.careerGoal);
+      if (meta?.roadmapUpdate?.careerGoal) {
+        setSidebarGoal(meta.roadmapUpdate.careerGoal);
+      }
     },
     [updateStage],
   );
 
-  const { messages, isLoading, sendMessage, sessionId, sessionReady } =
-    useChat(handleRoadmapUpdate);
+  const {
+    messages,
+    isLoading,
+    sendMessage,
+    sessionId,
+    sessionReady,
+    phase,
+    onboarding,
+    profile,
+    careerGoal,
+    guideReady,
+    setProfileLocal,
+  } = useChat(handleMetaUpdate);
+
+  const displayGoal = sidebarGoal || careerGoal;
   const progress = getProgress(stages);
+  const isOnboarding = phase === "onboarding";
+  const currentQuestion = onboarding?.question || null;
 
   const handleQuickReply = (text) => {
     if (sessionId && !isLoading) sendMessage(text);
@@ -54,79 +77,114 @@ export default function ChatPage() {
     window.location.reload();
   };
 
+  const inputPlaceholder = isOnboarding
+    ? currentQuestion?.placeholder || "Type a more detailed answer…"
+    : "Ask a follow-up about your guide…";
+
   return (
     <div
-      className="flex flex-col h-screen overflow-hidden"
-      style={{ fontFamily: "var(--font-body)", background: "#f8f9fc" }}
+      className="flex flex-col h-screen overflow-hidden bg-cream"
+      style={{ fontFamily: "var(--font-body)" }}
     >
-      <AppHeader onNewSession={handleNewSession} />
+      <AppHeader
+        onNewSession={handleNewSession}
+        onAvatarClick={() => setEditorOpen(true)}
+        variant="cream"
+      />
 
       <div className="flex flex-1 overflow-hidden">
         {/* ════ Chat Panel ════ */}
         <div className="flex flex-col flex-1 bg-white border-r border-border min-w-0">
           {!sessionReady && (
-            <div className="px-6 py-2 text-center  bg-gold-faint text-navy border-b border-border">
+            <div className="px-6 py-2 text-center bg-gold-faint text-navy border-b border-border">
               Connecting to advisor…
             </div>
           )}
           {sessionReady && !sessionId && (
-            <div className="px-6 py-2 text-center  bg-red-50 text-red-700 border-b border-red-100">
+            <div className="px-6 py-2 text-center bg-red-50 text-red-700 border-b border-red-100">
               Could not reach server. Please refresh the page.
             </div>
           )}
 
+          <OnboardingProgress onboarding={onboarding} phase={phase} />
+
           <ChatWindow
             messages={messages}
             isLoading={isLoading}
-            disabled={!sessionId}
+            phase={phase}
           />
 
-          {/* Quick replies */}
-          <div className="flex gap-2 px-6 pb-3 flex-wrap">
-            {QUICK_REPLIES.map((q) => (
-              <button
-                key={q}
-                onClick={() => handleQuickReply(q)}
-                disabled={!sessionId || isLoading}
-                className=" px-4 py-2 rounded-full border border-border text-fg-soft bg-white hover:border-navy hover:text-navy transition-all duration-150 whitespace-nowrap disabled:opacity-40 disabled:cursor-not-allowed"
-              >
-                {q}
-              </button>
-            ))}
-          </div>
+          {/* Onboarding chips OR free-chat quick replies */}
+          {isOnboarding ? (
+            <SuggestionChips
+              question={currentQuestion}
+              phase={phase}
+              disabled={!sessionId || isLoading}
+              onSelect={handleQuickReply}
+            />
+          ) : (
+            <div className="flex gap-2 px-6 pb-3 flex-wrap">
+              {CHAT_QUICK_REPLIES.map((q) => (
+                <button
+                  key={q}
+                  onClick={() => handleQuickReply(q)}
+                  disabled={!sessionId || isLoading}
+                  className="px-4 py-2 rounded-full border border-border text-fg-soft bg-white hover:border-navy hover:text-navy transition-all duration-150 whitespace-nowrap disabled:opacity-40 disabled:cursor-not-allowed text-[13px]"
+                >
+                  {q}
+                </button>
+              ))}
+            </div>
+          )}
 
           <ChatInput
             onSend={sendMessage}
             isLoading={isLoading}
             disabled={!sessionId}
+            placeholder={inputPlaceholder}
           />
 
           <p className="text-center text-[11px] py-2 px-4 shrink-0 text-fg-muted">
-            Caria AI can make mistakes. Verify important academic deadlines.
+            {isOnboarding
+              ? "Your answers stay in this session and shape your personal guide."
+              : "Caria AI can make mistakes. Verify important academic deadlines."}
           </p>
         </div>
 
         {/* ════ Right Info Panel ════ */}
-        <aside
-          className="w-72 shrink-0 overflow-y-auto border-l border-border p-5 flex flex-col gap-5"
-          style={{ background: "#f8f9fc" }}
-        >
+        <aside className="w-80 shrink-0 overflow-y-auto border-l border-border bg-cream p-5 flex flex-col gap-5">
           {/* Active Context */}
           <div>
             <p className="text-[10px] font-semibold tracking-widest uppercase mb-3 text-fg-muted">
               Active Context
             </p>
             <div className="bg-white border border-border rounded-2xl p-4 flex items-center gap-3">
-              <div className="w-11 h-11 rounded-xl flex items-center justify-center  font-bold text-white bg-navy shrink-0">
-                {careerGoal ? careerGoal.slice(0, 2).toUpperCase() : "?"}
+              <div className="w-11 h-11 rounded-xl flex items-center justify-center font-bold text-white bg-navy shrink-0 text-sm">
+                {displayGoal ? displayGoal.slice(0, 2).toUpperCase() : "?"}
               </div>
-              <div>
-                <p className=" font-semibold text-navy">
-                  {careerGoal || "No goal set yet"}
+              <div className="min-w-0">
+                <p className="font-semibold text-navy truncate">
+                  {displayGoal ||
+                    (isOnboarding ? "Discovering your path…" : "No goal set yet")}
                 </p>
-                <p className="text-xs text-fg-muted">Primary Career Goal</p>
+                <p className="text-xs text-fg-muted">
+                  {isOnboarding ? "Onboarding in progress" : "Primary Career Goal"}
+                </p>
               </div>
             </div>
+          </div>
+
+          {/* Live profile */}
+          <div>
+            <p className="text-[10px] font-semibold tracking-widest uppercase mb-3 text-fg-muted">
+              About You
+            </p>
+            <ProfileSummary
+              profile={profile}
+              phase={phase}
+              guideReady={guideReady}
+              onEdit={!isOnboarding ? () => setEditorOpen(true) : undefined}
+            />
           </div>
 
           {/* Roadmap Status */}
@@ -183,7 +241,7 @@ export default function ChatPage() {
                     </div>
                     <div className="pb-4">
                       <p
-                        className={` font-semibold leading-tight ${isLocked ? "text-gray-400" : "text-navy"}`}
+                        className={`font-semibold leading-tight ${isLocked ? "text-gray-400" : "text-navy"}`}
                       >
                         {label}
                       </p>
@@ -206,29 +264,6 @@ export default function ChatPage() {
             </div>
           </div>
 
-          {/* Key Documents */}
-          <div>
-            <p className="text-[10px] font-semibold tracking-widest uppercase mb-3 text-fg-muted">
-              Key Documents
-            </p>
-            <div className="flex flex-col gap-2">
-              <DocCard
-                iconBg="#fee2e2"
-                iconColor="#dc2626"
-                title="2024 School Register"
-                sub="All Category A–D Schools"
-                action={<IcoDownload />}
-              />
-              <DocCard
-                iconBg="#dbeafe"
-                iconColor="#1d4ed8"
-                title="Cut-off Point Matrix"
-                sub="Last 3 Years Trends"
-                action={<IcoArrow />}
-              />
-            </div>
-          </div>
-
           {/* Status widget */}
           <div className="rounded-2xl p-4 mt-auto bg-navy">
             <div className="flex items-center gap-2 mb-2">
@@ -239,39 +274,30 @@ export default function ChatPage() {
                 Advisor Status
               </span>
             </div>
-            <p className=" font-semibold text-white mb-1">
-              {sessionId ? "Ready to help" : "Connecting…"}
+            <p className="font-semibold text-white mb-1">
+              {!sessionId
+                ? "Connecting…"
+                : isOnboarding
+                  ? "Learning about you"
+                  : "Ready to help"}
             </p>
             <p className="text-[11px] leading-[1.5] text-white/50">
-              {sessionId
-                ? "Ask about schools, subjects, or career pathways."
-                : "Waiting for a connection to the server."}
+              {!sessionId
+                ? "Waiting for a connection to the server."
+                : isOnboarding
+                  ? "Tap suggestions or type details — both work."
+                  : "Your guide is ready. Ask follow-ups anytime."}
             </p>
           </div>
         </aside>
       </div>
-    </div>
-  );
-}
 
-/* ─── Doc Card ────────────────────────────────────────────── */
-
-function DocCard({ iconBg, iconColor, title, sub, action }) {
-  return (
-    <div className="bg-white border border-border rounded-xl p-3 flex items-center gap-3">
-      <div
-        className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0"
-        style={{ background: iconBg }}
-      >
-        <IcoDoc color={iconColor} />
-      </div>
-      <div className="flex-1 min-w-0">
-        <p className=" font-semibold text-navy truncate">{title}</p>
-        <p className="text-[11px] truncate text-fg-muted">{sub}</p>
-      </div>
-      <button className="text-fg-muted hover:text-navy transition-colors p-1">
-        {action}
-      </button>
+      <ProfileEditor
+        open={editorOpen}
+        onClose={() => setEditorOpen(false)}
+        initialProfile={profile}
+        onSaved={(data) => setProfileLocal(data.profile, data.careerGoal)}
+      />
     </div>
   );
 }
@@ -364,67 +390,3 @@ function IcoDegree({ color = "white", size = 16 }) {
   );
 }
 
-function IcoDoc({ color = "#dc2626" }) {
-  return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-      <path
-        d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
-        stroke={color}
-        strokeWidth="1.8"
-        strokeLinejoin="round"
-      />
-      <polyline
-        points="14 2 14 8 20 8"
-        stroke={color}
-        strokeWidth="1.8"
-        strokeLinejoin="round"
-      />
-      <line
-        x1="9"
-        y1="13"
-        x2="15"
-        y2="13"
-        stroke={color}
-        strokeWidth="1.8"
-        strokeLinecap="round"
-      />
-      <line
-        x1="9"
-        y1="17"
-        x2="13"
-        y2="17"
-        stroke={color}
-        strokeWidth="1.8"
-        strokeLinecap="round"
-      />
-    </svg>
-  );
-}
-
-function IcoDownload() {
-  return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-      <path
-        d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
-
-function IcoArrow() {
-  return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-      <path
-        d="M5 12h14M13 6l6 6-6 6"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}

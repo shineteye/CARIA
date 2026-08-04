@@ -1,16 +1,5 @@
 import { useState, useRef } from 'react';
 
-function MicIcon() {
-  return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-      <rect x="9" y="2" width="6" height="11" rx="3" stroke="currentColor" strokeWidth="1.8"/>
-      <path d="M5 10a7 7 0 0 0 14 0" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/>
-      <line x1="12" y1="19" x2="12" y2="22" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/>
-      <line x1="8" y1="22" x2="16" y2="22" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/>
-    </svg>
-  );
-}
-
 function SendIcon() {
   return (
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
@@ -28,11 +17,18 @@ function SpinnerIcon() {
   );
 }
 
-export default function ChatInput({ onSend, isLoading, disabled = false }) {
+export default function ChatInput({
+  onSend,
+  isLoading,
+  disabled = false,
+  placeholder,
+}) {
   const [text, setText] = useState('');
   const textareaRef = useRef(null);
 
   const canSend = !!text.trim() && !isLoading && !disabled;
+  const resolvedPlaceholder =
+    placeholder || 'Ask about schools, courses, or requirements...';
 
   const handleSend = () => {
     const trimmed = text.trim();
@@ -71,18 +67,11 @@ export default function ChatInput({ onSend, isLoading, disabled = false }) {
             onChange={handleInput}
             onKeyDown={handleKeyDown}
             disabled={isLoading || disabled}
-            placeholder="Ask about schools, courses, or requirements..."
+            placeholder={resolvedPlaceholder}
             rows={1}
             className="flex-1 resize-none outline-none text-[15px] text-fg placeholder:text-fg-muted bg-transparent leading-normal"
             style={{ minHeight: 24, maxHeight: 120, fontFamily: 'var(--font-body)' }}
           />
-          <button
-            type="button"
-            className="shrink-0 text-fg-muted hover:text-navy transition-colors pb-0.5"
-            aria-label="Voice input"
-          >
-            <MicIcon />
-          </button>
         </div>
 
         <button
