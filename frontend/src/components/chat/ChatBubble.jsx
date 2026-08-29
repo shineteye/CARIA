@@ -1,102 +1,86 @@
 import ReactMarkdown from 'react-markdown';
-import { RiRobotLine } from 'react-icons/ri';
-
-function formatTime(iso) {
-  if (!iso) return '';
-  return new Date(iso).toLocaleTimeString('en-US', {
-    hour: 'numeric',
-    minute: '2-digit',
-    hour12: true,
-  });
-}
-
-function AdvisorAvatar() {
-  return (
-    <div
-      className="w-9 h-9 rounded-full flex items-center justify-center shrink-0 text-white bg-navy"
-      aria-hidden="true"
-    >
-      <RiRobotLine size={18} />
-    </div>
-  );
-}
-
-function UserAvatar() {
-  return (
-    <div
-      className="w-9 h-9 rounded-full flex items-center justify-center shrink-0 bg-border"
-      aria-hidden="true"
-    >
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-        <circle cx="12" cy="8" r="4" stroke="#6b7280" strokeWidth="1.8"/>
-        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="#6b7280" strokeWidth="1.8" strokeLinecap="round"/>
-      </svg>
-    </div>
-  );
-}
+import CariaAvatar from './CariaAvatar';
 
 const markdownComponents = {
   p: ({ children }) => (
-    <p className="mb-2 last:mb-0 text-[15px] leading-[1.7]">{children}</p>
+    <p className="mb-3 last:mb-0 text-[15px] leading-[1.75]">{children}</p>
   ),
   strong: ({ children }) => (
     <strong className="font-semibold text-navy">{children}</strong>
   ),
   ul: ({ children }) => (
-    <ul className="my-2 flex flex-col gap-2 pl-1">{children}</ul>
+    <ul className="my-3 flex flex-col gap-2">{children}</ul>
+  ),
+  ol: ({ children }) => (
+    <ol className="my-3 flex flex-col gap-2">{children}</ol>
   ),
   li: ({ children }) => (
-    <li className="flex items-start gap-2 text-[15px] leading-[1.65]">
-      <span className="mt-2 w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
-      <span>{children}</span>
+    <li className="flex items-start gap-2.5 text-[15px] leading-[1.7]">
+      <span className="mt-[0.6em] w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
+      <span className="min-w-0">{children}</span>
     </li>
   ),
+  h2: ({ children }) => (
+    <h2
+      className="text-lg text-navy mt-5 mb-2 first:mt-0"
+      style={{ fontFamily: 'var(--font-display)' }}
+    >
+      {children}
+    </h2>
+  ),
+  h3: ({ children }) => (
+    <h3 className="text-[13px] font-semibold uppercase tracking-wider text-fg-muted mt-5 mb-2 first:mt-0">
+      {children}
+    </h3>
+  ),
   blockquote: ({ children }) => (
-    <div className="my-3 rounded-xl p-4 border bg-gray-50 border-border">
+    <div className="my-3 rounded-xl p-4 bg-gold-faint border border-gold/20">
       {children}
     </div>
   ),
+  a: ({ children, href }) => (
+    <a href={href} className="text-gold underline underline-offset-2 hover:text-navy">
+      {children}
+    </a>
+  ),
+  code: ({ children }) => (
+    <code className="text-[13px] bg-cream border border-border rounded px-1.5 py-0.5">
+      {children}
+    </code>
+  ),
 };
 
-function AgentBubble({ content, timestamp }) {
+/**
+ * Caria's replies read as a document, not a chat bubble — long-form guidance
+ * deserves full measure and typographic hierarchy.
+ */
+function AgentMessage({ content }) {
   return (
-    <div className="flex items-start gap-3">
-      <AdvisorAvatar />
-      <div className="flex flex-col gap-1 max-w-[78%]">
-        <div className="rounded-2xl rounded-tl-sm px-4 py-3 bg-gray-100">
-          <div className="text-fg">
-            <ReactMarkdown components={markdownComponents}>{content}</ReactMarkdown>
-          </div>
+    <div className="flex items-start gap-3.5">
+      <CariaAvatar size={34} />
+      <div className="min-w-0 flex-1 pt-1">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-fg-muted mb-2">
+          Caria
+        </p>
+        <div className="text-fg max-w-[62ch]">
+          <ReactMarkdown components={markdownComponents}>{content}</ReactMarkdown>
         </div>
-        {timestamp && (
-          <span className="text-[11px] pl-1 text-fg-muted">
-            Advisor • {formatTime(timestamp)}
-          </span>
-        )}
       </div>
     </div>
   );
 }
 
-function UserBubble({ content, timestamp }) {
+function UserMessage({ content }) {
   return (
-    <div className="flex items-start gap-3 flex-row-reverse">
-      <UserAvatar />
-      <div className="flex flex-col gap-1 items-end max-w-[78%]">
-        <div className="rounded-2xl rounded-tr-sm px-4 py-3 bg-navy text-white">
-          <p className="text-[15px] leading-[1.65]">{content}</p>
-        </div>
-        {timestamp && (
-          <span className="text-[11px] pr-1 text-fg-muted">
-            You • {formatTime(timestamp)}
-          </span>
-        )}
+    <div className="flex justify-end pl-12">
+      <div className="rounded-2xl rounded-br-md px-4 py-2.5 bg-navy text-white max-w-[80%]">
+        <p className="text-[15px] leading-[1.6] whitespace-pre-wrap">{content}</p>
       </div>
     </div>
   );
 }
 
-export default function ChatBubble({ role, content, timestamp }) {
-  if (role === 'user') return <UserBubble content={content} timestamp={timestamp} />;
-  return <AgentBubble content={content} timestamp={timestamp} />;
+export default function ChatBubble({ role, content }) {
+  if (role === 'user') return <UserMessage content={content} />;
+  return <AgentMessage content={content} />;
 }

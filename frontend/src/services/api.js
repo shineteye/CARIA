@@ -4,9 +4,11 @@ const isProduction = import.meta.env.PROD;
 const TOKEN_KEY = "Caria_auth_token";
 
 const api = axios.create({
-  baseURL:
-    import.meta.env.VITE_API_URL ||
-    (isProduction ? "/_/backend" : "http://localhost:5001"),
+  // In dev, "" sends requests to the Vite dev server, which proxies /api to the
+  // backend (see vite.config.js). Keeping it relative means the app also works
+  // through an ngrok tunnel or from a phone on the LAN, where "localhost" would
+  // resolve to the visitor's own machine.
+  baseURL: import.meta.env.VITE_API_URL || (isProduction ? "/_/backend" : ""),
   headers: { "Content-Type": "application/json" },
 });
 
@@ -26,17 +28,28 @@ export function clearAuthToken() {
   localStorage.removeItem(TOKEN_KEY);
 }
 
-export async function register(name, email, password) {
+// sessionId lets a guest's onboarding answers carry into the new account.
+export async function register(name, email, password, sessionId) {
   const { data } = await api.post("/api/auth/register", {
     name,
     email,
     password,
+    sessionId,
   });
   return data;
 }
 
-export async function login(email, password) {
-  const { data } = await api.post("/api/auth/login", { email, password });
+export async function login(email, password, sessionId) {
+  const { data } = await api.post("/api/auth/login", {
+    email,
+    password,
+    sessionId,
+  });
+  return data;
+}
+
+export async function unlockGuide(sessionId) {
+  const { data } = await api.post("/api/chat/unlock-guide", { sessionId });
   return data;
 }
 
@@ -82,6 +95,22 @@ export async function getProfile() {
 
 export async function updateProfile(profile) {
   const { data } = await api.put("/api/profile", { profile });
+  return data;
+}
+
+export async function getCareerRecommendations() {
+  const { data } = await api.get("/api/careers/recommendations");
+  return data;
+}
+
+/** Public catalogue — no account needed. */
+export async function getAllCareers() {
+  const { data } = await api.get("/api/careers");
+  return data;
+}
+
+export async function compareCareers(careerIds) {
+  const { data } = await api.post("/api/careers/compare", { careerIds });
   return data;
 }
 

@@ -3,39 +3,31 @@ import useChat from "../hooks/useChat";
 import useRoadmap from "../hooks/useRoadmap";
 import ChatWindow from "../components/chat/ChatWindow";
 import ChatInput from "../components/chat/ChatInput";
-import OnboardingProgress from "../components/chat/OnboardingProgress";
-import SuggestionChips from "../components/chat/SuggestionChips";
-import ProfileSummary from "../components/chat/ProfileSummary";
+import QuestionCard from "../components/chat/QuestionCard";
+import ContextPanel from "../components/chat/ContextPanel";
 import ProfileEditor from "../components/chat/ProfileEditor";
+import SignupPrompt from "../components/chat/SignupPrompt";
 import AppHeader from "../components/layout/AppHeader";
 
-function getProgress(stages) {
-  const pts = stages.reduce((sum, s) => {
-    if (s.status === "complete") return sum + 1;
-    if (s.status === "active") return sum + 0.5;
-    return sum;
-  }, 0);
-  return Math.round((pts / stages.length) * 100);
-}
-
 const ROADMAP_META = [
-  { key: "JHS", label: "BECE Preparation", Icon: IcoGradCap },
-  { key: "BECE", label: "SHS Selection (CSSPS)", Icon: IcoSchool },
-  { key: "SHS", label: "WASSCE / Pre-Uni", Icon: IcoFlask },
-  { key: "WASSCE", label: "University Admission", Icon: IcoBuilding },
-  { key: "University", label: "Professional Degree", Icon: IcoDegree },
+  { key: "JHS", label: "BECE Preparation" },
+  { key: "BECE", label: "SHS Selection (CSSPS)" },
+  { key: "SHS", label: "WASSCE / Pre-University" },
+  { key: "WASSCE", label: "University Admission" },
+  { key: "University", label: "Professional Degree" },
 ];
 
 const CHAT_QUICK_REPLIES = [
   "Refine my roadmap for my grades",
   "What SHS stream fits me?",
   "How do I talk to my parents about this?",
-  "University options if I miss top cutoffs",
+  "Options if I miss top cutoffs",
 ];
 
 export default function ChatPage() {
   const [sidebarGoal, setSidebarGoal] = useState(null);
   const [editorOpen, setEditorOpen] = useState(false);
+  const [panelOpen, setPanelOpen] = useState(false);
 
   const { stages, updateStage } = useRoadmap();
   const handleMetaUpdate = useCallback(
@@ -60,13 +52,16 @@ export default function ChatPage() {
     profile,
     careerGoal,
     guideReady,
+    signupPreview,
+    unlockGuide,
     setProfileLocal,
   } = useChat(handleMetaUpdate);
 
   const displayGoal = sidebarGoal || careerGoal;
-  const progress = getProgress(stages);
   const isOnboarding = phase === "onboarding";
+  const awaitingSignup = phase === "awaiting_signup";
   const currentQuestion = onboarding?.question || null;
+  const inputDisabled = !sessionId || isLoading;
 
   const handleQuickReply = (text) => {
     if (sessionId && !isLoading) sendMessage(text);
@@ -77,13 +72,23 @@ export default function ChatPage() {
     window.location.reload();
   };
 
-  const inputPlaceholder = isOnboarding
-    ? currentQuestion?.placeholder || "Type a more detailed answer…"
-    : "Ask a follow-up about your guide…";
+  const panelProps = {
+    phase,
+    onboarding,
+    profile,
+    careerGoal: displayGoal,
+    guideReady,
+    stages,
+    roadmapMeta: ROADMAP_META,
+    onEditProfile: () => {
+      setEditorOpen(true);
+      setPanelOpen(false);
+    },
+  };
 
   return (
     <div
-      className="flex flex-col h-screen overflow-hidden bg-cream"
+      className="flex flex-col h-screen overflow-hidden bg-white"
       style={{ fontFamily: "var(--font-body)" }}
     >
       <AppHeader
@@ -93,204 +98,126 @@ export default function ChatPage() {
       />
 
       <div className="flex flex-1 overflow-hidden">
-        {/* ════ Chat Panel ════ */}
-        <div className="flex flex-col flex-1 bg-white border-r border-border min-w-0">
+        {/* ════ Conversation ════ */}
+        <div className="flex flex-col flex-1 min-w-0">
           {!sessionReady && (
-            <div className="px-6 py-2 text-center bg-gold-faint text-navy border-b border-border">
-              Connecting to advisor…
+            <div className="px-6 py-2 text-center text-[13px] bg-gold-faint text-navy border-b border-gold/20 shrink-0">
+              Connecting to Caria…
             </div>
           )}
           {sessionReady && !sessionId && (
-            <div className="px-6 py-2 text-center bg-red-50 text-red-700 border-b border-red-100">
-              Could not reach server. Please refresh the page.
+            <div className="px-6 py-2 text-center text-[13px] bg-red-50 text-red-700 border-b border-red-100 shrink-0">
+              Could not reach the server. Please refresh the page.
             </div>
           )}
 
-          <OnboardingProgress onboarding={onboarding} phase={phase} />
+          <ChatWindow messages={messages} isLoading={isLoading} phase={phase} />
 
-          <ChatWindow
-            messages={messages}
-            isLoading={isLoading}
-            phase={phase}
-          />
-
-          {/* Onboarding chips OR free-chat quick replies */}
-          {isOnboarding ? (
-            <SuggestionChips
-              question={currentQuestion}
-              phase={phase}
-              disabled={!sessionId || isLoading}
-              onSelect={handleQuickReply}
+          {/* Guest finished onboarding — claim the work with an account. */}
+          {awaitingSignup ? (
+            <SignupPrompt
+              preview={signupPreview}
+              sessionId={sessionId}
+              onClaimed={unlockGuide}
             />
           ) : (
-            <div className="flex gap-2 px-6 pb-3 flex-wrap">
-              {CHAT_QUICK_REPLIES.map((q) => (
-                <button
-                  key={q}
-                  onClick={() => handleQuickReply(q)}
-                  disabled={!sessionId || isLoading}
-                  className="px-4 py-2 rounded-full border border-border text-fg-soft bg-white hover:border-navy hover:text-navy transition-all duration-150 whitespace-nowrap disabled:opacity-40 disabled:cursor-not-allowed text-[13px]"
-                >
-                  {q}
-                </button>
-              ))}
-            </div>
-          )}
-
-          <ChatInput
-            onSend={sendMessage}
-            isLoading={isLoading}
-            disabled={!sessionId}
-            placeholder={inputPlaceholder}
-          />
-
-          <p className="text-center text-[11px] py-2 px-4 shrink-0 text-fg-muted">
-            {isOnboarding
-              ? "Your answers stay in this session and shape your personal guide."
-              : "Caria AI can make mistakes. Verify important academic deadlines."}
-          </p>
-        </div>
-
-        {/* ════ Right Info Panel ════ */}
-        <aside className="w-80 shrink-0 overflow-y-auto border-l border-border bg-cream p-5 flex flex-col gap-5">
-          {/* Active Context */}
-          <div>
-            <p className="text-[10px] font-semibold tracking-widest uppercase mb-3 text-fg-muted">
-              Active Context
-            </p>
-            <div className="bg-white border border-border rounded-2xl p-4 flex items-center gap-3">
-              <div className="w-11 h-11 rounded-xl flex items-center justify-center font-bold text-white bg-navy shrink-0 text-sm">
-                {displayGoal ? displayGoal.slice(0, 2).toUpperCase() : "?"}
-              </div>
-              <div className="min-w-0">
-                <p className="font-semibold text-navy truncate">
-                  {displayGoal ||
-                    (isOnboarding ? "Discovering your path…" : "No goal set yet")}
-                </p>
-                <p className="text-xs text-fg-muted">
-                  {isOnboarding ? "Onboarding in progress" : "Primary Career Goal"}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Live profile */}
-          <div>
-            <p className="text-[10px] font-semibold tracking-widest uppercase mb-3 text-fg-muted">
-              About You
-            </p>
-            <ProfileSummary
-              profile={profile}
-              phase={phase}
-              guideReady={guideReady}
-              onEdit={!isOnboarding ? () => setEditorOpen(true) : undefined}
-            />
-          </div>
-
-          {/* Roadmap Status */}
-          <div>
-            <div className="flex items-center justify-between mb-3">
-              <p className="text-[10px] font-semibold tracking-widest uppercase text-fg-muted">
-                Roadmap Status
-              </p>
-              <p className="text-xs font-semibold text-navy">
-                {progress}% Complete
-              </p>
-            </div>
-
-            <div className="h-1.5 rounded-full mb-4 overflow-hidden bg-border">
-              <div
-                className="h-full rounded-full transition-all duration-500 bg-success"
-                style={{ width: `${progress}%` }}
-              />
-            </div>
-
-            <div className="flex flex-col">
-              {ROADMAP_META.map(({ key, label, Icon }, idx) => {
-                const stageData = stages.find((s) => s.name === key) || {
-                  status: "locked",
-                };
-                const isActive = stageData.status === "active";
-                const isComplete = stageData.status === "complete";
-                const isLocked = stageData.status === "locked";
-                const isLast = idx === ROADMAP_META.length - 1;
-
-                return (
-                  <div key={key} className="flex gap-3">
-                    <div className="flex flex-col items-center">
-                      <div
-                        className={`w-9 h-9 rounded-full flex items-center justify-center shrink-0 ${
-                          isActive
-                            ? "bg-navy"
-                            : isComplete
-                              ? "bg-gold"
-                              : "bg-gray-200"
-                        }`}
-                      >
-                        <Icon
-                          color={isLocked ? "#9ca3af" : "white"}
-                          size={16}
-                        />
-                      </div>
-                      {!isLast && (
-                        <div
-                          className={`w-px flex-1 my-1 ${isComplete ? "bg-gold" : "bg-gray-200"}`}
-                          style={{ minHeight: 20 }}
-                        />
-                      )}
-                    </div>
-                    <div className="pb-4">
-                      <p
-                        className={`font-semibold leading-tight ${isLocked ? "text-gray-400" : "text-navy"}`}
-                      >
-                        {label}
-                      </p>
-                      <p className="text-[11px] mt-0.5 text-fg-muted">
-                        {isActive
-                          ? "In Progress"
-                          : isComplete
-                            ? "Complete"
-                            : "Upcoming"}
-                      </p>
-                      {stageData.detail && !isLocked && (
-                        <p className="text-[11px] mt-0.5 text-gold">
-                          {stageData.detail}
-                        </p>
-                      )}
+            <>
+              {/* Onboarding: pinned question + chips. Free chat: quick replies. */}
+              {isOnboarding ? (
+                <QuestionCard
+                  question={currentQuestion}
+                  disabled={inputDisabled}
+                  onSelect={handleQuickReply}
+                />
+              ) : (
+                messages.length > 0 && (
+                  <div className="shrink-0 border-t border-border bg-white">
+                    <div className="max-w-[760px] mx-auto px-6 md:px-8 pt-4 pb-1 flex gap-2 overflow-x-auto">
+                      {CHAT_QUICK_REPLIES.map((q) => (
+                        <button
+                          key={q}
+                          onClick={() => handleQuickReply(q)}
+                          disabled={inputDisabled}
+                          className="shrink-0 px-3.5 py-2 rounded-full border border-border text-[13px] text-fg-soft bg-white hover:border-navy hover:text-navy transition-all duration-150 whitespace-nowrap disabled:opacity-40 disabled:cursor-not-allowed"
+                        >
+                          {q}
+                        </button>
+                      ))}
                     </div>
                   </div>
-                );
-              })}
-            </div>
-          </div>
+                )
+              )}
 
-          {/* Status widget */}
-          <div className="rounded-2xl p-4 mt-auto bg-navy">
-            <div className="flex items-center gap-2 mb-2">
-              <span
-                className={`w-2 h-2 rounded-full ${sessionId ? "bg-green-400" : "bg-red-400"}`}
+              <ChatInput
+                onSend={sendMessage}
+                isLoading={isLoading}
+                disabled={!sessionId}
+                placeholder={
+                  isOnboarding
+                    ? currentQuestion?.placeholder || "Or type your own answer…"
+                    : "Ask a follow-up…"
+                }
+                hint={
+                  isOnboarding
+                    ? "Tap an option above, or type something more specific."
+                    : "Caria can make mistakes — verify important dates and cutoffs."
+                }
               />
-              <span className="text-[11px] font-semibold text-white/70">
-                Advisor Status
-              </span>
-            </div>
-            <p className="font-semibold text-white mb-1">
-              {!sessionId
-                ? "Connecting…"
-                : isOnboarding
-                  ? "Learning about you"
-                  : "Ready to help"}
-            </p>
-            <p className="text-[11px] leading-[1.5] text-white/50">
-              {!sessionId
-                ? "Waiting for a connection to the server."
-                : isOnboarding
-                  ? "Tap suggestions or type details — both work."
-                  : "Your guide is ready. Ask follow-ups anytime."}
-            </p>
-          </div>
+            </>
+          )}
+        </div>
+
+        {/* ════ Context panel — desktop ════ */}
+        <aside className="hidden lg:block w-[300px] shrink-0 overflow-y-auto border-l border-border bg-cream">
+          <ContextPanel {...panelProps} />
         </aside>
       </div>
+
+      {/* ════ Context panel — mobile toggle + drawer ════ */}
+      <button
+        type="button"
+        onClick={() => setPanelOpen(true)}
+        className="lg:hidden fixed bottom-24 right-5 z-30 w-12 h-12 rounded-full bg-navy text-white shadow-lg flex items-center justify-center"
+        aria-label="Show your progress and profile"
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M4 6h16M4 12h16M4 18h10"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+          />
+        </svg>
+      </button>
+
+      {panelOpen && (
+        <>
+          <div
+            className="lg:hidden fixed inset-0 bg-navy/40 backdrop-blur-[2px] z-40"
+            onClick={() => setPanelOpen(false)}
+          />
+          <aside className="lg:hidden fixed top-0 right-0 h-full w-[85%] max-w-[340px] bg-cream z-50 shadow-2xl overflow-y-auto border-l border-border">
+            <div className="flex justify-end p-4 pb-0">
+              <button
+                type="button"
+                onClick={() => setPanelOpen(false)}
+                aria-label="Close panel"
+                className="text-fg-muted hover:text-navy p-1"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M18 6L6 18M6 6l12 12"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <ContextPanel {...panelProps} />
+          </aside>
+        </>
+      )}
 
       <ProfileEditor
         open={editorOpen}
@@ -301,92 +228,3 @@ export default function ChatPage() {
     </div>
   );
 }
-
-/* ─── Icon Set ────────────────────────────────────────────── */
-
-function IcoGradCap({ color = "white", size = 16 }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none">
-      <path
-        d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"
-        stroke={color}
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M6 12v5c3 3 9 3 12 0v-5"
-        stroke={color}
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
-
-function IcoSchool({ color = "white", size = 16 }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none">
-      <path
-        d="M3 21h18M3 10h18M5 10V21M19 10V21M12 3L21 10H3L12 3Z"
-        stroke={color}
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
-
-function IcoFlask({ color = "white", size = 16 }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none">
-      <path
-        d="M9 3h6M9 3v7L4 19a1 1 0 0 0 .9 1.4h14.2A1 1 0 0 0 20 19L15 10V3"
-        stroke={color}
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
-
-function IcoBuilding({ color = "white", size = 16 }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none">
-      <rect
-        x="3"
-        y="3"
-        width="18"
-        height="18"
-        rx="2"
-        stroke={color}
-        strokeWidth="1.8"
-      />
-      <path
-        d="M8 7h8M8 11h8M8 15h5"
-        stroke={color}
-        strokeWidth="1.8"
-        strokeLinecap="round"
-      />
-    </svg>
-  );
-}
-
-function IcoDegree({ color = "white", size = 16 }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none">
-      <circle cx="12" cy="8" r="5" stroke={color} strokeWidth="1.8" />
-      <path
-        d="M7 13.5L5 21l7-3 7 3-2-7.5"
-        stroke={color}
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
-

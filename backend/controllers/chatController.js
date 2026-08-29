@@ -14,6 +14,7 @@ const {
   getQuestion,
   getTotalQuestions,
 } = require("../services/onboardingService");
+const { getRecommendations } = require("../services/matchingService");
 
 /** Persist session profile onto the owning user account */
 async function syncProfileToUser(session) {
@@ -32,6 +33,10 @@ async function syncProfileToUser(session) {
     console.error("Failed to sync profile to user:", err.message);
   }
 }
+
+// Groq retired the llama-3.3 chat models; override with GROQ_MODEL if the
+// account's available models change again (GET /openai/v1/models lists them).
+const GROQ_MODEL = process.env.GROQ_MODEL || "openai/gpt-oss-120b";
 
 let groqClient;
 
@@ -54,90 +59,218 @@ function loadJSON(filename) {
 }
 
 /* ── Lazy-loaded data (cached after first load) ── */
-let SYSTEM_PROMPT_BASE = null;
+let DATA = null;
 
-function buildDataTables() {
-  if (SYSTEM_PROMPT_BASE) return SYSTEM_PROMPT_BASE;
+function loadData() {
+  if (DATA) return DATA;
+  DATA = {
+    jhs: loadJSON("jhs_data.json"),
+    schools: loadJSON("ghana_shs.json"),
+    ucc: loadJSON("ucc_cut_off_points_2026.json"),
+    ug: loadJSON("university_of_ghana_cutoff_points_2026.json"),
+    guidance: loadJSON("shs_university_guidance_100.json"),
+  };
+  return DATA;
+}
 
-  const jhsData = loadJSON("jhs_data.json");
-  const shsSchools = loadJSON("ghana_shs_sample_50.json");
-  const uccCutoffs = loadJSON("ucc_cut_off_points_2026.json");
-  const ugCutoffs = loadJSON("university_of_ghana_cutoff_points_2026.json");
-  const shsGuidance = loadJSON("shs_university_guidance_100.json");
+function careerLine(career, guidance) {
+  const p = career.primary_pathway || {};
+  const sg = guidance.find((g) => g.title === career.title);
+  const wassce = sg?.shs_university_guidance?.target_wassce_aggregate || "?";
+  const electives = (p.required_wassce_electives || []).join("+");
+  const cats = (p.target_shs_categories || []).join("/");
+  const unis = (p.university_pathways || [])
+    .slice(0, 2)
+    .map((u) => `${u.institution} agg≤${u.typical_cutoff_aggregate}`)
+    .join("; ");
+  return `${career.title}: BECE≤${p.ideal_bece_aggregate || "?"} | ${p.recommended_shs_stream || "?"} | Cat${cats} | WASSCE≤${wassce} | ${electives} | ${unis}`;
+}
 
-  const careerTable = jhsData
-    .map((c) => {
-      const p = c.primary_pathway || {};
-      const sg = shsGuidance.find((g) => g.title === c.title);
-      const guide = sg?.shs_university_guidance || {};
-      const electives = (p.required_wassce_electives || []).join("+");
-      const cats = (p.target_shs_categories || []).join("/");
-      const unis = (p.university_pathways || [])
-        .slice(0, 2)
-        .map((u) => `${u.institution} agg≤${u.typical_cutoff_aggregate}`)
-        .join("; ");
-      const wassce = guide.target_wassce_aggregate || "?";
-      return `${c.title}: BECE≤${p.ideal_bece_aggregate || "?"} | ${p.recommended_shs_stream || "?"} | Cat${cats} | WASSCE≤${wassce} | ${electives} | ${unis}`;
+/**
+ * Build only the reference data THIS student needs.
+ *
+ * Dumping all 81 careers and 297 schools on every turn cost ~6k tokens and blew
+ * the Groq free-tier 8k TPM limit outright. Scoping to the student's own matches
+ * and region is both cheaper and better advice — they don't need aerospace
+ * engineering in Tamale when they asked about business in Kumasi.
+ */
+function buildDataTables(profile) {
+  const { jhs, schools, ucc, ug, guidance } = loadData();
+
+  // Careers: their top matches, plus whatever they explicitly named.
+  const scored = getRecommendations(profile || {}, 12);
+  const wanted = new Set(scored.map((s) => s.careerId));
+  const named = String(profile?.careerDirection || "").toLowerCase();
+  for (const c of jhs) {
+    if (named && named.includes(c.title.toLowerCase().split(" ")[0])) {
+      wanted.add(c.career_id);
+    }
+  }
+  const careerTable = jhs
+    .filter((c) => wanted.has(c.career_id))
+    .map((c) => careerLine(c, guidance))
+    .join("\n");
+
+  // Schools: their region first, then a couple of others for mobility.
+  const region = String(profile?.region || "").toLowerCase();
+  const inRegion = schools.filter(
+    (s) => region && s.region.toLowerCase().includes(region.split(" ")[0]),
+  );
+  const picked = (inRegion.length ? inRegion : schools).slice(0, 24);
+  const schoolList = picked
+    .map((s) => {
+      const tracks = s.academic_tracks?.length
+        ? ` (${s.academic_tracks.slice(0, 3).join("/")})`
+        : "";
+      return `${s.school_name} [Cat${s.category || "?"}, ${s.gender}]${tracks}`;
     })
     .join("\n");
 
-  function flattenCutoffs(uniData) {
-    const rows = [];
-    for (const fac of uniData.faculties_and_programs || []) {
-      for (const prog of fac.programs || []) {
-        rows.push(`${prog.name}(${prog.cut_off_point})`);
-      }
-    }
-    return rows.join(", ");
-  }
-
-  const uccList = `UCC: ${flattenCutoffs(uccCutoffs)}`;
-  const ugList = `UG Legon: ${flattenCutoffs(ugCutoffs)}`;
-
-  const schoolList = shsSchools
-    .slice(0, 30)
-    .map((s) => `${s.school_name} [Cat${s.category}] ${s.region}`)
-    .join("\n");
-
-  SYSTEM_PROMPT_BASE = {
-    careerTable,
-    schoolList,
-    uccList,
-    ugList,
+  // University programmes: only those plausibly related to their matches.
+  // The full UCC + UG listing is ~1000 tokens of mostly irrelevant programmes.
+  const interestWords = new Set(
+    scored
+      .slice(0, 6)
+      .flatMap((s) => s.title.toLowerCase().split(/[^a-z]+/))
+      .filter((w) => w.length > 4),
+  );
+  const relevantPrograms = (uniData, label) => {
+    const rows = (uniData.faculties_and_programs || [])
+      .flatMap((f) => f.programs || [])
+      .filter((p) => {
+        const n = p.name.toLowerCase();
+        return [...interestWords].some((w) => n.includes(w.slice(0, 6)));
+      })
+      .slice(0, 18)
+      .map((p) => `${p.name}(${p.cut_off_point})`);
+    return rows.length ? `${label}: ${rows.join(", ")}` : "";
   };
 
-  return SYSTEM_PROMPT_BASE;
+  return {
+    careerTable,
+    schoolList,
+    schoolScope: inRegion.length
+      ? `${picked.length} in ${profile.region}`
+      : "sample across regions",
+    uccList: relevantPrograms(ucc, "UCC"),
+    ugList: relevantPrograms(ug, "UG Legon"),
+  };
+}
+
+function buildTopMatchesBlock(profile) {
+  if (!profile.interests?.length && !profile.strengths?.length) return "";
+  const top = getRecommendations(profile, 5);
+  if (!top.length) return "";
+
+  const lines = top
+    .map(
+      (m, i) =>
+        `${i + 1}. ${m.title} — overall match ${m.overallScore}% (fit ${m.fitScore}%, money/affordability ${m.moneyScore}%), ${m.salaryRange}, ${m.demand} demand, ${m.tuitionTier} cost tier`,
+    )
+    .join("\n");
+
+  return `\n══ TOP SCORED MATCHES FOR THIS STUDENT (ranked by fit + affordability, weighted by their stated motivation) ══\nThese are the same rankings shown to the student on the Explore page — stay consistent with them unless the conversation surfaces new information.\n${lines}\n`;
 }
 
 function buildSystemPrompt(profile) {
-  const data = buildDataTables();
+  const data = buildDataTables(profile);
   const profileBlock = buildProfileContext(profile);
+  const matchesBlock = buildTopMatchesBlock(profile);
 
   return `You are Caria — a warm, sharp Ghanaian career counselor having an ongoing conversation with a student you already know well from their onboarding. You are not writing a report or a brochure; you are talking to them.
+
+╔═══ NON-NEGOTIABLE — overrides everything below ═══╗
+1. TALK, don't publish. You are speaking to one student, not writing them a document.
+   - NO markdown tables. NO section headings of ANY kind in a normal reply — not
+     "**What works in Ghana**", not "**Practical steps**", not "**Next move**". If you
+     find yourself writing a bold line followed by a colon or a paragraph beneath it,
+     you have started writing a report. Delete it and just say the thing.
+   - NO numbered plans for a question a person asked out loud.
+   - Bold is for the occasional school or subject name inside a sentence. Nothing else.
+   (The one-off personal guide is the SINGLE exception — it has its own four headers,
+   specified later. Never carry that format into ordinary replies.)
+2. LENGTH: 100–180 words. Say the useful thing and stop.
+3. NEVER invent what you weren't told — fees, boarding costs, quotas, interviews, clubs,
+   labs, facilities, industry partnerships, or salary figures for any job not listed in
+   the data below. Comparing two salaries you were only given one of is inventing.
+   This applies especially to MONEY HELP: do not name specific scholarships, bursaries,
+   loan schemes, fee waivers or their eligibility rules — you do not have current data
+   on any of them, and a student who plans around a scheme you invented gets hurt.
+   Say instead: "there is student financial support in Ghana, but the schemes and
+   deadlines change — your school's guidance officer will know what's open this year."
+   If you don't have a fact: "worth asking the school directly" / "check the CSSPS portal."
+4. NEVER give a BECE aggregate for entering a specific SHS. Ghana has NO fixed SHS
+   cut-off points; GES has publicly called such tables fake. Placement depends on their
+   raw score, how many others picked that school, programme demand, and choice order.
+   (University cutoffs ARE real — quote those from the data below.)
+╚═══════════════════════════════════════════════════╝
+
+THE VOICE — this is how a good Ghanaian counsellor actually speaks:
+
+✗ NOT THIS (a catalogue):
+"Here are three schools that fit your profile:
+**1. Accra Academy (Cat A – Boys)**
+- **Why it fits:** Strong science track, well-equipped ICT labs.
+- **Cost/Travel:** Higher end of the public range.
+**2. Labone Senior High (Cat B – Mixed)** ..."
+
+✓ THIS (a person talking):
+"With your maths and ICT, Accra Academy is the obvious first choice — it's Category A
+and the science track there is strong. But you told me money is tight, so I wouldn't
+put all your hope on it. Labone and Odorgonno are both Category B, both offer the
+science stream you need, and they're realistic. Put Accra Academy first if you want
+to reach, but make one of those other two your safe choice — that's the part students
+get wrong. Which of them is closest to home for you?"
+
+Notice: it commits to a view, explains the trade-off in plain sentences, admits what it
+doesn't know, and ends by asking something real. Do that.
+
+The harder the question, the MORE you should write like a person — not less. When a
+student asks something emotional (parents pushing a different career, fear of failing,
+money worries), a numbered plan is the wrong shape entirely. Answer it the way you'd
+answer out loud: acknowledge it honestly in a sentence or two, give them your actual
+view, hand them ONE thing to do next, and stop. Never turn a family conflict into
+"1. Show the overlap  2. Present a concrete plan  3. Offer a compromise" — that is a
+consultant's slide deck, and it will not help a 15-year-old talk to their parents.
+
+✗ "I am scared I will fail WASSCE" → do NOT reply with a five-step revision programme.
+✓ Reply like this: "That fear is worth listening to — it usually means you already know
+which paper is the problem. For most students in your position it's one or two subjects
+dragging the aggregate, not everything at once. So tell me: which subject are you most
+afraid of? Once I know that, I can tell you exactly what to do about it — and also what
+your options still look like if the results don't land where you want, because there
+are more of them than you think."
+
+One question back is worth more than five steps they won't follow. A student who is
+frightened needs you to narrow the problem, not hand them a programme.
 
 Use their PROFILE as the primary filter for every recommendation. Do not ignore family pressure, finances, region, strengths, or challenges.
 
 ${profileBlock}
+${matchesBlock}
 
 Your job: give practical, personalised guidance from JHS → BECE → SHS → WASSCE → university → career for THIS student, one conversation at a time.
 
-HOW TO TALK:
-- Before answering, check their STUDENT PROFILE "School stage" against what you're about to say. Never give advice that contradicts a fact already in their profile — e.g. if their stage is "SHS Form 1–2" or later, they have ALREADY been placed in an SHS stream (Ghana students choose their stream at SHS admission), so don't recommend a stream as if it's still undecided. If you need a fact that isn't in their profile (like which stream they're currently in), ask them directly in one short sentence instead of guessing or defaulting to a generic recommendation.
-- Answer the actual question they just asked. Don't pre-emptively dump every adjacent topic (alternate schools, regional options, how to talk to parents, etc.) unless they asked for it or it's essential to answering well.
-- Write in short, natural paragraphs like you're speaking to them directly. Weave their specific details (region, strengths, grades, family situation) into sentences — don't restate their profile as a checklist.
-- Only use a bullet list when listing genuinely discrete items (named schools, named steps) — lead with a sentence of context first, never open with a bare header.
-- Skip generic closing sections like "Key points to discuss" or "Remember." End with one concrete next step, or a short question back to them to keep the conversation going.
-- Be decisive and specific: name actual schools, actual cutoffs, actual subjects — not just categories of options.
-- Keep a normal reply to roughly 120–200 words. Only go longer if they explicitly ask for a full breakdown or roadmap.
-- If family pressure conflicts with interests, name the tension directly and give them a bridge path plus a line they could actually say to their parents — don't just tell them to "have an open conversation."
-- If academics are weak in a required subject, give 1–2 concrete catch-up steps, not a general pep talk.
-- Only answer Ghana education and career questions.
-- Cutoff aggregates are totals of 6 subjects (lower = better).
+MORE ON HOW TO TALK:
+- Answer the question they actually asked. Don't pre-empt adjacent topics.
+- Have an opinion. "I'd go with X, because…" beats laying out every option evenly.
+- Name the thing they haven't thought of — the safe choice, the cheaper route, the
+  subject that will quietly block them later.
+- End with a real question or one concrete next step. Never a summary.
+- Never contradict their profile: at SHS Form 1–2 or later they have ALREADY been placed
+  in a stream. If you need a fact you don't have, just ask for it in one sentence.
+- Prefer careers from their TOP SCORED MATCHES; if you go outside that list, say why.
+- Asked which SHS? 2–3 real ones from the list below, across categories, in sentences.
+- Family pressure: name the tension, then give them a line they could actually say.
+- Weak subject: 1–2 concrete catch-up steps, not encouragement.
+- Ghana education and careers only.
 
-══ CAREER PATHWAYS (format: Career: BECE target | SHS stream | School category | WASSCE agg | Required electives | University options) ══
+══ CAREER PATHWAYS most relevant to this student (format: Career: BECE target | SHS stream | School category | WASSCE agg | Required electives | University options) ══
+If they ask about a career that isn't listed here, answer from general knowledge of the Ghanaian system and say the specifics should be confirmed.
 ${data.careerTable}
 
-══ SHS SCHOOLS (sample — recommend by category match and region) ══
+══ SHS SCHOOLS (${data.schoolScope}) ══
+Category (A–D) reflects a school's historical average performance, NOT an entry aggregate.
 ${data.schoolList}
 
 ══ UNIVERSITY CUTOFF POINTS 2026 (aggregate = sum of best 6 WASSCE grades; lower is better) ══
@@ -149,41 +282,60 @@ KNUST general requirement: aggregate ≤24; science programmes typically ≤12, 
 UEW, UDS, UMaT, UHAS also accept students — mention these for students who miss top-tier cutoffs.`;
 }
 
-function buildGuideSystemPrompt(profile) {
+function buildGuideSystemPrompt(profile, firstName) {
   return `${buildSystemPrompt(profile)}
 
-You are now writing their FIRST PERSONAL GUIDE after onboarding.
-Structure your reply exactly like this (markdown):
+You are now writing their FIRST PERSONAL GUIDE, straight after onboarding. This is the
+one reply that may run longer — 300–400 words. Every other rule still holds: no tables,
+nothing invented, no SHS cut-offs.
+${firstName ? `Their first name is ${firstName}. Open by addressing them by it.` : "You don't know their name — open with the sentence itself, never an empty \"Hey !\"."}
 
-**Your personal guide is ready**
-One warm sentence reflecting who they are.
+This should read like a counsellor who has just listened to them for ten minutes and is
+now telling them what they think — not like a generated report. Write it as flowing
+paragraphs. Use these four headers and nothing else:
 
-**Who you are (my read)**
-3–5 bullets summarising stage, strengths, challenges, influences, constraints.
+**What I'm hearing**
+Reflect their situation back in 2–3 sentences of prose — stage, what they're good at,
+what's in their way, what constraints are real. No bullet list of their profile fields;
+they know their own answers. Show them you understood the shape of it.
 
-**Best-fit direction**
-1 primary path + why it fits them. 1–2 alternates if useful.
+**Where I'd point you**
+Name one direction and commit to it, with the honest reason it fits them. Mention one
+alternate worth keeping open. If their stated dream and their strengths pull apart, say
+so kindly and directly — that's the most valuable thing you can tell them.
 
-**Your roadmap**
-Bullets for: now → next exam → SHS stream/electives (or current SHS focus) → WASSCE targets → university options with realistic cutoffs.
-Mention category/region/finance constraints.
+**How you get there**
+The actual path from where they are now, written as PROSE. At most 3 short bullets, and
+never with bold labels like "**SHS selection:**" in front of them — that turns it back
+into a report. Cover the subjects that matter, the aggregate worth targeting, and 2–3
+named institutions. Keep it to their stage: a JHS student does not need university
+cutoffs yet, and listing six universities to a Form 1 student is noise.
 
-**Watch-outs**
-Family, money, weak subjects, mobility — honest but kind.
+**Start here**
+Two or three things to do this term. Specific and small enough to actually begin.
 
-**Next 3 actions**
-Specific things to do this week/term.
+Then one closing line inviting them to ask about any part of it.
 
-Keep under 450 words. Be specific to THEIR answers — no generic brochure language.`;
+Be specific to what THEY said. If they told you money is tight, the guide has to show it
+thought about money. If family expects something different, address it. Generic advice
+that could apply to any student is a failure here.`;
 }
 
 /* ── Helpers ── */
+function topMatchDetail(profile) {
+  if (!profile?.interests?.length && !profile?.strengths?.length) return null;
+  const [top] = getRecommendations(profile, 1);
+  if (!top?.shsStream) return null;
+  return { careerGoal: top.title, shsStream: top.shsStream };
+}
+
 function parseRoadmapUpdate(text, profile) {
   const fromProfile = profile ? deriveRoadmapFromProfile(profile) : null;
+  const topMatch = profile ? topMatchDetail(profile) : null;
   const lower = (text || "").toLowerCase();
 
   let stage = fromProfile?.stage || null;
-  let detail = fromProfile?.detail || null;
+  let detail = fromProfile?.detail || topMatch?.shsStream || null;
 
   if (lower.includes("general science")) {
     stage = stage || "SHS";
@@ -227,7 +379,7 @@ function parseRoadmapUpdate(text, profile) {
   return {
     stage,
     detail: detail || fromProfile?.detail || "See guidance",
-    careerGoal: fromProfile?.careerGoal || null,
+    careerGoal: fromProfile?.careerGoal || topMatch?.careerGoal || null,
   };
 }
 
@@ -257,12 +409,25 @@ async function saveAgentMessage(session, content, roadmapStage = null) {
   return agentMessage;
 }
 
+/** The student's name lives on the User, not the profile. */
+async function sessionFirstName(session) {
+  if (!session.userId) return null;
+  try {
+    const owner = await User.findById(session.userId).select("name");
+    return owner?.name?.trim().split(/\s+/)[0] || null;
+  } catch {
+    return null;
+  }
+}
+
 async function generatePersonalGuide(session) {
   const profile = publicProfile(session.profile);
+  const firstName = await sessionFirstName(session);
+
   const completion = await getGroq().chat.completions.create({
-    model: "llama-3.3-70b-versatile",
+    model: GROQ_MODEL,
     messages: [
-      { role: "system", content: buildGuideSystemPrompt(profile) },
+      { role: "system", content: buildGuideSystemPrompt(profile, firstName) },
       {
         role: "user",
         content:
@@ -270,7 +435,10 @@ async function generatePersonalGuide(session) {
       },
     ],
     temperature: 0.4,
-    max_tokens: 1100,
+    // gpt-oss spends part of the budget on reasoning tokens before any visible
+    // output, so this ceiling covers both.
+    max_tokens: 2500,
+    reasoning_effort: "low",
   });
 
   return completion.choices[0].message.content;
@@ -312,9 +480,42 @@ async function handleOnboarding(session, answerText, res) {
 
   // Finished all questions → generate guide
   if (nextStep >= total) {
-    session.phase = "chat";
     session.careerGoal = deriveCareerGoal(updated);
     session.region = updated.region || session.region;
+
+    // Guest finished onboarding: hold the guide until they have an account to
+    // save it to. Their answers are already persisted on the session, so signing
+    // up claims this work rather than starting over.
+    if (!session.userId) {
+      session.phase = "awaiting_signup";
+      await session.save();
+
+      const [topMatch] = getRecommendations(updated, 1);
+      return res.json({
+        reply: null,
+        phase: "awaiting_signup",
+        onboarding: {
+          step: total,
+          total,
+          progress: 100,
+          completed: true,
+          question: null,
+        },
+        profile: publicProfile(session.profile),
+        careerGoal: session.careerGoal,
+        roadmapUpdate: null,
+        guideReady: false,
+        signupPreview: {
+          answersGiven: total,
+          careerGoal: session.careerGoal,
+          topMatch: topMatch
+            ? { title: topMatch.title, score: topMatch.overallScore }
+            : null,
+        },
+      });
+    }
+
+    session.phase = "chat";
 
     let reply;
     try {
@@ -322,7 +523,7 @@ async function handleOnboarding(session, answerText, res) {
       session.guideGenerated = true;
     } catch (err) {
       console.error("Guide generation failed:", err);
-      reply = buildFallbackGuide(updated);
+      reply = buildFallbackGuide(updated, await sessionFirstName(session));
       session.guideGenerated = true;
     }
 
@@ -367,30 +568,41 @@ async function handleOnboarding(session, answerText, res) {
   });
 }
 
-function buildFallbackGuide(profile) {
+/**
+ * Shown when the model call fails. Written in the same conversational voice as a
+ * real guide — a student should never be able to tell this is the degraded path.
+ */
+function buildFallbackGuide(profile, firstName) {
   const career = deriveCareerGoal(profile);
-  const lines = [
-    "**Your personal guide is ready**",
-    `Based on what you shared, I'm treating **${career}** as your working direction.`,
-    "",
-    "**Who you are (my read)**",
-    profile.educationLevel ? `- Stage: ${profile.educationLevel}` : null,
-    profile.region ? `- Region: ${profile.region}` : null,
-    profile.strengths?.length
-      ? `- Strengths: ${profile.strengths.join(", ")}`
-      : null,
-    profile.challenges?.length
-      ? `- Challenges: ${profile.challenges.join(", ")}`
-      : null,
-    profile.influences ? `- Influences: ${profile.influences}` : null,
-    "",
-    "**Next steps**",
-    "- Focus on the subjects tied to your direction this term.",
-    "- Ask me for SHS streams, WASSCE targets, or university cutoffs next.",
-    "- We can adjust if family expectations or grades change.",
-  ].filter(Boolean);
+  const [top] = getRecommendations(profile, 1);
+  const match = top?.title && top.title !== career ? top.title : null;
 
-  return lines.join("\n");
+  const strengths = profile.strengths?.length
+    ? profile.strengths.slice(0, 2).join(" and ")
+    : null;
+  const tight = /concern|tight/i.test(profile.financialSituation || "");
+  const greeting = firstName ? `${firstName}, ` : "";
+
+  const opening =
+    `**What I'm hearing**\n` +
+    `${greeting}from everything you've told me, **${career}** is the direction that fits you best` +
+    (strengths ? `, and your ${strengths} back that up` : "") +
+    `.` +
+    (match ? ` ${match} is worth keeping on the table too — it draws on the same strengths.` : "") +
+    (tight
+      ? ` I've also noted money is tight, so I'll keep pointing you at routes that don't depend on being able to pay your way.`
+      : "");
+
+  const next =
+    `\n\n**Start here**\n` +
+    `- Focus this term on the subjects that path actually needs — ask me which ones and I'll be specific.\n` +
+    `- Tell me your current results and I'll tell you honestly which schools are realistic.\n` +
+    (profile.familyExpectations && /specific|pressure/i.test(profile.familyExpectations)
+      ? `- If family expectations are pulling a different way, ask me — that conversation is worth planning.\n`
+      : "") +
+    `\nAsk me about any part of this and we'll go deeper.`;
+
+  return opening + next;
 }
 
 /* ── Free chat turn ── */
@@ -407,14 +619,15 @@ async function handleChat(session, message, res) {
 
   const profile = publicProfile(session.profile);
   const completion = await getGroq().chat.completions.create({
-    model: "llama-3.3-70b-versatile",
+    model: GROQ_MODEL,
     messages: [
       { role: "system", content: buildSystemPrompt(profile) },
       ...recentHistory,
       { role: "user", content: message },
     ],
     temperature: 0.55,
-    max_tokens: 500,
+    max_tokens: 1400,
+    reasoning_effort: "low",
   });
 
   const reply = completion.choices[0].message.content;
@@ -438,6 +651,58 @@ async function handleChat(session, message, res) {
   });
 }
 
+/**
+ * Generate the personal guide for a session that finished onboarding as a guest
+ * and has since been claimed by an account. Called right after sign-up.
+ */
+exports.unlockGuide = async (req, res, next) => {
+  try {
+    const { sessionId } = req.body;
+    if (!sessionId) {
+      return res.status(400).json({ error: "sessionId is required" });
+    }
+
+    const session = await Session.findOne({ sessionId, userId: req.user._id });
+    if (!session) {
+      return res.status(404).json({ error: "Session not found" });
+    }
+    if (session.guideGenerated) {
+      return res.status(400).json({ error: "Guide already generated." });
+    }
+
+    const profile = publicProfile(session.profile);
+    session.phase = "chat";
+    session.careerGoal = session.careerGoal || deriveCareerGoal(profile);
+
+    let reply;
+    try {
+      reply = await generatePersonalGuide(session);
+    } catch (err) {
+      console.error("Guide generation failed:", err);
+      reply = buildFallbackGuide(profile, await sessionFirstName(session));
+    }
+    session.guideGenerated = true;
+
+    const roadmapUpdate = deriveRoadmapFromProfile(profile);
+    await saveAgentMessage(session, reply, roadmapUpdate.stage);
+    await session.save();
+    await syncProfileToUser(session);
+
+    res.json({
+      reply,
+      phase: "chat",
+      onboarding: null,
+      profile,
+      careerGoal: session.careerGoal,
+      roadmapUpdate,
+      guideReady: true,
+    });
+  } catch (error) {
+    console.error("Unlock guide error:", error);
+    next(error);
+  }
+};
+
 /* ── Controller ── */
 exports.sendMessage = async (req, res, next) => {
   try {
@@ -449,12 +714,30 @@ exports.sendMessage = async (req, res, next) => {
         .json({ error: "sessionId and message are required" });
     }
 
-    const session = await Session.findOne({
-      sessionId,
-      userId: req.user._id,
-    });
+    // Signed-in users reach only their own sessions; guests only unclaimed ones.
+    const session = await Session.findOne(
+      req.user
+        ? { sessionId, userId: req.user._id }
+        : { sessionId, userId: null },
+    );
     if (!session) {
       return res.status(404).json({ error: "Session not found" });
+    }
+
+    // Guest completed onboarding — everything past this point needs an account.
+    if (session.phase === "awaiting_signup") {
+      return res.status(401).json({
+        error: "Create an account to unlock your guide.",
+        phase: "awaiting_signup",
+      });
+    }
+
+    // Free chat costs an LLM call, so it stays behind an account.
+    if (session.phase === "chat" && !session.userId) {
+      return res.status(401).json({
+        error: "Create an account to keep chatting with Caria.",
+        phase: "awaiting_signup",
+      });
     }
 
     const trimmed = message.trim();

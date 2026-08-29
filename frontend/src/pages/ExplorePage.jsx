@@ -1,26 +1,132 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import AppHeader from '../components/layout/AppHeader';
+import { useAuth } from '../context/AuthContext';
+import { getCareerRecommendations, getAllCareers } from '../services/api';
 
 /* ─── Data ──────────────────────────────────────────────── */
 
-const STREAMS = [
-  'All Streams',
-  'Science & Health',
-  'Engineering & Tech',
-  'Business & Finance',
-  'Arts & Law',
-  'TVET & Skilled Trades',
+/**
+ * Categories are driven by each career's own tags, not by parsing its SHS stream.
+ * Stream-parsing mis-filed careers badly — a teacher whose stream is "any subject
+ * matching your specialism" landed under Engineering & Tech, and 56 of 107 careers
+ * fell into Science & Health because the word "science" appeared anywhere.
+ * Order matters: the first matching tag wins, so specific fields beat broad ones.
+ */
+const CATEGORY_RULES = [
+  ['Health & Medicine', ['health']],
+  ['Teaching & Education', ['teaching']],
+  ['Engineering & Building', ['building']],
+  ['Tech & Digital', ['tech']],
+  ['Business & Finance', ['business']],
+  ['Law & Public Service', ['justice']],
+  ['Creative & Media', ['creative_work']],
+  ['Trades & Practical', ['practical']],
+  ['Science & Research', ['science']],
 ];
 
-const CAREERS = [
+const STREAMS = ['All Streams', ...CATEGORY_RULES.map(([label]) => label)];
+
+/**
+ * The FIRST tag on a career is its primary field; later tags are secondary
+ * flavour (a hotel manager carries "teaching" for the mentoring side of the job,
+ * but filing it under Teaching & Education would mislead someone browsing for
+ * a classroom career). So match on the primary tag first, and only fall back to
+ * a secondary match if the primary doesn't map to any category.
+ */
+function categoryFor(tags, shsStream) {
+  const primary = (tags || [])[0];
+  if (primary) {
+    const direct = CATEGORY_RULES.find(([, needed]) => needed.includes(primary));
+    if (direct) return direct[0];
+  }
+  const owned = new Set(tags || []);
+  for (const [label, needed] of CATEGORY_RULES) {
+    if (needed.some((t) => owned.has(t))) return label;
+  }
+  const s = (shsStream || '').toLowerCase();
+  if (s.includes('technical') || s.includes('tvet')) return 'Trades & Practical';
+  if (s.includes('business')) return 'Business & Finance';
+  if (s.includes('arts')) return 'Creative & Media';
+  if (s.includes('science')) return 'Health & Medicine';
+  return 'Science & Research';
+}
+
+/** Cards shown per page — the catalogue is 100+, so 6 at a time was tedious. */
+const PAGE_SIZE = 12;
+
+const ICON_FROM_CATEGORY = {
+  'Health & Medicine': IconHealth,
+  'Teaching & Education': IconBook,
+  'Engineering & Building': IconBlueprint,
+  'Tech & Digital': IconCode,
+  'Business & Finance': IconBank,
+  'Law & Public Service': IconScales,
+  'Creative & Media': IconPalette,
+  'Trades & Practical': IconWrench,
+  'Science & Research': IconFlask,
+};
+
+/** Plain-language reason this career ranked where it did — no scores-as-prose. */
+function describeMatch(rec) {
+  const cheapest = (rec.universities || [])
+    .map((u) => u.cutoff)
+    .filter((c) => typeof c === 'number');
+  const bestCutoff = cheapest.length ? Math.min(...cheapest) : null;
+
+  const parts = [];
+  if (rec.shsStream) parts.push(rec.shsStream.replace(/ \(.*\)$/, ''));
+  if (bestCutoff !== null) parts.push(`cutoff from aggregate ${bestCutoff}`);
+  else if (rec.beceTarget) parts.push(`BECE ${rec.beceTarget}`);
+  return parts.join(' · ');
+}
+
+/**
+ * Map a scored career from the API into the card/detail shape this page renders.
+ * Scores are only carried through when they were computed against a real profile —
+ * showing "Match for you 52%" to someone who hasn't told us anything is meaningless.
+ */
+function mapRecommendation(rec, personalized) {
+  const stream = categoryFor(rec.tags, rec.shsStream);
+  return {
+    id: rec.careerId,
+    title: rec.title,
+    tag: stream.split(' ')[0],
+    description: describeMatch(rec),
+    shs: rec.shsStream || 'Varies',
+    stream,
+    Icon: ICON_FROM_CATEGORY[stream] || IconBlueprint,
+    fitScore: personalized ? rec.fitScore : undefined,
+    moneyScore: personalized ? rec.moneyScore : undefined,
+    overallScore: personalized ? rec.overallScore : undefined,
+    detail: {
+      about: null,
+      bece: rec.beceTarget || 'Varies',
+      shsStream: rec.shsStream || 'Varies',
+      shsCategories: rec.shsCategories || [],
+      electives: rec.electives || [],
+      wassce: null,
+      universities: (rec.universities || []).map((u) => ({
+        name: `${u.institution} — ${u.program}`,
+        cutoff: u.cutoff ?? null,
+      })),
+      jobRoles: [],
+      salary: rec.salaryRange,
+      tuitionTier: rec.tuitionTier,
+      demand: rec.demand,
+      alternatives: rec.alternatives || [],
+    },
+  };
+}
+
+const FALLBACK_CAREERS = [
   {
     id: 1,
     title: 'Public Health Nurse',
     tag: 'Health',
     description: 'Providing essential healthcare services and health education within Ghanaian communities.',
     shs: 'General Science',
-    stream: 'Science & Health',
+    stream: 'Health & Medicine',
     Icon: IconHealth,
     detail: {
       about: 'Public Health Nurses work in clinics, hospitals, and communities across Ghana to deliver preventive care, maternal health services, and health education. They are in high demand in both public and private health sectors.',
@@ -45,7 +151,7 @@ const CAREERS = [
     tag: 'Tech',
     description: "Building digital solutions and applications for West Africa's booming tech ecosystem.",
     shs: 'General Science / Elective Maths',
-    stream: 'Engineering & Tech',
+    stream: 'Engineering & Building',
     Icon: IconCode,
     detail: {
       about: "Software Developers design, build, and maintain digital products — apps, websites, and enterprise systems. Ghana's growing tech hub (Silicon Savannah) offers strong local and remote job opportunities.",
@@ -95,7 +201,7 @@ const CAREERS = [
     tag: 'TVET',
     description: 'Specializing in the maintenance and design of modern vehicle systems.',
     shs: 'Technical / General Science',
-    stream: 'TVET & Skilled Trades',
+    stream: 'Trades & Practical',
     Icon: IconWrench,
     detail: {
       about: 'Automotive Engineers design, test, and maintain vehicle systems including engines, electronics, and safety features. TVET schools offer excellent technical programmes that lead to both HND and university degrees.',
@@ -120,7 +226,7 @@ const CAREERS = [
     tag: 'Arts & Law',
     description: 'Navigating the legal complexities of business transactions and commercial law.',
     shs: 'General Arts',
-    stream: 'Arts & Law',
+    stream: 'Creative & Media',
     Icon: IconScales,
     detail: {
       about: 'Corporate Lawyers advise businesses on contracts, mergers, compliance, and commercial disputes. You must complete a law degree and be called to the Bar by the Ghana School of Law.',
@@ -145,7 +251,7 @@ const CAREERS = [
     tag: 'Engineering',
     description: 'Designing and overseeing the construction of critical infrastructure like roads and bridges.',
     shs: 'General Science',
-    stream: 'Engineering & Tech',
+    stream: 'Engineering & Building',
     Icon: IconBlueprint,
     detail: {
       about: 'Civil Engineers plan and oversee the design and construction of roads, bridges, water systems, and buildings. Ghana\'s infrastructure boom makes this a high-demand profession in both public and private sectors.',
@@ -170,7 +276,7 @@ const CAREERS = [
     tag: 'Health',
     description: 'Diagnosing and treating patients across a wide range of medical conditions in Ghanaian hospitals.',
     shs: 'General Science',
-    stream: 'Science & Health',
+    stream: 'Health & Medicine',
     Icon: IconHealth,
     detail: {
       about: 'Medical Doctors (MBChB) diagnose and treat illness in hospitals, clinics, and communities. It is one of the most competitive and prestigious paths in Ghana, requiring top BECE grades and strong WASSCE scores.',
@@ -195,7 +301,7 @@ const CAREERS = [
     tag: 'Arts & Law',
     description: 'Creating visual concepts and designs for brands, media, and digital products across Ghana.',
     shs: 'Visual Arts / General Arts',
-    stream: 'Arts & Law',
+    stream: 'Creative & Media',
     Icon: IconScales,
     detail: {
       about: 'Graphic Designers create logos, layouts, and digital visuals for companies, media houses, and online platforms. The rise of digital marketing in Ghana has made this a thriving creative career.',
@@ -219,20 +325,66 @@ const CAREERS = [
 /* ─── Page ──────────────────────────────────────────────── */
 
 export default function ExplorePage() {
+  const { isAuthenticated } = useAuth();
   const [activeStream, setActiveStream] = useState('All Streams');
+  const [academicLevel, setAcademicLevel] = useState('Any level');
   const [search, setSearch] = useState('');
-  const [visibleCount, setVisibleCount] = useState(6);
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const [selected, setSelected] = useState(null);
+  const [compareIds, setCompareIds] = useState([]);
+  const [careers, setCareers] = useState([]);
+  const [personalized, setPersonalized] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    let cancelled = false;
+    setLoading(true);
+
+    // Signed in → the full catalogue ranked for them. Logged out → the same
+    // catalogue, ranked neutrally. Either way it's the real 107, not a sample.
+    const request = isAuthenticated
+      ? getCareerRecommendations().then((d) => ({
+          list: d.recommendations,
+          personalized: true,
+        }))
+      : getAllCareers().then((d) => ({ list: d.careers, personalized: false }));
+
+    request
+      .then(({ list, personalized: isPersonal }) => {
+        if (cancelled) return;
+        if (list?.length) {
+          setCareers(list.map((r) => mapRecommendation(r, isPersonal)));
+          setPersonalized(isPersonal);
+        } else {
+          setCareers(FALLBACK_CAREERS);
+          setPersonalized(false);
+        }
+      })
+      .catch(() => {
+        // Backend unreachable — the static sample keeps the page usable.
+        if (!cancelled) {
+          setCareers(FALLBACK_CAREERS);
+          setPersonalized(false);
+        }
+      })
+      .finally(() => {
+        if (!cancelled) setLoading(false);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [isAuthenticated]);
 
   const streamCounts = useMemo(() => {
-    const counts = { 'All Streams': CAREERS.length };
+    const counts = { 'All Streams': careers.length };
     STREAMS.slice(1).forEach((s) => {
-      counts[s] = CAREERS.filter((c) => c.stream === s).length;
+      counts[s] = careers.filter((c) => c.stream === s).length;
     });
     return counts;
-  }, []);
+  }, [careers]);
 
-  const filtered = CAREERS.filter((c) => {
+  const filtered = careers.filter((c) => {
     const matchStream = activeStream === 'All Streams' || c.stream === activeStream;
     const q = search.toLowerCase();
     const matchSearch =
@@ -240,7 +392,12 @@ export default function ExplorePage() {
       c.title.toLowerCase().includes(q) ||
       c.description.toLowerCase().includes(q) ||
       c.shs.toLowerCase().includes(q);
-    return matchStream && matchSearch;
+    const matchLevel =
+      academicLevel === 'Any level' ||
+      (academicLevel === 'JHS' && /jhs|bece/i.test(c.shs || '')) ||
+      (academicLevel === 'SHS' && !/university/i.test(c.shs || '')) ||
+      (academicLevel === 'University' && (c.detail?.universities || []).length > 0);
+    return matchStream && matchSearch && matchLevel;
   });
 
   const visible = filtered.slice(0, visibleCount);
@@ -248,7 +405,15 @@ export default function ExplorePage() {
 
   const handleStream = (s) => {
     setActiveStream(s);
-    setVisibleCount(6);
+    setVisibleCount(PAGE_SIZE);
+  };
+
+  const toggleCompare = (id) => {
+    setCompareIds((prev) => {
+      if (prev.includes(id)) return prev.filter((c) => c !== id);
+      if (prev.length >= 3) return prev;
+      return [...prev, id];
+    });
   };
 
   return (
@@ -270,7 +435,7 @@ export default function ExplorePage() {
                 type="text"
                 placeholder="e.g. Nurse, Civil Engineer…"
                 value={search}
-                onChange={(e) => { setSearch(e.target.value); setVisibleCount(6); }}
+                onChange={(e) => { setSearch(e.target.value); setVisibleCount(PAGE_SIZE); }}
                 className="w-full pl-10 pr-3 py-2.5 rounded-xl border border-border bg-cream/50 text-sm text-fg outline-none focus:border-navy focus:bg-white transition-colors"
               />
             </div>
@@ -305,7 +470,11 @@ export default function ExplorePage() {
             <p className="text-[10px] font-semibold tracking-widest uppercase text-fg-muted mb-3">
               Academic Level
             </p>
-            <select className="w-full text-sm text-fg-soft border border-border bg-cream/50 rounded-xl px-3 py-2.5 outline-none cursor-pointer focus:border-navy">
+            <select
+              value={academicLevel}
+              onChange={(e) => { setAcademicLevel(e.target.value); setVisibleCount(PAGE_SIZE); }}
+              className="w-full text-sm text-fg-soft border border-border bg-cream/50 rounded-xl px-3 py-2.5 outline-none cursor-pointer focus:border-navy"
+            >
               <option>Any level</option>
               <option>JHS</option>
               <option>SHS</option>
@@ -336,8 +505,15 @@ export default function ExplorePage() {
               Explore Your Future
             </h1>
             <p className="text-sm text-fg-soft leading-relaxed max-w-130">
-              Discover career paths tailored for the Ghanaian job market. Select any career to see the full academic roadmap.
+              {personalized
+                ? 'Ranked for you — weighted by your interests, strengths, and what matters most to you (passion vs pay).'
+                : 'Discover career paths tailored for the Ghanaian job market. Select any career to see the full academic roadmap.'}
             </p>
+            {!isAuthenticated && (
+              <p className="text-xs text-gold mt-2">
+                <Link to="/register" className="underline hover:text-navy">Sign up</Link> and complete onboarding to see careers ranked for your own profile.
+              </p>
+            )}
           </div>
 
           {/* Mobile-only search + stream pills (sidebar hidden below lg) */}
@@ -350,16 +526,16 @@ export default function ExplorePage() {
                 type="text"
                 placeholder="Search for careers…"
                 value={search}
-                onChange={(e) => { setSearch(e.target.value); setVisibleCount(6); }}
+                onChange={(e) => { setSearch(e.target.value); setVisibleCount(PAGE_SIZE); }}
                 className="w-full pl-11 pr-5 py-3 rounded-full border border-border bg-white text-sm text-fg outline-none focus:border-navy transition-colors"
               />
             </div>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex gap-2 overflow-x-auto pb-1 -mx-1 px-1">
               {STREAMS.map((s) => (
                 <button
                   key={s}
                   onClick={() => handleStream(s)}
-                  className={`text-sm px-4 py-2 rounded-full border transition-all duration-150 ${
+                  className={`shrink-0 text-sm px-4 py-2 rounded-full border transition-all duration-150 whitespace-nowrap ${
                     activeStream === s
                       ? 'bg-navy text-white border-navy'
                       : 'bg-white text-fg border-border hover:border-navy'
@@ -369,29 +545,71 @@ export default function ExplorePage() {
                 </button>
               ))}
             </div>
+            <select
+              value={academicLevel}
+              onChange={(e) => { setAcademicLevel(e.target.value); setVisibleCount(PAGE_SIZE); }}
+              className="w-full text-sm text-fg-soft border border-border bg-white rounded-full px-4 py-2.5 outline-none cursor-pointer focus:border-navy"
+            >
+              <option>Any level</option>
+              <option>JHS</option>
+              <option>SHS</option>
+              <option>University</option>
+            </select>
           </div>
 
-          <p className="text-xs text-fg-muted mb-4">
-            {filtered.length} career{filtered.length === 1 ? '' : 's'} found
-            {activeStream !== 'All Streams' ? ` in ${activeStream}` : ''}
-          </p>
-
-          {/* Career Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mb-8">
-            {visible.map((career) => (
-              <CareerCard key={career.id} career={career} onClick={() => setSelected(career)} />
-            ))}
-            {visible.length === 0 && (
-              <p className="col-span-full text-center text-fg-muted py-16 text-sm">
-                No careers match your search.
-              </p>
+          <div className="flex items-baseline justify-between gap-4 mb-4">
+            <p className="text-xs text-fg-muted">
+              {filtered.length} career{filtered.length === 1 ? '' : 's'}
+              {activeStream !== 'All Streams' ? ` in ${activeStream}` : ''}
+            </p>
+            {personalized && (
+              <p className="text-xs text-fg-muted">Sorted by match for you</p>
             )}
           </div>
+
+          {/* Career Cards Grid */}
+          {loading ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mb-8">
+              {Array.from({ length: 6 }).map((_, i) => (
+                <div
+                  key={i}
+                  className="bg-white rounded-2xl border border-border p-5 animate-pulse"
+                >
+                  <div className="w-10 h-10 rounded-xl bg-border/60 mb-4" />
+                  <div className="h-2 w-16 rounded bg-border/60 mb-3" />
+                  <div className="h-4 w-3/4 rounded bg-border/60 mb-2.5" />
+                  <div className="h-3 w-full rounded bg-border/40 mb-1.5" />
+                  <div className="h-3 w-2/3 rounded bg-border/40" />
+                  <div className="mt-5 pt-4 border-t border-border">
+                    <div className="h-1.5 w-full rounded-full bg-border/60" />
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mb-8">
+              {visible.map((career) => (
+                <CareerCard
+                  key={career.id}
+                  career={career}
+                  onClick={() => setSelected(career)}
+                  comparable={personalized}
+                  checked={compareIds.includes(career.id)}
+                  onToggleCompare={() => toggleCompare(career.id)}
+                />
+              ))}
+              {visible.length === 0 && (
+                <p className="col-span-full text-center text-fg-muted py-16 text-sm">
+                  No careers match your search.
+                </p>
+              )}
+            </div>
+          )}
 
           {hasMore && (
             <div className="flex justify-center pb-4">
               <button
-                onClick={() => setVisibleCount((n) => n + 6)}
+                onClick={() => setVisibleCount((n) => n + PAGE_SIZE)}
                 className="px-10 py-3 rounded-full border border-navy text-navy text-sm font-medium hover:bg-navy hover:text-white transition-all duration-150"
               >
                 Load More Careers
@@ -400,6 +618,22 @@ export default function ExplorePage() {
           )}
         </main>
       </div>
+
+      {/* Floating Compare Bar */}
+      {compareIds.length >= 2 && (
+        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-30 bg-navy text-white rounded-full shadow-xl px-6 py-3 flex items-center gap-4">
+          <span className="text-sm font-medium">{compareIds.length} careers selected</span>
+          <Link
+            to={`/compare?ids=${compareIds.join(',')}`}
+            className="text-sm font-semibold bg-gold text-navy px-4 py-1.5 rounded-full hover:bg-white transition-colors"
+          >
+            Compare →
+          </Link>
+          <button onClick={() => setCompareIds([])} className="text-white/60 hover:text-white text-sm">
+            Clear
+          </button>
+        </div>
+      )}
 
       {/* Detail Panel */}
       {selected && (
@@ -411,40 +645,75 @@ export default function ExplorePage() {
 
 /* ─── Career Card ───────────────────────────────────────── */
 
-function CareerCard({ career, onClick }) {
-  const { title, tag, description, shs, Icon } = career;
+function CareerCard({ career, onClick, comparable, checked, onToggleCompare }) {
+  const { title, tag, description, shs, Icon, fitScore, moneyScore, overallScore } =
+    career;
+  const scored = typeof overallScore === 'number';
 
   return (
-    <button
-      onClick={onClick}
-      className="group bg-white rounded-2xl overflow-hidden flex flex-col border border-border hover:border-navy hover:-translate-y-0.5 hover:shadow-md transition-all duration-150 text-left"
-    >
-      <div className="p-5 flex flex-col flex-1">
-        <div className="flex items-start justify-between mb-4">
-          <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 bg-navy/5">
-            <Icon />
-          </div>
-          <span className="text-[10px] font-semibold tracking-wider uppercase text-gold px-2 py-1">
-            {tag}
-          </span>
+    <div className="group bg-white rounded-2xl flex flex-col border border-border hover:border-navy hover:-translate-y-0.5 hover:shadow-md transition-all duration-150 relative">
+      {comparable && (
+        <label
+          className="absolute top-4 right-4 z-10 flex items-center gap-1.5 cursor-pointer text-[11px] font-medium text-fg-muted hover:text-navy"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <input
+            type="checkbox"
+            checked={checked}
+            onChange={onToggleCompare}
+            className="w-3.5 h-3.5 accent-navy cursor-pointer"
+          />
+          Compare
+        </label>
+      )}
+
+      <button onClick={onClick} className="p-5 flex flex-col flex-1 text-left">
+        <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 bg-navy/5 mb-4">
+          <Icon />
         </div>
 
-        <h3 className="text-lg font-bold text-navy mb-2 leading-snug">{title}</h3>
-        <p className="text-[15px] text-fg-soft leading-[1.65] flex-1">{description}</p>
+        <span className="text-[10px] font-semibold tracking-[0.12em] uppercase text-gold mb-1.5">
+          {tag}
+        </span>
+        <h3 className="text-lg font-semibold text-navy mb-1.5 leading-snug pr-16">
+          {title}
+        </h3>
+        <p className="text-[13px] text-fg-muted leading-[1.6] flex-1">
+          {description || shs}
+        </p>
 
-        <div className="border-t border-border my-4" />
-
-        <div className="flex items-center justify-between gap-3">
-          <div className="min-w-0">
-            <p className="text-xs text-fg-muted mb-1">Required SHS Stream:</p>
-            <p className="text-[15px] font-semibold text-navy truncate">{shs}</p>
+        {scored && (
+          <div className="mt-5 pt-4 border-t border-border">
+            <div className="flex items-baseline justify-between mb-2">
+              <span className="text-[11px] font-semibold uppercase tracking-wide text-fg-muted">
+                Match for you
+              </span>
+              <span className="text-[15px] font-semibold text-navy tabular-nums">
+                {overallScore}%
+              </span>
+            </div>
+            <div className="h-1.5 rounded-full bg-border overflow-hidden mb-2.5">
+              <div
+                className="h-full rounded-full bg-navy transition-all duration-500"
+                style={{ width: `${overallScore}%` }}
+              />
+            </div>
+            <div className="flex gap-4 text-[11px] text-fg-muted">
+              <span>
+                Interest fit <strong className="text-fg-soft">{fitScore}%</strong>
+              </span>
+              <span>
+                Pay &amp; cost <strong className="text-fg-soft">{moneyScore}%</strong>
+              </span>
+            </div>
           </div>
-          <span className="text-xs font-medium text-navy opacity-0 group-hover:opacity-100 transition-opacity shrink-0 flex items-center gap-1">
-            View roadmap →
-          </span>
-        </div>
-      </div>
-    </button>
+        )}
+
+        <span className="text-xs font-medium text-navy opacity-0 group-hover:opacity-100 transition-opacity mt-4">
+          View full roadmap →
+        </span>
+      </button>
+    </div>
   );
 }
 
@@ -485,8 +754,31 @@ function CareerDetail({ career, onClose }) {
         {/* Scrollable body */}
         <div className="flex-1 overflow-y-auto p-6 space-y-6">
 
-          {/* About */}
-          <p className="text-[15px] text-fg-soft leading-[1.7]">{detail.about}</p>
+          {/* Score breakdown — only for personalized results */}
+          {typeof career.overallScore === 'number' && (
+            <section className="bg-white border border-border rounded-2xl p-5">
+              <div className="flex items-baseline justify-between mb-3">
+                <h3 className="text-xs font-semibold tracking-widest uppercase text-fg-muted">
+                  Why this ranks here
+                </h3>
+                <span className="text-lg font-semibold text-navy tabular-nums">
+                  {career.overallScore}%
+                </span>
+              </div>
+              <div className="space-y-3">
+                <ScoreBar label="Interest &amp; strength fit" value={career.fitScore} />
+                <ScoreBar label="Pay, demand &amp; affordability" value={career.moneyScore} />
+              </div>
+              <p className="text-[12px] text-fg-muted leading-relaxed mt-3.5">
+                Weighted by what you told Caria matters most to you.
+              </p>
+            </section>
+          )}
+
+          {/* About (static fallback entries only) */}
+          {detail.about && (
+            <p className="text-[15px] text-fg-soft leading-[1.7]">{detail.about}</p>
+          )}
 
           {/* Academic Roadmap */}
           <section className="bg-white border border-border rounded-2xl p-5">
@@ -501,16 +793,61 @@ function CareerDetail({ career, onClose }) {
               <RoadmapStep
                 step="SHS"
                 title={`${detail.shsStream} Programme`}
-                body={`Target Category ${detail.shsCategories.join('/')} schools. Elect: ${detail.electives.join(', ')}.`}
+                body={
+                  [
+                    detail.shsCategories?.length
+                      ? `Target Category ${detail.shsCategories.join('/')} schools.`
+                      : null,
+                    detail.electives?.length
+                      ? `Electives: ${detail.electives.join(', ')}.`
+                      : null,
+                  ]
+                    .filter(Boolean)
+                    .join(' ') || 'Ask Caria which electives fit your current results.'
+                }
               />
               <RoadmapStep
                 step="WASSCE"
-                title={`Target aggregate ${detail.wassce}`}
+                title={
+                  detail.wassce
+                    ? `Target aggregate ${detail.wassce}`
+                    : 'Meet the cutoffs below'
+                }
                 body="Aim for A1–B3 in all electives. Core subjects: C6 minimum in English, Maths, and Science."
                 last
               />
             </div>
           </section>
+
+          {/* Alternative pathways — the "what if I miss it" reassurance */}
+          {detail.alternatives?.length > 0 && (
+            <section>
+              <h3 className="text-xs font-semibold tracking-widest uppercase text-fg-muted mb-3">
+                If you miss that aggregate
+              </h3>
+              <div className="flex flex-col gap-2.5">
+                {detail.alternatives.map((alt) => (
+                  <div
+                    key={alt.condition}
+                    className="bg-white rounded-xl p-4 border border-border"
+                  >
+                    <p className="text-[11px] font-semibold uppercase tracking-wide text-gold mb-1.5">
+                      {alt.condition}
+                    </p>
+                    <p className="text-sm font-medium text-navy mb-1">{alt.stream}</p>
+                    <p className="text-[13px] text-fg-soft leading-relaxed">
+                      {alt.rationale}
+                    </p>
+                    {alt.careers?.length > 0 && (
+                      <p className="text-[12px] text-fg-muted mt-2">
+                        Leads to: {alt.careers.join(' · ')}
+                      </p>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
 
           {/* University Options */}
           <section>
@@ -532,19 +869,31 @@ function CareerDetail({ career, onClose }) {
           </section>
 
           {/* Job Roles */}
-          <section>
-            <h3 className="text-xs font-semibold tracking-widest uppercase text-fg-muted mb-3">Career Roles</h3>
-            <div className="flex flex-wrap gap-2">
-              {detail.jobRoles.map((r) => (
-                <span key={r} className="text-xs px-3 py-1.5 rounded-full border border-border text-fg-soft bg-white">{r}</span>
-              ))}
-            </div>
-          </section>
+          {detail.jobRoles?.length > 0 && (
+            <section>
+              <h3 className="text-xs font-semibold tracking-widest uppercase text-fg-muted mb-3">Career Roles</h3>
+              <div className="flex flex-wrap gap-2">
+                {detail.jobRoles.map((r) => (
+                  <span key={r} className="text-xs px-3 py-1.5 rounded-full border border-border text-fg-soft bg-white">{r}</span>
+                ))}
+              </div>
+            </section>
+          )}
 
-          {/* Salary */}
-          <section className="bg-gold-faint border border-gold/20 rounded-2xl p-4">
-            <p className="text-[10px] font-semibold tracking-widest uppercase text-gold mb-1">Earning Potential</p>
-            <p className="text-base font-bold text-navy">{detail.salary}</p>
+          {/* Earning & cost */}
+          <section className="bg-gold-faint border border-gold/20 rounded-2xl p-5">
+            <p className="text-[10px] font-semibold tracking-widest uppercase text-gold mb-1.5">
+              Earning potential
+            </p>
+            <p className="text-base font-semibold text-navy mb-3">{detail.salary}</p>
+            <div className="flex flex-wrap gap-x-5 gap-y-1.5 text-[12px] text-navy/70">
+              {detail.tuitionTier && (
+                <span className="capitalize">Study cost: {detail.tuitionTier}</span>
+              )}
+              {detail.demand && (
+                <span className="capitalize">Job demand: {detail.demand}</span>
+              )}
+            </div>
           </section>
         </div>
 
@@ -569,6 +918,25 @@ function CareerDetail({ career, onClose }) {
 }
 
 /* ─── Roadmap Step ──────────────────────────────────────── */
+
+function ScoreBar({ label, value }) {
+  return (
+    <div>
+      <div className="flex items-baseline justify-between mb-1.5">
+        <span className="text-[13px] text-fg-soft">{label}</span>
+        <span className="text-[12px] font-semibold text-navy tabular-nums">
+          {value}%
+        </span>
+      </div>
+      <div className="h-1.5 rounded-full bg-border overflow-hidden">
+        <div
+          className="h-full rounded-full bg-navy transition-all duration-500"
+          style={{ width: `${value}%` }}
+        />
+      </div>
+    </div>
+  );
+}
 
 function RoadmapStep({ step, title, body, last = false }) {
   return (
@@ -641,6 +1009,35 @@ function IconBlueprint({ color = '#0d1b3e', size = 20 }) {
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none">
       <path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke={color} strokeWidth="1.8" strokeLinejoin="round"/>
       <path d="M12 22V12M2 7l10 5 10-5" stroke={color} strokeWidth="1.8" strokeLinejoin="round"/>
+    </svg>
+  );
+}
+
+function IconBook({ color = '#0d1b3e', size = 20 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke={color} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke={color} strokeWidth="1.8" strokeLinejoin="round"/>
+    </svg>
+  );
+}
+
+function IconPalette({ color = '#0d1b3e', size = 20 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <path d="M12 22a10 10 0 1 1 10-10c0 2-1.5 3-3 3h-2a2 2 0 0 0-1.4 3.4A2 2 0 0 1 14 22h-2z" stroke={color} strokeWidth="1.8" strokeLinejoin="round"/>
+      <circle cx="7.5" cy="12" r="1.2" fill={color}/>
+      <circle cx="10" cy="7.5" r="1.2" fill={color}/>
+      <circle cx="15" cy="8" r="1.2" fill={color}/>
+    </svg>
+  );
+}
+
+function IconFlask({ color = '#0d1b3e', size = 20 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <path d="M9 3h6M10 3v6.5L4.6 18.4A1.5 1.5 0 0 0 5.9 20.7h12.2a1.5 1.5 0 0 0 1.3-2.3L14 9.5V3" stroke={color} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M7.5 15h9" stroke={color} strokeWidth="1.8" strokeLinecap="round"/>
     </svg>
   );
 }

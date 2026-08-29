@@ -1,89 +1,83 @@
-Here's a simple README for your project:
+# 📚 PathFinder Ghana (Caria)
 
----
-
-# 📚 PathFinder Ghana
-
-**An AI-powered career guidance platform for Ghanaian students**
+**An AI-powered career and academic guidance platform for Ghanaian students**
 
 ---
 
 ## 🎯 What It Does
 
-PathFinder Ghana helps students navigate the complex education system by providing personalized academic roadmaps from JHS through university to their dream career.
+PathFinder Ghana helps students navigate the Ghanaian education system by providing personalized academic roadmaps from JHS through BECE, SHS, WASSCE, and into university and career — weighted by what actually matters to each student, whether that's passion, money, or a balance of both.
 
 **Students get clear answers to:**
 - What subjects should I take?
 - What grades do I need?
-- Which schools should I aim for?
-- How do I get from here to my career?
+- Which schools and programmes fit my situation?
+- How do I get from here to my career, given my finances and what I care about?
 
 ---
 
 ## 🚀 Features
 
-- **AI-Powered Roadmaps** - Personalized step-by-step academic plans
-- **Career Exploration** - Browse and discover career paths
-- **Subject Guidance** - Know exactly which subjects to pick
-- **School & Grade Targets** - See specific requirements for your goals
-- **Simple & Free** - No sign-up needed, built for all Ghanaian students
+- **Account & Profile** — register/login (JWT), with a persisted profile (interests, strengths, finances, motivation, etc.)
+- **Chat-Driven Onboarding** — a 12-question guided quiz that builds a student profile
+- **AI Personal Guide** — an LLM-generated (Groq / Llama 3.3) roadmap after onboarding, plus ongoing conversational advice
+- **Scored Career Matching** — careers ranked by fit (interests/strengths) and money (salary, demand, affordability), weighted by the student's own passion-vs-money motivation
+- **Compare Tool** — side-by-side comparison of 2–3 careers: fit score, money score, salary range, tuition tier, cutoffs, university options
+- **Career Explorer** — browse and filter career paths, personalized once logged in
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React, Tailwind CSS
-- **Routing:** React Router
-- **Icons:** React Icons
-- **Styling:** Custom CSS with Tailwind
+- **Frontend:** React 19, Vite, React Router, Tailwind CSS, Axios
+- **Backend:** Node.js, Express 5, MongoDB (Mongoose), JWT auth
+- **AI:** Groq SDK (`llama-3.3-70b-versatile`)
+- **Deployment:** Vercel (frontend + backend as separate services)
 
 ---
 
 ## 📁 Project Structure
 
 ```
-pathfinder-ghana/
-├── src/
-│   ├── assets/
-│   │   └── images/
-│   ├── components/
-│   │   ├── layout/
-│   │   │   ├── Navbar.jsx
-│   │   │   └── Footer.jsx
-│   │   └── ...
-│   ├── pages/
-│   │   ├── LandingPage.jsx
-│   │   └── ...
-│   └── App.jsx
-├── public/
-└── README.md
+CARIA/
+├── backend/
+│   ├── server.js
+│   ├── config/db.js
+│   ├── models/           (User, Session, Message, shared profileSchema)
+│   ├── controllers/      (auth, profile, session, chat, career)
+│   ├── routes/
+│   ├── middleware/       (JWT auth, error handler)
+│   ├── services/         (onboardingService, matchingService)
+│   └── data/             (career/school/university JSON knowledge base)
+└── frontend/
+    └── src/
+        ├── context/AuthContext.jsx
+        ├── components/
+        ├── hooks/
+        ├── pages/         (Landing, Auth, Chat, Explore, Compare, NotFound)
+        └── services/api.js
 ```
 
 ---
 
 ## 🏃 Getting Started
 
-### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
-
-### Installation
+### Backend
 
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/pathfinder-ghana.git
-
-# Navigate to project
-cd pathfinder-ghana
-
-# Install dependencies
+cd backend
 npm install
-
-# Start development server
+# create a .env with MONGO_URI, JWT_SECRET, GROQ_API_KEY
 npm start
 ```
 
-The app will open at `http://localhost:3000`
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
 ---
 
@@ -95,21 +89,12 @@ The app will open at `http://localhost:3000`
 
 ---
 
-## 📝 Pages
-
-- **Landing Page** - Hero section, benefits, career categories
-- **Chat Page** - AI-powered career guidance conversation
-- **Explore Page** - Browse all career paths
-
----
-
 ## 🔮 Future Improvements
 
-- [ ] AI integration for personalized roadmaps
-- [ ] Database of Ghanaian schools and programs
-- [ ] User accounts to save progress
+- [ ] Real tuition and cost-of-living dataset (current tuition tiers are approximate)
+- [ ] Expand cutoff/school data beyond Greater Accra & Central Region
 - [ ] Mobile app version
-- [ ] Career assessment tests
+- [ ] Password reset / email verification
 
 ---
 
@@ -125,17 +110,4 @@ MIT
 
 ---
 
-## 👥 Team
-
-Built with ❤️ for Ghanaian students
-
----
-
-## 🙏 Acknowledgments
-
-- Ghana Education Service
-- All Ghanaian students navigating their future
-
----
-
-**Start your journey today → [pathfinder-ghana.com](https://caria-ghana.vercel.app)**
+**Start your journey today → [caria-ghana.vercel.app](https://caria-ghana.vercel.app)**

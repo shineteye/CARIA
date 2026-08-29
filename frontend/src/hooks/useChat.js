@@ -3,6 +3,7 @@ import {
   createSession,
   sendMessage as sendMessageApi,
   getSessionHistory,
+  unlockGuide as unlockGuideApi,
 } from "../services/api";
 import { useAuth } from "../context/AuthContext";
 
@@ -19,9 +20,13 @@ export default function useChat(onMetaUpdate) {
   const [profile, setProfile] = useState(null);
   const [careerGoal, setCareerGoal] = useState(null);
   const [guideReady, setGuideReady] = useState(false);
+  const [signupPreview, setSignupPreview] = useState(null);
 
   const onMetaUpdateRef = useRef(onMetaUpdate);
   onMetaUpdateRef.current = onMetaUpdate;
+
+  // True from sign-up until the guide finishes generating.
+  const claimingRef = useRef(false);
 
   const applyMeta = useCallback((data) => {
     if (data.phase) setPhase(data.phase);
@@ -31,6 +36,7 @@ export default function useChat(onMetaUpdate) {
       setCareerGoal(data.careerGoal);
     }
     if (data.guideReady !== undefined) setGuideReady(!!data.guideReady);
+    if (data.signupPreview !== undefined) setSignupPreview(data.signupPreview);
 
     onMetaUpdateRef.current?.({
       phase: data.phase,
@@ -43,10 +49,10 @@ export default function useChat(onMetaUpdate) {
   }, []);
 
   useEffect(() => {
-    if (!isAuthenticated || !token) {
-      setSessionReady(true);
-      return;
-    }
+    // Signing up flips isAuthenticated, which would otherwise re-run this and
+    // clobber the guide we're in the middle of unlocking. The claim + unlock
+    // path owns session state while it runs.
+    if (claimingRef.current) return;
 
     let cancelled = false;
 
@@ -113,13 +119,18 @@ export default function useChat(onMetaUpdate) {
       try {
         const data = await sendMessageApi(sessionId, trimmed);
 
-        const agentMessage = {
-          role: "agent",
-          content: data.reply,
-          timestamp: new Date().toISOString(),
-        };
-
-        setMessages((prev) => [...prev, agentMessage]);
+        // A guest finishing onboarding gets no reply — the signup prompt takes
+        // the conversation's place until they have an account.
+        if (data.reply) {
+          setMessages((prev) => [
+            ...prev,
+            {
+              role: "agent",
+              content: data.reply,
+              timestamp: new Date().toISOString(),
+            },
+          ]);
+        }
         applyMeta(data);
       } catch (err) {
         const msg =
@@ -162,6 +173,52 @@ export default function useChat(onMetaUpdate) {
     if (nextGoal !== undefined) setCareerGoal(nextGoal);
   }, []);
 
+  /**
+   * Called immediately after a guest signs up: their session is now claimed, so
+   * generate the guide they've already earned.
+   */
+  const unlockGuide = useCallback(
+    async (claimedSessionId) => {
+      const id = claimedSessionId || sessionId;
+      if (!id) return;
+      claimingRef.current = true;
+      setSessionId(id);
+      localStorage.setItem(SESSION_KEY, id);
+      setSignupPreview(null);
+      setIsLoading(true);
+      try {
+        const data = await unlockGuideApi(id);
+        if (data.reply) {
+          setMessages((prev) => [
+            ...prev,
+            {
+              role: "agent",
+              content: data.reply,
+              timestamp: new Date().toISOString(),
+            },
+          ]);
+        }
+        applyMeta(data);
+      } catch (err) {
+        setMessages((prev) => [
+          ...prev,
+          {
+            role: "agent",
+            content:
+              err?.response?.data?.error ||
+              "Your account is ready, but I couldn't build the guide just now. Ask me anything and we'll pick it up from there.",
+            timestamp: new Date().toISOString(),
+          },
+        ]);
+        setPhase("chat");
+      } finally {
+        setIsLoading(false);
+        claimingRef.current = false;
+      }
+    },
+    [sessionId, applyMeta],
+  );
+
   return {
     messages,
     isLoading,
@@ -173,6 +230,8 @@ export default function useChat(onMetaUpdate) {
     profile,
     careerGoal,
     guideReady,
+    signupPreview,
+    unlockGuide,
     startFreshOnboarding,
     setProfileLocal,
   };

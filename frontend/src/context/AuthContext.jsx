@@ -69,8 +69,8 @@ export function AuthProvider({ children }) {
   }, [clearAuth]);
 
   const login = useCallback(
-    async (email, password) => {
-      const data = await loginApi(email, password);
+    async (email, password, sessionId) => {
+      const data = await loginApi(email, password, sessionId);
       applyAuth(data.token, data.user);
       return data;
     },
@@ -78,8 +78,8 @@ export function AuthProvider({ children }) {
   );
 
   const register = useCallback(
-    async (name, email, password) => {
-      const data = await registerApi(name, email, password);
+    async (name, email, password, sessionId) => {
+      const data = await registerApi(name, email, password, sessionId);
       applyAuth(data.token, data.user);
       return data;
     },

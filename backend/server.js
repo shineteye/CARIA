@@ -4,7 +4,13 @@ const express = require("express");
 const cors = require("cors");
 const connectDB = require("./config/db");
 
-let chatRoutes, sessionRoutes, authRoutes, profileRoutes, errorHandler;
+let chatRoutes,
+  sessionRoutes,
+  authRoutes,
+  profileRoutes,
+  careerRoutes,
+  schoolRoutes,
+  errorHandler;
 try {
   chatRoutes = require("./routes/chat");
 } catch (e) {
@@ -26,6 +32,16 @@ try {
   console.error("LOAD ERROR profile routes:", e);
 }
 try {
+  careerRoutes = require("./routes/career");
+} catch (e) {
+  console.error("LOAD ERROR career routes:", e);
+}
+try {
+  schoolRoutes = require("./routes/school");
+} catch (e) {
+  console.error("LOAD ERROR school routes:", e);
+}
+try {
   errorHandler = require("./middleware/errorHandler");
 } catch (e) {
   console.error("LOAD ERROR errorHandler:", e);
@@ -40,7 +56,12 @@ app.use(async (req, res, next) => {
     await connectDB();
     next();
   } catch (err) {
-    res.status(503).json({ error: "Database unavailable" });
+    console.error("DB middleware error:", err.name, "|", err.message);
+    res.status(503).json({
+      error: "Database unavailable",
+      // Surfaced outside production so connection problems are diagnosable.
+      ...(process.env.NODE_ENV !== "production" && { detail: err.message }),
+    });
   }
 });
 
@@ -55,6 +76,8 @@ if (authRoutes) app.use("/api/auth", authRoutes);
 if (profileRoutes) app.use("/api/profile", profileRoutes);
 if (chatRoutes) app.use("/api/chat", chatRoutes);
 if (sessionRoutes) app.use("/api/session", sessionRoutes);
+if (careerRoutes) app.use("/api/careers", careerRoutes);
+if (schoolRoutes) app.use("/api/schools", schoolRoutes);
 
 app.get("/api/health", (req, res) => {
   res.json({ status: "ok" });

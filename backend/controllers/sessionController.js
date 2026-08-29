@@ -54,8 +54,38 @@ function sessionPayload(session, messages) {
  */
 exports.createSession = async (req, res, next) => {
   try {
-    const user = req.user;
+    const user = req.user; // undefined for guests
     const forceNew = !!req.body?.forceNew;
+
+    // ── Guest: anonymous session, claimed later at sign-up ──
+    if (!user) {
+      const guestId = randomUUID();
+      const welcome = firstQuestionMessage();
+      const guestSession = await Session.create({
+        sessionId: guestId,
+        userId: null,
+        phase: "onboarding",
+        onboardingStep: 0,
+        profile: emptyProfile(),
+      });
+      const agentMessage = await Message.create({
+        sessionId: guestId,
+        role: "agent",
+        content: welcome,
+      });
+      guestSession.messages.push(agentMessage._id);
+      await guestSession.save();
+
+      return res.status(201).json(
+        sessionPayload(guestSession, [
+          {
+            role: "agent",
+            content: welcome,
+            timestamp: agentMessage.timestamp,
+          },
+        ]),
+      );
+    }
 
     // Resume existing active session unless forceNew
     if (!forceNew && user.activeSessionId) {
@@ -138,9 +168,13 @@ exports.createSession = async (req, res, next) => {
 exports.getHistory = async (req, res, next) => {
   try {
     const { sessionId } = req.params;
-    const user = req.user;
+    const user = req.user; // undefined for guests
 
-    const session = await Session.findOne({ sessionId, userId: user._id });
+    // A guest may only read an unclaimed session; a signed-in user only their own.
+    // The sessionId is an unguessable UUID, which is what protects guest sessions.
+    const session = await Session.findOne(
+      user ? { sessionId, userId: user._id } : { sessionId, userId: null },
+    );
     if (!session) {
       return res.status(404).json({ error: "Session not found" });
     }

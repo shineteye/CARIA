@@ -4,6 +4,7 @@ import ProtectedRoute from "./components/auth/ProtectedRoute";
 import LandingPage from "./pages/LandingPage";
 import ChatPage from "./pages/ChatPage";
 import ExplorePage from "./pages/ExplorePage";
+import ComparePage from "./pages/ComparePage";
 import AuthPage from "./pages/AuthPage";
 import NotFound from "./pages/NotFound";
 
@@ -17,13 +18,16 @@ export default function App() {
           <Route path="/register" element={<AuthPage />} />
           <Route path="/explore" element={<ExplorePage />} />
           <Route
-            path="/chat"
+            path="/compare"
             element={
               <ProtectedRoute>
-                <ChatPage />
+                <ComparePage />
               </ProtectedRoute>
             }
           />
+          {/* Open to guests — onboarding runs without an account, and the
+              signup prompt appears once the guide is ready to be saved. */}
+          <Route path="/chat" element={<ChatPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </AuthProvider>

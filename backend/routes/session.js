@@ -1,10 +1,11 @@
 const express = require("express");
 const { createSession, getHistory } = require("../controllers/sessionController");
-const { requireAuth } = require("../middleware/auth");
+const { optionalAuth } = require("../middleware/auth");
 
 const router = express.Router();
 
-router.post("/create", requireAuth, createSession);
-router.get("/:sessionId/history", requireAuth, getHistory);
+// Guests get an anonymous session (userId: null) they can claim by signing up.
+router.post("/create", optionalAuth, createSession);
+router.get("/:sessionId/history", optionalAuth, getHistory);
 
 module.exports = router;

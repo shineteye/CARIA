@@ -1,0 +1,1298 @@
+[
+  {
+    "career_id": "medical_doctor",
+    "salary_entry": 8000,
+    "salary_mid": 25000,
+    "tuition_tier": "high",
+    "demand": "high",
+    "tags": [
+      "health",
+      "science"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "software_developer",
+    "salary_entry": 4000,
+    "salary_mid": 15000,
+    "tuition_tier": "medium",
+    "demand": "high",
+    "tags": [
+      "tech",
+      "building"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "civil_engineer",
+    "salary_entry": 4000,
+    "salary_mid": 14000,
+    "tuition_tier": "medium",
+    "demand": "high",
+    "tags": [
+      "building",
+      "science"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "chartered_accountant",
+    "salary_entry": 4500,
+    "salary_mid": 12000,
+    "tuition_tier": "medium",
+    "demand": "high",
+    "tags": [
+      "business"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "pharmacist",
+    "salary_entry": 6000,
+    "salary_mid": 16000,
+    "tuition_tier": "high",
+    "demand": "high",
+    "tags": [
+      "health",
+      "science"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "corporate_lawyer",
+    "salary_entry": 5000,
+    "salary_mid": 20000,
+    "tuition_tier": "high",
+    "demand": "medium",
+    "tags": [
+      "justice",
+      "business"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "electrical_engineer",
+    "salary_entry": 4000,
+    "salary_mid": 13000,
+    "tuition_tier": "medium",
+    "demand": "high",
+    "tags": [
+      "building",
+      "science",
+      "tech"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "mechanical_engineer",
+    "salary_entry": 3800,
+    "salary_mid": 12500,
+    "tuition_tier": "medium",
+    "demand": "high",
+    "tags": [
+      "building",
+      "science"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "biomedical_engineer",
+    "salary_entry": 4200,
+    "salary_mid": 13500,
+    "tuition_tier": "high",
+    "demand": "medium",
+    "tags": [
+      "health",
+      "tech",
+      "science"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "banker_financial_analyst",
+    "salary_entry": 4500,
+    "salary_mid": 14000,
+    "tuition_tier": "medium",
+    "demand": "high",
+    "tags": [
+      "business"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "data_scientist_ethics",
+    "salary_entry": 5000,
+    "salary_mid": 17000,
+    "tuition_tier": "medium",
+    "demand": "high",
+    "tags": [
+      "tech",
+      "science"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "bioinformatics_specialist",
+    "salary_entry": 4500,
+    "salary_mid": 14000,
+    "tuition_tier": "high",
+    "demand": "medium",
+    "tags": [
+      "tech",
+      "health",
+      "science"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "nurse_practitioner",
+    "salary_entry": 3500,
+    "salary_mid": 8000,
+    "tuition_tier": "medium",
+    "demand": "high",
+    "tags": [
+      "health"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "environmental_scientist",
+    "salary_entry": 3200,
+    "salary_mid": 9000,
+    "tuition_tier": "medium",
+    "demand": "medium",
+    "tags": [
+      "science"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "agricultural_scientist",
+    "salary_entry": 3000,
+    "salary_mid": 8500,
+    "tuition_tier": "medium",
+    "demand": "medium",
+    "tags": [
+      "science",
+      "building"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "telecoms_engineer",
+    "salary_entry": 4000,
+    "salary_mid": 12000,
+    "tuition_tier": "medium",
+    "demand": "high",
+    "tags": [
+      "tech",
+      "building"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "marketing_manager",
+    "salary_entry": 3500,
+    "salary_mid": 11000,
+    "tuition_tier": "medium",
+    "demand": "medium",
+    "tags": [
+      "business",
+      "creative_work"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "supply_chain_manager",
+    "salary_entry": 3500,
+    "salary_mid": 10500,
+    "tuition_tier": "medium",
+    "demand": "medium",
+    "tags": [
+      "business"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "journalist_media_expert",
+    "salary_entry": 2500,
+    "salary_mid": 8000,
+    "tuition_tier": "low",
+    "demand": "medium",
+    "tags": [
+      "creative_work",
+      "justice"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "professional_educator",
+    "salary_entry": 2200,
+    "salary_mid": 6000,
+    "tuition_tier": "low",
+    "demand": "high",
+    "tags": [
+      "teaching"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "automotive_technician",
+    "salary_entry": 2500,
+    "salary_mid": 8000,
+    "tuition_tier": "low",
+    "demand": "high",
+    "tags": [
+      "practical",
+      "building"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "building_construction_tech",
+    "salary_entry": 2500,
+    "salary_mid": 7500,
+    "tuition_tier": "low",
+    "demand": "high",
+    "tags": [
+      "practical",
+      "building"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "cybersecurity_analyst",
+    "salary_entry": 4500,
+    "salary_mid": 15000,
+    "tuition_tier": "medium",
+    "demand": "high",
+    "tags": [
+      "tech"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "graphic_designer",
+    "salary_entry": 2000,
+    "salary_mid": 10000,
+    "tuition_tier": "low",
+    "demand": "medium",
+    "tags": [
+      "creative_work"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "biochemist",
+    "salary_entry": 3200,
+    "salary_mid": 9000,
+    "tuition_tier": "medium",
+    "demand": "medium",
+    "tags": [
+      "science",
+      "health"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "urban_informatics_analyst",
+    "salary_entry": 4000,
+    "salary_mid": 12000,
+    "tuition_tier": "medium",
+    "demand": "medium",
+    "tags": [
+      "tech",
+      "building"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "veterinary_surgeon",
+    "salary_entry": 4000,
+    "salary_mid": 11000,
+    "tuition_tier": "high",
+    "demand": "medium",
+    "tags": [
+      "health",
+      "science"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "human_resource_manager",
+    "salary_entry": 3200,
+    "salary_mid": 9500,
+    "tuition_tier": "medium",
+    "demand": "medium",
+    "tags": [
+      "business",
+      "teaching"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "human_computer_interaction_designer",
+    "salary_entry": 4000,
+    "salary_mid": 13000,
+    "tuition_tier": "medium",
+    "demand": "medium",
+    "tags": [
+      "tech",
+      "creative_work"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "medical_laboratory_scientist",
+    "salary_entry": 3500,
+    "salary_mid": 9500,
+    "tuition_tier": "medium",
+    "demand": "high",
+    "tags": [
+      "health",
+      "science"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "industrial_designer",
+    "salary_entry": 3000,
+    "salary_mid": 9500,
+    "tuition_tier": "medium",
+    "demand": "medium",
+    "tags": [
+      "creative_work",
+      "building"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "epidemiologist",
+    "salary_entry": 4000,
+    "salary_mid": 12000,
+    "tuition_tier": "high",
+    "demand": "medium",
+    "tags": [
+      "health",
+      "science"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "aerospace_engineer",
+    "salary_entry": 4500,
+    "salary_mid": 14000,
+    "tuition_tier": "high",
+    "demand": "low",
+    "tags": [
+      "building",
+      "science",
+      "tech"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "agribusiness_consultant",
+    "salary_entry": 3000,
+    "salary_mid": 9000,
+    "tuition_tier": "medium",
+    "demand": "medium",
+    "tags": [
+      "business",
+      "science"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "investment_banker",
+    "salary_entry": 5500,
+    "salary_mid": 22000,
+    "tuition_tier": "high",
+    "demand": "medium",
+    "tags": [
+      "business"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "architect",
+    "salary_entry": 4000,
+    "salary_mid": 13500,
+    "tuition_tier": "high",
+    "demand": "medium",
+    "tags": [
+      "creative_work",
+      "building"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "human rights advocate",
+    "salary_entry": 2800,
+    "salary_mid": 8000,
+    "tuition_tier": "medium",
+    "demand": "medium",
+    "tags": [
+      "justice"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "clinical_psychologist",
+    "salary_entry": 3500,
+    "salary_mid": 10000,
+    "tuition_tier": "medium",
+    "demand": "medium",
+    "tags": [
+      "health",
+      "teaching"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "physiotherapist",
+    "salary_entry": 3200,
+    "salary_mid": 9000,
+    "tuition_tier": "medium",
+    "demand": "medium",
+    "tags": [
+      "health"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "quantity_surveyor",
+    "salary_entry": 3500,
+    "salary_mid": 11000,
+    "tuition_tier": "medium",
+    "demand": "high",
+    "tags": [
+      "business",
+      "building"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "actuary",
+    "salary_entry": 4500,
+    "salary_mid": 16000,
+    "tuition_tier": "medium",
+    "demand": "medium",
+    "tags": [
+      "business",
+      "science"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "agricultural_engineer",
+    "salary_entry": 3500,
+    "salary_mid": 10000,
+    "tuition_tier": "medium",
+    "demand": "medium",
+    "tags": [
+      "building",
+      "science"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "public_health_director",
+    "salary_entry": 5000,
+    "salary_mid": 15000,
+    "tuition_tier": "high",
+    "demand": "medium",
+    "tags": [
+      "health",
+      "business"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "biomedical_researcher",
+    "salary_entry": 3500,
+    "salary_mid": 10500,
+    "tuition_tier": "high",
+    "demand": "low",
+    "tags": [
+      "science",
+      "health"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "hr_operations_clerk",
+    "salary_entry": 1800,
+    "salary_mid": 4000,
+    "tuition_tier": "low",
+    "demand": "medium",
+    "tags": [
+      "business"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "telecom_infrastructure_installer",
+    "salary_entry": 2000,
+    "salary_mid": 6000,
+    "tuition_tier": "low",
+    "demand": "high",
+    "tags": [
+      "practical",
+      "tech"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "brand_manager",
+    "salary_entry": 3000,
+    "salary_mid": 9500,
+    "tuition_tier": "medium",
+    "demand": "medium",
+    "tags": [
+      "business",
+      "creative_work"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "logistics_coordinator",
+    "salary_entry": 2200,
+    "salary_mid": 6500,
+    "tuition_tier": "low",
+    "demand": "high",
+    "tags": [
+      "business"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "news_reporter",
+    "salary_entry": 1800,
+    "salary_mid": 5000,
+    "tuition_tier": "low",
+    "demand": "medium",
+    "tags": [
+      "creative_work",
+      "justice"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "jhs_teacher",
+    "salary_entry": 1800,
+    "salary_mid": 4500,
+    "tuition_tier": "low",
+    "demand": "high",
+    "tags": [
+      "teaching"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "automotive_workshop_manager",
+    "salary_entry": 2500,
+    "salary_mid": 7500,
+    "tuition_tier": "low",
+    "demand": "medium",
+    "tags": [
+      "practical",
+      "building"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "construction_site_supervisor",
+    "salary_entry": 2800,
+    "salary_mid": 8000,
+    "tuition_tier": "low",
+    "demand": "high",
+    "tags": [
+      "practical",
+      "building"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "it_compliance_specialist",
+    "salary_entry": 3500,
+    "salary_mid": 11000,
+    "tuition_tier": "medium",
+    "demand": "medium",
+    "tags": [
+      "tech",
+      "business"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "electrician",
+    "salary_entry": 2200,
+    "salary_mid": 8000,
+    "tuition_tier": "low",
+    "demand": "high",
+    "tags": [
+      "practical",
+      "building",
+      "tech"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "plumber",
+    "salary_entry": 2000,
+    "salary_mid": 7500,
+    "tuition_tier": "low",
+    "demand": "high",
+    "tags": [
+      "practical",
+      "building"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "welder_fabricator",
+    "salary_entry": 2000,
+    "salary_mid": 9000,
+    "tuition_tier": "low",
+    "demand": "high",
+    "tags": [
+      "practical",
+      "building"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "carpenter_joiner",
+    "salary_entry": 1800,
+    "salary_mid": 7000,
+    "tuition_tier": "low",
+    "demand": "medium",
+    "tags": [
+      "practical",
+      "building",
+      "creative_work"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "mason_builder",
+    "salary_entry": 2000,
+    "salary_mid": 8500,
+    "tuition_tier": "low",
+    "demand": "high",
+    "tags": [
+      "practical",
+      "building"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "fashion_designer",
+    "salary_entry": 1500,
+    "salary_mid": 9000,
+    "tuition_tier": "low",
+    "demand": "medium",
+    "tags": [
+      "creative_work",
+      "practical"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "cosmetologist",
+    "salary_entry": 1500,
+    "salary_mid": 7000,
+    "tuition_tier": "low",
+    "demand": "medium",
+    "tags": [
+      "practical",
+      "creative_work"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "refrigeration_technician",
+    "salary_entry": 2000,
+    "salary_mid": 8000,
+    "tuition_tier": "low",
+    "demand": "high",
+    "tags": [
+      "practical",
+      "tech",
+      "building"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "crop_agronomist",
+    "salary_entry": 1800,
+    "salary_mid": 8000,
+    "tuition_tier": "low",
+    "demand": "high",
+    "tags": [
+      "practical",
+      "science"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "poultry_livestock_farmer",
+    "salary_entry": 1800,
+    "salary_mid": 9000,
+    "tuition_tier": "low",
+    "demand": "high",
+    "tags": [
+      "practical",
+      "science",
+      "business"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "fisheries_officer",
+    "salary_entry": 2000,
+    "salary_mid": 8000,
+    "tuition_tier": "medium",
+    "demand": "medium",
+    "tags": [
+      "science",
+      "practical"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "agro_processor",
+    "salary_entry": 2000,
+    "salary_mid": 10000,
+    "tuition_tier": "medium",
+    "demand": "medium",
+    "tags": [
+      "business",
+      "science",
+      "practical"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "photographer",
+    "salary_entry": 1500,
+    "salary_mid": 9000,
+    "tuition_tier": "low",
+    "demand": "medium",
+    "tags": [
+      "creative_work"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "videographer_editor",
+    "salary_entry": 1800,
+    "salary_mid": 11000,
+    "tuition_tier": "low",
+    "demand": "medium",
+    "tags": [
+      "creative_work",
+      "tech"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "audio_engineer",
+    "salary_entry": 1800,
+    "salary_mid": 10000,
+    "tuition_tier": "medium",
+    "demand": "medium",
+    "tags": [
+      "creative_work",
+      "tech"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "animator_motion_designer",
+    "salary_entry": 2500,
+    "salary_mid": 13000,
+    "tuition_tier": "medium",
+    "demand": "medium",
+    "tags": [
+      "creative_work",
+      "tech"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "digital_content_creator",
+    "salary_entry": 1800,
+    "salary_mid": 12000,
+    "tuition_tier": "low",
+    "demand": "high",
+    "tags": [
+      "creative_work",
+      "business",
+      "tech"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "chef_caterer",
+    "salary_entry": 1800,
+    "salary_mid": 9000,
+    "tuition_tier": "low",
+    "demand": "high",
+    "tags": [
+      "practical",
+      "business",
+      "creative_work"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "hotel_manager",
+    "salary_entry": 2200,
+    "salary_mid": 10000,
+    "tuition_tier": "medium",
+    "demand": "medium",
+    "tags": [
+      "business",
+      "teaching"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "tourism_operator",
+    "salary_entry": 1800,
+    "salary_mid": 8000,
+    "tuition_tier": "medium",
+    "demand": "medium",
+    "tags": [
+      "business",
+      "teaching",
+      "creative_work"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "pharmacy_technician",
+    "salary_entry": 2000,
+    "salary_mid": 6500,
+    "tuition_tier": "medium",
+    "demand": "high",
+    "tags": [
+      "health",
+      "science"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "radiographer",
+    "salary_entry": 3500,
+    "salary_mid": 11000,
+    "tuition_tier": "high",
+    "demand": "high",
+    "tags": [
+      "health",
+      "science",
+      "tech"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "community_health_worker",
+    "salary_entry": 1800,
+    "salary_mid": 5500,
+    "tuition_tier": "low",
+    "demand": "high",
+    "tags": [
+      "health",
+      "teaching"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "dental_assistant",
+    "salary_entry": 2200,
+    "salary_mid": 7000,
+    "tuition_tier": "medium",
+    "demand": "medium",
+    "tags": [
+      "health",
+      "science"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "social_worker",
+    "salary_entry": 1800,
+    "salary_mid": 6500,
+    "tuition_tier": "low",
+    "demand": "medium",
+    "tags": [
+      "justice",
+      "teaching",
+      "health"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "immigration_customs_officer",
+    "salary_entry": 2500,
+    "salary_mid": 8000,
+    "tuition_tier": "low",
+    "demand": "medium",
+    "tags": [
+      "justice",
+      "business"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "police_fire_service",
+    "salary_entry": 2200,
+    "salary_mid": 7500,
+    "tuition_tier": "low",
+    "demand": "medium",
+    "tags": [
+      "justice",
+      "practical"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "early_childhood_teacher",
+    "salary_entry": 1800,
+    "salary_mid": 5000,
+    "tuition_tier": "low",
+    "demand": "high",
+    "tags": [
+      "teaching"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "mining_engineer",
+    "salary_entry": 4500,
+    "salary_mid": 18000,
+    "tuition_tier": "medium",
+    "demand": "high",
+    "tags": [
+      "science",
+      "building",
+      "practical"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "geologist",
+    "salary_entry": 4000,
+    "salary_mid": 15000,
+    "tuition_tier": "medium",
+    "demand": "medium",
+    "tags": [
+      "science",
+      "practical"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "petroleum_engineer",
+    "salary_entry": 6000,
+    "salary_mid": 22000,
+    "tuition_tier": "high",
+    "demand": "medium",
+    "tags": [
+      "science",
+      "building",
+      "tech"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "renewable_energy_technician",
+    "salary_entry": 2500,
+    "salary_mid": 10000,
+    "tuition_tier": "low",
+    "demand": "high",
+    "tags": [
+      "practical",
+      "tech",
+      "building",
+      "science"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "marine_engineer",
+    "salary_entry": 5000,
+    "salary_mid": 20000,
+    "tuition_tier": "high",
+    "demand": "medium",
+    "tags": [
+      "building",
+      "science",
+      "practical"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "aircraft_maintenance_engineer",
+    "salary_entry": 5000,
+    "salary_mid": 18000,
+    "tuition_tier": "high",
+    "demand": "medium",
+    "tags": [
+      "tech",
+      "practical",
+      "building",
+      "science"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "customs_clearing_agent",
+    "salary_entry": 2500,
+    "salary_mid": 12000,
+    "tuition_tier": "low",
+    "demand": "high",
+    "tags": [
+      "business",
+      "practical"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "insurance_underwriter",
+    "salary_entry": 2500,
+    "salary_mid": 10000,
+    "tuition_tier": "medium",
+    "demand": "medium",
+    "tags": [
+      "business",
+      "justice"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "real_estate_valuer",
+    "salary_entry": 3000,
+    "salary_mid": 14000,
+    "tuition_tier": "medium",
+    "demand": "medium",
+    "tags": [
+      "business",
+      "building"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "microfinance_officer",
+    "salary_entry": 1800,
+    "salary_mid": 7000,
+    "tuition_tier": "low",
+    "demand": "high",
+    "tags": [
+      "business",
+      "teaching"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "paralegal_court_clerk",
+    "salary_entry": 2000,
+    "salary_mid": 7000,
+    "tuition_tier": "low",
+    "demand": "medium",
+    "tags": [
+      "justice",
+      "business"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "public_administrator",
+    "salary_entry": 2200,
+    "salary_mid": 8500,
+    "tuition_tier": "low",
+    "demand": "medium",
+    "tags": [
+      "justice",
+      "business",
+      "teaching"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "journalist_investigative",
+    "salary_entry": 2000,
+    "salary_mid": 9000,
+    "tuition_tier": "low",
+    "demand": "medium",
+    "tags": [
+      "justice",
+      "creative_work"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "labour_union_officer",
+    "salary_entry": 2200,
+    "salary_mid": 8000,
+    "tuition_tier": "low",
+    "demand": "medium",
+    "tags": [
+      "justice",
+      "business",
+      "teaching"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "special_needs_educator",
+    "salary_entry": 2000,
+    "salary_mid": 6000,
+    "tuition_tier": "low",
+    "demand": "high",
+    "tags": [
+      "teaching",
+      "health"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "shs_subject_teacher",
+    "salary_entry": 2200,
+    "salary_mid": 7000,
+    "tuition_tier": "low",
+    "demand": "high",
+    "tags": [
+      "teaching",
+      "science"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "vocational_instructor",
+    "salary_entry": 2000,
+    "salary_mid": 7000,
+    "tuition_tier": "low",
+    "demand": "high",
+    "tags": [
+      "teaching",
+      "practical",
+      "building"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "optometrist",
+    "salary_entry": 3500,
+    "salary_mid": 12000,
+    "tuition_tier": "high",
+    "demand": "medium",
+    "tags": [
+      "health",
+      "science"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "nutritionist_dietitian",
+    "salary_entry": 2500,
+    "salary_mid": 9000,
+    "tuition_tier": "medium",
+    "demand": "medium",
+    "tags": [
+      "health",
+      "science",
+      "teaching"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "medical_records_officer",
+    "salary_entry": 1800,
+    "salary_mid": 6500,
+    "tuition_tier": "low",
+    "demand": "high",
+    "tags": [
+      "health",
+      "tech",
+      "business"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "printing_technician",
+    "salary_entry": 1800,
+    "salary_mid": 7500,
+    "tuition_tier": "low",
+    "demand": "medium",
+    "tags": [
+      "practical",
+      "creative_work"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "leather_footwear_maker",
+    "salary_entry": 1500,
+    "salary_mid": 7000,
+    "tuition_tier": "low",
+    "demand": "medium",
+    "tags": [
+      "practical",
+      "creative_work",
+      "business"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "heavy_equipment_operator",
+    "salary_entry": 2500,
+    "salary_mid": 9000,
+    "tuition_tier": "low",
+    "demand": "high",
+    "tags": [
+      "practical",
+      "building"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "quality_control_technician",
+    "salary_entry": 2200,
+    "salary_mid": 8000,
+    "tuition_tier": "medium",
+    "demand": "high",
+    "tags": [
+      "science",
+      "practical"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "it_support_technician",
+    "salary_entry": 2000,
+    "salary_mid": 9000,
+    "tuition_tier": "low",
+    "demand": "high",
+    "tags": [
+      "tech",
+      "practical"
+    ],
+    "confidence": "estimate"
+  },
+  {
+    "career_id": "gis_technician",
+    "salary_entry": 2500,
+    "salary_mid": 11000,
+    "tuition_tier": "medium",
+    "demand": "high",
+    "tags": [
+      "tech",
+      "science",
+      "building"
+    ],
+    "confidence": "estimate"
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "headline": "There are no fixed SHS cut-off points in Ghana.",
+  "summary": "The Ghana Education Service has stated publicly that placement into Senior High Schools is not decided by fixed cut-off aggregates. Any table claiming 'aggregate 6 gets you your first choice' is not official — GES has labelled such circulating tables as fake.",
+  "what_actually_decides_placement": [
+    "Your raw BECE score across the six placement subjects.",
+    "How competitive the school you chose is, and how many others chose it.",
+    "Demand for the specific programme you selected, not just the school.",
+    "The order you listed your choices in on the CSSPS form.",
+    "Residency status (day or boarding) and any category restrictions on your selections."
+  ],
+  "what_category_means": "Schools are grouped A to D based on their historical average performance and facilities — not on an entry threshold. A Category A school is typically more competitive because more students choose it, which indirectly means stronger aggregates tend to be placed there. But the category itself is not a cut-off you must meet.",
+  "practical_advice": [
+    "Spread your choices across categories rather than picking only Category A schools.",
+    "Check that the school you choose actually offers the programme you want — many do not offer every track.",
+    "A strong student at a Category B or C school can still reach any university programme; WASSCE results are what universities look at.",
+    "Confirm details on the official CSSPS portal and GES communications rather than social media lists."
+  ],
+  "sources": [
+    {
+      "label": "GES on CSSPS placement cut-off points",
+      "url": "https://geshub.org/cssps-school-placement-cut-off-points-2025-2026-2027/"
+    },
+    {
+      "label": "How BECE aggregates are calculated for placement (Graphic Online)",
+      "url": "https://www.graphic.com.gh/news/general-news/how-to-calculate-bece-aggregates-for-shs-placement-in-2025.html"
+    }
+  ],
+  "data_note": "School categories in this dataset are compiled from published Category A/B/C listings and cross-checked against an internal sample. Where sources disagreed, the published listing was preferred. Categories may change between years — verify against current GES publications before making a final selection."
+}
