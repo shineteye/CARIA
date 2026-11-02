@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
 import LandingPage from "./pages/LandingPage";
+import OnboardingPage from "./pages/OnboardingPage";
 import ChatPage from "./pages/ChatPage";
 import ExplorePage from "./pages/ExplorePage";
 import ComparePage from "./pages/ComparePage";
@@ -26,7 +27,8 @@ export default function App() {
             }
           />
           {/* Open to guests — onboarding runs without an account, and the
-              signup prompt appears once the guide is ready to be saved. */}
+              signup screen appears once the guide is ready to be saved. */}
+          <Route path="/start" element={<OnboardingPage />} />
           <Route path="/chat" element={<ChatPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

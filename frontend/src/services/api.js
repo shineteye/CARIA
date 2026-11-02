@@ -53,6 +53,11 @@ export async function unlockGuide(sessionId) {
   return data;
 }
 
+export async function rebuildPlan(sessionId) {
+  const { data } = await api.post("/api/chat/rebuild-plan", { sessionId });
+  return data;
+}
+
 export async function fetchMe() {
   const { data } = await api.get("/api/auth/me");
   return data;
@@ -70,6 +75,29 @@ export async function createSession(forceNew = false) {
 
 export async function sendMessage(sessionId, message) {
   const { data } = await api.post("/api/chat/message", { sessionId, message });
+  return data;
+}
+
+/* ── Full-screen onboarding ──────────────────────────────────────────────
+   Separate from /api/chat/message: the wizard advances the same state machine
+   without writing the student's raw answers into their conversation history. */
+
+export async function getOnboardingState(sessionId) {
+  const { data } = await api.get(`/api/onboarding/${sessionId}`);
+  return data;
+}
+
+export async function answerOnboarding(sessionId, answer) {
+  const { data } = await api.post("/api/onboarding/answer", {
+    sessionId,
+    answer,
+  });
+  return data;
+}
+
+/** Rewind to an earlier question. Forward moves must go through answering. */
+export async function setOnboardingStep(sessionId, step) {
+  const { data } = await api.post("/api/onboarding/step", { sessionId, step });
   return data;
 }
 

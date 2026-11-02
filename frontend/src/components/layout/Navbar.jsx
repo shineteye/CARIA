@@ -76,7 +76,7 @@ export default function Navbar({ compact = false }) {
               Log in
             </Link>
             <Link
-              to="/chat"
+              to="/start"
               className="font-semibold px-5 py-2 rounded-full bg-navy text-white border border-navy hover:bg-navy-light transition-all duration-150 text-sm"
             >
               Start Now

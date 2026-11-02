@@ -8,7 +8,7 @@ function TypingIndicator() {
       <CariaAvatar size={34} />
       <div
         className="flex items-center gap-1.5 px-4 py-3.5 rounded-2xl bg-cream border border-border"
-        aria-label="Caria is thinking"
+        aria-label="Caria is working on it"
       >
         {[0, 1, 2].map((i) => (
           <span
@@ -22,31 +22,11 @@ function TypingIndicator() {
   );
 }
 
-function EmptyState({ phase }) {
-  const onboarding = phase === 'onboarding';
-  return (
-    <div className="flex flex-col items-center justify-center flex-1 text-center px-8 py-16 gap-5">
-      <CariaAvatar size={64} />
-      <div className="max-w-[38ch]">
-        <h2
-          className="text-2xl text-navy mb-3 leading-snug"
-          style={{ fontFamily: 'var(--font-display)' }}
-        >
-          {onboarding
-            ? "First, tell me about you"
-            : 'Ask me anything about your path'}
-        </h2>
-        <p className="text-[15px] leading-[1.7] text-fg-soft">
-          {onboarding
-            ? "A few questions about your school stage, strengths, family, and what you can afford — then I'll build your guide."
-            : 'Streams, cutoffs, backup options, or how to talk to your parents. Your profile is already understood.'}
-        </p>
-      </div>
-    </div>
-  );
-}
-
-export default function ChatWindow({ messages, isLoading, phase = 'chat' }) {
+/**
+ * The consultation thread. Plans appear here only as references (onOpenPlan);
+ * `intro` renders above the thread when there is no real exchange yet.
+ */
+export default function ChatWindow({ messages, isLoading, onOpenPlan, intro }) {
   const bottomRef = useRef(null);
 
   useEffect(() => {
@@ -63,14 +43,17 @@ export default function ChatWindow({ messages, isLoading, phase = 'chat' }) {
       `}</style>
 
       <div className="flex-1 overflow-y-auto">
-        <div className="max-w-[760px] mx-auto px-6 md:px-8 py-8 flex flex-col gap-7 min-h-full">
-          {messages.length === 0 && !isLoading && <EmptyState phase={phase} />}
+        <div className="max-w-[760px] mx-auto px-4 sm:px-6 md:px-8 py-8 flex flex-col gap-7 min-h-full">
+          {intro}
 
           {messages.map((msg, index) => (
             <ChatBubble
               key={`${msg.timestamp}-${index}`}
               role={msg.role}
               content={msg.content}
+              kind={msg.kind}
+              timestamp={msg.timestamp}
+              onOpenPlan={onOpenPlan}
             />
           ))}
 

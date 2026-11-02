@@ -7,6 +7,7 @@ const {
   firstQuestionMessage,
   getOnboardingPayload,
   deriveCareerGoal,
+  deriveRoadmapFromProfile,
 } = require("../services/onboardingService");
 
 function publicProfile(profile) {
@@ -23,7 +24,10 @@ function sessionPayload(session, messages) {
   const total = getOnboardingPayload(0).total;
   const onboarding =
     phase === "onboarding"
-      ? getOnboardingPayload(session.onboardingStep || 0)
+      ? getOnboardingPayload(
+          session.onboardingStep || 0,
+          publicProfile(session.profile),
+        )
       : {
           step: total,
           total,
@@ -32,17 +36,24 @@ function sessionPayload(session, messages) {
           question: null,
         };
 
+  const profile = publicProfile(session.profile);
+
+  // Seed the roadmap on load. Without this the sidebar shows five locked,
+  // empty stages until the student happens to send a chat message that
+  // mentions a stage — so a freshly finished profile looked like no work had
+  // been done at all.
+  const roadmapUpdate =
+    phase === "onboarding" ? null : deriveRoadmapFromProfile(profile);
+
   return {
     sessionId: session.sessionId,
     phase,
     onboarding,
-    profile: publicProfile(session.profile),
+    profile,
     careerGoal:
-      session.careerGoal ||
-      (session.profile
-        ? deriveCareerGoal(publicProfile(session.profile))
-        : null),
+      session.careerGoal || (session.profile ? deriveCareerGoal(profile) : null),
     guideReady: !!session.guideGenerated,
+    roadmapUpdate,
     messages,
   };
 }
@@ -96,7 +107,7 @@ exports.createSession = async (req, res, next) => {
       if (existing) {
         const messages = await Message.find({ sessionId: existing.sessionId })
           .sort({ timestamp: 1 })
-          .select("role content timestamp -_id");
+          .select("role content kind timestamp -_id");
         return res.status(200).json(sessionPayload(existing, messages));
       }
     }
@@ -127,7 +138,7 @@ exports.createSession = async (req, res, next) => {
       const welcomeBack = await Message.create({
         sessionId,
         role: "agent",
-        content: `Welcome back, **${user.name.split(" ")[0]}**. Your profile is loaded — ask me anything about your path, or edit your answers anytime from the sidebar.`,
+        content: "Your profile and guidance plan are loaded. Ask about any part of your path, or edit your answers from the sidebar.",
       });
       session.messages.push(welcomeBack._id);
       messages = [
@@ -181,7 +192,7 @@ exports.getHistory = async (req, res, next) => {
 
     const messages = await Message.find({ sessionId })
       .sort({ timestamp: 1 })
-      .select("role content timestamp -_id");
+      .select("role content kind timestamp -_id");
 
     res.json(sessionPayload(session, messages));
   } catch (error) {

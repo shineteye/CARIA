@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 function SendIcon() {
   return (
@@ -35,9 +35,18 @@ export default function ChatInput({
   disabled = false,
   placeholder,
   hint,
+  prefill,
 }) {
   const [text, setText] = useState('');
   const textareaRef = useRef(null);
+
+  // A question handed over from elsewhere (e.g. a career on Explore) lands in
+  // the box for the student to edit and send — never sent on their behalf.
+  useEffect(() => {
+    if (!prefill) return;
+    setText(prefill);
+    textareaRef.current?.focus();
+  }, [prefill]);
 
   const canSend = !!text.trim() && !isLoading && !disabled;
   const resolvedPlaceholder =

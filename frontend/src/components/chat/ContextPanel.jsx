@@ -23,6 +23,62 @@ function formatValue(value, list) {
   return String(value);
 }
 
+/* ── The answers themselves, shared by both phases ──
+   Onboarding builds this list live; after the guide it stays as the record of
+   what the advice is actually based on. Hiding it the moment onboarding ends
+   made the chat feel like it had forgotten twelve questions of work. */
+
+function LearnedList({ profile, collapsible = false }) {
+  const [expanded, setExpanded] = useState(false);
+
+  const learned = LEARNED_FIELDS.map(({ key, label, list }) => {
+    const value = formatValue(profile?.[key], list);
+    return value ? { label, value } : null;
+  }).filter(Boolean);
+
+  if (learned.length === 0) {
+    return (
+      <p className="text-[13px] text-fg-muted leading-relaxed">
+        Your answers will collect here as we talk.
+      </p>
+    );
+  }
+
+  // After onboarding the full twelve would crowd out the roadmap, so show the
+  // first few and let them open the rest.
+  const PREVIEW = 4;
+  const hidden = collapsible && !expanded ? learned.length - PREVIEW : 0;
+  const shown = hidden > 0 ? learned.slice(0, PREVIEW) : learned;
+
+  return (
+    <>
+      <dl className="flex flex-col">
+        {shown.map(({ label, value }, i) => (
+          <div
+            key={label}
+            className={`py-2.5 ${i !== 0 ? 'border-t border-border' : 'pt-0'}`}
+          >
+            <dt className="text-[10px] font-semibold uppercase tracking-wide text-fg-muted mb-0.5">
+              {label}
+            </dt>
+            <dd className="text-[13px] text-navy leading-snug">{value}</dd>
+          </div>
+        ))}
+      </dl>
+
+      {collapsible && learned.length > PREVIEW && (
+        <button
+          type="button"
+          onClick={() => setExpanded((v) => !v)}
+          className="mt-2 text-[12px] font-medium text-gold hover:text-navy transition-colors"
+        >
+          {hidden > 0 ? `Show ${hidden} more` : 'Show less'}
+        </button>
+      )}
+    </>
+  );
+}
+
 /* ── Onboarding: progress + what Caria has learned so far ── */
 
 function OnboardingPanel({ onboarding, profile }) {
@@ -37,11 +93,6 @@ function OnboardingPanel({ onboarding, profile }) {
     ),
     99,
   );
-
-  const learned = LEARNED_FIELDS.map(({ key, label, list }) => {
-    const value = formatValue(profile?.[key], list);
-    return value ? { label, value } : null;
-  }).filter(Boolean);
 
   return (
     <>
@@ -66,26 +117,7 @@ function OnboardingPanel({ onboarding, profile }) {
         <p className="text-[10px] font-semibold tracking-[0.12em] uppercase text-fg-muted mb-3">
           What I've learned
         </p>
-
-        {learned.length === 0 ? (
-          <p className="text-[13px] text-fg-muted leading-relaxed">
-            Your answers will collect here as we talk.
-          </p>
-        ) : (
-          <dl className="flex flex-col">
-            {learned.map(({ label, value }, i) => (
-              <div
-                key={label}
-                className={`py-2.5 ${i !== 0 ? 'border-t border-border' : 'pt-0'}`}
-              >
-                <dt className="text-[10px] font-semibold uppercase tracking-wide text-fg-muted mb-0.5">
-                  {label}
-                </dt>
-                <dd className="text-[13px] text-navy leading-snug">{value}</dd>
-              </div>
-            ))}
-          </dl>
-        )}
+        <LearnedList profile={profile} />
       </section>
     </>
   );
@@ -235,6 +267,15 @@ export default function ContextPanel({
         <>
           <RoadmapPanel stages={stages} roadmapMeta={roadmapMeta} />
           {guideReady && <TopMatches />}
+
+          {/* The answers stay visible after the guide: this is what every
+              recommendation in the conversation is built on. */}
+          <section>
+            <p className="text-[10px] font-semibold tracking-[0.12em] uppercase text-fg-muted mb-3">
+              What I know about you
+            </p>
+            <LearnedList profile={profile} collapsible />
+          </section>
         </>
       )}
     </div>

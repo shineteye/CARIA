@@ -84,7 +84,7 @@ export default function ComparePage() {
                   label="University options"
                   cells={comparison.map((c) =>
                     (c.universities || []).length
-                      ? c.universities.map((u) => `${u.institution} (agg ≤${u.cutoff ?? '—'})`).join('; ')
+                      ? c.universities.map((u) => `${u.institution} (${u.cutoff != null ? `cut-off ${u.cutoff}` : 'cut-off not in our data'})`).join('; ')
                       : '—',
                   )}
                 />

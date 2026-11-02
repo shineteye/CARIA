@@ -35,7 +35,7 @@ export default function Footer() {
             Careers
           </a>
           <Link
-            to="/chat"
+            to="/start"
             className=" text-white/50 transition-colors duration-150 hover:text-gold"
           >
             Start Planning

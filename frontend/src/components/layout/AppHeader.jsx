@@ -19,6 +19,7 @@ export default function AppHeader({ onNewSession, onAvatarClick, variant = "app"
   };
 
   return (
+    <>
     <header
       className={`h-16 flex items-center justify-between px-6 md:px-8 shrink-0 z-40 border-b ${
         isCream
@@ -120,5 +121,29 @@ export default function AppHeader({ onNewSession, onAvatarClick, variant = "app"
         ) : null}
       </div>
     </header>
+
+    {/* Below sm the header has no room for the nav; it gets its own strip so a
+        phone can still move between the directory and the advisor. */}
+    <nav
+      className={`sm:hidden grid grid-cols-2 shrink-0 border-b border-border text-[13px] font-medium ${
+        isCream ? "bg-cream" : "bg-white"
+      }`}
+    >
+      {NAV_LINKS.map(({ label, path }) => {
+        const active = location.pathname === path;
+        return (
+          <Link
+            key={label}
+            to={path}
+            className={`text-center py-2.5 border-b-2 transition-colors ${
+              active ? "border-navy text-navy" : "border-transparent text-fg-muted"
+            }`}
+          >
+            {label}
+          </Link>
+        );
+      })}
+    </nav>
+    </>
   );
 }

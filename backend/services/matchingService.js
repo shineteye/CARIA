@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const { verifiedCutoff } = require("./cutoffService");
 
 function loadJSON(filename) {
   return JSON.parse(
@@ -45,6 +46,10 @@ const FINANCE_TOLERANCE = {
   public_day: 0.5,
   tight: 0.2,
   prefer_not: 0.5,
+  // Tertiary-stage answers (students in or past SHS)
+  can_private_uni: 1,
+  public_uni_ok: 0.65,
+  need_support: 0.3,
 };
 
 /** Profiles store the option label, not the id — match either. */
@@ -54,6 +59,8 @@ function financeTolerance(value) {
   if (FINANCE_TOLERANCE[s] !== undefined) return FINANCE_TOLERANCE[s];
   if (/private|boarding is possible/.test(s)) return FINANCE_TOLERANCE.can_private;
   if (/public boarding/.test(s)) return FINANCE_TOLERANCE.public_boarding;
+  if (/fees are manageable/.test(s)) return FINANCE_TOLERANCE.public_uni_ok;
+  if (/scholarship|loan/.test(s)) return FINANCE_TOLERANCE.need_support;
   if (/real concern|tight|struggl|difficult|cannot afford/.test(s))
     return FINANCE_TOLERANCE.tight;
   if (/public day/.test(s)) return FINANCE_TOLERANCE.public_day;
@@ -197,15 +204,18 @@ function scoreCareers(profile) {
         beceTarget: career.pathway.ideal_bece_aggregate || null,
         shsCategories: career.pathway.target_shs_categories || [],
         electives: career.pathway.required_wassce_electives || [],
+        // Only published cut-offs reach the student; the jhs_data
+        // typical_cutoff_aggregate is an estimate and is never shown.
         universities: (career.pathway.university_pathways || []).map((u) => ({
           institution: u.institution,
           program: u.program,
-          cutoff: u.typical_cutoff_aggregate,
+          cutoff: verifiedCutoff(u.institution, u.program)?.cutoff ?? null,
         })),
         alternatives: (career.alternativePathways || []).map((a) => ({
           condition: a.condition,
           stream: a.recommended_shs_stream,
           rationale: a.rationale,
+          programmes: a.viable_university_programs || [],
           careers: a.possible_careers || [],
         })),
       };

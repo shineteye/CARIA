@@ -126,12 +126,12 @@ export default function LandingPage() {
         </h1>
 
         <p className="text-lg text-fg-soft max-w-[500px] mx-auto mb-8 leading-[1.65]">
-          Answer a short chat-style quiz about you — then get a personal guide
+          Answer twelve short questions about you — then get a personal guide
           for subjects, schools, and grades from JHS to university.
         </p>
 
         <Link
-          to="/chat"
+          to="/start"
           className="inline-flex items-center gap-3 bg-navy text-white px-7 py-4 rounded-full font-semibold text-base transition-all duration-150 hover:bg-navy-light hover:-translate-y-px"
         >
           Start Planning My Path
@@ -404,11 +404,11 @@ export default function LandingPage() {
           <em className="not-italic text-gold-light">with one conversation.</em>
         </h2>
         <p className="text-base text-white/50 mb-8 leading-[1.6] max-w-[46ch] mx-auto">
-          Twelve questions. About five minutes. Then a plan built around your
+          Twelve questions. About three minutes. Then a plan built around your
           grades, your region, and what your family can actually afford.
         </p>
         <Link
-          to="/chat"
+          to="/start"
           className="inline-flex items-center gap-3 bg-white text-navy px-7 py-4 rounded-full font-semibold text-base transition-all duration-150 hover:bg-cream hover:-translate-y-px"
         >
           Start Planning My Path

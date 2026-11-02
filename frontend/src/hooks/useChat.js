@@ -4,6 +4,7 @@ import {
   sendMessage as sendMessageApi,
   getSessionHistory,
   unlockGuide as unlockGuideApi,
+  rebuildPlan as rebuildPlanApi,
 } from "../services/api";
 import { useAuth } from "../context/AuthContext";
 
@@ -127,6 +128,7 @@ export default function useChat(onMetaUpdate) {
             {
               role: "agent",
               content: data.reply,
+              kind: data.replyKind || "message",
               timestamp: new Date().toISOString(),
             },
           ]);
@@ -174,6 +176,19 @@ export default function useChat(onMetaUpdate) {
   }, []);
 
   /**
+   * Claim ownership of session state BEFORE signing up.
+   *
+   * Registering flips isAuthenticated, which re-runs the init effect above. If
+   * the guard is only set once unlockGuide starts, that re-run races the unlock
+   * and can reset the session out from under it — the student signs up and
+   * lands in a chat with no guide. Setting it synchronously up front closes the
+   * window.
+   */
+  const beginClaim = useCallback(() => {
+    claimingRef.current = true;
+  }, []);
+
+  /**
    * Called immediately after a guest signs up: their session is now claimed, so
    * generate the guide they've already earned.
    */
@@ -181,6 +196,8 @@ export default function useChat(onMetaUpdate) {
     async (claimedSessionId) => {
       const id = claimedSessionId || sessionId;
       if (!id) return;
+      // Already set synchronously by beginClaim before sign-up; setting it again
+      // is harmless and covers callers that skip that step.
       claimingRef.current = true;
       setSessionId(id);
       localStorage.setItem(SESSION_KEY, id);
@@ -194,6 +211,7 @@ export default function useChat(onMetaUpdate) {
             {
               role: "agent",
               content: data.reply,
+              kind: data.replyKind || "message",
               timestamp: new Date().toISOString(),
             },
           ]);
@@ -219,10 +237,37 @@ export default function useChat(onMetaUpdate) {
     [sessionId, applyMeta],
   );
 
+  /** Writes a new plan from the current profile; it becomes the latest one. */
+  const rebuildPlan = useCallback(async () => {
+    if (!sessionId || isLoading) return false;
+    setIsLoading(true);
+    try {
+      const data = await rebuildPlanApi(sessionId);
+      if (data.reply) {
+        setMessages((prev) => [
+          ...prev,
+          {
+            role: "agent",
+            content: data.reply,
+            kind: "guide",
+            timestamp: new Date().toISOString(),
+          },
+        ]);
+      }
+      applyMeta(data);
+      return true;
+    } catch {
+      return false;
+    } finally {
+      setIsLoading(false);
+    }
+  }, [sessionId, isLoading, applyMeta]);
+
   return {
     messages,
     isLoading,
     sendMessage,
+    rebuildPlan,
     sessionId,
     sessionReady,
     phase,
@@ -232,6 +277,7 @@ export default function useChat(onMetaUpdate) {
     guideReady,
     signupPreview,
     unlockGuide,
+    beginClaim,
     startFreshOnboarding,
     setProfileLocal,
   };

@@ -6,6 +6,7 @@ const connectDB = require("./config/db");
 
 let chatRoutes,
   sessionRoutes,
+  onboardingRoutes,
   authRoutes,
   profileRoutes,
   careerRoutes,
@@ -15,6 +16,11 @@ try {
   chatRoutes = require("./routes/chat");
 } catch (e) {
   console.error("LOAD ERROR chat routes:", e);
+}
+try {
+  onboardingRoutes = require("./routes/onboarding");
+} catch (e) {
+  console.error("LOAD ERROR onboarding routes:", e);
 }
 try {
   sessionRoutes = require("./routes/session");
@@ -76,6 +82,7 @@ if (authRoutes) app.use("/api/auth", authRoutes);
 if (profileRoutes) app.use("/api/profile", profileRoutes);
 if (chatRoutes) app.use("/api/chat", chatRoutes);
 if (sessionRoutes) app.use("/api/session", sessionRoutes);
+if (onboardingRoutes) app.use("/api/onboarding", onboardingRoutes);
 if (careerRoutes) app.use("/api/careers", careerRoutes);
 if (schoolRoutes) app.use("/api/schools", schoolRoutes);
 

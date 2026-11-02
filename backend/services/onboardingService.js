@@ -2,6 +2,7 @@ const {
   getQuestion,
   getTotalQuestions,
   formatQuestionForClient,
+  stageOf,
 } = require("../data/onboardingQuestions");
 
 function emptyProfile() {
@@ -109,44 +110,28 @@ function deriveCareerGoal(profile) {
   return profile.careerDirection;
 }
 
+/**
+ * Where the student is on the path, for the plan rail. Uses the same stage
+ * reading as the onboarding questions — the old substring checks matched
+ * "Finished WASSCE" as "wassce" and put finished students back before the exam.
+ */
 function deriveRoadmapFromProfile(profile) {
-  const level = (profile.educationLevel || "").toLowerCase();
   const career = deriveCareerGoal(profile);
   const streamHints = inferStreamHint(profile);
 
-  if (level.includes("jhs") || level.includes("bece") || level.includes("exploring early")) {
-    return {
-      stage: "JHS",
-      detail: streamHints || "Build foundations",
-      careerGoal: career,
-    };
+  switch (stageOf(profile.educationLevel)) {
+    case "post_wassce":
+      return { stage: "University", detail: "Results, programme choice and applications", careerGoal: career };
+    case "shs_final":
+      return { stage: "WASSCE", detail: "Target grades & electives", careerGoal: career };
+    case "shs":
+      return { stage: "SHS", detail: streamHints || "SHS pathway", careerGoal: career };
+    case "jhs":
+    case "exploring":
+      return { stage: "JHS", detail: streamHints || "Build foundations", careerGoal: career };
+    default:
+      return { stage: "BECE", detail: streamHints || "Next milestone", careerGoal: career };
   }
-  if (level.includes("shs form 1") || level.includes("form 1–2") || level.includes("form 1-2")) {
-    return {
-      stage: "SHS",
-      detail: streamHints || "SHS pathway",
-      careerGoal: career,
-    };
-  }
-  if (level.includes("wassce") || level.includes("form 3")) {
-    return {
-      stage: "WASSCE",
-      detail: "Target grades & electives",
-      careerGoal: career,
-    };
-  }
-  if (level.includes("finished")) {
-    return {
-      stage: "University",
-      detail: "Programme & cutoff fit",
-      careerGoal: career,
-    };
-  }
-  return {
-    stage: "BECE",
-    detail: streamHints || "Next milestone",
-    careerGoal: career,
-  };
 }
 
 function inferStreamHint(profile) {
@@ -183,7 +168,7 @@ function inferStreamHint(profile) {
   return null;
 }
 
-function getOnboardingPayload(step) {
+function getOnboardingPayload(step, profile) {
   const total = getTotalQuestions();
   const question = getQuestion(step);
   return {
@@ -191,7 +176,7 @@ function getOnboardingPayload(step) {
     total,
     progress: Math.round((step / total) * 100),
     completed: step >= total,
-    question: formatQuestionForClient(question, step, total),
+    question: formatQuestionForClient(question, step, total, profile),
   };
 }
 

@@ -2,6 +2,86 @@
  * Hybrid onboarding quiz for Caria.
  * Chat-style questions with tap-to-answer chips + optional free text.
  */
+const TIMELINE = {
+  bece: { id: "bece_soon", label: "BECE this year or next" },
+  chooseShs: { id: "choose_shs", label: "Choosing SHS programme / stream" },
+  wassce: { id: "wassce_soon", label: "WASSCE this year or next" },
+  chooseUni: { id: "choose_uni", label: "Choosing university programme" },
+  long: { id: "long_horizon", label: "Still early — long horizon" },
+  awaitingResults: { id: "awaiting_results", label: "Waiting for my WASSCE results" },
+  applyNow: { id: "apply_now", label: "Applying to university / college now" },
+  resit: { id: "resit", label: "Resitting or improving my results" },
+  alternatives: { id: "alternatives", label: "Exploring TVET, nursing or other routes" },
+  gapYear: { id: "gap_year", label: "Working or taking a gap year first" },
+};
+
+/**
+ * Buckets the free-text school stage answer: "post_wassce", "shs_final", "shs",
+ * "jhs", "exploring", or null when it can't be told.
+ */
+function stageOf(educationLevel) {
+  const stage = String(educationLevel || "").toLowerCase();
+  if (stage.includes("finished") || stage.includes("post")) return "post_wassce";
+  // JHS must be tested before "form 3": "JHS Form 3 / BECE soon" contains it too.
+  if (stage.includes("jhs") || stage.includes("bece")) return "jhs";
+  if (stage.includes("form 3") || stage.includes("wassce")) return "shs_final";
+  if (stage.includes("shs")) return "shs";
+  if (stage.includes("exploring")) return "exploring";
+  return null;
+}
+
+/** Timeline chips that make sense for the stage the student already gave. */
+function timelineOptionsForStage(educationLevel) {
+  const T = TIMELINE;
+  switch (stageOf(educationLevel)) {
+    case "post_wassce":
+      return [T.awaitingResults, T.applyNow, T.resit, T.alternatives, T.gapYear];
+    case "jhs":
+      return [T.bece, T.chooseShs, T.long];
+    case "shs_final":
+      return [T.wassce, T.chooseUni, T.alternatives, T.long];
+    case "shs":
+      return [T.chooseShs, T.wassce, T.chooseUni, T.long];
+    case "exploring":
+      return [T.chooseShs, T.chooseUni, T.long];
+    default:
+      return null;
+  }
+}
+
+const SHS_COST_OPTIONS = [
+  { id: "public_day", label: "Public day school is realistic" },
+  { id: "public_boarding", label: "Public boarding SHS is possible" },
+  { id: "can_private", label: "Private / boarding is possible" },
+  { id: "tight", label: "Money is a real concern" },
+  { id: "prefer_not", label: "Prefer not to say" },
+];
+
+const TERTIARY_COST_OPTIONS = [
+  { id: "public_uni_ok", label: "Public university fees are manageable" },
+  { id: "need_support", label: "I'd need a scholarship or loan" },
+  { id: "can_private_uni", label: "Private university is possible" },
+  { id: "tight", label: "Money is a real concern" },
+  { id: "prefer_not", label: "Prefer not to say" },
+];
+
+/** Students already in or past SHS are budgeting for tertiary, not SHS. */
+function costOptionsForStage(educationLevel) {
+  const stage = stageOf(educationLevel);
+  if (stage === "post_wassce" || stage === "shs_final" || stage === "shs") {
+    return TERTIARY_COST_OPTIONS;
+  }
+  return stage ? SHS_COST_OPTIONS : null;
+}
+
+function placementHelperForStage(educationLevel, { shs, tertiary }) {
+  const stage = stageOf(educationLevel);
+  if (stage === "post_wassce" || stage === "shs_final" || stage === "shs") {
+    return tertiary;
+  }
+  return shs;
+}
+
 const ONBOARDING_QUESTIONS = [
   {
     id: "education_level",
@@ -25,7 +105,12 @@ const ONBOARDING_QUESTIONS = [
     profileKey: "region",
     prompt:
       "Got it. **Which region are you in** (or where would you prefer to study)?\n\nThis helps me recommend realistic SHS and university options.",
-    helper: "Region affects school placement and cut-offs.",
+    helper: "Region affects school placement.",
+    helperFor: (profile) =>
+      placementHelperForStage(profile?.educationLevel, {
+        shs: "Region affects school placement.",
+        tertiary: "Region affects which universities and colleges are practical.",
+      }),
     multi: false,
     options: [
       { id: "greater_accra", label: "Greater Accra" },
@@ -154,13 +239,8 @@ const ONBOARDING_QUESTIONS = [
       "Money shapes real options. **Which best describes your family's situation for school costs?**\n\n(You can skip detail — a rough picture is enough.)",
     helper: "Used only to suggest realistic schools & paths.",
     multi: false,
-    options: [
-      { id: "public_day", label: "Public day school is realistic" },
-      { id: "public_boarding", label: "Public boarding SHS is possible" },
-      { id: "can_private", label: "Private / boarding is possible" },
-      { id: "tight", label: "Money is a real concern" },
-      { id: "prefer_not", label: "Prefer not to say" },
-    ],
+    options: SHS_COST_OPTIONS,
+    optionsFor: (profile) => costOptionsForStage(profile?.educationLevel),
     placeholder: "Optional: add context about costs…",
   },
   {
@@ -169,6 +249,11 @@ const ONBOARDING_QUESTIONS = [
     prompt:
       "Would you be willing to **leave your home region** for a stronger school or programme?",
     helper: "Affects SHS category and university choices.",
+    helperFor: (profile) =>
+      placementHelperForStage(profile?.educationLevel, {
+        shs: "Affects SHS category and university choices.",
+        tertiary: "Affects which universities and colleges I suggest.",
+      }),
     multi: false,
     options: [
       { id: "yes_good_school", label: "Yes, for a good school" },
@@ -184,6 +269,7 @@ const ONBOARDING_QUESTIONS = [
     prompt: "What's your **next big academic step**?",
     helper: "I'll prioritise what matters soonest.",
     multi: false,
+    // Fallback when the school stage is unknown; normally optionsFor() decides.
     options: [
       { id: "bece_soon", label: "BECE this year or next" },
       { id: "choose_shs", label: "Choosing SHS programme / stream" },
@@ -191,6 +277,7 @@ const ONBOARDING_QUESTIONS = [
       { id: "choose_uni", label: "Choosing university programme" },
       { id: "long_horizon", label: "Still early — long horizon" },
     ],
+    optionsFor: (profile) => timelineOptionsForStage(profile?.educationLevel),
     placeholder: "Or describe your timeline…",
   },
   {
@@ -221,14 +308,15 @@ function getTotalQuestions() {
   return ONBOARDING_QUESTIONS.length;
 }
 
-function formatQuestionForClient(question, step, total) {
+function formatQuestionForClient(question, step, total, profile) {
   if (!question) return null;
+  const options = (question.optionsFor && question.optionsFor(profile)) || question.options;
   return {
     id: question.id,
     prompt: question.prompt,
-    helper: question.helper || null,
+    helper: (question.helperFor && question.helperFor(profile)) || question.helper || null,
     multi: !!question.multi,
-    options: question.options.map((o) => ({ id: o.id, label: o.label })),
+    options: options.map((o) => ({ id: o.id, label: o.label })),
     placeholder: question.placeholder || "Type your answer…",
     step: step + 1,
     total,
@@ -237,6 +325,7 @@ function formatQuestionForClient(question, step, total) {
 }
 
 module.exports = {
+  stageOf,
   ONBOARDING_QUESTIONS,
   getQuestion,
   getTotalQuestions,
