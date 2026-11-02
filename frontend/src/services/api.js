@@ -1,14 +1,14 @@
 import axios from "axios";
 
-const isProduction = import.meta.env.PROD;
 const TOKEN_KEY = "Caria_auth_token";
 
 const api = axios.create({
-  // In dev, "" sends requests to the Vite dev server, which proxies /api to the
-  // backend (see vite.config.js). Keeping it relative means the app also works
-  // through an ngrok tunnel or from a phone on the LAN, where "localhost" would
-  // resolve to the visitor's own machine.
-  baseURL: import.meta.env.VITE_API_URL || (isProduction ? "/_/backend" : ""),
+  // "" keeps requests on the current origin. In dev the Vite server proxies /api
+  // to the backend (see vite.config.js); in production vercel.json routes /api to
+  // the backend service. Staying relative also means the app works through an
+  // ngrok tunnel or from a phone on the LAN, where "localhost" would resolve to
+  // the visitor's own machine.
+  baseURL: import.meta.env.VITE_API_URL || "",
   headers: { "Content-Type": "application/json" },
 });
 
